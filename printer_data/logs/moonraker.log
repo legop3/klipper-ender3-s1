@@ -208,3 +208,127 @@ Git Repo klipper-backup: No warnings detected
 2024-02-17 04:08:18,880 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
 2024-02-17 12:12:24,080 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616472309968
 2024-02-17 12:12:26,846 [websockets.py:on_close()] - Websocket Closed: ID: 140616472309968 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.10
+2024-02-17 17:32:57,678 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-02-17 17:43:47,013 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.14ms
+2024-02-17 17:43:47,014 [websockets.py:open()] - Websocket Opened: ID: 140616472310736, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0, Host Name: localhost
+2024-02-17 17:43:47,076 [websockets.py:_handle_identify()] - Websocket 140616472310736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-17 17:51:15,442 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:16,483 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:21,500 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:24,415 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 242.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:28,660 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:29,628 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:30,698 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:31,181 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:31,445 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:31,771 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:31,927 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:36,421 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:37,062 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:37,605 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:37,883 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:38,142 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:38,377 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:38,683 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:38,851 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:39,365 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [4924.285]
+2024-02-17 17:51:57,950 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 264.000 10.000 [4924.285]
+2024-02-17 17:52:00,335 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:04,732 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 244.000 10.000 [4924.285]
+2024-02-17 17:52:20,506 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:20,873 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:21,091 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:21,374 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:21,649 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:22,022 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:22,397 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:22,864 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:23,087 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 239.000 10.000 [4924.285]
+2024-02-17 17:52:43,465 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 -18.000 10.000 [4924.285]
+2024-02-17 17:52:49,480 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 -18.000 10.000 [4924.285]
+2024-02-17 17:53:44,159 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 -33.000 10.000 [4924.285]
+2024-02-17 17:53:45,088 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 235.000 -33.000 10.000 [4924.285]
+2024-02-17 17:54:54,175 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------250391818418861136932908605596
+2024-02-17 17:54:54,179 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-17 17:54:54,182 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 7.39ms
+2024-02-17 17:54:55,237 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-17 17:54:56,492 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-17 17:54:58,540 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-17 17:54:58,542 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-17 17:54:58,792 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-17 17:54:59,047 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-17 17:54:59,798 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-17 17:55:50,428 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -13.000 10.000 [0.000]
+2024-02-17 17:55:53,987 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -13.000 10.000 [0.000]
+2024-02-17 17:55:58,343 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -18.000 10.000 [0.000]
+2024-02-17 17:56:00,019 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:56:00,218 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:56:00,523 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:56:00,780 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:56:01,047 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:56:01,271 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 -9.000 10.000 [0.000]
+2024-02-17 17:57:10,777 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 242.000 10.000 [0.000]
+2024-02-17 17:57:15,735 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 242.000 10.000 [0.000]
+2024-02-17 17:58:04,478 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 242.000 10.000 [0.000]
+2024-02-17 17:58:28,159 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------2532298521114673162329195444
+2024-02-17 17:58:28,166 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-17 17:58:28,168 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 8.65ms
+2024-02-17 17:58:29,232 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-17 17:58:30,487 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-17 17:58:32,529 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-17 17:58:32,530 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-17 17:58:32,780 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-17 17:58:33,034 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-17 17:58:33,786 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-17 17:59:12,500 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2024-02-17 17:59:15,764 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2024-02-17 17:59:18,700 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2024-02-17 17:59:21,735 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 242.000 154.000 10.000 [0.000]
+2024-02-17 17:59:22,247 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 242.000 154.000 10.000 [0.000]
+2024-02-17 17:59:22,464 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 242.000 154.000 10.000 [0.000]
+2024-02-17 17:59:24,449 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:24,734 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:25,228 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:25,480 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:25,724 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:26,059 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:26,499 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:26,723 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:26,972 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:27,297 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:27,535 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 236.000 154.000 10.000 [0.000]
+2024-02-17 17:59:56,904 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------299319660638782409242124543001
+2024-02-17 17:59:56,910 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-17 17:59:56,914 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 10.11ms
+2024-02-17 17:59:57,968 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-17 17:59:59,226 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-17 18:00:01,267 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-17 18:00:01,267 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-17 18:00:01,518 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-17 18:00:01,773 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-17 18:00:02,522 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-17 18:00:49,919 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -11.000 154.000 10.000 [0.000]
+2024-02-17 18:01:32,971 [websockets.py:on_close()] - Websocket Closed: ID: 140616472310736 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.96
+2024-02-17 18:05:14,159 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=------------------------d99a9a2563529c2f
+2024-02-17 18:05:14,188 [application.py:post()] - Processing Uploaded File: Linkage_Lid_Box_W2.0_x_D2.0_x_H1.0_3h10m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-02-17 18:05:14,309 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-17 18:05:14,330 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-17 18:05:14,333 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Linkage_Lid_Box_W2.0_x_D2.0_x_H1.0_3h10m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-02-17 18:05:14,863 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Linkage_Lid_Box_W2.0_x_D2.0_x_H1.0_3h10m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-02-17 18:05:14,866 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 707.88ms
+2024-02-17 18:05:14,985 [job_state.py:_status_update()] - Job Started: Linkage_Lid_Box_W2.0_x_D2.0_x_H1.0_3h10m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-02-17 18:36:58,819 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.84ms
+2024-02-17 18:36:58,819 [websockets.py:open()] - Websocket Opened: ID: 140616471513456, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0, Host Name: localhost
+2024-02-17 18:36:58,917 [websockets.py:_handle_identify()] - Websocket 140616471513456 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-17 18:37:14,969 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------380323501331675427641538956388
+2024-02-17 18:37:14,975 [application.py:post()] - Processing Uploaded File: crowsnest.conf
+2024-02-17 18:37:14,977 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 9.11ms
+2024-02-17 19:38:19,072 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
