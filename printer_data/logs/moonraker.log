@@ -332,3 +332,14 @@ Content-Type: multipart/form-data; boundary=---------------------------380323501
 2024-02-17 18:37:14,975 [application.py:post()] - Processing Uploaded File: crowsnest.conf
 2024-02-17 18:37:14,977 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 9.11ms
 2024-02-17 19:38:19,072 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-02-17 20:06:53,471 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-17 20:06:53,472 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.36ms
+2024-02-17 20:06:53,473 [websockets.py:open()] - Websocket Opened: ID: 140616471519696, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-17 20:06:53,488 [websockets.py:_handle_identify()] - Websocket 140616471519696 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-17 21:08:18,417 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.25
+2024-02-17 21:08:18,418 [application.py:log_request()] - 101 GET /websocket (192.168.0.25) [_TRUSTED_USER_] 1.87ms
+2024-02-17 21:08:18,418 [websockets.py:open()] - Websocket Opened: ID: 140616471525552, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0, Host Name: 192.168.0.40
+2024-02-17 21:08:18,515 [websockets.py:_handle_identify()] - Websocket 140616471525552 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-17 21:08:19,160 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-17 21:25:58,639 [websockets.py:on_close()] - Websocket Closed: ID: 140616471525552 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.19
+2024-02-17 22:08:19,172 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
