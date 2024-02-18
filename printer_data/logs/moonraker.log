@@ -183,3 +183,10 @@ Git Repo klipper-backup: No warnings detected
 2024-02-18 07:55:34,088 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.80ms
 2024-02-18 07:55:34,088 [websockets.py:open()] - Websocket Opened: ID: 140616481711792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-02-18 07:55:34,093 [websockets.py:_handle_identify()] - Websocket 140616481711792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-18 08:58:19,292 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-18 11:40:14,291 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616481711792
+2024-02-18 11:40:19,090 [websockets.py:on_close()] - Websocket Closed: ID: 140616481711792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
+2024-02-18 11:41:41,845 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-18 11:41:41,846 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.82ms
+2024-02-18 11:41:41,846 [websockets.py:open()] - Websocket Opened: ID: 140616481711792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-18 11:41:41,852 [websockets.py:_handle_identify()] - Websocket 140616481711792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
