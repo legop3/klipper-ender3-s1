@@ -191,3 +191,10 @@ Git Repo klipper-backup: No warnings detected
 2024-02-19 04:01:13,379 [websockets.py:open()] - Websocket Opened: ID: 140616471646736, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-02-19 04:01:13,384 [websockets.py:_handle_identify()] - Websocket 140616471646736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-02-19 05:03:19,511 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-19 12:32:53,565 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616471646736
+2024-02-19 12:32:58,381 [websockets.py:on_close()] - Websocket Closed: ID: 140616471646736 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
+2024-02-19 12:34:11,552 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-19 12:34:11,553 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.85ms
+2024-02-19 12:34:11,553 [websockets.py:open()] - Websocket Opened: ID: 140616471657920, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-19 12:34:11,563 [websockets.py:_handle_identify()] - Websocket 140616471657920 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-19 13:38:19,609 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
