@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Feb 18 12:45:23 2024 --------------------
+-------------------- Log Start | Mon Feb 19 07:35:59 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -163,7 +163,7 @@ is_default: True
 manager: systemd
 Properties:
 **Requires=['-.mount', 'sysinit.target', 'system.slice']
-**After=['-.mount', 'sysinit.target', 'basic.target', 'systemd-journald.socket', 'network-online.target', 'system.slice']
+**After=['-.mount', 'systemd-journald.socket', 'basic.target', 'network-online.target', 'sysinit.target', 'system.slice']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -177,84 +177,12 @@ Git Repo mainsail-config: No warnings detected
 Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
 Git Repo klipper-backup: No warnings detected
-2024-02-18 07:45:23,601 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616471519696
-2024-02-18 07:45:28,475 [websockets.py:on_close()] - Websocket Closed: ID: 140616471519696 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.95
-2024-02-18 07:55:34,087 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-02-18 07:55:34,088 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.80ms
-2024-02-18 07:55:34,088 [websockets.py:open()] - Websocket Opened: ID: 140616481711792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-02-18 07:55:34,093 [websockets.py:_handle_identify()] - Websocket 140616481711792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-02-18 08:58:19,292 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-02-18 11:40:14,291 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616481711792
-2024-02-18 11:40:19,090 [websockets.py:on_close()] - Websocket Closed: ID: 140616481711792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
-2024-02-18 11:41:41,845 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-02-18 11:41:41,846 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.82ms
-2024-02-18 11:41:41,846 [websockets.py:open()] - Websocket Opened: ID: 140616481711792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-02-18 11:41:41,852 [websockets.py:_handle_identify()] - Websocket 140616481711792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-02-18 12:02:17,186 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-02-18 12:02:17,194 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1708275708.109493, Usage: 1.11%, Memory: 50460 kB
-System Time: 1708275709.112687, Usage: 0.91%, Memory: 50460 kB
-System Time: 1708275710.110990, Usage: 0.93%, Memory: 50460 kB
-System Time: 1708275711.111771, Usage: 1.08%, Memory: 50460 kB
-System Time: 1708275712.112870, Usage: 1.24%, Memory: 50460 kB
-System Time: 1708275713.114146, Usage: 0.84%, Memory: 50460 kB
-System Time: 1708275714.113605, Usage: 0.83%, Memory: 50460 kB
-System Time: 1708275715.115227, Usage: 0.8%, Memory: 50460 kB
-System Time: 1708275716.117774, Usage: 1.08%, Memory: 50460 kB
-System Time: 1708275717.119977, Usage: 1.29%, Memory: 50460 kB
-System Time: 1708275718.120254, Usage: 1.4%, Memory: 50460 kB
-System Time: 1708275719.121949, Usage: 1.0%, Memory: 50460 kB
-System Time: 1708275720.125365, Usage: 0.76%, Memory: 50460 kB
-System Time: 1708275721.128008, Usage: 0.89%, Memory: 50460 kB
-System Time: 1708275722.128390, Usage: 1.63%, Memory: 50460 kB
-System Time: 1708275723.129078, Usage: 1.23%, Memory: 50460 kB
-System Time: 1708275724.126619, Usage: 1.23%, Memory: 50460 kB
-System Time: 1708275725.128772, Usage: 0.79%, Memory: 50460 kB
-System Time: 1708275726.132803, Usage: 1.01%, Memory: 50460 kB
-System Time: 1708275727.130583, Usage: 1.5%, Memory: 50460 kB
-System Time: 1708275728.130520, Usage: 1.02%, Memory: 50460 kB
-System Time: 1708275729.129411, Usage: 1.26%, Memory: 50460 kB
-System Time: 1708275730.134532, Usage: 0.9%, Memory: 50460 kB
-System Time: 1708275731.137636, Usage: 1.16%, Memory: 50460 kB
-System Time: 1708275732.138126, Usage: 1.65%, Memory: 50460 kB
-System Time: 1708275733.139670, Usage: 1.79%, Memory: 50460 kB
-System Time: 1708275734.140314, Usage: 1.33%, Memory: 50460 kB
-System Time: 1708275735.142075, Usage: 1.55%, Memory: 50460 kB
-System Time: 1708275736.139646, Usage: 1.6%, Memory: 50460 kB
-System Time: 1708275737.142677, Usage: 1.04%, Memory: 50460 kB
-CPU Temperature: 34.0
-2024-02-18 12:11:41,911 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616481711792
-2024-02-18 12:11:46,850 [websockets.py:on_close()] - Websocket Closed: ID: 140616481711792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
-2024-02-18 12:11:49,750 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.63ms
-2024-02-18 12:11:49,751 [websockets.py:open()] - Websocket Opened: ID: 140616481710304, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-02-18 12:11:49,755 [websockets.py:_handle_identify()] - Websocket 140616481710304 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-02-18 12:22:20,183 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-02-18 12:22:21,438 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-02-18 12:22:21,468 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'sysinit.target', 'system.slice']
-**After=['-.mount', 'systemd-journald.socket', 'basic.target', 'network-online.target', 'sysinit.target', 'system.slice']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2024-02-18 12:22:21,915 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2024-02-18 12:22:23,484 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-02-18 12:22:23,485 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-02-18 12:22:23,735 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-02-18 12:22:23,990 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-02-18 12:22:24,992 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-02-18 12:22:57,884 [application.py:prepare()] - Upload Request Received from 127.0.0.1
-Content-Type: multipart/form-data; boundary=---------------------------26527875147272622461736927511
-2024-02-18 12:22:57,889 [application.py:post()] - Processing Uploaded File: crowsnest.conf
-2024-02-18 12:22:57,892 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 8.45ms
-2024-02-18 13:13:19,344 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-02-18 13:23:19,347 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-02-19 02:35:59,789 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616481710304
+2024-02-19 02:36:04,753 [websockets.py:on_close()] - Websocket Closed: ID: 140616481710304 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-02-19 02:46:33,401 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-19 02:46:33,402 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.37ms
+2024-02-19 02:46:33,402 [websockets.py:open()] - Websocket Opened: ID: 140616471655760, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-19 02:46:33,408 [websockets.py:_handle_identify()] - Websocket 140616471655760 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-19 03:48:19,500 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-19 03:59:03,563 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616471655760
+2024-02-19 03:59:08,404 [websockets.py:on_close()] - Websocket Closed: ID: 140616471655760 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.92
