@@ -328,3 +328,59 @@ Content-Type: multipart/form-data; boundary=------------------------2755c19acaf4
 2024-02-19 19:50:16,575 [websockets.py:_handle_identify()] - Websocket 140616785585840 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-02-19 19:51:15,874 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616785585840
 2024-02-19 19:51:20,806 [websockets.py:on_close()] - Websocket Closed: ID: 140616785585840 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.64
+2024-02-19 20:53:19,688 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.233
+2024-02-19 21:25:39,783 [websockets.py:on_close()] - Websocket Closed: ID: 140616471649856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.64
+2024-02-19 22:05:33,641 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-19 22:05:33,649 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-19 22:05:33,650 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Cube_PLA_10m6s.gcode, sliced by OrcaSlicer
+
+2024-02-19 22:05:33,732 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Cube_PLA_10m6s.gcode" --check-objects) successfully finished
+2024-02-19 22:05:33,830 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-19 22:05:33,897 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-02-19 22:07:59,035 [job_state.py:_status_update()] - Job Started: Cube_PLA_10m6s.gcode
+2024-02-19 22:34:52,891 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-02-19 22:38:03,601 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------595809f5006b4405
+2024-02-19 22:38:03,608 [application.py:post()] - Processing Uploaded File: newsa.gcode
+2024-02-19 22:38:03,827 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-19 22:38:03,839 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-19 22:38:03,842 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: newsa.gcode, sliced by PrusaSlicer
+
+2024-02-19 22:38:03,925 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "newsa.gcode" --check-objects) successfully finished
+2024-02-19 22:38:03,931 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 329.97ms
+2024-02-19 22:38:03,998 [job_state.py:_status_update()] - Job Started: newsa.gcode
+2024-02-19 23:13:19,713 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-02-19 23:38:19,717 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-19 23:38:19,718 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-02-19 23:48:49,708 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-02-19 23:48:49,726 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------2b6af0cb5e4487be
+2024-02-19 23:48:49,873 [application.py:post()] - Processing Uploaded File: 100_Joints_2h46m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-02-19 23:48:50,069 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-19 23:48:50,152 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-19 23:48:50,155 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: 100_Joints_2h46m_0.16mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-02-19 23:48:51,682 [websockets.py:write_to_socket()] - Websocket closed while writing: 140616471657920
+2024-02-19 23:48:51,789 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "100_Joints_2h46m_0.16mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-02-19 23:48:51,793 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2067.70ms
+2024-02-19 23:48:51,934 [job_state.py:_status_update()] - Job Started: 100_Joints_2h46m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-02-19 23:48:56,555 [websockets.py:on_close()] - Websocket Closed: ID: 140616471657920 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.04
+2024-02-19 23:49:13,993 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-19 23:49:13,993 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.88ms
+2024-02-19 23:49:13,993 [websockets.py:open()] - Websocket Opened: ID: 140616471657536, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-19 23:49:14,001 [websockets.py:_handle_identify()] - Websocket 140616471657536 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-19 23:49:56,407 [websockets.py:on_close()] - Websocket Closed: ID: 140616471657536 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.40
+2024-02-19 23:49:56,977 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.65ms
+2024-02-19 23:49:56,978 [websockets.py:open()] - Websocket Opened: ID: 140616471654320, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-19 23:49:57,031 [websockets.py:_handle_identify()] - Websocket 140616471654320 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-19 23:50:02,867 [websockets.py:on_close()] - Websocket Closed: ID: 140616471658112 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.95
+2024-02-19 23:50:03,737 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-02-19 23:50:03,738 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.48ms
+2024-02-19 23:50:03,739 [websockets.py:open()] - Websocket Opened: ID: 140616471649328, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0, Host Name: localhost
+2024-02-19 23:50:03,808 [websockets.py:_handle_identify()] - Websocket 140616471649328 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
