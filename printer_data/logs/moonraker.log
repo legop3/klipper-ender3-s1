@@ -242,3 +242,198 @@ CPU Temperature: 48.0
 2024-02-22 11:58:20,183 [job_state.py:_handle_started()] - Job state initialized: standby
 2024-02-22 11:58:20,440 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-02-22 11:58:21,188 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:10:48,931 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-02-22 12:11:17,318 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------181274230031153188694105969227
+2024-02-22 12:11:17,324 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-22 12:11:17,328 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 10.86ms
+2024-02-22 12:11:18,397 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:11:19,652 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:11:21,704 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:11:21,705 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:11:21,956 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 12:11:22,212 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 12:11:22,961 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:11:46,431 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-02-22 12:11:46,434 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------7a821b18088d6f2f
+2024-02-22 12:11:46,438 [application.py:post()] - Processing Uploaded File: BedCalibration_39m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-02-22 12:11:46,573 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-22 12:11:46,583 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-22 12:11:46,585 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: BedCalibration_39m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-02-22 12:11:46,653 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "BedCalibration_39m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-02-22 12:11:46,674 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 240.51ms
+2024-02-22 12:11:46,784 [job_state.py:_status_update()] - Job Started: BedCalibration_39m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-02-22 12:15:09,430 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------9015692441401590012536337149
+2024-02-22 12:15:09,437 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-22 12:15:09,439 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 9.88ms
+2024-02-22 12:15:10,566 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:15:11,822 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:15:13,875 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:15:13,876 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:15:14,126 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 12:15:14,385 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 12:15:15,131 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:22:17,670 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------93383aa26bb8a459
+2024-02-22 12:22:17,675 [application.py:post()] - Processing Uploaded File: caliber.gcode
+2024-02-22 12:22:17,807 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-22 12:22:17,819 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-22 12:22:17,822 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: caliber.gcode, sliced by PrusaSlicer
+
+2024-02-22 12:22:17,882 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "caliber.gcode" --check-objects) successfully finished
+2024-02-22 12:22:17,887 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 217.62ms
+2024-02-22 12:22:18,066 [job_state.py:_status_update()] - Job Started: caliber.gcode
+2024-02-22 12:23:27,519 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-02-22 12:23:27,527 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1708622577.831171, Usage: 1.01%, Memory: 49572 kB
+System Time: 1708622578.831459, Usage: 0.77%, Memory: 49572 kB
+System Time: 1708622579.832730, Usage: 0.77%, Memory: 49572 kB
+System Time: 1708622580.832585, Usage: 0.75%, Memory: 49572 kB
+System Time: 1708622581.834009, Usage: 1.01%, Memory: 49572 kB
+System Time: 1708622582.835266, Usage: 0.91%, Memory: 49572 kB
+System Time: 1708622583.837747, Usage: 0.88%, Memory: 49572 kB
+System Time: 1708622584.836824, Usage: 1.37%, Memory: 49572 kB
+System Time: 1708622585.840178, Usage: 0.78%, Memory: 49572 kB
+System Time: 1708622586.841129, Usage: 1.12%, Memory: 49572 kB
+System Time: 1708622587.843477, Usage: 1.2%, Memory: 49572 kB
+System Time: 1708622588.842928, Usage: 1.08%, Memory: 49572 kB
+System Time: 1708622589.844699, Usage: 0.9%, Memory: 49572 kB
+System Time: 1708622590.846598, Usage: 0.92%, Memory: 49572 kB
+System Time: 1708622591.846220, Usage: 0.99%, Memory: 49572 kB
+System Time: 1708622592.846393, Usage: 1.05%, Memory: 49572 kB
+System Time: 1708622593.846457, Usage: 1.01%, Memory: 49572 kB
+System Time: 1708622594.847831, Usage: 1.11%, Memory: 49572 kB
+System Time: 1708622595.847190, Usage: 1.08%, Memory: 49572 kB
+System Time: 1708622596.849620, Usage: 0.93%, Memory: 49572 kB
+System Time: 1708622597.849552, Usage: 1.23%, Memory: 49572 kB
+System Time: 1708622598.850714, Usage: 1.34%, Memory: 49572 kB
+System Time: 1708622599.852395, Usage: 1.16%, Memory: 49572 kB
+System Time: 1708622600.853660, Usage: 0.85%, Memory: 49572 kB
+System Time: 1708622601.856324, Usage: 0.9%, Memory: 49572 kB
+System Time: 1708622602.855652, Usage: 0.93%, Memory: 49572 kB
+System Time: 1708622603.857370, Usage: 0.98%, Memory: 49572 kB
+System Time: 1708622604.859078, Usage: 1.09%, Memory: 49572 kB
+System Time: 1708622605.858496, Usage: 0.87%, Memory: 49572 kB
+System Time: 1708622606.859196, Usage: 0.84%, Memory: 49572 kB
+CPU Temperature: 52.0
+2024-02-22 12:23:27,779 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.pause, Code: 400, Message: Shutdown due to webhooks request
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-02-22 12:24:58,026 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------90b0bd2bd13ffb02
+2024-02-22 12:24:58,032 [application.py:post()] - Processing Uploaded File: caliber.gcode
+2024-02-22 12:24:58,216 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-22 12:24:58,229 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-22 12:24:58,231 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: caliber.gcode, sliced by PrusaSlicer
+
+2024-02-22 12:24:58,288 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "caliber.gcode" --check-objects) successfully finished
+2024-02-22 12:24:58,292 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 266.30ms
+2024-02-22 12:25:02,304 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:25:03,559 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:25:04,587 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:25:04,588 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:25:04,589 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-02-22 12:25:09,186 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:25:10,442 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:25:12,501 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:25:12,502 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:25:12,752 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 12:25:13,009 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 12:25:13,757 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:25:23,787 [job_state.py:_status_update()] - Job Started: caliber.gcode
+2024-02-22 12:26:06,262 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------06d0101ad35eb1d8
+2024-02-22 12:26:06,269 [application.py:post()] - Processing Uploaded File: caliber.gcode
+2024-02-22 12:26:06,450 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-22 12:26:06,461 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-22 12:26:06,465 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: caliber.gcode, sliced by PrusaSlicer
+
+2024-02-22 12:26:06,538 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "caliber.gcode" --check-objects) successfully finished
+2024-02-22 12:26:06,548 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 286.69ms
+2024-02-22 12:26:06,659 [job_state.py:_status_update()] - Job Started: caliber.gcode
+2024-02-22 12:28:46,894 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.17ms
+2024-02-22 12:28:46,895 [websockets.py:open()] - Websocket Opened: ID: 140163781117840, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0, Host Name: localhost
+2024-02-22 12:28:46,978 [websockets.py:_handle_identify()] - Websocket 140163781117840 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-22 12:33:53,023 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------9958743281222582789992009619
+2024-02-22 12:33:53,028 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-02-22 12:33:53,031 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 8.82ms
+2024-02-22 12:33:54,094 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:33:55,349 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:33:57,393 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:33:57,394 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:33:57,645 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 12:33:57,904 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 12:33:58,901 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:34:39,256 [job_state.py:_status_update()] - Job Started: caliber.gcode
+2024-02-22 12:35:31,907 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-02-22 12:35:31,915 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1708623302.595253, Usage: 0.75%, Memory: 49688 kB
+System Time: 1708623303.596814, Usage: 0.98%, Memory: 49688 kB
+System Time: 1708623304.598033, Usage: 0.96%, Memory: 49688 kB
+System Time: 1708623305.597804, Usage: 1.19%, Memory: 49688 kB
+System Time: 1708623306.599093, Usage: 0.76%, Memory: 49688 kB
+System Time: 1708623307.599648, Usage: 1.05%, Memory: 49688 kB
+System Time: 1708623308.600078, Usage: 0.86%, Memory: 49688 kB
+System Time: 1708623309.600961, Usage: 1.0%, Memory: 49688 kB
+System Time: 1708623310.601685, Usage: 0.85%, Memory: 49688 kB
+System Time: 1708623311.602901, Usage: 0.86%, Memory: 49688 kB
+System Time: 1708623312.603406, Usage: 0.93%, Memory: 49688 kB
+System Time: 1708623313.604508, Usage: 0.76%, Memory: 49688 kB
+System Time: 1708623314.607153, Usage: 0.95%, Memory: 49688 kB
+System Time: 1708623315.606236, Usage: 1.12%, Memory: 49688 kB
+System Time: 1708623316.609285, Usage: 0.84%, Memory: 49688 kB
+System Time: 1708623317.608517, Usage: 0.96%, Memory: 49688 kB
+System Time: 1708623318.610196, Usage: 0.87%, Memory: 49688 kB
+System Time: 1708623319.610591, Usage: 0.74%, Memory: 49688 kB
+System Time: 1708623320.613570, Usage: 0.85%, Memory: 49688 kB
+System Time: 1708623321.614646, Usage: 0.83%, Memory: 49688 kB
+System Time: 1708623322.616180, Usage: 0.85%, Memory: 49688 kB
+System Time: 1708623323.616559, Usage: 0.96%, Memory: 49688 kB
+System Time: 1708623324.618215, Usage: 0.92%, Memory: 49688 kB
+System Time: 1708623325.618876, Usage: 1.12%, Memory: 49688 kB
+System Time: 1708623326.622099, Usage: 0.8%, Memory: 49688 kB
+System Time: 1708623327.621246, Usage: 1.15%, Memory: 49688 kB
+System Time: 1708623328.622606, Usage: 0.84%, Memory: 49688 kB
+System Time: 1708623329.622431, Usage: 0.78%, Memory: 49688 kB
+System Time: 1708623330.624079, Usage: 0.8%, Memory: 49688 kB
+System Time: 1708623331.624957, Usage: 1.05%, Memory: 49688 kB
+CPU Temperature: 52.0
+2024-02-22 12:35:37,953 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 12:35:39,208 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 12:35:41,250 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 12:35:41,251 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 12:35:41,501 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 12:35:41,759 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 12:35:42,759 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-22 12:47:54,136 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-22 13:27:54,143 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-02-22 13:37:54,145 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-02-22 15:28:44,127 [websockets.py:write_to_socket()] - Websocket closed while writing: 140163791871552
+2024-02-22 15:28:48,980 [websockets.py:on_close()] - Websocket Closed: ID: 140163791871552 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
+2024-02-22 15:28:56,748 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-22 15:28:56,748 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.84ms
+2024-02-22 15:28:56,749 [websockets.py:open()] - Websocket Opened: ID: 140163781412464, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-22 15:28:56,758 [websockets.py:_handle_identify()] - Websocket 140163781412464 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
