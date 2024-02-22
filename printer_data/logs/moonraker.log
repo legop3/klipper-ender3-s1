@@ -229,3 +229,16 @@ CPU Temperature: 48.0
 2024-02-22 02:06:29,757 [websockets.py:_handle_identify()] - Websocket 140163791870640 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-02-22 02:06:49,302 [websockets.py:on_close()] - Websocket Closed: ID: 140163791870640 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.57
 2024-02-22 03:07:54,029 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.133
+2024-02-22 11:44:01,892 [websockets.py:write_to_socket()] - Websocket closed while writing: 140163791868432
+2024-02-22 11:44:06,782 [websockets.py:on_close()] - Websocket Closed: ID: 140163791868432 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-02-22 11:44:13,977 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-22 11:44:13,978 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.84ms
+2024-02-22 11:44:13,978 [websockets.py:open()] - Websocket Opened: ID: 140163791871552, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-22 11:44:13,987 [websockets.py:_handle_identify()] - Websocket 140163791871552 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-22 11:58:16,630 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-22 11:58:17,885 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-22 11:58:19,932 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-22 11:58:19,933 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-22 11:58:20,183 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-22 11:58:20,440 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-22 11:58:21,188 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
