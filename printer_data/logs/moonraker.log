@@ -437,3 +437,40 @@ CPU Temperature: 52.0
 2024-02-22 15:28:56,748 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.84ms
 2024-02-22 15:28:56,749 [websockets.py:open()] - Websocket Opened: ID: 140163781412464, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-02-22 15:28:56,758 [websockets.py:_handle_identify()] - Websocket 140163781412464 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-22 16:32:54,175 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-22 17:44:54,912 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-02-22 17:44:54,920 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1708641865.768288, Usage: 1.16%, Memory: 49740 kB
+System Time: 1708641866.765517, Usage: 1.14%, Memory: 49740 kB
+System Time: 1708641867.768967, Usage: 0.9%, Memory: 49740 kB
+System Time: 1708641868.768884, Usage: 1.12%, Memory: 49740 kB
+System Time: 1708641869.771085, Usage: 0.85%, Memory: 49740 kB
+System Time: 1708641870.773317, Usage: 1.09%, Memory: 49740 kB
+System Time: 1708641871.774149, Usage: 1.29%, Memory: 49740 kB
+System Time: 1708641872.774446, Usage: 1.29%, Memory: 49740 kB
+System Time: 1708641873.774902, Usage: 1.36%, Memory: 49740 kB
+System Time: 1708641874.776139, Usage: 0.99%, Memory: 49740 kB
+System Time: 1708641875.777823, Usage: 0.86%, Memory: 49740 kB
+System Time: 1708641876.776789, Usage: 1.12%, Memory: 49740 kB
+System Time: 1708641877.777357, Usage: 0.83%, Memory: 49740 kB
+System Time: 1708641878.778200, Usage: 0.76%, Memory: 49740 kB
+System Time: 1708641879.782378, Usage: 0.65%, Memory: 49740 kB
+System Time: 1708641880.782346, Usage: 1.25%, Memory: 49740 kB
+System Time: 1708641881.783286, Usage: 1.03%, Memory: 49740 kB
+System Time: 1708641882.784815, Usage: 0.88%, Memory: 49740 kB
+System Time: 1708641883.786471, Usage: 1.23%, Memory: 49740 kB
+System Time: 1708641884.786587, Usage: 1.18%, Memory: 49740 kB
+System Time: 1708641885.785588, Usage: 1.03%, Memory: 49740 kB
+System Time: 1708641886.787835, Usage: 0.73%, Memory: 49740 kB
+System Time: 1708641887.786967, Usage: 0.9%, Memory: 49740 kB
+System Time: 1708641888.788120, Usage: 0.87%, Memory: 49740 kB
+System Time: 1708641889.788337, Usage: 0.83%, Memory: 49740 kB
+System Time: 1708641890.790716, Usage: 1.06%, Memory: 49740 kB
+System Time: 1708641891.789986, Usage: 1.03%, Memory: 49740 kB
+System Time: 1708641892.790163, Usage: 0.7%, Memory: 49740 kB
+System Time: 1708641893.791441, Usage: 0.84%, Memory: 49740 kB
+System Time: 1708641894.791755, Usage: 0.63%, Memory: 49740 kB
+CPU Temperature: 44.0
+2024-02-22 18:45:46,900 [websockets.py:write_to_socket()] - Websocket closed while writing: 140163781412464
+2024-02-22 18:45:51,750 [websockets.py:on_close()] - Websocket Closed: ID: 140163781412464 Close Code: None, Close Reason: None, Pong Time Elapsed: 43.98
