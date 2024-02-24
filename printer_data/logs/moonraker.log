@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Feb 23 05:52:54 2024 --------------------
+-------------------- Log Start | Sat Feb 24 09:52:22 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,12 +189,10 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-02-23 00:52:54,264 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
-2024-02-23 01:02:54,266 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-02-23 02:06:53,535 [websockets.py:write_to_socket()] - Websocket closed while writing: 140163792083344
-2024-02-23 02:06:58,424 [websockets.py:on_close()] - Websocket Closed: ID: 140163792083344 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.96
-2024-02-23 02:07:02,008 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-02-23 02:07:02,008 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.85ms
-2024-02-23 02:07:02,008 [websockets.py:open()] - Websocket Opened: ID: 140163793402512, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-02-23 02:07:02,019 [websockets.py:_handle_identify()] - Websocket 140163793402512 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-02-23 03:07:54,289 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-24 04:52:22,765 [websockets.py:write_to_socket()] - Websocket closed while writing: 140163793402512
+2024-02-24 04:52:27,010 [websockets.py:on_close()] - Websocket Closed: ID: 140163793402512 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.93
+2024-02-24 04:53:02,772 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-24 04:53:02,773 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.04ms
+2024-02-24 04:53:02,773 [websockets.py:open()] - Websocket Opened: ID: 140163781904416, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-24 04:53:02,785 [websockets.py:_handle_identify()] - Websocket 140163781904416 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-24 05:57:54,580 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
