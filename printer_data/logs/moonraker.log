@@ -197,3 +197,9 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-02-29 07:20:44,877 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2024-02-29 08:14:29,016 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2024-02-29 08:16:09,142 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 12:22:38,133 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2024-02-29 12:22:38,133 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2024-02-29 12:23:08,172 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 12:23:08,172 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2024-02-29 14:43:48,730 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 14:47:29,011 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
