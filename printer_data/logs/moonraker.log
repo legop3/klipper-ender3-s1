@@ -230,3 +230,58 @@ Content-Type: multipart/form-data; boundary=------------------------7af8b88b8df0
 2024-02-29 19:31:44,625 [websockets.py:_handle_identify()] - Websocket 139946617371424 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-02-29 19:46:41,964 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2024-02-29 19:46:41,964 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-02-29 20:36:41,971 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-29 20:40:44,835 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946617371424
+2024-02-29 20:40:49,620 [websockets.py:on_close()] - Websocket Closed: ID: 139946617371424 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.97
+2024-02-29 20:41:33,211 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 20:41:53,233 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 20:50:46,133 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-29 20:50:46,133 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.93ms
+2024-02-29 20:50:46,133 [websockets.py:open()] - Websocket Opened: ID: 139946617372288, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-29 20:50:46,163 [websockets.py:_handle_identify()] - Websocket 139946617372288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-29 21:51:41,984 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-02-29 22:15:15,045 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-02-29 22:15:15,052 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1709262885.092767, Usage: 0.59%, Memory: 45988 kB
+System Time: 1709262886.093929, Usage: 0.61%, Memory: 45988 kB
+System Time: 1709262887.094058, Usage: 0.66%, Memory: 45988 kB
+System Time: 1709262888.095201, Usage: 0.54%, Memory: 45988 kB
+System Time: 1709262889.096426, Usage: 0.71%, Memory: 45988 kB
+System Time: 1709262890.097682, Usage: 0.69%, Memory: 45988 kB
+System Time: 1709262891.098947, Usage: 0.7%, Memory: 45992 kB
+System Time: 1709262892.101172, Usage: 0.58%, Memory: 45992 kB
+System Time: 1709262893.102362, Usage: 0.55%, Memory: 45992 kB
+System Time: 1709262894.103712, Usage: 0.64%, Memory: 45992 kB
+System Time: 1709262895.103617, Usage: 0.66%, Memory: 45992 kB
+System Time: 1709262896.104555, Usage: 0.54%, Memory: 45992 kB
+System Time: 1709262897.105513, Usage: 0.63%, Memory: 45992 kB
+System Time: 1709262898.106609, Usage: 0.55%, Memory: 45992 kB
+System Time: 1709262899.106528, Usage: 0.75%, Memory: 45992 kB
+System Time: 1709262900.108533, Usage: 0.62%, Memory: 45992 kB
+System Time: 1709262901.109521, Usage: 0.62%, Memory: 45992 kB
+System Time: 1709262902.109725, Usage: 0.6%, Memory: 45992 kB
+System Time: 1709262903.110882, Usage: 0.62%, Memory: 45992 kB
+System Time: 1709262904.111638, Usage: 0.64%, Memory: 45992 kB
+System Time: 1709262905.112517, Usage: 0.62%, Memory: 45992 kB
+System Time: 1709262906.112934, Usage: 0.57%, Memory: 45992 kB
+System Time: 1709262907.112631, Usage: 0.68%, Memory: 45992 kB
+System Time: 1709262908.113770, Usage: 0.58%, Memory: 45992 kB
+System Time: 1709262909.115228, Usage: 0.81%, Memory: 45992 kB
+System Time: 1709262910.115153, Usage: 0.73%, Memory: 45992 kB
+System Time: 1709262911.116514, Usage: 0.72%, Memory: 45992 kB
+System Time: 1709262912.116505, Usage: 1.01%, Memory: 45992 kB
+System Time: 1709262913.117636, Usage: 0.62%, Memory: 45992 kB
+System Time: 1709262914.118053, Usage: 0.56%, Memory: 45992 kB
+CPU Temperature: 47.0
+2024-02-29 23:01:16,297 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946617372288
+2024-02-29 23:01:21,137 [websockets.py:on_close()] - Websocket Closed: ID: 139946617372288 Close Code: None, Close Reason: None, Pong Time Elapsed: 38.94
+2024-02-29 23:03:40,316 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-29 23:03:40,317 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.83ms
+2024-02-29 23:03:40,317 [websockets.py:open()] - Websocket Opened: ID: 139946617372288, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-29 23:03:40,327 [websockets.py:_handle_identify()] - Websocket 139946617372288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-29 23:09:31,018 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946617372288
+2024-02-29 23:09:35,318 [websockets.py:on_close()] - Websocket Closed: ID: 139946617372288 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-02-29 23:15:52,248 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.65ms
+2024-02-29 23:15:52,248 [websockets.py:open()] - Websocket Opened: ID: 139946617364080, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-29 23:15:52,278 [websockets.py:_handle_identify()] - Websocket 139946617364080 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
