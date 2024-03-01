@@ -203,3 +203,30 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-02-29 12:23:08,172 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
 2024-02-29 14:43:48,730 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2024-02-29 14:47:29,011 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-02-29 18:42:33,646 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-02-29 18:42:33,649 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------7af8b88b8df04947
+2024-02-29 18:42:33,681 [application.py:post()] - Processing Uploaded File: FujiFilm_XMount_RearCap_1h16m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-02-29 18:42:34,079 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-02-29 18:42:34,155 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-02-29 18:42:34,160 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: FujiFilm_XMount_RearCap_1h16m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-02-29 18:42:34,721 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "FujiFilm_XMount_RearCap_1h16m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-02-29 18:42:34,726 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1078.27ms
+2024-02-29 18:42:38,425 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-02-29 18:42:39,679 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-02-29 18:42:41,720 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-02-29 18:42:41,721 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-02-29 18:42:41,971 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-02-29 18:42:42,225 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-02-29 18:42:42,727 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-02-29 18:42:43,612 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-02-29 18:42:49,495 [job_state.py:_status_update()] - Job Started: FujiFilm_XMount_RearCap_1h16m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-02-29 19:31:44,617 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-02-29 19:31:44,618 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.32ms
+2024-02-29 19:31:44,618 [websockets.py:open()] - Websocket Opened: ID: 139946617371424, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-02-29 19:31:44,625 [websockets.py:_handle_identify()] - Websocket 139946617371424 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-02-29 19:46:41,964 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-02-29 19:46:41,964 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
