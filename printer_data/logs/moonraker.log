@@ -273,3 +273,16 @@ System Time: 1709331913.481563, Usage: 0.63%, Memory: 47644 kB
 System Time: 1709331914.481942, Usage: 0.64%, Memory: 47644 kB
 System Time: 1709331915.483043, Usage: 0.73%, Memory: 47644 kB
 CPU Temperature: 47.0
+2024-03-01 23:03:44,591 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946620490016
+2024-03-01 23:03:49,580 [websockets.py:on_close()] - Websocket Closed: ID: 139946620490016 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
+2024-03-01 23:03:52,464 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-01 23:03:52,464 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.77ms
+2024-03-01 23:03:52,464 [websockets.py:open()] - Websocket Opened: ID: 139946619448304, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-01 23:03:52,475 [websockets.py:_handle_identify()] - Websocket 139946619448304 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-01 23:35:23,378 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946619448304
+2024-03-01 23:35:27,466 [websockets.py:on_close()] - Websocket Closed: ID: 139946619448304 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-01 23:35:33,691 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.66ms
+2024-03-01 23:35:33,691 [websockets.py:open()] - Websocket Opened: ID: 139946620489968, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-01 23:35:33,696 [websockets.py:_handle_identify()] - Websocket 139946620489968 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-01 23:40:44,667 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946620489968
+2024-03-01 23:40:45,719 [websockets.py:on_close()] - Websocket Closed: ID: 139946620489968 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.01
