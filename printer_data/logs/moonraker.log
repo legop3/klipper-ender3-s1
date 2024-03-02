@@ -238,3 +238,38 @@ Content-Type: multipart/form-data; boundary=------------------------92bc688fb3da
 2024-03-01 15:33:04,578 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.41ms
 2024-03-01 15:33:04,578 [websockets.py:open()] - Websocket Opened: ID: 139946620490016, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-01 15:33:04,612 [websockets.py:_handle_identify()] - Websocket 139946620490016 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-01 16:36:42,190 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-01 17:25:16,234 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-01 17:25:16,241 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1709331886.462346, Usage: 0.57%, Memory: 47644 kB
+System Time: 1709331887.462445, Usage: 0.55%, Memory: 47644 kB
+System Time: 1709331888.462386, Usage: 0.63%, Memory: 47644 kB
+System Time: 1709331889.464605, Usage: 0.57%, Memory: 47644 kB
+System Time: 1709331890.464769, Usage: 0.74%, Memory: 47644 kB
+System Time: 1709331891.465804, Usage: 0.77%, Memory: 47644 kB
+System Time: 1709331892.465971, Usage: 0.55%, Memory: 47644 kB
+System Time: 1709331893.466254, Usage: 0.55%, Memory: 47644 kB
+System Time: 1709331894.467299, Usage: 0.62%, Memory: 47644 kB
+System Time: 1709331895.468509, Usage: 0.65%, Memory: 47644 kB
+System Time: 1709331896.468695, Usage: 0.63%, Memory: 47644 kB
+System Time: 1709331897.468954, Usage: 0.61%, Memory: 47644 kB
+System Time: 1709331898.470451, Usage: 0.59%, Memory: 47644 kB
+System Time: 1709331899.471412, Usage: 0.61%, Memory: 47644 kB
+System Time: 1709331900.472485, Usage: 0.8%, Memory: 47644 kB
+System Time: 1709331901.474436, Usage: 0.88%, Memory: 47644 kB
+System Time: 1709331902.472786, Usage: 0.81%, Memory: 47644 kB
+System Time: 1709331903.473533, Usage: 0.61%, Memory: 47644 kB
+System Time: 1709331904.474829, Usage: 0.59%, Memory: 47644 kB
+System Time: 1709331905.475552, Usage: 0.71%, Memory: 47644 kB
+System Time: 1709331906.476645, Usage: 0.83%, Memory: 47644 kB
+System Time: 1709331907.477342, Usage: 0.7%, Memory: 47644 kB
+System Time: 1709331908.477098, Usage: 0.64%, Memory: 47644 kB
+System Time: 1709331909.477459, Usage: 0.6%, Memory: 47644 kB
+System Time: 1709331910.478302, Usage: 0.69%, Memory: 47644 kB
+System Time: 1709331911.479433, Usage: 1.28%, Memory: 47644 kB
+System Time: 1709331912.480560, Usage: 0.55%, Memory: 47644 kB
+System Time: 1709331913.481563, Usage: 0.63%, Memory: 47644 kB
+System Time: 1709331914.481942, Usage: 0.64%, Memory: 47644 kB
+System Time: 1709331915.483043, Usage: 0.73%, Memory: 47644 kB
+CPU Temperature: 47.0
