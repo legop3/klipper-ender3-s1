@@ -194,3 +194,4 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-03 15:37:15,061 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.51ms
 2024-03-03 15:37:15,061 [websockets.py:open()] - Websocket Opened: ID: 139946617366816, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
 2024-03-03 15:37:15,070 [websockets.py:_handle_identify()] - Websocket 139946617366816 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-03 16:41:42,724 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
