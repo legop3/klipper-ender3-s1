@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Mar  6 02:09:20 2024 --------------------
+-------------------- Log Start | Wed Mar  6 05:11:35 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,65 +189,20 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-03-05 21:09:20,004 [power.py:refresh_status()] - Error Refeshing Device Status: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 927, in refresh_status
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-RuntimeError: coroutine ignored GeneratorExit
-2024-03-05 21:09:20,004 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: machine.device_power.on, Code: 400, Message: Error Refeshing Device Status: printer_plug
-2024-03-05 21:09:20,005 [base_events.py:default_exception_handler()] - Task was destroyed but it is pending!
-task: <Task pending name='Task-12071771' coro=<EventLoop.register_callback.<locals>._wrapper() done, defined at /home/daniel/moonraker/moonraker/eventloop.py:80> wait_for=<Future pending cb=[Task.task_wakeup()]>>
-2024-03-05 21:09:31,002 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-05 21:09:32,262 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-05 21:09:36,308 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-05 21:09:36,310 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-05 21:09:36,558 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-05 21:09:36,813 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-05 21:09:37,313 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-05 21:09:37,633 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-05 21:09:38,103 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.objects.query, Code: 503, Message: Klippy Host not connected
-2024-03-05 21:09:38,233 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2024-03-05 21:09:38,889 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-05 21:09:40,927 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-05 21:09:40,928 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-05 21:09:41,178 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-05 21:09:41,432 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-05 21:09:41,932 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-05 21:22:58,901 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-05 21:22:58,902 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.73ms
-2024-03-05 21:22:58,902 [websockets.py:open()] - Websocket Opened: ID: 139946617366000, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-05 21:22:58,910 [websockets.py:_handle_identify()] - Websocket 139946617366000 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-05 21:44:47,194 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.25
-2024-03-05 21:44:47,194 [application.py:log_request()] - 101 GET /websocket (192.168.0.25) [_TRUSTED_USER_] 0.84ms
-2024-03-05 21:44:47,194 [websockets.py:open()] - Websocket Opened: ID: 139946616502304, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: 192.168.0.40
-2024-03-05 21:44:47,206 [websockets.py:_handle_identify()] - Websocket 139946616502304 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-05 21:46:21,992 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2024-03-05 21:46:21,995 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------dc179c21d8dd4f3a
-2024-03-05 21:46:22,025 [application.py:post()] - Processing Uploaded File: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode
-2024-03-05 21:46:22,169 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2024-03-05 21:46:22,187 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2024-03-05 21:46:22,189 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2024-03-05 21:46:22,735 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2024-03-05 21:46:22,742 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 746.74ms
-2024-03-05 21:46:22,805 [job_state.py:_status_update()] - Job Started: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode
-2024-03-05 21:56:10,714 [websockets.py:on_close()] - Websocket Closed: ID: 139946617366000 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 11.81
-2024-03-05 21:56:12,538 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.65ms
-2024-03-05 21:56:12,538 [websockets.py:open()] - Websocket Opened: ID: 139946616500864, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-05 21:56:12,563 [websockets.py:_handle_identify()] - Websocket 139946616500864 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-05 22:09:42,844 [websockets.py:on_close()] - Websocket Closed: ID: 139946616502304 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.64
-2024-03-05 22:23:32,695 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616500864
-2024-03-05 22:23:37,540 [websockets.py:on_close()] - Websocket Closed: ID: 139946616500864 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.70
-2024-03-05 22:23:55,187 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.65ms
-2024-03-05 22:23:55,187 [websockets.py:open()] - Websocket Opened: ID: 139946616504080, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-05 22:23:55,246 [websockets.py:_handle_identify()] - Websocket 139946616504080 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-05 22:46:43,293 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2024-03-05 22:46:43,293 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
-2024-03-05 22:46:43,293 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2024-03-05 23:26:43,301 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-03-05 23:43:25,128 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-06 00:11:35,312 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616504080
+2024-03-06 00:11:40,189 [websockets.py:on_close()] - Websocket Closed: ID: 139946616504080 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-06 00:12:19,233 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-06 00:12:19,234 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.81ms
+2024-03-06 00:12:19,234 [websockets.py:open()] - Websocket Opened: ID: 139946616499376, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-06 00:12:19,240 [websockets.py:_handle_identify()] - Websocket 139946616499376 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-06 00:46:43,315 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-03-06 01:16:43,319 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-06 01:38:59,243 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616499376
+2024-03-06 01:39:04,236 [websockets.py:on_close()] - Websocket Closed: ID: 139946616499376 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-06 01:39:30,528 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-06 01:39:30,529 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.87ms
+2024-03-06 01:39:30,529 [websockets.py:open()] - Websocket Opened: ID: 139946616502400, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-06 01:39:30,565 [websockets.py:_handle_identify()] - Websocket 139946616502400 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-06 01:42:10,581 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616502400
+2024-03-06 01:42:11,473 [websockets.py:on_close()] - Websocket Closed: ID: 139946616502400 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.14
+2024-03-06 02:41:43,333 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
