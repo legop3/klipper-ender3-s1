@@ -373,3 +373,25 @@ Content-Type: multipart/form-data; boundary=---------------------------174654450
 2024-03-07 19:58:56,076 [job_state.py:_handle_started()] - Job state initialized: standby
 2024-03-07 19:58:56,330 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-03-07 19:58:56,830 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-07 20:00:51,907 [job_state.py:_status_update()] - Job Started: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 20:04:28,776 [job_state.py:_status_update()] - Job Started: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 20:12:16,571 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:16,847 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:17,138 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:17,424 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:17,719 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:17,998 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:18,216 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:18,433 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:12:18,669 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 7.000 234.000 0.000 [67.946]
+2024-03-07 20:15:38,162 [job_state.py:_status_update()] - Job Started: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 20:26:43,766 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.225
+2024-03-07 20:51:43,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-03-07 20:56:43,771 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-03-07 22:39:08,572 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616373456
+2024-03-07 22:39:13,325 [websockets.py:on_close()] - Websocket Closed: ID: 139946616373456 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-03-07 22:39:49,041 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-07 22:39:49,041 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.04ms
+2024-03-07 22:39:49,042 [websockets.py:open()] - Websocket Opened: ID: 139946617731104, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-07 22:39:49,046 [websockets.py:_handle_identify()] - Websocket 139946617731104 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-07 23:41:43,801 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
