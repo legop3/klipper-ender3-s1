@@ -282,3 +282,94 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-07 13:56:43,704 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
 2024-03-07 15:32:45,231 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946617360432
 2024-03-07 15:32:45,528 [websockets.py:on_close()] - Websocket Closed: ID: 139946617360432 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.06
+2024-03-07 18:09:56,935 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-07 18:09:56,935 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.71ms
+2024-03-07 18:09:56,935 [websockets.py:open()] - Websocket Opened: ID: 139946616375040, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-07 18:09:56,939 [websockets.py:_handle_identify()] - Websocket 139946616375040 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-07 18:09:58,745 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 18:10:00,001 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 18:11:30,021 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-07 18:11:30,022 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-07 18:11:30,022 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-03-07 18:13:27,542 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-03-07 18:13:27,545 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------8b029af9fa95fe76
+2024-03-07 18:13:27,570 [application.py:post()] - Processing Uploaded File: Heltec_WT_v5_front-no-insert-ribs_1h20m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 18:13:28,014 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-03-07 18:13:28,053 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-03-07 18:13:28,058 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Heltec_WT_v5_front-no-insert-ribs_1h20m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-03-07 18:13:28,364 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Heltec_WT_v5_front-no-insert-ribs_1h20m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-03-07 18:13:28,369 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 823.99ms
+2024-03-07 18:13:29,097 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 18:13:29,112 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-03-07 18:13:30,353 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 18:13:34,947 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 18:13:36,202 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 18:13:40,884 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 18:13:42,139 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 18:14:14,085 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-07 18:14:14,086 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-07 18:14:14,336 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-07 18:14:14,590 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-07 18:14:15,343 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-07 18:14:16,108 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-07 18:14:24,619 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-ribs_1h20m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 18:43:57,121 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946616375040
+2024-03-07 18:44:01,938 [websockets.py:on_close()] - Websocket Closed: ID: 139946616375040 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-07 18:44:38,323 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.63ms
+2024-03-07 18:44:38,323 [websockets.py:open()] - Websocket Opened: ID: 139946616373456, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-07 18:44:38,329 [websockets.py:_handle_identify()] - Websocket 139946616373456 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-07 19:08:35,463 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.225
+2024-03-07 19:08:35,464 [application.py:log_request()] - 101 GET /websocket (192.168.0.225) [_TRUSTED_USER_] 0.77ms
+2024-03-07 19:08:35,464 [websockets.py:open()] - Websocket Opened: ID: 139946614723856, Proxied: True, User Agent: Mozilla/5.0 (Android 10; Mobile; rv:122.0) Gecko/122.0 Firefox/122.0, Host Name: 192.168.0.40
+2024-03-07 19:08:35,538 [websockets.py:_handle_identify()] - Websocket 139946614723856 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-07 19:16:43,754 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-03-07 19:16:43,755 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-03-07 19:18:49,238 [websockets.py:on_close()] - Websocket Closed: ID: 139946614723856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.77
+2024-03-07 19:23:51,823 [application.py:log_request()] - 101 GET /websocket (192.168.0.225) [_TRUSTED_USER_] 0.63ms
+2024-03-07 19:23:51,823 [websockets.py:open()] - Websocket Opened: ID: 139946614526720, Proxied: True, User Agent: Mozilla/5.0 (Android 10; Mobile; rv:122.0) Gecko/122.0 Firefox/122.0, Host Name: 192.168.0.40
+2024-03-07 19:23:51,867 [websockets.py:_handle_identify()] - Websocket 139946614526720 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-07 19:30:26,714 [websockets.py:on_close()] - Websocket Closed: ID: 139946614526720 Close Code: 1001, Close Reason: Child was killed, Pong Time Elapsed: 4.89
+2024-03-07 19:46:43,759 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-07 19:47:25,560 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-03-07 19:47:25,565 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------7980974df498f3bf
+2024-03-07 19:47:25,668 [application.py:post()] - Processing Uploaded File: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 19:47:25,835 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-03-07 19:47:25,859 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-03-07 19:47:25,863 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-03-07 19:47:27,374 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-03-07 19:47:27,384 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1819.59ms
+2024-03-07 19:47:27,414 [job_state.py:_status_update()] - Job Started: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 19:47:28,964 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-07 19:53:57,948 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------174654450241033017222951165458
+2024-03-07 19:53:57,956 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-03-07 19:53:57,958 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 10.76ms
+2024-03-07 19:53:59,048 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 19:54:00,303 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 19:54:02,379 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-07 19:54:02,379 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-07 19:54:02,629 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-07 19:54:02,887 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-07 19:54:03,635 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-07 19:54:11,406 [job_state.py:_status_update()] - Job Started: Heltec_WT_v6b_frame-noheaders-ext-antenna-powerSwitch_3h58m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-07 19:58:52,536 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-07 19:58:53,791 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-07 19:58:55,825 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-07 19:58:55,825 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-07 19:58:56,076 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-07 19:58:56,330 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-07 19:58:56,830 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
