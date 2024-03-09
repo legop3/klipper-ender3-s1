@@ -194,3 +194,4 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-09 03:01:26,710 [websockets.py:open()] - Websocket Opened: ID: 139946617075648, Proxied: True, User Agent: Mozilla/5.0 (Android 10; Mobile; rv:122.0) Gecko/122.0 Firefox/122.0, Host Name: 192.168.0.40
 2024-03-09 03:01:26,767 [websockets.py:_handle_identify()] - Websocket 139946617075648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-03-09 03:01:33,360 [websockets.py:on_close()] - Websocket Closed: ID: 139946617075648 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.65
+2024-03-09 04:01:44,105 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.225
