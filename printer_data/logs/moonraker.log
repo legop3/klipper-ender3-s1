@@ -266,3 +266,38 @@ CPU Temperature: 35.0
 2024-03-08 15:42:20,458 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.62ms
 2024-03-08 15:42:20,459 [websockets.py:open()] - Websocket Opened: ID: 139946618477568, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-08 15:42:20,464 [websockets.py:_handle_identify()] - Websocket 139946618477568 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-08 16:17:59,051 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-08 16:17:59,057 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1709932649.681954, Usage: 0.76%, Memory: 51632 kB
+System Time: 1709932650.683584, Usage: 0.63%, Memory: 51632 kB
+System Time: 1709932651.685072, Usage: 0.54%, Memory: 51632 kB
+System Time: 1709932652.688725, Usage: 0.61%, Memory: 51632 kB
+System Time: 1709932653.688249, Usage: 0.83%, Memory: 51632 kB
+System Time: 1709932654.689926, Usage: 0.68%, Memory: 51632 kB
+System Time: 1709932655.691597, Usage: 0.6%, Memory: 51632 kB
+System Time: 1709932656.692295, Usage: 0.56%, Memory: 51632 kB
+System Time: 1709932657.692941, Usage: 0.88%, Memory: 51632 kB
+System Time: 1709932658.693624, Usage: 0.56%, Memory: 51632 kB
+System Time: 1709932659.694352, Usage: 0.61%, Memory: 51632 kB
+System Time: 1709932660.695140, Usage: 0.61%, Memory: 51632 kB
+System Time: 1709932661.696015, Usage: 0.51%, Memory: 51632 kB
+System Time: 1709932662.696790, Usage: 0.56%, Memory: 51632 kB
+System Time: 1709932663.698457, Usage: 0.55%, Memory: 51632 kB
+System Time: 1709932664.699195, Usage: 0.66%, Memory: 51632 kB
+System Time: 1709932665.698587, Usage: 0.73%, Memory: 51632 kB
+System Time: 1709932666.700293, Usage: 0.58%, Memory: 51632 kB
+System Time: 1709932667.703430, Usage: 0.77%, Memory: 51632 kB
+System Time: 1709932668.702404, Usage: 0.74%, Memory: 51632 kB
+System Time: 1709932669.703972, Usage: 0.51%, Memory: 51632 kB
+System Time: 1709932670.705581, Usage: 0.64%, Memory: 51632 kB
+System Time: 1709932671.707187, Usage: 0.86%, Memory: 51632 kB
+System Time: 1709932672.708792, Usage: 0.66%, Memory: 51632 kB
+System Time: 1709932673.709363, Usage: 0.69%, Memory: 51632 kB
+System Time: 1709932674.709970, Usage: 0.95%, Memory: 51632 kB
+System Time: 1709932675.710678, Usage: 0.69%, Memory: 51632 kB
+System Time: 1709932676.711330, Usage: 0.59%, Memory: 51632 kB
+System Time: 1709932677.712947, Usage: 0.69%, Memory: 51632 kB
+System Time: 1709932678.713490, Usage: 0.58%, Memory: 51632 kB
+CPU Temperature: 34.0
+2024-03-08 16:46:43,985 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
