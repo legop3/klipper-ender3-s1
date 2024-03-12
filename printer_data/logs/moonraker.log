@@ -1,4 +1,4 @@
--------------------- Log Start | Sat Mar  9 08:01:26 2024 --------------------
+-------------------- Log Start | Mon Mar 11 20:06:43 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,11 +189,60 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-03-09 03:01:26,709 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.225
-2024-03-09 03:01:26,710 [application.py:log_request()] - 101 GET /websocket (192.168.0.225) [_TRUSTED_USER_] 0.79ms
-2024-03-09 03:01:26,710 [websockets.py:open()] - Websocket Opened: ID: 139946617075648, Proxied: True, User Agent: Mozilla/5.0 (Android 10; Mobile; rv:122.0) Gecko/122.0 Firefox/122.0, Host Name: 192.168.0.40
-2024-03-09 03:01:26,767 [websockets.py:_handle_identify()] - Websocket 139946617075648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-09 03:01:33,360 [websockets.py:on_close()] - Websocket Closed: ID: 139946617075648 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.65
-2024-03-09 04:01:44,105 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.225
-2024-03-09 16:59:20,505 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618477568
-2024-03-09 16:59:25,461 [websockets.py:on_close()] - Websocket Closed: ID: 139946618477568 Close Code: None, Close Reason: None, Pong Time Elapsed: 43.17
+2024-03-11 16:06:43,846 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-11 16:06:44,407 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-03-11 16:06:46,421 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-03-11 16:07:03,810 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-11 16:28:51,701 [websockets.py:on_close()] - Websocket Closed: ID: 139946617366816 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.57
+2024-03-11 16:39:19,117 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-11 16:39:19,188 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 335.48ms
+2024-03-11 16:39:19,209 [websockets.py:open()] - Websocket Opened: ID: 139946617063552, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
+2024-03-11 16:39:19,216 [websockets.py:_handle_identify()] - Websocket 139946617063552 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 16:56:29,689 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-11 16:56:29,733 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2024-03-11 16:56:34,310 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-11 16:56:35,191 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['system.slice', 'systemd-journald.socket', 'sysinit.target', 'basic.target', 'network-online.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-03-11 16:56:37,078 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-11 16:56:37,078 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-11 16:56:37,328 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-11 16:56:37,613 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-11 16:56:38,083 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-11 17:08:31,907 [job_state.py:_status_update()] - Job Started: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-11 17:34:58,939 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.233
+2024-03-11 17:34:58,949 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 17.60ms
+2024-03-11 17:34:58,949 [websockets.py:open()] - Websocket Opened: ID: 139946618483952, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-11 17:34:58,971 [websockets.py:_handle_identify()] - Websocket 139946618483952 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 17:36:33,054 [websockets.py:on_close()] - Websocket Closed: ID: 139946618483952 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.03
+2024-03-11 18:10:01,409 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 0.69ms
+2024-03-11 18:10:01,409 [websockets.py:open()] - Websocket Opened: ID: 139946618476416, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-11 18:10:01,426 [websockets.py:_handle_identify()] - Websocket 139946618476416 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 18:11:44,772 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-03-11 18:15:44,171 [websockets.py:on_close()] - Websocket Closed: ID: 139946618476416 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.02
+2024-03-11 18:26:25,955 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-11 18:26:25,956 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.76ms
+2024-03-11 18:26:25,956 [websockets.py:open()] - Websocket Opened: ID: 139946618485824, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-11 18:26:25,962 [websockets.py:_handle_identify()] - Websocket 139946618485824 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 19:04:06,919 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 1.12ms
+2024-03-11 19:04:06,920 [websockets.py:open()] - Websocket Opened: ID: 139946618473968, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-11 19:04:06,933 [websockets.py:_handle_identify()] - Websocket 139946618473968 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 19:06:22,703 [websockets.py:on_close()] - Websocket Closed: ID: 139946618473968 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.78
+2024-03-11 19:26:44,790 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-11 19:39:28,698 [job_state.py:_status_update()] - Job Started: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-11 19:42:29,496 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 5.51ms
+2024-03-11 19:42:29,503 [websockets.py:open()] - Websocket Opened: ID: 139946618475024, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-11 19:42:29,513 [websockets.py:_handle_identify()] - Websocket 139946618475024 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-11 19:45:47,211 [websockets.py:on_close()] - Websocket Closed: ID: 139946618475024 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.61
