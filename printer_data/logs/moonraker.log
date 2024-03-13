@@ -202,3 +202,41 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-13 11:52:37,538 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.06ms
 2024-03-13 11:52:37,538 [websockets.py:open()] - Websocket Opened: ID: 139946618444800, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-13 11:52:37,547 [websockets.py:_handle_identify()] - Websocket 139946618444800 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-13 12:56:45,222 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-13 15:19:44,961 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-13 15:19:46,217 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-13 15:19:46,266 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'network-online.target', '-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-03-13 15:19:48,279 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-13 15:19:48,279 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-13 15:19:48,530 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-13 15:19:48,784 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-13 15:19:49,535 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-13 15:20:02,575 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-13 15:22:43,692 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-03-13 15:22:43,818 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------c780026322c6aa9c
+2024-03-13 15:22:44,219 [application.py:post()] - Processing Uploaded File: emax_goggles_front_v1_2h45m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-13 15:22:44,664 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-03-13 15:22:44,754 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-03-13 15:22:44,755 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: emax_goggles_front_v1_2h45m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-03-13 15:22:45,277 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "emax_goggles_front_v1_2h45m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-03-13 15:22:45,365 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1593.43ms
+2024-03-13 15:22:45,368 [job_state.py:_status_update()] - Job Started: emax_goggles_front_v1_2h45m_0.28mm_205C_PLA_ENDER3S1.gcode
+2024-03-13 15:22:47,061 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
