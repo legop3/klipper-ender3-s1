@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Mar 12 04:06:00 2024 --------------------
+-------------------- Log Start | Wed Mar 13 04:21:24 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,86 +189,10 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-03-12 00:06:00,364 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-03-12 00:06:00,371 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1710216331.048901, Usage: 0.63%, Memory: 42820 kB
-System Time: 1710216332.050975, Usage: 0.57%, Memory: 42820 kB
-System Time: 1710216333.052860, Usage: 0.95%, Memory: 42820 kB
-System Time: 1710216334.053454, Usage: 0.77%, Memory: 42820 kB
-System Time: 1710216335.054501, Usage: 0.74%, Memory: 42820 kB
-System Time: 1710216336.055178, Usage: 0.76%, Memory: 42820 kB
-System Time: 1710216337.055959, Usage: 0.8%, Memory: 42820 kB
-System Time: 1710216338.057265, Usage: 0.59%, Memory: 42820 kB
-System Time: 1710216339.057000, Usage: 0.61%, Memory: 42820 kB
-System Time: 1710216340.058790, Usage: 0.85%, Memory: 42820 kB
-System Time: 1710216341.058153, Usage: 0.8%, Memory: 42820 kB
-System Time: 1710216342.058655, Usage: 0.7%, Memory: 42820 kB
-System Time: 1710216343.061524, Usage: 1.12%, Memory: 42820 kB
-System Time: 1710216344.061810, Usage: 0.71%, Memory: 42820 kB
-System Time: 1710216345.064363, Usage: 0.58%, Memory: 42820 kB
-System Time: 1710216346.065160, Usage: 0.68%, Memory: 42820 kB
-System Time: 1710216347.066985, Usage: 0.59%, Memory: 42820 kB
-System Time: 1710216348.066668, Usage: 0.64%, Memory: 42820 kB
-System Time: 1710216349.068185, Usage: 0.59%, Memory: 42820 kB
-System Time: 1710216350.068960, Usage: 0.65%, Memory: 42820 kB
-System Time: 1710216351.070669, Usage: 0.61%, Memory: 42820 kB
-System Time: 1710216352.071318, Usage: 1.03%, Memory: 42820 kB
-System Time: 1710216353.072144, Usage: 0.88%, Memory: 42820 kB
-System Time: 1710216354.072778, Usage: 0.69%, Memory: 42820 kB
-System Time: 1710216355.074464, Usage: 0.66%, Memory: 42820 kB
-System Time: 1710216356.075078, Usage: 1.04%, Memory: 42820 kB
-System Time: 1710216357.074836, Usage: 0.57%, Memory: 42820 kB
-System Time: 1710216358.075523, Usage: 0.58%, Memory: 42820 kB
-System Time: 1710216359.076281, Usage: 0.61%, Memory: 42820 kB
-System Time: 1710216360.076867, Usage: 0.7%, Memory: 42820 kB
-CPU Temperature: 45.0
-2024-03-12 01:20:22,517 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618479728
-2024-03-12 01:20:27,290 [websockets.py:on_close()] - Websocket Closed: ID: 139946618479728 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.33
-2024-03-12 01:24:04,206 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-12 01:24:04,207 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.00ms
-2024-03-12 01:24:04,207 [websockets.py:open()] - Websocket Opened: ID: 139946618483184, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-12 01:24:04,228 [websockets.py:_handle_identify()] - Websocket 139946618483184 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-12 02:26:44,863 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-03-12 20:28:24,748 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-12 20:28:26,004 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-12 20:28:28,066 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-12 20:28:28,068 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-12 20:28:28,318 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-12 20:28:28,591 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-12 20:28:29,573 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-12 20:28:44,868 [job_state.py:_status_update()] - Job Started: Picatinny_To_Nerf_v1_1h45m_0.28mm_205C_PLA_ENDER3S1.gcode
-2024-03-12 23:04:10,131 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-03-12 23:04:10,138 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1710299020.361636, Usage: 0.63%, Memory: 43500 kB
-System Time: 1710299021.361865, Usage: 0.7%, Memory: 43500 kB
-System Time: 1710299022.363050, Usage: 0.65%, Memory: 43500 kB
-System Time: 1710299023.362529, Usage: 0.69%, Memory: 43500 kB
-System Time: 1710299024.363665, Usage: 0.64%, Memory: 43500 kB
-System Time: 1710299025.365915, Usage: 0.75%, Memory: 43500 kB
-System Time: 1710299026.367782, Usage: 0.78%, Memory: 43500 kB
-System Time: 1710299027.367146, Usage: 0.95%, Memory: 43500 kB
-System Time: 1710299028.368046, Usage: 0.7%, Memory: 43500 kB
-System Time: 1710299029.369341, Usage: 1.04%, Memory: 43500 kB
-System Time: 1710299030.369668, Usage: 0.68%, Memory: 43500 kB
-System Time: 1710299031.370724, Usage: 0.73%, Memory: 43500 kB
-System Time: 1710299032.370131, Usage: 0.66%, Memory: 43500 kB
-System Time: 1710299033.371247, Usage: 0.74%, Memory: 43500 kB
-System Time: 1710299034.371801, Usage: 0.8%, Memory: 43500 kB
-System Time: 1710299035.372718, Usage: 0.69%, Memory: 43500 kB
-System Time: 1710299036.373714, Usage: 0.69%, Memory: 43500 kB
-System Time: 1710299037.374896, Usage: 0.67%, Memory: 43500 kB
-System Time: 1710299038.374760, Usage: 0.72%, Memory: 43500 kB
-System Time: 1710299039.376043, Usage: 0.96%, Memory: 43500 kB
-System Time: 1710299040.376057, Usage: 0.74%, Memory: 43500 kB
-System Time: 1710299041.377193, Usage: 0.6%, Memory: 43500 kB
-System Time: 1710299042.376894, Usage: 0.76%, Memory: 43500 kB
-System Time: 1710299043.378904, Usage: 0.71%, Memory: 43500 kB
-System Time: 1710299044.380799, Usage: 0.7%, Memory: 43500 kB
-System Time: 1710299045.379883, Usage: 0.9%, Memory: 43500 kB
-System Time: 1710299046.382670, Usage: 1.21%, Memory: 43500 kB
-System Time: 1710299047.382005, Usage: 0.77%, Memory: 43500 kB
-System Time: 1710299048.381820, Usage: 0.63%, Memory: 43500 kB
-System Time: 1710299049.382755, Usage: 0.93%, Memory: 43500 kB
-CPU Temperature: 45.0
+2024-03-13 00:21:24,256 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618483184
+2024-03-13 00:21:29,209 [websockets.py:on_close()] - Websocket Closed: ID: 139946618483184 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-13 00:21:30,928 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-13 00:21:30,928 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.77ms
+2024-03-13 00:21:30,928 [websockets.py:open()] - Websocket Opened: ID: 139946618444800, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-13 00:21:30,932 [websockets.py:_handle_identify()] - Websocket 139946618444800 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-13 01:21:45,100 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
