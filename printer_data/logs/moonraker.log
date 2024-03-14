@@ -243,3 +243,37 @@ Content-Type: multipart/form-data; boundary=------------------------c780026322c6
 2024-03-13 16:26:45,256 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2024-03-13 16:26:45,256 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2024-03-13 16:26:45,256 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-13 21:06:23,681 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-13 21:06:23,688 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1710378354.542639, Usage: 0.63%, Memory: 45316 kB
+System Time: 1710378355.542984, Usage: 1.03%, Memory: 45316 kB
+System Time: 1710378356.544617, Usage: 1.02%, Memory: 45316 kB
+System Time: 1710378357.543661, Usage: 1.22%, Memory: 45316 kB
+System Time: 1710378358.543129, Usage: 1.01%, Memory: 45316 kB
+System Time: 1710378359.544555, Usage: 0.63%, Memory: 45316 kB
+System Time: 1710378360.544935, Usage: 0.74%, Memory: 45316 kB
+System Time: 1710378361.548494, Usage: 0.84%, Memory: 45316 kB
+System Time: 1710378362.546736, Usage: 1.17%, Memory: 45316 kB
+System Time: 1710378363.549343, Usage: 0.94%, Memory: 45316 kB
+System Time: 1710378364.550065, Usage: 1.17%, Memory: 45316 kB
+System Time: 1710378365.551327, Usage: 1.08%, Memory: 45316 kB
+System Time: 1710378366.552876, Usage: 1.14%, Memory: 45316 kB
+System Time: 1710378367.552305, Usage: 1.27%, Memory: 45316 kB
+System Time: 1710378368.553964, Usage: 1.01%, Memory: 45316 kB
+System Time: 1710378369.555337, Usage: 1.22%, Memory: 45316 kB
+System Time: 1710378370.552673, Usage: 1.11%, Memory: 45316 kB
+System Time: 1710378371.557580, Usage: 0.85%, Memory: 45316 kB
+System Time: 1710378372.557768, Usage: 1.23%, Memory: 45316 kB
+System Time: 1710378373.555933, Usage: 1.29%, Memory: 45316 kB
+System Time: 1710378374.560560, Usage: 0.94%, Memory: 45316 kB
+System Time: 1710378375.557913, Usage: 0.99%, Memory: 45316 kB
+System Time: 1710378376.560503, Usage: 0.54%, Memory: 45316 kB
+System Time: 1710378377.561063, Usage: 0.63%, Memory: 45316 kB
+System Time: 1710378378.562662, Usage: 0.59%, Memory: 45316 kB
+System Time: 1710378379.562060, Usage: 1.17%, Memory: 45316 kB
+System Time: 1710378380.563471, Usage: 0.56%, Memory: 45316 kB
+System Time: 1710378381.564930, Usage: 0.59%, Memory: 45316 kB
+System Time: 1710378382.565383, Usage: 0.57%, Memory: 45316 kB
+System Time: 1710378383.565738, Usage: 0.88%, Memory: 45316 kB
+CPU Temperature: 34.0
