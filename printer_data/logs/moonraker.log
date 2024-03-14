@@ -202,3 +202,92 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-14 11:12:20,502 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.86ms
 2024-03-14 11:12:20,502 [websockets.py:open()] - Websocket Opened: ID: 139946618315792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-14 11:12:20,509 [websockets.py:_handle_identify()] - Websocket 139946618315792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-14 12:04:00,546 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618315792
+2024-03-14 12:04:05,504 [websockets.py:on_close()] - Websocket Closed: ID: 139946618315792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.92
+2024-03-14 12:04:18,802 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.63ms
+2024-03-14 12:04:18,802 [websockets.py:open()] - Websocket Opened: ID: 139946617069216, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-14 12:04:18,842 [websockets.py:_handle_identify()] - Websocket 139946617069216 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-14 13:05:49,508 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-14 13:05:50,764 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-14 13:05:52,783 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['system.slice', 'systemd-journald.socket', 'basic.target', '-.mount', 'network-online.target', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-03-14 13:05:53,036 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-14 13:05:53,037 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-14 13:05:53,288 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-14 13:05:53,570 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-14 13:05:54,294 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-14 13:06:45,491 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-14 13:08:50,773 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 245.000 224.975 10.152 [0.000]
+2024-03-14 13:15:39,191 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-03-14 13:15:39,195 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------758c33ee1e02d2f5
+2024-03-14 13:15:39,870 [application.py:post()] - Processing Uploaded File: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 13:15:40,081 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-03-14 13:15:40,103 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-03-14 13:15:40,106 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-03-14 13:15:50,406 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-03-14 13:15:50,416 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 11221.44ms
+2024-03-14 13:15:50,526 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 13:15:51,782 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-03-14 13:15:52,319 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-14 13:19:58,396 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 230.000 2.075 [47.952]
+2024-03-14 13:20:00,069 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 230.000 2.075 [47.952]
+2024-03-14 13:21:25,768 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------85681499723047572293193126376
+2024-03-14 13:21:25,776 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-03-14 13:21:25,780 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 12.75ms
+2024-03-14 13:21:26,850 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-14 13:21:28,107 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-14 13:21:30,238 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-14 13:21:30,238 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-14 13:21:30,488 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-14 13:21:30,822 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-14 13:21:31,492 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-14 13:23:29,327 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-03-14 13:23:32,680 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-03-14 13:24:29,328 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-03-14 13:24:32,682 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-03-14 13:25:29,329 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-03-14 13:25:32,684 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-03-14 13:26:29,330 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-03-14 13:26:32,685 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2024-03-14 13:27:29,331 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
+2024-03-14 13:27:32,686 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2024-03-14 13:28:32,460 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 14:16:45,505 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-03-14 14:16:45,505 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-14 14:31:45,507 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-03-14 15:16:41,362 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 15:24:15,950 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 15:30:16,753 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-14 15:30:16,753 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.12ms
+2024-03-14 15:30:16,754 [websockets.py:open()] - Websocket Opened: ID: 139946614724768, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
+2024-03-14 15:30:16,851 [websockets.py:_handle_identify()] - Websocket 139946614724768 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-14 15:42:17,630 [websockets.py:on_close()] - Websocket Closed: ID: 139946617063552 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.42
+2024-03-14 15:42:18,550 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.92ms
+2024-03-14 15:42:18,551 [websockets.py:open()] - Websocket Opened: ID: 139946614718624, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
+2024-03-14 15:42:18,615 [websockets.py:_handle_identify()] - Websocket 139946614718624 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-14 15:42:45,133 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-03-14 15:42:46,389 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-14 15:42:48,437 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-14 15:42:48,438 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-14 15:42:48,688 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-03-14 15:42:48,946 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-03-14 15:42:49,944 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-03-14 15:43:09,501 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
