@@ -291,3 +291,38 @@ Content-Type: multipart/form-data; boundary=---------------------------856814997
 2024-03-14 15:42:48,946 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-03-14 15:42:49,944 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2024-03-14 15:43:09,501 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-14 16:12:33,642 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-14 16:12:33,650 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1710447124.202440, Usage: 0.72%, Memory: 50540 kB
+System Time: 1710447125.201728, Usage: 0.68%, Memory: 50540 kB
+System Time: 1710447126.203114, Usage: 0.7%, Memory: 50540 kB
+System Time: 1710447127.203699, Usage: 0.74%, Memory: 50540 kB
+System Time: 1710447128.204304, Usage: 0.72%, Memory: 50540 kB
+System Time: 1710447129.205205, Usage: 0.86%, Memory: 50540 kB
+System Time: 1710447130.206715, Usage: 0.87%, Memory: 50540 kB
+System Time: 1710447131.207154, Usage: 0.77%, Memory: 50540 kB
+System Time: 1710447132.208538, Usage: 1.25%, Memory: 50540 kB
+System Time: 1710447133.208904, Usage: 0.96%, Memory: 50540 kB
+System Time: 1710447134.208402, Usage: 0.89%, Memory: 50540 kB
+System Time: 1710447135.209937, Usage: 0.73%, Memory: 50540 kB
+System Time: 1710447136.210446, Usage: 0.96%, Memory: 50540 kB
+System Time: 1710447137.212017, Usage: 0.94%, Memory: 50540 kB
+System Time: 1710447138.212110, Usage: 0.77%, Memory: 50540 kB
+System Time: 1710447139.214365, Usage: 0.88%, Memory: 50540 kB
+System Time: 1710447140.215795, Usage: 0.7%, Memory: 50540 kB
+System Time: 1710447141.216448, Usage: 0.79%, Memory: 50540 kB
+System Time: 1710447142.217919, Usage: 1.07%, Memory: 50540 kB
+System Time: 1710447143.217994, Usage: 0.83%, Memory: 50540 kB
+System Time: 1710447144.218632, Usage: 0.74%, Memory: 50540 kB
+System Time: 1710447145.220070, Usage: 0.78%, Memory: 50540 kB
+System Time: 1710447146.220338, Usage: 0.85%, Memory: 50540 kB
+System Time: 1710447147.220803, Usage: 0.88%, Memory: 50540 kB
+System Time: 1710447148.221167, Usage: 0.75%, Memory: 50540 kB
+System Time: 1710447149.221498, Usage: 0.82%, Memory: 50540 kB
+System Time: 1710447150.222014, Usage: 1.05%, Memory: 50540 kB
+System Time: 1710447151.223062, Usage: 1.08%, Memory: 50540 kB
+System Time: 1710447152.225838, Usage: 1.04%, Memory: 50540 kB
+System Time: 1710447153.224368, Usage: 0.76%, Memory: 50540 kB
+CPU Temperature: 47.0
+2024-03-14 16:46:45,533 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
