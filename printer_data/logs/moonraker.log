@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Mar 14 05:34:37 2024 --------------------
+-------------------- Log Start | Mon Mar 18 05:29:39 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -100,10 +100,117 @@ install_script = tools/pkglist.sh
 All Configuration Files:
 /home/daniel/printer_data/config/moonraker.conf
 #################################################################
+2024-03-18 01:29:39,809 [confighelper.py:read_file()] - Configuration File '/home/daniel/printer_data/config/moonraker.conf' parsed, total size: 1635 B
+2024-03-18 01:29:39,809 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
 
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+2024-03-18 01:29:41,307 [server.py:load_component()] - Component (secrets) loaded
+2024-03-18 01:29:41,373 [server.py:load_component()] - Component (template) loaded
+2024-03-18 01:29:41,377 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-03-18 01:29:44,365 [server.py:load_component()] - Component (application) loaded
+2024-03-18 01:29:44,611 [server.py:load_component()] - Component (websockets) loaded
+2024-03-18 01:29:44,737 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-03-18 01:29:44,943 [server.py:add_log_rollover_item()] - 
 Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
-Unsafe Shutdown Count: 1
-
+Unsafe Shutdown Count: 2
+2024-03-18 01:29:45,131 [server.py:load_component()] - Component (database) loaded
+2024-03-18 01:29:45,366 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-03-18 01:29:45,512 [server.py:load_component()] - Component (file_manager) loaded
+2024-03-18 01:29:45,608 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-03-18 01:29:45,609 [server.py:load_component()] - Component (authorization) loaded
+2024-03-18 01:29:45,630 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-03-18 01:29:46,363 [server.py:add_log_rollover_item()] - 
 System Info:
 
 ***python***
@@ -118,7 +225,7 @@ System Info:
   serial_number: 
   hardware_desc: 
   model: 
-  total_memory: 12115924
+  total_memory: 12115928
   memory_units: kB
 
 ***sd_info***
@@ -151,15 +258,42 @@ System Info:
   crowsnest
   octoeverywhere
   ratos-configurator
-Module libcamera unavailble, import failed
-
+2024-03-18 01:29:46,364 [server.py:load_component()] - Component (shell_command) loaded
+2024-03-18 01:29:46,364 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-03-18 01:29:46,369 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-03-18 01:29:46,369 [server.py:load_component()] - Component (machine) loaded
+2024-03-18 01:29:46,371 [server.py:load_component()] - Component (data_store) loaded
+2024-03-18 01:29:46,372 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2024-03-18 01:29:46,372 [server.py:load_component()] - Component (proc_stats) loaded
+2024-03-18 01:29:46,373 [server.py:load_component()] - Component (job_state) loaded
+2024-03-18 01:29:46,375 [server.py:load_component()] - Component (job_queue) loaded
+2024-03-18 01:29:46,480 [server.py:load_component()] - Component (http_client) loaded
+2024-03-18 01:29:46,483 [server.py:load_component()] - Component (announcements) loaded
+2024-03-18 01:29:46,484 [server.py:load_component()] - Component (webcam) loaded
+2024-03-18 01:29:46,485 [server.py:load_component()] - Component (extensions) loaded
+2024-03-18 01:29:46,488 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-03-18 01:29:46,631 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/daniel/moonraker-env
+2024-03-18 01:29:46,635 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/daniel/klippy-env
+2024-03-18 01:29:46,695 [server.py:load_component()] - Component (update_manager) loaded
+2024-03-18 01:29:46,698 [server.py:load_component()] - Component (history) loaded
+2024-03-18 01:29:46,716 [power.py:__init__()] - Power component loading devices: ['power printer_plug']
+2024-03-18 01:29:46,722 [server.py:load_component()] - Component (power) loaded
+2024-03-18 01:29:46,723 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-03-18 01:29:46,734 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-03-18 01:29:46,871 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-03-18 01:29:46,871 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-03-18 01:29:46,871 [machine.py:validation_init()] - Installation version in database up to date
+2024-03-18 01:29:47,011 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-03-18 01:29:47,045 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-18 01:29:47,046 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2024-03-18 01:29:47,071 [server.py:add_log_rollover_item()] - 
 Systemd unit moonraker.service:
 unit_name: moonraker.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount', 'network-online.target']
-**After=['sysinit.target', '-.mount', 'basic.target', 'system.slice', 'systemd-journald.socket', 'network-online.target']
+**Requires=['network-online.target', '-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'system.slice', 'systemd-journald.socket', 'sysinit.target', 'network-online.target']
 **SupplementaryGroups=['moonraker-admin']
 **EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
 **ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
@@ -167,49 +301,12 @@ Properties:
 **FragmentPath=/etc/systemd/system/moonraker.service
 **Description=API Server for Klipper SV1
 **User=daniel
-
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['sysinit.target', 'system.slice', '-.mount']
-**After=['system.slice', 'network-online.target', '-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-Git Repo moonraker: No warnings detected
-Git Repo klipper: No warnings detected
-Git Repo mainsail-config: No warnings detected
-Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
-Git Repo klipper-backup: No warnings detected
-Git Repo crowsnest: No warnings detected
-Klipper Version: v0.12.0-111-g4f00f219
-2024-03-14 01:34:37,657 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618444800
-2024-03-14 01:34:42,541 [websockets.py:on_close()] - Websocket Closed: ID: 139946618444800 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
-2024-03-14 01:34:54,274 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-14 01:34:54,275 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.85ms
-2024-03-14 01:34:54,275 [websockets.py:open()] - Websocket Opened: ID: 139946618315456, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-14 01:34:54,283 [websockets.py:_handle_identify()] - Websocket 139946618315456 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 02:36:45,371 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-03-14 11:11:44,439 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618315456
-2024-03-14 11:11:49,277 [websockets.py:on_close()] - Websocket Closed: ID: 139946618315456 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.96
-2024-03-14 11:12:20,502 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-14 11:12:20,502 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.86ms
-2024-03-14 11:12:20,502 [websockets.py:open()] - Websocket Opened: ID: 139946618315792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-14 11:12:20,509 [websockets.py:_handle_identify()] - Websocket 139946618315792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 12:04:00,546 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946618315792
-2024-03-14 12:04:05,504 [websockets.py:on_close()] - Websocket Closed: ID: 139946618315792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.92
-2024-03-14 12:04:18,802 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.63ms
-2024-03-14 12:04:18,802 [websockets.py:open()] - Websocket Opened: ID: 139946617069216, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-14 12:04:18,842 [websockets.py:_handle_identify()] - Websocket 139946617069216 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 13:05:49,508 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-14 13:05:50,764 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-14 13:05:52,783 [server.py:add_log_rollover_item()] - 
+2024-03-18 01:29:47,071 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-03-18 01:29:47,071 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-03-18 01:29:47,072 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-03-18 01:29:47,072 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2024-03-18 01:29:47,072 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-03-18 01:29:47,073 [server.py:add_log_rollover_item()] - 
 Systemd unit klipper.service:
 unit_name: klipper.service
 is_default: True
@@ -224,117 +321,295 @@ Properties:
 **FragmentPath=/etc/systemd/system/klipper.service
 **Description=Klipper 3D Printer Firmware SV1
 **User=daniel
-2024-03-14 13:05:53,036 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-14 13:05:53,037 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-14 13:05:53,288 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-14 13:05:53,570 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-14 13:05:54,294 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-14 13:06:45,491 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-03-14 13:08:50,773 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 245.000 224.975 10.152 [0.000]
-2024-03-14 13:15:39,191 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2024-03-14 13:15:39,195 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------758c33ee1e02d2f5
-2024-03-14 13:15:39,870 [application.py:post()] - Processing Uploaded File: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 13:15:40,081 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+2024-03-18 01:29:47,073 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-03-18 01:29:47,074 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-03-18 01:29:47,075 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2024-03-18 01:29:47,801 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-03-18 01:29:47,970 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/daniel/printer_data/comms/moonraker.sock'
+2024-03-18 01:29:47,970 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: basement
+2024-03-18 01:29:47,971 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-03-18 01:29:48,223 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-03-18 01:29:48,242 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['systemd-journald.socket', 'sysinit.target', 'system.slice', '-.mount', 'basic.target', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-03-18 01:29:48,494 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-111-g4f00f219
+2024-03-18 01:29:55,979 [base_deploy.py:log_info()] - PackageKit: Detected 37 package updates:
+alsa-ucm-conf
+apache2-bin
+cups
+cups-bsd
+cups-client
+cups-common
+cups-core-drivers
+cups-daemon
+cups-ipp-utils
+cups-ppdc
+cups-server-common
+dpkg
+dpkg-dev
+firmware-sof-signed
+google-chrome-stable
+libcups2
+libcupsimage2
+libdpkg-perl
+libexpat1
+libexpat1-dev
+libgpgme11
+libgpgmepp6
+libkpathsea6
+libldap-2.5-0
+libldap-common
+libsynctex2
+linux-firmware
+python3-gpg
+tcpdump
+tracker-extract
+tracker-miner-fs
+ubuntu-advantage-tools
+ubuntu-pro-client-l10n
+ubuntu-pro-client
+python3-update-manager
+update-manager
+update-manager-core
+2024-03-18 01:29:56,086 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker status --porcelain -b) successfully finished
+2024-03-18 01:29:56,092 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker branch --list --no-color) successfully finished
+2024-03-18 01:29:56,097 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker remote get-url origin) successfully finished
+2024-03-18 01:29:58,247 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker fetch origin --prune --progress) successfully finished
+2024-03-18 01:29:58,282 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-03-18 01:29:58,285 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker rev-parse HEAD) successfully finished
+2024-03-18 01:29:58,296 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:29:58,299 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker rev-parse origin/master) successfully finished
+2024-03-18 01:29:58,308 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:29:58,312 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker rev-list HEAD..a3e4dac5fb20f8dfc0857a252eef5219d5e0ec4c --count) successfully finished
+2024-03-18 01:29:58,316 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker log 65a82719250acefae303bb106abe82595de23d79..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-03-18 01:29:58,371 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-03-18 01:29:58,371 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/daniel/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 65a82719250acefae303bb106abe82595de23d79
+Upstream Commit SHA: a3e4dac5fb20f8dfc0857a252eef5219d5e0ec4c
+Current Version: v0.8.0-311-g65a82719
+Upstream Version: v0.8.0-324-ga3e4dac5
+Rollback Commit: 65a82719250acefae303bb106abe82595de23d79
+Rollback Branch: master
+Rollback Version: v0.8.0-311-g65a82719
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 13
+Diverged: False
+2024-03-18 01:29:58,371 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2024-03-18 01:29:58,371 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2024-03-18 01:29:58,538 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper status --porcelain -b) successfully finished
+2024-03-18 01:29:58,544 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper branch --list --no-color) successfully finished
+2024-03-18 01:29:58,550 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper remote get-url origin) successfully finished
+2024-03-18 01:30:01,511 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper fetch origin --prune --progress) successfully finished
+2024-03-18 01:30:01,515 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-03-18 01:30:01,518 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper rev-parse HEAD) successfully finished
+2024-03-18 01:30:01,563 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:30:01,565 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper rev-parse origin/master) successfully finished
+2024-03-18 01:30:01,607 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:30:01,610 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper rev-list HEAD..bfb71bc2dc63f2911a11ebf580f82b1e8b2706c4 --count) successfully finished
+2024-03-18 01:30:01,614 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper log 4f00f2199174eca1b022fe4b8f7f3aaedfd90b6f..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-03-18 01:30:01,664 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-03-18 01:30:01,665 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/daniel/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 4f00f2199174eca1b022fe4b8f7f3aaedfd90b6f
+Upstream Commit SHA: bfb71bc2dc63f2911a11ebf580f82b1e8b2706c4
+Current Version: v0.12.0-111-g4f00f219
+Upstream Version: v0.12.0-125-gbfb71bc2
+Rollback Commit: 4f00f2199174eca1b022fe4b8f7f3aaedfd90b6f
+Rollback Branch: master
+Rollback Version: v0.12.0-111-g4f00f219
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 14
+Diverged: False
+2024-03-18 01:30:01,665 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2024-03-18 01:30:01,665 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2024-03-18 01:30:02,044 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config status --porcelain -b) successfully finished
+2024-03-18 01:30:02,050 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config branch --list --no-color) successfully finished
+2024-03-18 01:30:02,056 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config remote get-url origin) successfully finished
+2024-03-18 01:30:02,612 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config fetch origin --prune --progress) successfully finished
+2024-03-18 01:30:02,615 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-03-18 01:30:02,617 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config rev-parse HEAD) successfully finished
+2024-03-18 01:30:02,620 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:30:02,623 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config rev-parse origin/master) successfully finished
+2024-03-18 01:30:02,625 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:30:02,628 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config rev-list HEAD..e57810d51b5c634aadaca4db923bfcba269ae4b3 --count) successfully finished
+2024-03-18 01:30:02,629 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/daniel/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Rollback Branch: master
+Rollback Version: v1.2.1-0-ge57810d5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-03-18 01:30:02,629 [base_deploy.py:log_info()] - Git Repo mainsail-config: Channel: dev
+2024-03-18 01:30:02,629 [base_deploy.py:log_info()] - Git Repo mainsail-config: Validity check for git repo passed
+2024-03-18 01:30:03,260 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/daniel/mainsail
+Local Version: v2.10.0
+Remote Version: v2.10.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.10.0/mainsail.zip
+Download Size: 2081565
+Content Type: application/zip
+Rollback Version: v2.10.0
+Rollback Repo: mainsail-crew/mainsail
+2024-03-18 01:30:04,146 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2024-03-18 01:30:04,153 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2024-03-18 01:30:04,158 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2024-03-18 01:30:04,893 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) successfully finished
+2024-03-18 01:30:04,896 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-03-18 01:30:04,899 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging rev-parse HEAD) successfully finished
+2024-03-18 01:30:04,903 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:30:04,906 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging rev-parse origin/main) successfully finished
+2024-03-18 01:30:04,910 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:30:04,913 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging rev-list HEAD..d657271f13fc429b5ca36a4f8956b67c9ddf0558 --count) successfully finished
+2024-03-18 01:30:04,916 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging log c58f3d31adb16eaf963b84cb35c8ca72cc736245..origin/main --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-03-18 01:30:04,921 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-03-18 01:30:04,921 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/daniel/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: c58f3d31adb16eaf963b84cb35c8ca72cc736245
+Upstream Commit SHA: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Current Version: v1.1.2-8-gc58f3d31
+Upstream Version: v1.1.2-12-gd657271f
+Rollback Commit: c58f3d31adb16eaf963b84cb35c8ca72cc736245
+Rollback Branch: main
+Rollback Version: v1.1.2-8-gc58f3d31
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 4
+Diverged: False
+2024-03-18 01:30:04,921 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Channel: dev
+2024-03-18 01:30:04,921 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Validity check for git repo passed
+2024-03-18 01:30:05,428 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup status --porcelain -b) successfully finished
+2024-03-18 01:30:05,432 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup branch --list --no-color) successfully finished
+2024-03-18 01:30:05,437 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup remote get-url origin) successfully finished
+2024-03-18 01:30:06,702 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup fetch origin --prune --progress) successfully finished
+2024-03-18 01:30:06,705 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-03-18 01:30:06,708 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup rev-parse HEAD) successfully finished
+2024-03-18 01:30:06,712 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:30:06,715 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup rev-parse origin/main) successfully finished
+2024-03-18 01:30:06,720 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:30:06,724 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup rev-list HEAD..62b7cd9c99d7be91e227709eaa6ef6b14261b728 --count) successfully finished
+2024-03-18 01:30:06,727 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup log 67929a3e868279547ead4d4f55f2be8ab352f241..origin/main --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-03-18 01:30:06,732 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-03-18 01:30:06,732 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: Staubgeborener
+Repository Name: klipper-backup
+Path: /home/daniel/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Staubgeborener/klipper-backup.git
+Recovery URL: https://github.com/Staubgeborener/klipper-backup.git
+Current Commit SHA: 67929a3e868279547ead4d4f55f2be8ab352f241
+Upstream Commit SHA: 62b7cd9c99d7be91e227709eaa6ef6b14261b728
+Current Version: v1.2.1-0-g67929a3e
+Upstream Version: v1.2.2-1-g62b7cd9c
+Rollback Commit: 67929a3e868279547ead4d4f55f2be8ab352f241
+Rollback Branch: main
+Rollback Version: v1.2.1-0-g67929a3e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 15
+Diverged: False
+2024-03-18 01:30:06,732 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
+2024-03-18 01:30:06,732 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
+2024-03-18 01:30:06,937 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest status --porcelain -b) successfully finished
+2024-03-18 01:30:06,942 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest branch --list --no-color) successfully finished
+2024-03-18 01:30:06,947 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest remote get-url origin) successfully finished
+2024-03-18 01:30:07,755 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest fetch origin --prune --progress) successfully finished
+2024-03-18 01:30:07,758 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-03-18 01:30:07,761 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest rev-parse HEAD) successfully finished
+2024-03-18 01:30:07,766 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-03-18 01:30:07,769 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest rev-parse origin/master) successfully finished
+2024-03-18 01:30:07,773 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-03-18 01:30:07,777 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest rev-list HEAD..e96cd46ffb4a42ae1fbf23118caa68dd0dac0597 --count) successfully finished
+2024-03-18 01:30:07,780 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest log ba0ac8fbe4567cda574d5835f0e13b3434f16713..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-03-18 01:30:07,788 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-03-18 01:30:07,789 [git_deploy.py:log_repo_info()] - Git Repo crowsnest Detected:
+Owner: mainsail-crew
+Repository Name: crowsnest
+Path: /home/daniel/crowsnest
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/crowsnest.git
+Recovery URL: https://github.com/mainsail-crew/crowsnest.git
+Current Commit SHA: ba0ac8fbe4567cda574d5835f0e13b3434f16713
+Upstream Commit SHA: e96cd46ffb4a42ae1fbf23118caa68dd0dac0597
+Current Version: v4.1.4-1-gba0ac8fb
+Upstream Version: v4.1.6-1-ge96cd46f
+Rollback Commit: ba0ac8fbe4567cda574d5835f0e13b3434f16713
+Rollback Branch: master
+Rollback Version: v4.1.4-1-gba0ac8fb
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 8
+Diverged: False
+2024-03-18 01:30:07,789 [base_deploy.py:log_info()] - Git Repo crowsnest: Channel: dev
+2024-03-18 01:30:07,789 [base_deploy.py:log_info()] - Git Repo crowsnest: Validity check for git repo passed
+2024-03-18 01:31:12,945 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-03-18 01:31:12,946 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-03-18 01:31:12,947 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
 
-2024-03-14 13:15:40,103 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2024-03-14 13:15:40,106 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2024-03-14 13:15:50,406 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2024-03-14 13:15:50,416 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 11221.44ms
-2024-03-14 13:15:50,526 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 13:15:51,782 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-14 13:15:52,319 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2024-03-14 13:19:58,396 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 230.000 2.075 [47.952]
-2024-03-14 13:20:00,069 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 230.000 2.075 [47.952]
-2024-03-14 13:21:25,768 [application.py:prepare()] - Upload Request Received from 127.0.0.1
-Content-Type: multipart/form-data; boundary=---------------------------85681499723047572293193126376
-2024-03-14 13:21:25,776 [application.py:post()] - Processing Uploaded File: printer.cfg
-2024-03-14 13:21:25,780 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 12.75ms
-2024-03-14 13:21:26,850 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-14 13:21:28,107 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-14 13:21:30,238 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-14 13:21:30,238 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-14 13:21:30,488 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-14 13:21:30,822 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-14 13:21:31,492 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-14 13:23:29,327 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2024-03-14 13:23:32,680 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2024-03-14 13:24:29,328 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
-2024-03-14 13:24:32,682 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
-2024-03-14 13:25:29,329 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
-2024-03-14 13:25:32,684 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
-2024-03-14 13:26:29,330 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
-2024-03-14 13:26:32,685 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
-2024-03-14 13:27:29,331 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
-2024-03-14 13:27:32,686 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
-2024-03-14 13:28:32,460 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 14:16:45,505 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2024-03-14 14:16:45,505 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2024-03-14 14:31:45,507 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2024-03-14 15:16:41,362 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 15:24:15,950 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 15:30:16,753 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2024-03-14 15:30:16,753 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.12ms
-2024-03-14 15:30:16,754 [websockets.py:open()] - Websocket Opened: ID: 139946614724768, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
-2024-03-14 15:30:16,851 [websockets.py:_handle_identify()] - Websocket 139946614724768 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 15:42:17,630 [websockets.py:on_close()] - Websocket Closed: ID: 139946617063552 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.42
-2024-03-14 15:42:18,550 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.92ms
-2024-03-14 15:42:18,551 [websockets.py:open()] - Websocket Opened: ID: 139946614718624, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
-2024-03-14 15:42:18,615 [websockets.py:_handle_identify()] - Websocket 139946614718624 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 15:42:45,133 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-14 15:42:46,389 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-14 15:42:48,437 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-14 15:42:48,438 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-14 15:42:48,688 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-14 15:42:48,946 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-14 15:42:49,944 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-14 15:43:09,501 [job_state.py:_status_update()] - Job Started: Clockspring3D_Torture_Toaster_v24_22h15m_0.16mm_205C_PLA_ENDER3S1.gcode
-2024-03-14 16:12:33,642 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-03-14 16:12:33,650 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1710447124.202440, Usage: 0.72%, Memory: 50540 kB
-System Time: 1710447125.201728, Usage: 0.68%, Memory: 50540 kB
-System Time: 1710447126.203114, Usage: 0.7%, Memory: 50540 kB
-System Time: 1710447127.203699, Usage: 0.74%, Memory: 50540 kB
-System Time: 1710447128.204304, Usage: 0.72%, Memory: 50540 kB
-System Time: 1710447129.205205, Usage: 0.86%, Memory: 50540 kB
-System Time: 1710447130.206715, Usage: 0.87%, Memory: 50540 kB
-System Time: 1710447131.207154, Usage: 0.77%, Memory: 50540 kB
-System Time: 1710447132.208538, Usage: 1.25%, Memory: 50540 kB
-System Time: 1710447133.208904, Usage: 0.96%, Memory: 50540 kB
-System Time: 1710447134.208402, Usage: 0.89%, Memory: 50540 kB
-System Time: 1710447135.209937, Usage: 0.73%, Memory: 50540 kB
-System Time: 1710447136.210446, Usage: 0.96%, Memory: 50540 kB
-System Time: 1710447137.212017, Usage: 0.94%, Memory: 50540 kB
-System Time: 1710447138.212110, Usage: 0.77%, Memory: 50540 kB
-System Time: 1710447139.214365, Usage: 0.88%, Memory: 50540 kB
-System Time: 1710447140.215795, Usage: 0.7%, Memory: 50540 kB
-System Time: 1710447141.216448, Usage: 0.79%, Memory: 50540 kB
-System Time: 1710447142.217919, Usage: 1.07%, Memory: 50540 kB
-System Time: 1710447143.217994, Usage: 0.83%, Memory: 50540 kB
-System Time: 1710447144.218632, Usage: 0.74%, Memory: 50540 kB
-System Time: 1710447145.220070, Usage: 0.78%, Memory: 50540 kB
-System Time: 1710447146.220338, Usage: 0.85%, Memory: 50540 kB
-System Time: 1710447147.220803, Usage: 0.88%, Memory: 50540 kB
-System Time: 1710447148.221167, Usage: 0.75%, Memory: 50540 kB
-System Time: 1710447149.221498, Usage: 0.82%, Memory: 50540 kB
-System Time: 1710447150.222014, Usage: 1.05%, Memory: 50540 kB
-System Time: 1710447151.223062, Usage: 1.08%, Memory: 50540 kB
-System Time: 1710447152.225838, Usage: 1.04%, Memory: 50540 kB
-System Time: 1710447153.224368, Usage: 0.76%, Memory: 50540 kB
-CPU Temperature: 47.0
-2024-03-14 16:46:45,533 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2024-03-14 22:23:38,966 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946617069216
-2024-03-14 22:23:43,803 [websockets.py:on_close()] - Websocket Closed: ID: 139946617069216 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
-2024-03-14 22:23:58,820 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-03-14 22:23:58,820 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.76ms
-2024-03-14 22:23:58,820 [websockets.py:open()] - Websocket Opened: ID: 139946614729904, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-14 22:23:58,832 [websockets.py:_handle_identify()] - Websocket 139946614729904 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 22:34:29,367 [websockets.py:write_to_socket()] - Websocket closed while writing: 139946614729904
-2024-03-14 22:34:33,823 [websockets.py:on_close()] - Websocket Closed: ID: 139946614729904 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
-2024-03-14 22:34:58,791 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.64ms
-2024-03-14 22:34:58,791 [websockets.py:open()] - Websocket Opened: ID: 139946614732208, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-03-14 22:34:58,795 [websockets.py:_handle_identify()] - Websocket 139946614732208 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-03-14 23:36:45,604 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-03-18 01:32:04,743 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-18 01:32:04,748 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 6.60ms
+2024-03-18 01:32:04,749 [websockets.py:open()] - Websocket Opened: ID: 140353767001104, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0, Host Name: localhost
+2024-03-18 01:32:04,938 [websockets.py:_handle_identify()] - Websocket 140353767001104 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-18 02:34:46,886 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
