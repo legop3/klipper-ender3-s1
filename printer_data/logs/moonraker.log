@@ -209,3 +209,18 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-22 02:14:46,041 [websockets.py:open()] - Websocket Opened: ID: 140353767814768, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-22 02:14:46,046 [websockets.py:_handle_identify()] - Websocket 140353767814768 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-03-22 03:14:48,159 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.237
+2024-03-22 11:03:45,411 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-03-22 11:03:45,414 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------66a5f497ebf33166
+2024-03-22 11:03:45,545 [application.py:post()] - Processing Uploaded File: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-22 11:03:45,685 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-03-22 11:03:45,698 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-03-22 11:03:45,701 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-03-22 11:03:47,493 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-03-22 11:03:47,499 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2085.01ms
+2024-03-22 11:03:47,601 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-22 11:03:48,003 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-03-22 11:03:48,158 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.237
