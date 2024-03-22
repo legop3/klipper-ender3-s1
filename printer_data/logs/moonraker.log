@@ -225,3 +225,4 @@ Properties:
 2024-03-21 15:50:16,302 [application.py:log_request()] - 101 GET /websocket (192.168.0.237) [_TRUSTED_USER_] 1.16ms
 2024-03-21 15:50:16,303 [websockets.py:open()] - Websocket Opened: ID: 140353767816256, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
 2024-03-21 15:50:16,355 [websockets.py:_handle_identify()] - Websocket 140353767816256 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-21 16:54:48,049 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.237
