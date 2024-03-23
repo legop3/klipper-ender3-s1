@@ -228,3 +228,15 @@ Content-Type: multipart/form-data; boundary=------------------------66a5f497ebf3
 2024-03-22 12:04:48,260 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2024-03-22 12:04:48,260 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.237
 2024-03-22 16:28:53,348 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-22 20:28:56,239 [websockets.py:write_to_socket()] - Websocket closed while writing: 140353767814768
+2024-03-22 20:29:01,043 [websockets.py:on_close()] - Websocket Closed: ID: 140353767814768 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-03-22 20:29:38,420 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.237
+2024-03-22 20:29:38,421 [application.py:log_request()] - 101 GET /websocket (192.168.0.237) [_TRUSTED_USER_] 0.92ms
+2024-03-22 20:29:38,421 [websockets.py:open()] - Websocket Opened: ID: 140353767816304, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-03-22 20:29:38,463 [websockets.py:_handle_identify()] - Websocket 140353767816304 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-22 21:29:48,370 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.237
+2024-03-22 21:51:32,021 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-22 23:29:33,672 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.25
+2024-03-22 23:29:33,673 [application.py:log_request()] - 101 GET /websocket (192.168.0.25) [_TRUSTED_USER_] 1.39ms
+2024-03-22 23:29:33,673 [websockets.py:open()] - Websocket Opened: ID: 140353766120976, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0, Host Name: 192.168.0.40
+2024-03-22 23:29:33,705 [websockets.py:_handle_identify()] - Websocket 140353766120976 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
