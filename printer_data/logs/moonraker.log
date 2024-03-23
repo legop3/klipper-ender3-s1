@@ -191,3 +191,12 @@ Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
 2024-03-23 00:04:17,199 [websockets.py:on_close()] - Websocket Closed: ID: 140353766120976 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.52
 2024-03-23 00:34:48,404 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
+2024-03-23 09:50:58,540 [websockets.py:write_to_socket()] - Websocket closed while writing: 140353767816304
+2024-03-23 09:51:02,186 [websockets.py:on_close()] - Websocket Closed: ID: 140353767816304 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.26
+2024-03-23 09:51:34,405 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-23 09:56:55,300 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.232
+2024-03-23 09:56:55,301 [application.py:log_request()] - 101 GET /websocket (192.168.0.232) [_TRUSTED_USER_] 1.39ms
+2024-03-23 09:56:55,301 [websockets.py:open()] - Websocket Opened: ID: 140353767814048, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-23 09:56:55,341 [websockets.py:_handle_identify()] - Websocket 140353767814048 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-23 10:09:58,655 [websockets.py:on_close()] - Websocket Closed: ID: 140353767814048 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.27
+2024-03-23 10:59:48,504 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.232
