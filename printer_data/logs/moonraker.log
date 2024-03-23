@@ -227,3 +227,4 @@ Content-Type: multipart/form-data; boundary=------------------------66a5f497ebf3
 2024-03-22 12:04:48,260 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2024-03-22 12:04:48,260 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2024-03-22 12:04:48,260 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.237
+2024-03-22 16:28:53,348 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
