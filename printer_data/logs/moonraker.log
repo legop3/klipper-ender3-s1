@@ -200,3 +200,37 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-03-23 09:56:55,341 [websockets.py:_handle_identify()] - Websocket 140353767814048 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-03-23 10:09:58,655 [websockets.py:on_close()] - Websocket Closed: ID: 140353767814048 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.27
 2024-03-23 10:59:48,504 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.232
+2024-03-23 20:36:15,174 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-23 20:36:15,181 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1711240545.515030, Usage: 0.82%, Memory: 52180 kB
+System Time: 1711240546.515923, Usage: 0.63%, Memory: 52180 kB
+System Time: 1711240547.516653, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240548.517478, Usage: 0.71%, Memory: 52180 kB
+System Time: 1711240549.517572, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240550.519947, Usage: 0.54%, Memory: 52180 kB
+System Time: 1711240551.519479, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240552.520371, Usage: 0.65%, Memory: 52180 kB
+System Time: 1711240553.521162, Usage: 0.69%, Memory: 52180 kB
+System Time: 1711240554.522548, Usage: 0.66%, Memory: 52180 kB
+System Time: 1711240555.523099, Usage: 1.0%, Memory: 52180 kB
+System Time: 1711240556.524505, Usage: 0.55%, Memory: 52180 kB
+System Time: 1711240557.524388, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240558.526140, Usage: 0.68%, Memory: 52180 kB
+System Time: 1711240559.528370, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240560.528034, Usage: 0.73%, Memory: 52180 kB
+System Time: 1711240561.529424, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240562.530180, Usage: 0.62%, Memory: 52180 kB
+System Time: 1711240563.529824, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240564.530735, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240565.531754, Usage: 0.88%, Memory: 52180 kB
+System Time: 1711240566.532715, Usage: 0.74%, Memory: 52180 kB
+System Time: 1711240567.533660, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240568.534398, Usage: 0.6%, Memory: 52180 kB
+System Time: 1711240569.534259, Usage: 0.81%, Memory: 52180 kB
+System Time: 1711240570.536165, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240571.536036, Usage: 1.08%, Memory: 52180 kB
+System Time: 1711240572.536044, Usage: 0.53%, Memory: 52180 kB
+System Time: 1711240573.537138, Usage: 0.73%, Memory: 52180 kB
+System Time: 1711240574.537153, Usage: 0.59%, Memory: 52180 kB
+CPU Temperature: 45.0
