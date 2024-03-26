@@ -1,0 +1,236 @@
+-------------------- Log Start | Sat Mar 23 04:04:17 2024 --------------------
+data_path: /home/daniel/printer_data
+is_default_data_path: False
+config_file: /home/daniel/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
+unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
+software_version: v0.8.0-311-g65a8271
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/daniel/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 2
+
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 12115928
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Ubuntu 22.04.4 LTS
+  id: ubuntu
+  version: 22.04
+  version_parts: {'major': '22', 'minor': '04', 'build_number': ''}
+  like: debian
+  codename: jammy
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', '-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'system.slice', 'systemd-journald.socket', 'sysinit.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
+**ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/daniel/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=daniel
+
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['sysinit.target', 'system.slice', 'basic.target', '-.mount', 'systemd-journald.socket', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo klipper-backup: No warnings detected
+Git Repo crowsnest: No warnings detected
+Klipper Version: v0.12.0-111-g4f00f219
+2024-03-23 00:04:17,199 [websockets.py:on_close()] - Websocket Closed: ID: 140353766120976 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.52
+2024-03-23 00:34:48,404 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
+2024-03-23 09:50:58,540 [websockets.py:write_to_socket()] - Websocket closed while writing: 140353767816304
+2024-03-23 09:51:02,186 [websockets.py:on_close()] - Websocket Closed: ID: 140353767816304 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.26
+2024-03-23 09:51:34,405 [job_state.py:_status_update()] - Job Started: Heltec_WT_v5_front-no-insert-blank_4h37m_0.16mm_205C_PLA_ENDER3S1.gcode
+2024-03-23 09:56:55,300 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.232
+2024-03-23 09:56:55,301 [application.py:log_request()] - 101 GET /websocket (192.168.0.232) [_TRUSTED_USER_] 1.39ms
+2024-03-23 09:56:55,301 [websockets.py:open()] - Websocket Opened: ID: 140353767814048, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:123.0) Gecko/123.0 Firefox/123.0, Host Name: 192.168.0.40
+2024-03-23 09:56:55,341 [websockets.py:_handle_identify()] - Websocket 140353767814048 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-03-23 10:09:58,655 [websockets.py:on_close()] - Websocket Closed: ID: 140353767814048 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.27
+2024-03-23 10:59:48,504 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.232
+2024-03-23 20:36:15,174 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-03-23 20:36:15,181 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1711240545.515030, Usage: 0.82%, Memory: 52180 kB
+System Time: 1711240546.515923, Usage: 0.63%, Memory: 52180 kB
+System Time: 1711240547.516653, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240548.517478, Usage: 0.71%, Memory: 52180 kB
+System Time: 1711240549.517572, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240550.519947, Usage: 0.54%, Memory: 52180 kB
+System Time: 1711240551.519479, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240552.520371, Usage: 0.65%, Memory: 52180 kB
+System Time: 1711240553.521162, Usage: 0.69%, Memory: 52180 kB
+System Time: 1711240554.522548, Usage: 0.66%, Memory: 52180 kB
+System Time: 1711240555.523099, Usage: 1.0%, Memory: 52180 kB
+System Time: 1711240556.524505, Usage: 0.55%, Memory: 52180 kB
+System Time: 1711240557.524388, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240558.526140, Usage: 0.68%, Memory: 52180 kB
+System Time: 1711240559.528370, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240560.528034, Usage: 0.73%, Memory: 52180 kB
+System Time: 1711240561.529424, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240562.530180, Usage: 0.62%, Memory: 52180 kB
+System Time: 1711240563.529824, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240564.530735, Usage: 0.57%, Memory: 52180 kB
+System Time: 1711240565.531754, Usage: 0.88%, Memory: 52180 kB
+System Time: 1711240566.532715, Usage: 0.74%, Memory: 52180 kB
+System Time: 1711240567.533660, Usage: 0.58%, Memory: 52180 kB
+System Time: 1711240568.534398, Usage: 0.6%, Memory: 52180 kB
+System Time: 1711240569.534259, Usage: 0.81%, Memory: 52180 kB
+System Time: 1711240570.536165, Usage: 0.72%, Memory: 52180 kB
+System Time: 1711240571.536036, Usage: 1.08%, Memory: 52180 kB
+System Time: 1711240572.536044, Usage: 0.53%, Memory: 52180 kB
+System Time: 1711240573.537138, Usage: 0.73%, Memory: 52180 kB
+System Time: 1711240574.537153, Usage: 0.59%, Memory: 52180 kB
+CPU Temperature: 45.0
