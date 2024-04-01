@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Mar 25 23:37:51 2024 --------------------
+-------------------- Log Start | Thu Mar 28 14:19:48 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['sysinit.target', 'system.slice', 'basic.target', '-.mount', 'systemd-journald.socket', 'network-online.target']
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice', 'basic.target', 'sysinit.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,64 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-03-25 19:37:51,299 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2024-03-25 19:37:52,555 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2024-03-25 19:37:52,587 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'sysinit.target', 'system.slice']
-**After=['-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice', 'basic.target', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2024-03-25 19:37:59,746 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2024-03-25 19:37:59,747 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2024-03-25 19:37:59,997 [job_state.py:_handle_started()] - Job state initialized: standby
-2024-03-25 19:38:00,250 [klippy_connection.py:_check_ready()] - Klippy ready
-2024-03-25 19:38:00,751 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2024-03-25 19:38:15,175 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Must home axis first: 0.000 0.000 5.000 [0.000]
-2024-03-25 19:41:23,389 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2024-03-25 19:42:23,390 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
-2024-03-25 19:43:23,392 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
-2024-03-25 19:44:23,393 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
-2024-03-25 19:50:39,052 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-03-25 19:50:39,059 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1711410609.068094, Usage: 1.14%, Memory: 53060 kB
-System Time: 1711410610.073086, Usage: 0.67%, Memory: 53060 kB
-System Time: 1711410611.074038, Usage: 1.07%, Memory: 53060 kB
-System Time: 1711410612.072086, Usage: 0.87%, Memory: 53060 kB
-System Time: 1711410613.076090, Usage: 0.66%, Memory: 53060 kB
-System Time: 1711410614.078128, Usage: 1.4%, Memory: 53060 kB
-System Time: 1711410615.078665, Usage: 1.4%, Memory: 53060 kB
-System Time: 1711410616.078223, Usage: 1.04%, Memory: 53060 kB
-System Time: 1711410617.077366, Usage: 0.76%, Memory: 53060 kB
-System Time: 1711410618.079578, Usage: 0.62%, Memory: 53060 kB
-System Time: 1711410619.083255, Usage: 0.86%, Memory: 53060 kB
-System Time: 1711410620.081014, Usage: 0.88%, Memory: 53060 kB
-System Time: 1711410621.081822, Usage: 0.72%, Memory: 53060 kB
-System Time: 1711410622.084439, Usage: 0.74%, Memory: 53060 kB
-System Time: 1711410623.089347, Usage: 1.07%, Memory: 53060 kB
-System Time: 1711410624.088410, Usage: 1.79%, Memory: 53060 kB
-System Time: 1711410625.090307, Usage: 1.16%, Memory: 53060 kB
-System Time: 1711410626.091139, Usage: 1.07%, Memory: 53060 kB
-System Time: 1711410627.089770, Usage: 0.99%, Memory: 53060 kB
-System Time: 1711410628.089554, Usage: 0.87%, Memory: 53060 kB
-System Time: 1711410629.092659, Usage: 0.81%, Memory: 53060 kB
-System Time: 1711410630.090425, Usage: 0.83%, Memory: 53060 kB
-System Time: 1711410631.094384, Usage: 0.71%, Memory: 53060 kB
-System Time: 1711410632.096675, Usage: 0.74%, Memory: 53060 kB
-System Time: 1711410633.095318, Usage: 1.13%, Memory: 53060 kB
-System Time: 1711410634.098162, Usage: 1.06%, Memory: 53060 kB
-System Time: 1711410635.098965, Usage: 0.98%, Memory: 53060 kB
-System Time: 1711410636.098706, Usage: 0.63%, Memory: 53060 kB
-System Time: 1711410637.100680, Usage: 0.49%, Memory: 53060 kB
-System Time: 1711410638.100249, Usage: 0.61%, Memory: 53060 kB
-CPU Temperature: 44.0
+2024-03-28 10:19:48,333 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-28 10:20:08,347 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-28 10:20:38,382 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-03-28 10:24:08,580 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
