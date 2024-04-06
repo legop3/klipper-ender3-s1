@@ -939,3 +939,16 @@ Content-Type: multipart/form-data; boundary=------------------------283fe2364587
 2024-04-05 19:58:03,801 [application.py:log_request()] - 101 GET /websocket (192.168.0.232) [_TRUSTED_USER_] 0.76ms
 2024-04-05 19:58:03,801 [websockets.py:open()] - Websocket Opened: ID: 140305402193680, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:124.0) Gecko/124.0 Firefox/124.0, Host Name: 192.168.0.40
 2024-04-05 19:58:03,823 [websockets.py:_handle_identify()] - Websocket 140305402193680 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 20:09:36,060 [websockets.py:on_close()] - Websocket Closed: ID: 140305402193680 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.25
+2024-04-05 20:09:36,707 [application.py:log_request()] - 101 GET /websocket (192.168.0.232) [_TRUSTED_USER_] 0.97ms
+2024-04-05 20:09:36,707 [websockets.py:open()] - Websocket Opened: ID: 140305402191280, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:124.0) Gecko/124.0 Firefox/124.0, Host Name: basement.local
+2024-04-05 20:09:36,727 [websockets.py:_handle_identify()] - Websocket 140305402191280 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 20:13:31,452 [websockets.py:on_close()] - Websocket Closed: ID: 140305402191280 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.72
+2024-04-05 21:11:55,458 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.232
+2024-04-05 22:35:59,475 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305402198288
+2024-04-05 22:36:04,447 [websockets.py:on_close()] - Websocket Closed: ID: 140305402198288 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-05 22:36:29,287 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
+2024-04-05 22:36:29,289 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 2.66ms
+2024-04-05 22:36:29,290 [websockets.py:open()] - Websocket Opened: ID: 140305402196896, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-04-05 22:36:29,294 [websockets.py:_handle_identify()] - Websocket 140305402196896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 23:36:55,483 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
