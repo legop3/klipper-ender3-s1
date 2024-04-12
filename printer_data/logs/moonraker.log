@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Apr 10 04:12:48 2024 --------------------
+-------------------- Log Start | Fri Apr 12 18:39:44 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,5 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-04-10 00:12:48,503 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305375939456
-2024-04-10 00:12:49,798 [websockets.py:on_close()] - Websocket Closed: ID: 140305375939456 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.24
+2024-04-12 14:39:44,647 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-04-12 14:39:44,654 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1712947155.079868, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947156.080053, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947157.082260, Usage: 0.63%, Memory: 51204 kB
+System Time: 1712947158.083512, Usage: 0.72%, Memory: 51204 kB
+System Time: 1712947159.083775, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947160.084077, Usage: 0.95%, Memory: 51204 kB
+System Time: 1712947161.084445, Usage: 0.63%, Memory: 51204 kB
+System Time: 1712947162.084609, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947163.084709, Usage: 0.5%, Memory: 51204 kB
+System Time: 1712947164.084702, Usage: 0.53%, Memory: 51204 kB
+System Time: 1712947165.085890, Usage: 0.53%, Memory: 51204 kB
+System Time: 1712947166.086952, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947167.088159, Usage: 0.51%, Memory: 51204 kB
+System Time: 1712947168.089275, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947169.092663, Usage: 0.56%, Memory: 51204 kB
+System Time: 1712947170.094188, Usage: 0.82%, Memory: 51204 kB
+System Time: 1712947171.094877, Usage: 0.71%, Memory: 51204 kB
+System Time: 1712947172.095847, Usage: 0.74%, Memory: 51204 kB
+System Time: 1712947173.096406, Usage: 0.56%, Memory: 51204 kB
+System Time: 1712947174.096408, Usage: 0.6%, Memory: 51204 kB
+System Time: 1712947175.098556, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947176.098826, Usage: 0.61%, Memory: 51204 kB
+System Time: 1712947177.101103, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947178.101339, Usage: 0.64%, Memory: 51204 kB
+System Time: 1712947179.101548, Usage: 0.6%, Memory: 51204 kB
+System Time: 1712947180.103083, Usage: 0.76%, Memory: 51204 kB
+System Time: 1712947181.104282, Usage: 0.87%, Memory: 51204 kB
+System Time: 1712947182.105869, Usage: 0.66%, Memory: 51204 kB
+System Time: 1712947183.108105, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947184.109211, Usage: 0.6%, Memory: 51204 kB
+CPU Temperature: 48.0
