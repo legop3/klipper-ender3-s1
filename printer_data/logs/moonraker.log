@@ -469,3 +469,92 @@ Traceback (most recent call last):
     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
 socket.gaierror: [Errno -3] Temporary failure in name resolution
 2024-04-15 13:29:08,281 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 3070.57 seconds, total blocked count: 140
+2024-04-15 13:36:27,380 [proc_stats.py:log_last_stats()] - 
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+2024-04-15 13:58:20,626 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 1837.65 seconds, total blocked count: 141
+2024-04-15 14:00:49,071 [proc_stats.py:log_last_stats()] - 
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+System Time: 1713203624.948665, Usage: 0.24%, Memory: 22860 kB
+2024-04-15 14:14:52,933 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 977.93 seconds, total blocked count: 142
+2024-04-15 14:19:06,774 [proc_stats.py:log_last_stats()] - 
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+System Time: 1713203624.948665, Usage: 0.24%, Memory: 22860 kB
+2024-04-15 14:33:44,791 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2024-04-15 14:41:25,774 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b641700d0>, <Task finished name='Task-26995934' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 15:01:14,734 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2786.52 seconds, total blocked count: 143
+2024-04-15 15:03:45,046 [proc_stats.py:log_last_stats()] - 
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+System Time: 1713203624.948665, Usage: 0.24%, Memory: 22860 kB
+2024-04-15 15:03:46,065 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 169.91 seconds, total blocked count: 144
+2024-04-15 15:03:46,065 [proc_stats.py:log_last_stats()] - 
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+System Time: 1713203624.948665, Usage: 0.24%, Memory: 22860 kB
+System Time: 1713207825.593708, Usage: 0.57%, Memory: 22804 kB
+2024-04-15 15:03:46,266 [proc_stats.py:log_last_stats()] - 
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+System Time: 1713198506.065054, Usage: 0.22%, Memory: 22808 kB
+System Time: 1713203624.948665, Usage: 0.24%, Memory: 22860 kB
+System Time: 1713207825.593708, Usage: 0.57%, Memory: 22804 kB
+System Time: 1713207826.076195, Usage: 3.24%, Memory: 27132 kB
+2024-04-15 15:03:51,568 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-04-15 15:03:54,400 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2024-04-15 15:03:55,051 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2024-04-15 15:03:55,557 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-04-15 15:03:57,573 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-04-15 15:04:04,074 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-04-15 15:04:04,074 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2024-04-15 15:05:58,773 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2024-04-15 15:06:11,426 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2024-04-15 15:06:23,460 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
