@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Apr 12 18:39:44 2024 --------------------
+-------------------- Log Start | Mon Apr 15 04:37:01 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,37 +189,198 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-04-12 14:39:44,647 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-04-12 14:39:44,654 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1712947155.079868, Usage: 0.59%, Memory: 51204 kB
-System Time: 1712947156.080053, Usage: 0.59%, Memory: 51204 kB
-System Time: 1712947157.082260, Usage: 0.63%, Memory: 51204 kB
-System Time: 1712947158.083512, Usage: 0.72%, Memory: 51204 kB
-System Time: 1712947159.083775, Usage: 0.67%, Memory: 51204 kB
-System Time: 1712947160.084077, Usage: 0.95%, Memory: 51204 kB
-System Time: 1712947161.084445, Usage: 0.63%, Memory: 51204 kB
-System Time: 1712947162.084609, Usage: 0.67%, Memory: 51204 kB
-System Time: 1712947163.084709, Usage: 0.5%, Memory: 51204 kB
-System Time: 1712947164.084702, Usage: 0.53%, Memory: 51204 kB
-System Time: 1712947165.085890, Usage: 0.53%, Memory: 51204 kB
-System Time: 1712947166.086952, Usage: 0.59%, Memory: 51204 kB
-System Time: 1712947167.088159, Usage: 0.51%, Memory: 51204 kB
-System Time: 1712947168.089275, Usage: 0.52%, Memory: 51204 kB
-System Time: 1712947169.092663, Usage: 0.56%, Memory: 51204 kB
-System Time: 1712947170.094188, Usage: 0.82%, Memory: 51204 kB
-System Time: 1712947171.094877, Usage: 0.71%, Memory: 51204 kB
-System Time: 1712947172.095847, Usage: 0.74%, Memory: 51204 kB
-System Time: 1712947173.096406, Usage: 0.56%, Memory: 51204 kB
-System Time: 1712947174.096408, Usage: 0.6%, Memory: 51204 kB
-System Time: 1712947175.098556, Usage: 0.52%, Memory: 51204 kB
-System Time: 1712947176.098826, Usage: 0.61%, Memory: 51204 kB
-System Time: 1712947177.101103, Usage: 0.52%, Memory: 51204 kB
-System Time: 1712947178.101339, Usage: 0.64%, Memory: 51204 kB
-System Time: 1712947179.101548, Usage: 0.6%, Memory: 51204 kB
-System Time: 1712947180.103083, Usage: 0.76%, Memory: 51204 kB
-System Time: 1712947181.104282, Usage: 0.87%, Memory: 51204 kB
-System Time: 1712947182.105869, Usage: 0.66%, Memory: 51204 kB
-System Time: 1712947183.108105, Usage: 0.67%, Memory: 51204 kB
-System Time: 1712947184.109211, Usage: 0.6%, Memory: 51204 kB
-CPU Temperature: 48.0
+2024-04-15 00:20:20,274 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 3184.13 seconds, total blocked count: 122
+2024-04-15 00:30:03,414 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151166.300629, Usage: 0.4%, Memory: 26344 kB
+System Time: 1713151205.509481, Usage: 0.46%, Memory: 26308 kB
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+2024-04-15 00:44:16,331 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b64170af0>, <Task finished name='Task-26995408' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 01:44:40,120 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5093.2 seconds, total blocked count: 123
+2024-04-15 01:47:46,237 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151205.509481, Usage: 0.46%, Memory: 26308 kB
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+2024-04-15 02:12:44,680 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 1645.34 seconds, total blocked count: 124
+2024-04-15 02:21:04,706 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151205.509481, Usage: 0.46%, Memory: 26308 kB
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+2024-04-15 02:46:59,009 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2024-04-15 02:54:15,078 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b64170700>, <Task finished name='Task-26995485' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 03:20:13,003 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4089.54 seconds, total blocked count: 125
+2024-04-15 03:27:51,165 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151205.509481, Usage: 0.46%, Memory: 26308 kB
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+2024-04-15 03:59:10,897 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2333.16 seconds, total blocked count: 126
+2024-04-15 04:06:08,207 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+2024-04-15 04:56:52,035 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 3469.17 seconds, total blocked count: 127
+2024-04-15 05:01:12,416 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151244.150433, Usage: 0.37%, Memory: 25328 kB
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+2024-04-15 05:16:43,341 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2024-04-15 05:22:27,655 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b64170b80>, <Task finished name='Task-26995580' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 05:49:06,401 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 3128.86 seconds, total blocked count: 128
+2024-04-15 05:54:39,341 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+2024-04-15 06:37:57,473 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2909.35 seconds, total blocked count: 129
+2024-04-15 06:47:39,263 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151270.983412, Usage: 0.53%, Memory: 25328 kB
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+2024-04-15 07:14:44,479 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2231.79 seconds, total blocked count: 130
+2024-04-15 07:18:53,012 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+2024-04-15 07:28:15,678 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2024-04-15 07:37:30,013 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b659b05e0>, <Task finished name='Task-26995651' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 07:57:06,277 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2545.08 seconds, total blocked count: 131
+2024-04-15 08:01:00,205 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+2024-04-15 08:20:13,296 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 1377.04 seconds, total blocked count: 132
+2024-04-15 08:25:20,071 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+2024-04-15 08:46:41,781 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 1592.98 seconds, total blocked count: 133
+2024-04-15 08:51:08,742 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB
+2024-04-15 08:58:57,498 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2024-04-15 09:06:39,585 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': 
+2024-04-15 09:10:12,259 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f9b641705e0>, <Task finished name='Task-26995713' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=gaierror(-3, 'Temporary failure in name resolution')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 269, in connect
+    addrinfo = await self.resolver.resolve(host, port, af)
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/netutil.py", line 433, in resolve
+    for fam, _, _, _, address in await asyncio.get_running_loop().getaddrinfo(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2024-04-15 09:32:50,101 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 2698.33 seconds, total blocked count: 134
+2024-04-15 09:41:50,033 [proc_stats.py:log_last_stats()] - 
+System Time: 1713151465.871197, Usage: 0.31%, Memory: 23556 kB
+System Time: 1713159751.401300, Usage: 0.22%, Memory: 23044 kB
+System Time: 1713166481.745141, Usage: 0.21%, Memory: 24628 kB
+System Time: 1713173027.270582, Usage: 0.21%, Memory: 22792 kB
+System Time: 1713178853.299887, Usage: 0.23%, Memory: 22816 kB

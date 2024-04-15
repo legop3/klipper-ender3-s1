@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Apr  9 05:08:56 2024 --------------------
+-------------------- Log Start | Fri Apr 12 18:39:44 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,36 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-04-09 01:08:56,788 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305375946608
-2024-04-09 01:09:01,785 [websockets.py:on_close()] - Websocket Closed: ID: 140305375946608 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
-2024-04-09 01:10:43,911 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
-2024-04-09 01:10:43,912 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 1.30ms
-2024-04-09 01:10:43,912 [websockets.py:open()] - Websocket Opened: ID: 140305375938400, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-09 01:10:43,920 [websockets.py:_handle_identify()] - Websocket 140305375938400 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-09 02:11:56,251 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
-2024-04-09 11:39:34,029 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305375938400
-2024-04-09 11:39:38,915 [websockets.py:on_close()] - Websocket Closed: ID: 140305375938400 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
-2024-04-09 11:42:35,978 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
-2024-04-09 11:42:35,978 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 0.95ms
-2024-04-09 11:42:35,978 [websockets.py:open()] - Websocket Opened: ID: 140305402188016, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-09 11:42:35,983 [websockets.py:_handle_identify()] - Websocket 140305402188016 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-09 12:46:56,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
-2024-04-09 16:14:56,005 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305402188016
-2024-04-09 16:15:00,981 [websockets.py:on_close()] - Websocket Closed: ID: 140305402188016 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
-2024-04-09 16:17:28,841 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
-2024-04-09 16:17:28,842 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 0.85ms
-2024-04-09 16:17:28,842 [websockets.py:open()] - Websocket Opened: ID: 140305375938592, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-09 16:17:28,847 [websockets.py:_handle_identify()] - Websocket 140305375938592 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-09 17:21:56,414 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
-2024-04-09 22:18:28,898 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305375938592
-2024-04-09 22:18:33,844 [websockets.py:on_close()] - Websocket Closed: ID: 140305375938592 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
-2024-04-09 22:21:10,496 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
-2024-04-09 22:21:10,496 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 1.10ms
-2024-04-09 22:21:10,496 [websockets.py:open()] - Websocket Opened: ID: 140305375939936, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-09 22:21:10,515 [websockets.py:_handle_identify()] - Websocket 140305375939936 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-09 22:26:10,529 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305375939936
-2024-04-09 22:26:15,498 [websockets.py:on_close()] - Websocket Closed: ID: 140305375939936 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.84
-2024-04-09 22:37:28,398 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 0.64ms
-2024-04-09 22:37:28,398 [websockets.py:open()] - Websocket Opened: ID: 140305375939456, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-09 22:37:28,412 [websockets.py:_handle_identify()] - Websocket 140305375939456 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-09 23:41:56,486 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
+2024-04-12 14:39:44,647 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-04-12 14:39:44,654 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1712947155.079868, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947156.080053, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947157.082260, Usage: 0.63%, Memory: 51204 kB
+System Time: 1712947158.083512, Usage: 0.72%, Memory: 51204 kB
+System Time: 1712947159.083775, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947160.084077, Usage: 0.95%, Memory: 51204 kB
+System Time: 1712947161.084445, Usage: 0.63%, Memory: 51204 kB
+System Time: 1712947162.084609, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947163.084709, Usage: 0.5%, Memory: 51204 kB
+System Time: 1712947164.084702, Usage: 0.53%, Memory: 51204 kB
+System Time: 1712947165.085890, Usage: 0.53%, Memory: 51204 kB
+System Time: 1712947166.086952, Usage: 0.59%, Memory: 51204 kB
+System Time: 1712947167.088159, Usage: 0.51%, Memory: 51204 kB
+System Time: 1712947168.089275, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947169.092663, Usage: 0.56%, Memory: 51204 kB
+System Time: 1712947170.094188, Usage: 0.82%, Memory: 51204 kB
+System Time: 1712947171.094877, Usage: 0.71%, Memory: 51204 kB
+System Time: 1712947172.095847, Usage: 0.74%, Memory: 51204 kB
+System Time: 1712947173.096406, Usage: 0.56%, Memory: 51204 kB
+System Time: 1712947174.096408, Usage: 0.6%, Memory: 51204 kB
+System Time: 1712947175.098556, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947176.098826, Usage: 0.61%, Memory: 51204 kB
+System Time: 1712947177.101103, Usage: 0.52%, Memory: 51204 kB
+System Time: 1712947178.101339, Usage: 0.64%, Memory: 51204 kB
+System Time: 1712947179.101548, Usage: 0.6%, Memory: 51204 kB
+System Time: 1712947180.103083, Usage: 0.76%, Memory: 51204 kB
+System Time: 1712947181.104282, Usage: 0.87%, Memory: 51204 kB
+System Time: 1712947182.105869, Usage: 0.66%, Memory: 51204 kB
+System Time: 1712947183.108105, Usage: 0.67%, Memory: 51204 kB
+System Time: 1712947184.109211, Usage: 0.6%, Memory: 51204 kB
+CPU Temperature: 48.0
