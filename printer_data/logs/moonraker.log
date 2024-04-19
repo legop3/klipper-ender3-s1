@@ -251,3 +251,125 @@ Content-Type: multipart/form-data; boundary=------------------------d51c5f4c92fe
 2024-04-18 19:33:01,628 [websockets.py:open()] - Websocket Opened: ID: 140305427568128, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:124.0) Gecko/124.0 Firefox/124.0, Host Name: 192.168.0.40
 2024-04-18 19:33:01,667 [websockets.py:_handle_identify()] - Websocket 140305427568128 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-04-18 19:38:19,709 [websockets.py:on_close()] - Websocket Closed: ID: 140305427568128 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.03
+2024-04-18 20:01:13,548 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
+2024-04-18 20:01:13,549 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 1.29ms
+2024-04-18 20:01:13,549 [websockets.py:open()] - Websocket Opened: ID: 140305429295648, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-04-18 20:01:13,592 [websockets.py:_handle_identify()] - Websocket 140305429295648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-18 20:04:19,674 [job_state.py:_status_update()] - Job Started: Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 20:32:35,658 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-04-18 20:37:35,659 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.233
+2024-04-18 21:07:35,667 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-04-18 21:47:35,674 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
+2024-04-18 23:24:13,667 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305429295648
+2024-04-18 23:24:18,552 [websockets.py:on_close()] - Websocket Closed: ID: 140305429295648 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-18 23:24:40,650 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
+2024-04-18 23:24:40,651 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 1.39ms
+2024-04-18 23:24:40,651 [websockets.py:open()] - Websocket Opened: ID: 140305428315488, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-04-18 23:24:40,754 [websockets.py:_handle_identify()] - Websocket 140305428315488 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-18 23:32:49,671 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-04-18 23:32:49,674 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------c728aaac46b510a6
+2024-04-18 23:32:49,906 [application.py:post()] - Processing Uploaded File: Side_1_49m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 23:32:50,089 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-04-18 23:32:50,096 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-04-18 23:32:50,100 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Side_1_49m_0.24mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-04-18 23:32:50,260 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Side_1_49m_0.24mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-04-18 23:32:50,272 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 598.39ms
+2024-04-18 23:32:50,453 [job_state.py:_status_update()] - Job Started: Side_1_49m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 23:32:51,932 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-04-18 23:34:21,528 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------361205944637229778812246095032
+2024-04-18 23:34:21,537 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-18 23:34:21,541 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 13.50ms
+2024-04-18 23:35:27,468 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=---------------------------299585024242768720083359628039
+2024-04-18 23:35:27,473 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-18 23:35:27,475 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 7.32ms
+2024-04-18 23:35:32,165 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-04-18 23:35:32,173 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1713497703.030036, Usage: 0.86%, Memory: 36608 kB
+System Time: 1713497704.030216, Usage: 0.81%, Memory: 36608 kB
+System Time: 1713497705.031097, Usage: 1.06%, Memory: 36608 kB
+System Time: 1713497706.032101, Usage: 0.79%, Memory: 36608 kB
+System Time: 1713497707.034111, Usage: 1.09%, Memory: 36608 kB
+System Time: 1713497708.034934, Usage: 1.1%, Memory: 36608 kB
+System Time: 1713497709.036794, Usage: 1.03%, Memory: 36608 kB
+System Time: 1713497710.036797, Usage: 0.91%, Memory: 36608 kB
+System Time: 1713497711.035369, Usage: 0.86%, Memory: 36608 kB
+System Time: 1713497712.038816, Usage: 1.14%, Memory: 36608 kB
+System Time: 1713497713.038565, Usage: 1.02%, Memory: 36608 kB
+System Time: 1713497714.040322, Usage: 1.94%, Memory: 36608 kB
+System Time: 1713497715.041878, Usage: 0.89%, Memory: 36608 kB
+System Time: 1713497716.043719, Usage: 0.94%, Memory: 36608 kB
+System Time: 1713497717.044790, Usage: 1.03%, Memory: 36608 kB
+System Time: 1713497718.045299, Usage: 1.16%, Memory: 36608 kB
+System Time: 1713497719.044649, Usage: 1.03%, Memory: 36608 kB
+System Time: 1713497720.043649, Usage: 0.9%, Memory: 36608 kB
+System Time: 1713497721.045873, Usage: 0.89%, Memory: 36608 kB
+System Time: 1713497722.044974, Usage: 1.16%, Memory: 36608 kB
+System Time: 1713497723.047337, Usage: 1.04%, Memory: 36608 kB
+System Time: 1713497724.047133, Usage: 1.21%, Memory: 36608 kB
+System Time: 1713497725.048127, Usage: 0.8%, Memory: 36608 kB
+System Time: 1713497726.049089, Usage: 0.77%, Memory: 36608 kB
+System Time: 1713497727.051967, Usage: 0.74%, Memory: 36608 kB
+System Time: 1713497728.051821, Usage: 2.28%, Memory: 36612 kB
+System Time: 1713497729.052652, Usage: 0.73%, Memory: 36612 kB
+System Time: 1713497730.053636, Usage: 0.91%, Memory: 36612 kB
+System Time: 1713497731.052592, Usage: 0.76%, Memory: 36612 kB
+System Time: 1713497732.056832, Usage: 1.19%, Memory: 36612 kB
+CPU Temperature: 48.0
+2024-04-18 23:35:38,917 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:35:58,911 [power.py:set_power()] - Power Toggle Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 943, in set_power
+    res = await self._send_tplink_command(state)
+RuntimeError: coroutine ignored GeneratorExit
+2024-04-18 23:35:58,912 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: machine.device_power.on, Code: 400, Message: Error Toggling Device Power: printer_plug
+2024-04-18 23:35:58,944 [base_events.py:default_exception_handler()] - Task was destroyed but it is pending!
+task: <Task pending name='Task-32018078' coro=<EventLoop.register_callback.<locals>._wrapper() done, defined at /home/daniel/moonraker/moonraker/eventloop.py:80> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-04-18 23:36:04,503 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:27,516 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:34,773 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:38,919 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-04-18 23:36:41,942 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:45,888 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:47,490 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:48,719 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:49,307 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:49,571 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:49,810 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:50,076 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:50,320 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:50,589 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:50,845 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:51,090 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:36:51,390 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:01,327 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:04,504 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-04-18 23:37:06,389 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:08,412 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:09,544 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:17,187 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:17,668 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:17,889 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:18,112 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:18,311 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:18,519 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:18,703 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:18,903 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-04-18 23:37:23,171 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-18 23:37:23,174 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2024-04-18 23:37:23,174 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2024-04-18 23:37:23,174 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2024-04-18 23:37:23,177 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2024-04-18 23:37:24,433 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-18 23:37:26,888 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-18 23:37:26,889 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-18 23:37:27,139 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-18 23:37:27,395 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-18 23:37:28,395 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-18 23:37:39,931 [job_state.py:_status_update()] - Job Started: Side_1_49m_0.24mm_205C_PLA_ENDER3S1.gcode
