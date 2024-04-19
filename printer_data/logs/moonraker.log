@@ -194,3 +194,60 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-04-18 13:07:52,450 [websockets.py:open()] - Websocket Opened: ID: 140305428370416, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0, Host Name: localhost
 2024-04-18 13:07:52,661 [websockets.py:_handle_identify()] - Websocket 140305428370416 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-04-18 14:12:35,587 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-04-18 18:42:57,326 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-18 18:43:06,565 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-18 18:43:07,808 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['sysinit.target', 'network-online.target', 'systemd-journald.socket', 'system.slice', '-.mount', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-04-18 18:43:09,694 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-18 18:43:09,698 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-18 18:43:10,181 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-18 18:43:10,239 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-18 18:43:10,949 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-18 18:43:11,890 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-04-18 18:46:57,196 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-04-18 18:46:57,414 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------7aeb818fae46aff0
+2024-04-18 18:46:57,911 [application.py:post()] - Processing Uploaded File: Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 18:46:58,639 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-04-18 18:46:58,725 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-04-18 18:46:58,727 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-04-18 18:46:58,824 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-04-18 18:46:58,908 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1516.39ms
+2024-04-18 18:46:59,158 [job_state.py:_status_update()] - Job Started: Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 19:23:57,276 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.233
+2024-04-18 19:23:57,277 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 1.91ms
+2024-04-18 19:23:57,278 [websockets.py:open()] - Websocket Opened: ID: 140305427573840, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:124.0) Gecko/124.0 Firefox/124.0, Host Name: 192.168.0.40
+2024-04-18 19:23:57,322 [websockets.py:_handle_identify()] - Websocket 140305427573840 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-18 19:26:02,080 [websockets.py:on_close()] - Websocket Closed: ID: 140305427573840 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.61
+2024-04-18 19:30:11,480 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------d51c5f4c92febf00
+2024-04-18 19:30:11,527 [application.py:post()] - Processing Uploaded File: Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 19:30:11,653 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-04-18 19:30:11,669 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-04-18 19:30:11,672 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-04-18 19:30:11,820 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-04-18 19:30:11,878 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 398.55ms
+2024-04-18 19:30:11,879 [job_state.py:_status_update()] - Job Started: Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-04-18 19:33:01,628 [application.py:log_request()] - 101 GET /websocket (192.168.0.233) [_TRUSTED_USER_] 0.73ms
+2024-04-18 19:33:01,628 [websockets.py:open()] - Websocket Opened: ID: 140305427568128, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:124.0) Gecko/124.0 Firefox/124.0, Host Name: 192.168.0.40
+2024-04-18 19:33:01,667 [websockets.py:_handle_identify()] - Websocket 140305427568128 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-18 19:38:19,709 [websockets.py:on_close()] - Websocket Closed: ID: 140305427568128 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.03
