@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Apr 19 04:37:35 2024 --------------------
+-------------------- Log Start | Sun Apr 21 20:24:41 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,49 +189,49 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-04-19 00:37:35,704 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
-2024-04-19 00:37:35,704 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2024-04-19 00:42:35,705 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2024-04-19 02:13:40,721 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305428315488
-2024-04-19 02:13:45,654 [websockets.py:on_close()] - Websocket Closed: ID: 140305428315488 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
-2024-04-19 02:14:41,477 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.239
-2024-04-19 02:14:41,478 [application.py:log_request()] - 101 GET /websocket (192.168.0.239) [_TRUSTED_USER_] 1.25ms
-2024-04-19 02:14:41,478 [websockets.py:open()] - Websocket Opened: ID: 140305401346800, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-04-19 02:14:41,490 [websockets.py:_handle_identify()] - Websocket 140305401346800 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-04-19 03:17:35,735 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.239
-2024-04-19 09:52:59,657 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-04-19 09:52:59,665 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1713534749.775696, Usage: 0.8%, Memory: 38072 kB
-System Time: 1713534750.777930, Usage: 0.8%, Memory: 38072 kB
-System Time: 1713534751.778996, Usage: 1.04%, Memory: 38072 kB
-System Time: 1713534752.781451, Usage: 0.87%, Memory: 38072 kB
-System Time: 1713534753.780208, Usage: 0.94%, Memory: 38072 kB
-System Time: 1713534754.780763, Usage: 0.95%, Memory: 38072 kB
-System Time: 1713534755.783368, Usage: 0.85%, Memory: 38072 kB
-System Time: 1713534756.783960, Usage: 0.92%, Memory: 38072 kB
-System Time: 1713534757.785203, Usage: 0.73%, Memory: 38072 kB
-System Time: 1713534758.785949, Usage: 0.74%, Memory: 38072 kB
-System Time: 1713534759.785587, Usage: 0.86%, Memory: 38072 kB
-System Time: 1713534760.787403, Usage: 0.71%, Memory: 38072 kB
-System Time: 1713534761.788185, Usage: 0.88%, Memory: 38072 kB
-System Time: 1713534762.788507, Usage: 0.92%, Memory: 38072 kB
-System Time: 1713534763.789716, Usage: 0.67%, Memory: 38072 kB
-System Time: 1713534764.790696, Usage: 0.74%, Memory: 38072 kB
-System Time: 1713534765.792048, Usage: 0.84%, Memory: 38072 kB
-System Time: 1713534766.794019, Usage: 0.92%, Memory: 38072 kB
-System Time: 1713534767.793102, Usage: 0.92%, Memory: 38072 kB
-System Time: 1713534768.793805, Usage: 0.83%, Memory: 38072 kB
-System Time: 1713534769.795507, Usage: 0.7%, Memory: 38072 kB
-System Time: 1713534770.795067, Usage: 0.65%, Memory: 38072 kB
-System Time: 1713534771.795438, Usage: 0.77%, Memory: 38072 kB
-System Time: 1713534772.797577, Usage: 0.77%, Memory: 38072 kB
-System Time: 1713534773.797940, Usage: 0.69%, Memory: 38072 kB
-System Time: 1713534774.798565, Usage: 0.98%, Memory: 38072 kB
-System Time: 1713534775.799257, Usage: 0.97%, Memory: 38072 kB
-System Time: 1713534776.800941, Usage: 1.04%, Memory: 38072 kB
-System Time: 1713534777.803704, Usage: 0.88%, Memory: 38072 kB
-System Time: 1713534778.804216, Usage: 0.89%, Memory: 38072 kB
-CPU Temperature: 44.0
-2024-04-19 21:40:11,690 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305401346800
-2024-04-19 21:40:15,832 [websockets.py:on_close()] - Websocket Closed: ID: 140305401346800 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.01
+2024-04-21 16:24:41,902 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-21 16:24:43,159 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-21 16:24:43,202 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['network-online.target', 'sysinit.target', 'system.slice', '-.mount', 'basic.target', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-04-21 16:24:45,218 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-21 16:24:45,219 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-21 16:24:45,469 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-21 16:24:45,727 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-21 16:24:46,224 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-21 16:25:47,218 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.15 seconds, total blocked count: 145
+2024-04-21 16:25:47,553 [proc_stats.py:log_last_stats()] - 
+System Time: 1713731136.812980, Usage: 0.72%, Memory: 40324 kB
+System Time: 1713731137.814899, Usage: 0.66%, Memory: 40324 kB
+System Time: 1713731138.815503, Usage: 1.18%, Memory: 40324 kB
+System Time: 1713731147.218680, Usage: 1.27%, Memory: 48612 kB
+System Time: 1713731147.234918, Usage: 1.82%, Memory: 48624 kB
+2024-04-21 16:27:19,085 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-04-21 16:27:19,090 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------4434debb39e860df
+2024-04-21 16:27:19,221 [application.py:post()] - Processing Uploaded File: GARMIN-4PIN-RS232_19m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-04-21 16:27:19,362 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-04-21 16:27:19,373 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-04-21 16:27:19,375 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: GARMIN-4PIN-RS232_19m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-04-21 16:27:19,572 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "GARMIN-4PIN-RS232_19m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-04-21 16:27:19,580 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 490.28ms
+2024-04-21 16:27:19,705 [job_state.py:_status_update()] - Job Started: GARMIN-4PIN-RS232_19m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-04-21 16:27:22,136 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-04-21 17:06:21,105 [job_state.py:_status_update()] - Job Started: GARMIN-4PIN-RS232_19m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-04-21 17:27:36,413 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-04-21 18:07:36,420 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
