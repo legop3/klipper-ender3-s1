@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Apr 23 04:39:50 2024 --------------------
+-------------------- Log Start | Tue May  7 19:04:24 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,37 +189,5 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-04-23 00:39:50,612 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-04-23 00:39:50,619 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1713847160.821404, Usage: 0.7%, Memory: 48700 kB
-System Time: 1713847161.819706, Usage: 0.89%, Memory: 48700 kB
-System Time: 1713847162.820027, Usage: 0.84%, Memory: 48700 kB
-System Time: 1713847163.821533, Usage: 0.49%, Memory: 48700 kB
-System Time: 1713847164.822192, Usage: 0.58%, Memory: 48700 kB
-System Time: 1713847165.822753, Usage: 0.71%, Memory: 48700 kB
-System Time: 1713847166.823371, Usage: 0.58%, Memory: 48700 kB
-System Time: 1713847167.824835, Usage: 0.62%, Memory: 48700 kB
-System Time: 1713847168.825379, Usage: 0.66%, Memory: 48700 kB
-System Time: 1713847169.825783, Usage: 0.74%, Memory: 48700 kB
-System Time: 1713847170.827237, Usage: 0.61%, Memory: 48700 kB
-System Time: 1713847171.828665, Usage: 0.52%, Memory: 48700 kB
-System Time: 1713847172.830148, Usage: 0.88%, Memory: 48700 kB
-System Time: 1713847173.830759, Usage: 0.69%, Memory: 48700 kB
-System Time: 1713847174.833730, Usage: 0.67%, Memory: 48700 kB
-System Time: 1713847175.832664, Usage: 1.0%, Memory: 48700 kB
-System Time: 1713847176.836476, Usage: 0.66%, Memory: 48700 kB
-System Time: 1713847177.834687, Usage: 0.77%, Memory: 48700 kB
-System Time: 1713847178.835244, Usage: 0.58%, Memory: 48700 kB
-System Time: 1713847179.835854, Usage: 0.54%, Memory: 48700 kB
-System Time: 1713847180.838075, Usage: 0.54%, Memory: 48700 kB
-System Time: 1713847181.838047, Usage: 0.69%, Memory: 48700 kB
-System Time: 1713847182.838559, Usage: 0.72%, Memory: 48700 kB
-System Time: 1713847183.839646, Usage: 0.63%, Memory: 48700 kB
-System Time: 1713847184.839842, Usage: 0.63%, Memory: 48700 kB
-System Time: 1713847185.841414, Usage: 0.74%, Memory: 48700 kB
-System Time: 1713847186.844064, Usage: 0.84%, Memory: 48700 kB
-System Time: 1713847187.846624, Usage: 0.6%, Memory: 48700 kB
-System Time: 1713847188.850220, Usage: 0.62%, Memory: 48700 kB
-System Time: 1713847189.850111, Usage: 1.04%, Memory: 48700 kB
-CPU Temperature: 46.0
+2024-05-07 15:04:24,261 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-05-07 15:06:14,374 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
