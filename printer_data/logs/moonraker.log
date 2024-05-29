@@ -199,3 +199,5 @@ Klipper Version: v0.12.0-111-g4f00f219
 2024-05-28 14:17:32,846 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2024-05-28 14:20:23,032 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2024-05-28 14:20:43,047 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-05-28 18:32:49,141 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-05-28 18:33:09,159 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
