@@ -1,4 +1,4 @@
--------------------- Log Start | Thu May 30 02:41:36 2024 --------------------
+-------------------- Log Start | Thu May 30 11:12:09 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,5 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-05-29 22:41:36,623 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-05-29 22:41:56,643 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-05-29 22:52:27,326 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-05-29 22:52:47,350 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-05-29 23:03:28,033 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-05-29 23:03:48,050 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-05-30 07:12:09,087 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-05-30 07:12:29,110 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
