@@ -190,3 +190,5 @@ Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
 2024-06-21 12:19:56,913 [websockets.py:on_close()] - Websocket Closed: ID: 140305428370416 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.51
+2024-06-21 20:00:48,314 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.236
+2024-06-21 20:01:58,386 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.236
