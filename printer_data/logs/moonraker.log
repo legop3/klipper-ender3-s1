@@ -394,3 +394,15 @@ Content-Type: multipart/form-data; boundary=------------------------bc40cb8b0673
 2024-07-12 15:51:46,298 [application.py:log_request()] - 101 GET /websocket (192.168.0.25) [_TRUSTED_USER_] 0.87ms
 2024-07-12 15:51:46,298 [websockets.py:open()] - Websocket Opened: ID: 140305428314816, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0, Host Name: 192.168.0.40
 2024-07-12 15:51:46,355 [websockets.py:_handle_identify()] - Websocket 140305428314816 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-07-12 16:37:12,264 [websockets.py:on_close()] - Websocket Closed: ID: 140305428314816 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.96
+2024-07-12 16:41:28,743 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-07-12 16:46:28,744 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-07-12 16:56:28,746 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.25
+2024-07-12 17:48:30,333 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-07-12 17:48:32,613 [job_state.py:_status_update()] - Job Started: Side_2_52m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-07-12 17:48:33,707 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-07-12 18:51:28,764 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-07-12 18:51:28,764 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-07-12 19:29:56,218 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-07-12 19:29:57,984 [job_state.py:_status_update()] - Job Started: Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode
+2024-07-12 19:29:59,243 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
