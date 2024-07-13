@@ -406,3 +406,5 @@ Content-Type: multipart/form-data; boundary=------------------------bc40cb8b0673
 2024-07-12 19:29:56,218 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2024-07-12 19:29:57,984 [job_state.py:_status_update()] - Job Started: Money_clip_basic_21m_0.24mm_205C_PLA_ENDER3S1.gcode
 2024-07-12 19:29:59,243 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-07-12 20:31:28,785 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-07-12 20:31:28,785 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
