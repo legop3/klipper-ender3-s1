@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Jul 25 16:37:55 2024 --------------------
+-------------------- Log Start | Thu Sep  5 20:45:47 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -17,7 +17,7 @@ git_repo_url: https://github.com/Arksine/moonraker.git
 modified_files: []
 unofficial_components: []
 log_file: /home/daniel/printer_data/logs/moonraker.log
-python_version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+python_version: 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]
 launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
 msgspec_enabled: False
 uvloop_enabled: False
@@ -100,15 +100,122 @@ install_script = tools/pkglist.sh
 All Configuration Files:
 /home/daniel/printer_data/config/moonraker.conf
 #################################################################
+2024-09-05 16:45:47,443 [confighelper.py:read_file()] - Configuration File '/home/daniel/printer_data/config/moonraker.conf' parsed, total size: 1635 B
+2024-09-05 16:45:47,443 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
 
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+2024-09-05 16:45:48,133 [server.py:load_component()] - Component (secrets) loaded
+2024-09-05 16:45:48,186 [server.py:load_component()] - Component (template) loaded
+2024-09-05 16:45:48,189 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-09-05 16:45:51,841 [server.py:load_component()] - Component (application) loaded
+2024-09-05 16:45:52,270 [server.py:load_component()] - Component (websockets) loaded
+2024-09-05 16:45:52,490 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-09-05 16:45:52,746 [server.py:add_log_rollover_item()] - 
 Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
-Unsafe Shutdown Count: 2
-
+Unsafe Shutdown Count: 3
+2024-09-05 16:45:53,005 [server.py:load_component()] - Component (database) loaded
+2024-09-05 16:45:53,199 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-09-05 16:45:53,408 [server.py:load_component()] - Component (file_manager) loaded
+2024-09-05 16:45:53,482 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-09-05 16:45:53,484 [server.py:load_component()] - Component (authorization) loaded
+2024-09-05 16:45:53,486 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-09-05 16:45:54,393 [server.py:add_log_rollover_item()] - 
 System Info:
 
 ***python***
   version: (3, 10, 12, 'final', 0)
-  version_string: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+  version_string: 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]
 
 ***cpu_info***
   cpu_count: 4
@@ -118,7 +225,7 @@ System Info:
   serial_number: 
   hardware_desc: 
   model: 
-  total_memory: 12115920
+  total_memory: 12115836
   memory_units: kB
 
 ***sd_info***
@@ -151,15 +258,40 @@ System Info:
   crowsnest
   octoeverywhere
   ratos-configurator
-Module libcamera unavailble, import failed
-
+2024-09-05 16:45:54,395 [server.py:load_component()] - Component (shell_command) loaded
+2024-09-05 16:45:54,395 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-09-05 16:45:54,399 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-09-05 16:45:54,399 [server.py:load_component()] - Component (machine) loaded
+2024-09-05 16:45:54,401 [server.py:load_component()] - Component (data_store) loaded
+2024-09-05 16:45:54,402 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2024-09-05 16:45:54,402 [server.py:load_component()] - Component (proc_stats) loaded
+2024-09-05 16:45:54,403 [server.py:load_component()] - Component (job_state) loaded
+2024-09-05 16:45:54,486 [server.py:load_component()] - Component (job_queue) loaded
+2024-09-05 16:45:54,537 [server.py:load_component()] - Component (http_client) loaded
+2024-09-05 16:45:54,540 [server.py:load_component()] - Component (announcements) loaded
+2024-09-05 16:45:54,542 [server.py:load_component()] - Component (webcam) loaded
+2024-09-05 16:45:54,544 [server.py:load_component()] - Component (extensions) loaded
+2024-09-05 16:45:54,547 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-09-05 16:45:54,558 [power.py:__init__()] - Power component loading devices: ['power printer_plug']
+2024-09-05 16:45:54,559 [server.py:load_component()] - Component (power) loaded
+2024-09-05 16:45:54,561 [server.py:load_component()] - Component (history) loaded
+2024-09-05 16:45:54,577 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/daniel/moonraker-env
+2024-09-05 16:45:54,579 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/daniel/klippy-env
+2024-09-05 16:45:54,629 [server.py:load_component()] - Component (update_manager) loaded
+2024-09-05 16:45:54,630 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-09-05 16:45:54,638 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-09-05 16:45:54,733 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-09-05 16:45:54,733 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-09-05 16:45:54,733 [machine.py:validation_init()] - Installation version in database up to date
+2024-09-05 16:45:55,841 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-09-05 16:45:56,010 [server.py:add_log_rollover_item()] - 
 Systemd unit moonraker.service:
 unit_name: moonraker.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', '-.mount', 'sysinit.target', 'network-online.target']
-**After=['-.mount', 'systemd-journald.socket', 'network-online.target', 'sysinit.target', 'basic.target', 'system.slice']
+**Requires=['network-online.target', 'system.slice', '-.mount', 'sysinit.target']
+**After=['system.slice', 'systemd-journald.socket', 'network-online.target', 'basic.target', '-.mount', 'sysinit.target']
 **SupplementaryGroups=['moonraker-admin']
 **EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
 **ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
@@ -167,7 +299,11 @@ Properties:
 **FragmentPath=/etc/systemd/system/moonraker.service
 **Description=API Server for Klipper SV1
 **User=daniel
-
+2024-09-05 16:45:56,010 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-09-05 16:45:56,010 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-09-05 16:45:56,011 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-09-05 16:45:56,012 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-09-05 16:45:56,012 [server.py:add_log_rollover_item()] - 
 Systemd unit klipper.service:
 unit_name: klipper.service
 is_default: True
@@ -182,16 +318,351 @@ Properties:
 **FragmentPath=/etc/systemd/system/klipper.service
 **Description=Klipper 3D Printer Firmware SV1
 **User=daniel
-Git Repo moonraker: No warnings detected
-Git Repo klipper: No warnings detected
-Git Repo mainsail-config: No warnings detected
-Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
-Git Repo klipper-backup: No warnings detected
-Git Repo crowsnest: No warnings detected
-Klipper Version: v0.12.0-111-g4f00f219
-2024-07-25 12:37:55,029 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
-2024-07-25 12:38:22,039 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
-2024-07-25 12:42:24,646 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-07-25 12:42:56,680 [websockets.py:write_to_socket()] - Websocket closed while writing: 140305429294016
-2024-07-25 12:43:01,625 [websockets.py:on_close()] - Websocket Closed: ID: 140305429294016 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
-2024-07-25 12:43:44,735 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2024-09-05 16:45:56,012 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2024-09-05 16:45:56,012 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-09-05 16:45:56,015 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-09-05 16:45:56,016 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2024-09-05 16:45:56,623 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-09-05 16:45:56,878 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/daniel/printer_data/comms/moonraker.sock'
+2024-09-05 16:45:56,878 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: basement
+2024-09-05 16:45:56,879 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-09-05 16:45:57,132 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-09-05 16:45:57,188 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['network-online.target', 'sysinit.target', '-.mount', 'system.slice', 'basic.target', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-09-05 16:45:57,441 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-111-g4f00f219
+2024-09-05 16:45:58,032 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 16:46:00,047 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 16:46:04,935 [base_deploy.py:log_info()] - PackageKit: Detected 60 package updates:
+alsa-ucm-conf
+apt
+apt-utils
+coreutils
+dpkg
+dpkg-dev
+firmware-sof-signed
+gir1.2-mutter-10
+gjs
+gnome-remote-desktop
+google-chrome-stable
+libapt-pkg6.0
+libdpkg-perl
+libgjs0g
+libgpgme11
+libgpgmepp6
+libldap-2.5-0
+libldap-common
+libmutter-10-0
+libpulse-mainloop-glib0
+libpulse0
+libpulsedsp
+libsmbclient
+libwbclient0
+linux-firmware
+mutter
+mutter-common
+pulseaudio
+pulseaudio-module-bluetooth
+pulseaudio-module-gsettings
+pulseaudio-utils
+python3-gpg
+python3-samba
+samba-common
+samba-common-bin
+samba-dsdb-modules
+samba-libs
+smbclient
+tcpdump
+tracker-extract
+tracker-miner-fs
+tzdata
+ubuntu-advantage-tools
+ubuntu-minimal
+ubuntu-pro-client-l10n
+ubuntu-standard
+update-notifier
+update-notifier-common
+vim-common
+vim-tiny
+xdg-desktop-portal-gnome
+xserver-common
+xserver-xephyr
+xserver-xorg-core
+xserver-xorg-legacy
+xxd
+ubuntu-pro-client
+python3-update-manager
+update-manager
+update-manager-core
+2024-09-05 16:46:05,149 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker status --porcelain -b) successfully finished
+2024-09-05 16:46:05,153 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker branch --list --no-color) successfully finished
+2024-09-05 16:46:05,158 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker remote get-url origin) successfully finished
+2024-09-05 16:46:05,410 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:05,412 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:05,913 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:05,913 [git_deploy.py:refresh_repo_state()] - Git Repo moonraker: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:05,913 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:06,073 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper status --porcelain -b) successfully finished
+2024-09-05 16:46:06,079 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper branch --list --no-color) successfully finished
+2024-09-05 16:46:06,084 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper remote get-url origin) successfully finished
+2024-09-05 16:46:06,097 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:06,099 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:06,600 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:06,600 [git_deploy.py:refresh_repo_state()] - Git Repo klipper: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:06,600 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:06,863 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config status --porcelain -b) successfully finished
+2024-09-05 16:46:06,869 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config branch --list --no-color) successfully finished
+2024-09-05 16:46:06,874 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config remote get-url origin) successfully finished
+2024-09-05 16:46:06,885 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:06,887 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:07,387 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:07,388 [git_deploy.py:refresh_repo_state()] - Git Repo mainsail-config: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:07,388 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:08,400 [base_deploy.py:log_info()] - Web Client mainsail: Github Request Error - [Errno -3] Temporary failure in name resolution
+2024-09-05 16:46:08,401 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/daniel/mainsail
+Local Version: v2.10.0
+Remote Version: v2.10.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.10.0/mainsail.zip
+Download Size: 2081565
+Content Type: application/zip
+Rollback Version: v2.10.0
+Rollback Repo: mainsail-crew/mainsail
+2024-09-05 16:46:08,981 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2024-09-05 16:46:08,988 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2024-09-05 16:46:08,994 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2024-09-05 16:46:09,005 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:09,007 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:09,508 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:09,508 [git_deploy.py:refresh_repo_state()] - Git Repo Klipper-Adaptive-Meshing-Purging: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:09,508 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:10,806 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup status --porcelain -b) successfully finished
+2024-09-05 16:46:10,812 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup branch --list --no-color) successfully finished
+2024-09-05 16:46:10,818 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup remote get-url origin) successfully finished
+2024-09-05 16:46:10,829 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:10,831 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:11,332 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:11,332 [git_deploy.py:refresh_repo_state()] - Git Repo klipper-backup: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:11,332 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:13,175 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest status --porcelain -b) successfully finished
+2024-09-05 16:46:13,183 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest branch --list --no-color) successfully finished
+2024-09-05 16:46:13,188 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest remote get-url origin) successfully finished
+2024-09-05 16:46:13,198 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest fetch origin --prune --progress) exited with return code 128
+2024-09-05 16:46:13,200 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2024-09-05 16:46:13,702 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2024-09-05 16:46:13,702 [git_deploy.py:refresh_repo_state()] - Git Repo crowsnest: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:46:13,702 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2024-09-05 16:47:20,839 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-09-05 16:47:20,840 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-09-05 16:47:20,842 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-09-05 17:15:58,041 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 17:16:00,064 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 17:45:58,041 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 17:46:00,063 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 18:15:58,043 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 18:16:00,064 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 18:45:58,044 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 18:46:00,065 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 19:15:58,045 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 19:16:00,067 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-09-05 19:45:58,048 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-09-05 19:46:00,070 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
