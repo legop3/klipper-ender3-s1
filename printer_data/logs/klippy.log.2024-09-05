@@ -1,4 +1,4 @@
-=============== Log rollover at Thu Oct 24 18:27:09 2024 ===============
+=============== Log rollover at Thu Sep  5 16:45:43 2024 ===============
 Starting Klippy...
 Args: ['/home/daniel/klipper/klippy/klippy.py', '/home/daniel/printer_data/config/printer.cfg', '-I', '/home/daniel/printer_data/comms/klippy.serial', '-l', '/home/daniel/printer_data/logs/klippy.log', '-a', '/home/daniel/printer_data/comms/klippy.sock']
 Git version: 'v0.12.0-111-g4f00f219'
@@ -6,8 +6,8 @@ Branch: master
 Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
-Python: '3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]'
-Start printer at Thu Oct 24 18:27:13 2024 (1729808833.8 63.8)
+Python: '3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]'
+Start printer at Thu Sep  5 16:45:48 2024 (1725569148.3 64.4)
 ===== Config file =====
 [exclude_object]
 
@@ -357,8 +357,8 @@ Extruder max_extrude_ratio=0.266081
 mcu 'mcu': Starting serial connect
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0'
-webhooks client 140213487711424: New connection
-webhooks client 140213487711424: Client info {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+webhooks client 140094610700032: New connection
+webhooks client 140094610700032: Client info {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0'
 mcu 'mcu': Unable to open serial port: [Errno 2] could not open port /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0'
