@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Nov 17 05:27:23 2024 --------------------
+-------------------- Log Start | Tue Nov 26 18:52:53 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,84 +189,83 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-11-17 00:27:23,918 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 00:27:25,938 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 00:57:23,918 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 00:57:25,940 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 01:27:23,921 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 01:27:25,943 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 01:57:23,922 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 01:57:25,945 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 02:27:23,923 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 02:27:25,945 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 02:57:23,925 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 02:57:25,948 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 03:27:23,923 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 03:27:25,947 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 03:57:23,927 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 03:57:25,950 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 04:27:23,927 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 04:27:25,948 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 04:57:23,930 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 04:57:25,952 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 05:27:23,932 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 05:27:25,954 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 05:57:23,934 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 05:57:25,956 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 06:27:23,936 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 06:27:25,958 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 06:57:23,934 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 06:57:25,955 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 07:27:23,937 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 07:27:25,958 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 07:57:23,937 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 07:57:25,960 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 08:27:23,940 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 08:27:25,962 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 08:57:23,940 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 08:57:25,964 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 09:27:23,941 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 09:27:25,963 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 09:57:23,944 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 09:57:25,967 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 10:27:23,944 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 10:27:25,965 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 10:57:23,946 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 10:57:25,969 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 11:27:23,948 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 11:27:25,968 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 11:57:23,949 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 11:57:25,971 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 12:27:23,951 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 12:27:25,973 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 12:57:23,951 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 12:57:25,972 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 13:27:23,955 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 13:27:25,976 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 13:57:23,955 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 13:57:25,977 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 14:27:23,956 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2024-11-17 14:27:25,978 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2024-11-17 14:35:26,216 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2024-11-17 14:34:52,164 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-11-17 14:34:52,165 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2024-11-26 13:52:53,855 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-11-26 13:52:53,856 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 2.43ms
+2024-11-26 13:52:53,856 [websockets.py:open()] - Websocket Opened: ID: 140272911639376, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0, Host Name: localhost
+2024-11-26 13:52:53,948 [websockets.py:_handle_identify()] - Websocket 140272911639376 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 13:52:58,728 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-11-26 13:52:59,984 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-11-26 13:53:00,006 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice', 'sysinit.target', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2024-11-26 13:53:25,210 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-11-26 13:53:26,465 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-11-26 13:53:28,504 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-11-26 13:53:28,505 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-11-26 13:53:28,755 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-11-26 13:53:29,009 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-11-26 13:53:29,509 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-11-26 13:54:49,651 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 240.000 220.000 14.000 [0.000]
+2024-11-26 14:06:40,859 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-11-26 14:06:40,862 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------2f15598c4409baed
+2024-11-26 14:06:40,901 [application.py:post()] - Processing Uploaded File: MG995-C_1h55m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-11-26 14:06:41,405 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-11-26 14:06:41,450 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-11-26 14:06:41,452 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: MG995-C_1h55m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-11-26 14:06:41,923 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "MG995-C_1h55m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-11-26 14:06:41,928 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1066.73ms
+2024-11-26 14:06:42,074 [job_state.py:_status_update()] - Job Started: MG995-C_1h55m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-11-26 14:23:02,210 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-11-26 14:23:02,213 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 2.49ms
+2024-11-26 14:23:02,213 [websockets.py:open()] - Websocket Opened: ID: 140272910170528, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-11-26 14:23:02,304 [websockets.py:_handle_identify()] - Websocket 140272910170528 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 14:39:22,324 [websockets.py:write_to_socket()] - Websocket closed while writing: 140272910170528
+2024-11-26 14:39:27,214 [websockets.py:on_close()] - Websocket Closed: ID: 140272910170528 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-11-26 14:57:33,094 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
+2024-11-26 14:57:33,095 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 1.94ms
+2024-11-26 14:57:33,096 [websockets.py:open()] - Websocket Opened: ID: 140272910168800, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 14:57:33,133 [websockets.py:_handle_identify()] - Websocket 140272910168800 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:06:52,840 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-11-26 15:06:52,840 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-11-26 15:10:57,827 [websockets.py:on_close()] - Websocket Closed: ID: 140272910168800 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.72
+2024-11-26 15:10:58,338 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.92ms
+2024-11-26 15:10:58,338 [websockets.py:open()] - Websocket Opened: ID: 140272910164096, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:10:58,355 [websockets.py:_handle_identify()] - Websocket 140272910164096 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:15:39,007 [websockets.py:on_close()] - Websocket Closed: ID: 140272910164096 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.61
+2024-11-26 15:17:15,657 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.80ms
+2024-11-26 15:17:15,658 [websockets.py:open()] - Websocket Opened: ID: 140272910156704, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:17:15,862 [websockets.py:_handle_identify()] - Websocket 140272910156704 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:19:19,744 [websockets.py:on_close()] - Websocket Closed: ID: 140272910156704 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.07
+2024-11-26 15:30:37,699 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.87ms
+2024-11-26 15:30:37,699 [websockets.py:open()] - Websocket Opened: ID: 140272910162896, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:30:37,824 [websockets.py:_handle_identify()] - Websocket 140272910162896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:32:42,445 [websockets.py:on_close()] - Websocket Closed: ID: 140272910162896 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.70
+2024-11-26 15:41:52,847 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-11-26 15:48:49,868 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.75ms
+2024-11-26 15:48:49,868 [websockets.py:open()] - Websocket Opened: ID: 140272910171584, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:48:49,893 [websockets.py:_handle_identify()] - Websocket 140272910171584 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:50:53,146 [websockets.py:on_close()] - Websocket Closed: ID: 140272910171584 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.16
+2024-11-26 15:52:28,806 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.62ms
+2024-11-26 15:52:28,806 [websockets.py:open()] - Websocket Opened: ID: 140272910160640, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:52:28,848 [websockets.py:_handle_identify()] - Websocket 140272910160640 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:55:07,387 [websockets.py:on_close()] - Websocket Closed: ID: 140272910160640 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.46
+2024-11-26 15:57:54,329 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 2.10ms
+2024-11-26 15:57:54,330 [websockets.py:open()] - Websocket Opened: ID: 140272910160736, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 15:57:54,337 [websockets.py:_handle_identify()] - Websocket 140272910160736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 15:58:05,892 [websockets.py:on_close()] - Websocket Closed: ID: 140272910160736 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.52
