@@ -269,3 +269,33 @@ Content-Type: multipart/form-data; boundary=------------------------2f15598c4409
 2024-11-26 15:57:54,330 [websockets.py:open()] - Websocket Opened: ID: 140272910160736, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
 2024-11-26 15:57:54,337 [websockets.py:_handle_identify()] - Websocket 140272910160736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2024-11-26 15:58:05,892 [websockets.py:on_close()] - Websocket Closed: ID: 140272910160736 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.52
+2024-11-26 16:20:38,073 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2024-11-26 16:20:38,077 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------3d8b780f4b70c081
+2024-11-26 16:20:38,103 [application.py:post()] - Processing Uploaded File: Base_H_1h30m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-11-26 16:20:38,333 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2024-11-26 16:20:38,377 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2024-11-26 16:20:38,382 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Base_H_1h30m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2024-11-26 16:20:38,789 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Base_H_1h30m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2024-11-26 16:20:38,796 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 719.00ms
+2024-11-26 16:20:38,948 [job_state.py:_status_update()] - Job Started: Base_H_1h30m_0.20mm_205C_PLA_ENDER3S1.gcode
+2024-11-26 16:20:39,229 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-11-26 16:23:35,721 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.61ms
+2024-11-26 16:23:35,721 [websockets.py:open()] - Websocket Opened: ID: 140272937968752, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 16:23:35,778 [websockets.py:_handle_identify()] - Websocket 140272937968752 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 16:51:31,452 [websockets.py:on_close()] - Websocket Closed: ID: 140272937968752 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.66
+2024-11-26 17:01:50,513 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.64ms
+2024-11-26 17:01:50,513 [websockets.py:open()] - Websocket Opened: ID: 140272937966784, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:132.0) Gecko/132.0 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 17:01:50,533 [websockets.py:_handle_identify()] - Websocket 140272937966784 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 17:21:52,866 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2024-11-26 17:21:52,866 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-11-26 17:26:52,489 [websockets.py:on_close()] - Websocket Closed: ID: 140272937966784 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.97
+2024-11-26 18:01:52,871 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
+2024-11-26 19:06:28,543 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
+2024-11-26 19:06:28,544 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 0.91ms
+2024-11-26 19:06:28,544 [websockets.py:open()] - Websocket Opened: ID: 140272937966160, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0, Host Name: 192.168.0.40
+2024-11-26 19:06:28,591 [websockets.py:_handle_identify()] - Websocket 140272937966160 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-11-26 19:36:23,260 [websockets.py:on_close()] - Websocket Closed: ID: 140272937966160 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.71
