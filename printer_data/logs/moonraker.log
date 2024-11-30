@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Nov 27 06:16:45 2024 --------------------
+-------------------- Log Start | Sat Nov 30 03:32:30 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-11-27 01:16:45,009 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-11-27 01:16:45,009 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.85ms
-2024-11-27 01:16:45,009 [websockets.py:open()] - Websocket Opened: ID: 140272937969280, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-11-27 01:16:45,052 [websockets.py:_handle_identify()] - Websocket 140272937969280 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-11-27 02:16:52,960 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2024-11-29 22:32:30,635 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-11-29 22:32:30,641 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1732937521.169791, Usage: 0.63%, Memory: 49256 kB
+System Time: 1732937522.169892, Usage: 0.85%, Memory: 49256 kB
+System Time: 1732937523.169828, Usage: 0.67%, Memory: 49256 kB
+System Time: 1732937524.171335, Usage: 0.84%, Memory: 49256 kB
+System Time: 1732937525.172854, Usage: 0.98%, Memory: 49256 kB
+System Time: 1732937526.172079, Usage: 1.01%, Memory: 49256 kB
+System Time: 1732937527.173488, Usage: 0.76%, Memory: 49256 kB
+System Time: 1732937528.176209, Usage: 0.76%, Memory: 49256 kB
+System Time: 1732937529.175030, Usage: 0.81%, Memory: 49256 kB
+System Time: 1732937530.179873, Usage: 0.63%, Memory: 49256 kB
+System Time: 1732937531.177082, Usage: 0.95%, Memory: 49256 kB
+System Time: 1732937532.178715, Usage: 0.61%, Memory: 49256 kB
+System Time: 1732937533.178422, Usage: 0.76%, Memory: 49256 kB
+System Time: 1732937534.178637, Usage: 0.85%, Memory: 49256 kB
+System Time: 1732937535.180110, Usage: 0.84%, Memory: 49256 kB
+System Time: 1732937536.181164, Usage: 0.57%, Memory: 49256 kB
+System Time: 1732937537.181308, Usage: 0.71%, Memory: 49256 kB
+System Time: 1732937538.181847, Usage: 0.65%, Memory: 49256 kB
+System Time: 1732937539.182498, Usage: 0.71%, Memory: 49256 kB
+System Time: 1732937540.184102, Usage: 0.7%, Memory: 49256 kB
+System Time: 1732937541.184659, Usage: 0.71%, Memory: 49256 kB
+System Time: 1732937542.187188, Usage: 0.61%, Memory: 49256 kB
+System Time: 1732937543.185840, Usage: 0.77%, Memory: 49256 kB
+System Time: 1732937544.189316, Usage: 0.75%, Memory: 49256 kB
+System Time: 1732937545.187427, Usage: 0.92%, Memory: 49256 kB
+System Time: 1732937546.189062, Usage: 0.69%, Memory: 49256 kB
+System Time: 1732937547.189070, Usage: 1.01%, Memory: 49256 kB
+System Time: 1732937548.189519, Usage: 0.62%, Memory: 49256 kB
+System Time: 1732937549.191114, Usage: 0.69%, Memory: 49256 kB
+System Time: 1732937550.190352, Usage: 0.83%, Memory: 49256 kB
+CPU Temperature: 51.0
