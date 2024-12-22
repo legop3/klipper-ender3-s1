@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Dec  9 07:02:38 2024 --------------------
+-------------------- Log Start | Sun Dec 22 20:04:08 2024 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,49 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-12-09 02:02:38,244 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-12-09 02:02:54,736 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2024-12-09 02:03:15,198 [websockets.py:write_to_socket()] - Websocket closed while writing: 140272937969280
-2024-12-09 02:03:20,011 [websockets.py:on_close()] - Websocket Closed: ID: 140272937969280 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
-2024-12-09 02:03:38,269 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2024-12-09 02:03:42,823 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2024-12-22 15:04:08,785 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2024-12-22 15:04:08,796 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 11.78ms
+2024-12-22 15:04:08,796 [websockets.py:open()] - Websocket Opened: ID: 140272937971392, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2024-12-22 15:04:08,819 [websockets.py:_handle_identify()] - Websocket 140272937971392 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
