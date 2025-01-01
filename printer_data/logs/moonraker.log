@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Dec 22 20:04:08 2024 --------------------
+-------------------- Log Start | Wed Jan  1 07:04:49 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,10 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2024-12-22 15:04:08,785 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2024-12-22 15:04:08,796 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 11.78ms
-2024-12-22 15:04:08,796 [websockets.py:open()] - Websocket Opened: ID: 140272937971392, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2024-12-22 15:04:08,819 [websockets.py:_handle_identify()] - Websocket 140272937971392 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2024-12-22 16:06:59,479 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2025-01-01 02:04:49,782 [websockets.py:write_to_socket()] - Websocket closed while writing: 140272937971392
+2025-01-01 02:04:53,799 [websockets.py:on_close()] - Websocket Closed: ID: 140272937971392 Close Code: None, Close Reason: None, Pong Time Elapsed: 43.28
+2025-01-01 02:05:15,103 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2025-01-01 02:05:15,104 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.94ms
+2025-01-01 02:05:15,104 [websockets.py:open()] - Websocket Opened: ID: 140272937970768, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2025-01-01 02:05:15,110 [websockets.py:_handle_identify()] - Websocket 140272937970768 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-01-01 03:07:01,986 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
