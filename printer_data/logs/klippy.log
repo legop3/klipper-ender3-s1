@@ -8809,3 +8809,678 @@ Stats 6775931.7: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000013 mcu_task_
 Stats 6775932.7: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000013 mcu_task_stddev=0.000008 bytes_write=9697457 bytes_read=1863982 bytes_retransmit=9 bytes_invalid=0 send_seq=179445 receive_seq=179445 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999004 heater_bed: target=0 temp=37.0 pwm=0.000  sysload=0.02 cputime=11752.338 memavail=2246768 print_time=8515.127 buffer_time=0.000 print_stall=0 extruder: target=0 temp=36.0 pwm=0.000
 Stats 6775933.7: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000013 mcu_task_stddev=0.000008 bytes_write=9697463 bytes_read=1864103 bytes_retransmit=9 bytes_invalid=0 send_seq=179446 receive_seq=179446 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999004 heater_bed: target=0 temp=36.9 pwm=0.000  sysload=0.02 cputime=11752.342 memavail=2246660 print_time=8515.127 buffer_time=0.000 print_stall=0 extruder: target=0 temp=35.9 pwm=0.000
 Stats 6775934.7: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000013 mcu_task_stddev=0.000008 bytes_write=9697469 bytes_read=1864222 bytes_retransmit=9 bytes_invalid=0 send_seq=179447 receive_seq=179447 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999004 heater_bed: target=0 temp=36.9 pwm=0.000  sysload=0.02 cputime=11752.345 memavail=2244240 print_time=8515.127 buffer_time=0.000 print_stall=0 extruder: target=0 temp=35.9 pwm=0.000
+Resetting prediction variance 6785071.280: freq=71999141 diff=249637 stddev=998.234
+Resetting prediction variance 6785107.983: freq=71999253 diff=1232716 stddev=72000.000
+Timeout with MCU 'mcu' (eventtime=6785415.409242)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140213481392736
+Received 6767364.401877: b'{"id": 140272937962320, "method": "register_remote_method", "params": {"response_template": {"method": "reboot_machine"}, "remote_method": "reboot_machine"}}'
+Received 6767364.402339: b'{"id": 140272937962320, "method": "register_remote_method", "params": {"response_template": {"method": "pause_job_queue"}, "remote_method": "pause_job_queue"}}'
+Received 6767364.402792: b'{"id": 140272937962320, "method": "register_remote_method", "params": {"response_template": {"method": "start_job_queue"}, "remote_method": "start_job_queue"}}'
+Received 6767364.403200: b'{"id": 140272937962320, "method": "register_remote_method", "params": {"response_template": {"method": "set_device_power"}, "remote_method": "set_device_power"}}'
+Received 6767364.404426: b'{"id": 140272910163376, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 6767364.404594: b'{"id": 140272910161648, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 6767364.406241: b'{"id": 140272910156224, "method": "info", "params": {}}'
+Received 6767364.408981: b'{"id": 140272910159008, "method": "objects/list", "params": {}}'
+Received 6767364.408981: b'{"id": 140272910155936, "method": "gcode/help", "params": {}}'
+Received 6767364.413317: b'{"id": 140272910169568, "method": "info", "params": {}}'
+Received 6767364.413317: b'{"id": 140272910160832, "method": "objects/list", "params": {}}'
+Received 6767364.413769: b'{"id": 140272910163040, "method": "gcode/help", "params": {}}'
+Received 6767364.446326: b'{"id": 140272910169856, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 6767364.653674: b'{"id": 140272937972640, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 6767364.905471: b'{"id": 140272937971824, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null, "gcode": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null}, "response_template": {"method": "process_status_update"}}}'
+Received 6767365.155367: b'{"id": 140272937973552, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null, "gcode": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null}, "response_template": {"method": "process_status_update"}}}'
+Received 6767365.615831: b'{"id": 140272937961120, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 6767366.123487: b'{"id": 140272937975424, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 6767368.753235: b'{"id": 140272937974464, "method": "gcode/script", "params": {"script": "G28"}}'
+Received 6767848.676877: b'{"id": 140272937975664, "method": "gcode/script", "params": {"script": "SDCARD_PRINT_FILE FILENAME=\\"MG995-C_1h55m_0.20mm_205C_PLA_ENDER3S1.gcode\\""}}'
+gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, 0.0, 6402.894259999874] last_position=[5.0, 187.0, 162.0, 6423.28043999988] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=10.0
+Reactor garbage collection: (6767852.91477825, 0.0, 0.0)
+MCU 'mcu' shutdown: Command request
+clocksync state: mcu_freq=72000000 last_clock=1300026255067 clock_est=(6784978.516 1268549572910 71999265.558) min_half_rtt=0.000162 min_rtt_time=6773541.028 time_avg=6784978.516(44196.843) clock_avg=1268549572910.184(3182140260779.558) pred_variance=10448583330.506
+Dumping serial stats: bytes_write=9749189 bytes_read=3561185 bytes_retransmit=51 bytes_invalid=0 send_seq=188067 receive_seq=188067 retransmit_seq=188064 srtt=2.208 rttvar=3.467 rto=5.000 ready_bytes=0 upcoming_bytes=0
+Dumping send queue 100 messages
+Sent 0 6784702.105780 6784702.105540 6: seq: 13, get_clock
+Sent 1 6784705.632656 6784705.632416 6: seq: 14, get_clock
+Sent 2 6784706.626146 6784706.625906 6: seq: 15, get_clock
+Sent 3 6784711.119573 6784711.119333 6: seq: 16, get_clock
+Sent 4 6784721.719793 6784721.719553 6: seq: 17, get_clock
+Sent 5 6784724.636905 6784724.636665 6: seq: 18, get_clock
+Sent 6 6784725.939200 6784725.938960 6: seq: 19, get_clock
+Sent 7 6784727.170908 6784727.170668 6: seq: 1a, get_clock
+Sent 8 6784731.366220 6784731.365980 6: seq: 1b, get_clock
+Sent 9 6784732.563847 6784732.563607 6: seq: 1c, get_clock
+Sent 10 6784733.526312 6784733.526072 6: seq: 1d, get_clock
+Sent 11 6784735.912218 6784735.911978 6: seq: 1e, get_clock
+Sent 12 6784738.642427 6784738.642187 6: seq: 1f, get_clock
+Sent 13 6784747.504235 6784747.503995 6: seq: 10, get_clock
+Sent 14 6784748.598540 6784748.598300 6: seq: 11, get_clock
+Sent 15 6784749.541628 6784749.541388 6: seq: 12, get_clock
+Sent 16 6784750.986599 6784750.986359 6: seq: 13, get_clock
+Sent 17 6784757.631646 6784757.631406 6: seq: 14, get_clock
+Sent 18 6784762.037524 6784762.037284 6: seq: 15, get_clock
+Sent 19 6784766.515174 6784766.514934 6: seq: 16, get_clock
+Sent 20 6784767.655570 6784767.655330 6: seq: 17, get_clock
+Sent 21 6784771.338627 6784771.338387 6: seq: 18, get_clock
+Sent 22 6784774.544327 6784774.544087 6: seq: 19, get_clock
+Sent 23 6784781.163522 6784781.163282 6: seq: 1a, get_clock
+Sent 24 6784785.891256 6784785.891016 6: seq: 1b, get_clock
+Sent 25 6784786.878764 6784786.878524 6: seq: 1c, get_clock
+Sent 26 6784787.864037 6784787.863797 6: seq: 1d, get_clock
+Sent 27 6784789.749105 6784789.748865 6: seq: 1e, get_clock
+Sent 28 6784792.584453 6784792.584213 6: seq: 1f, get_clock
+Sent 29 6784793.980295 6784793.980055 6: seq: 10, get_clock
+Sent 30 6784795.837132 6784795.836892 6: seq: 11, get_clock
+Sent 31 6784796.838191 6784796.837951 6: seq: 12, get_clock
+Sent 32 6784800.263996 6784800.263756 6: seq: 13, get_clock
+Sent 33 6784801.194394 6784801.194154 6: seq: 14, get_clock
+Sent 34 6784802.178941 6784802.178701 6: seq: 15, get_clock
+Sent 35 6784804.028606 6784804.028366 6: seq: 16, get_clock
+Sent 36 6784805.044194 6784805.043954 6: seq: 17, get_clock
+Sent 37 6784806.627109 6784806.626869 6: seq: 18, get_clock
+Sent 38 6784808.622507 6784808.622267 6: seq: 19, get_clock
+Sent 39 6784810.087094 6784810.086854 6: seq: 1a, get_clock
+Sent 40 6784812.619507 6784812.619267 6: seq: 1b, get_clock
+Sent 41 6784813.888284 6784813.888044 6: seq: 1c, get_clock
+Sent 42 6784817.572418 6784817.572178 6: seq: 1d, get_clock
+Sent 43 6784818.605641 6784818.605401 6: seq: 1e, get_clock
+Sent 44 6784821.034808 6784821.034568 6: seq: 1f, get_clock
+Sent 45 6784822.050284 6784822.050044 6: seq: 10, get_clock
+Sent 46 6784823.396882 6784823.396642 6: seq: 11, get_clock
+Sent 47 6784831.039084 6784831.038844 6: seq: 12, get_clock
+Sent 48 6784833.452622 6784833.452382 6: seq: 13, get_clock
+Sent 49 6784835.307300 6784835.307060 6: seq: 14, get_clock
+Sent 50 6784842.993147 6784842.992907 6: seq: 15, get_clock
+Sent 51 6784849.878780 6784849.878540 6: seq: 16, get_clock
+Sent 52 6784851.688750 6784851.688510 6: seq: 17, get_clock
+Sent 53 6784853.565102 6784853.564862 6: seq: 18, get_clock
+Sent 54 6784869.282943 6784869.282703 6: seq: 19, get_clock
+Sent 55 6784870.343289 6784870.343049 6: seq: 1a, get_clock
+Sent 56 6784871.685781 6784871.685541 6: seq: 1b, get_clock
+Sent 57 6784872.877782 6784872.877542 6: seq: 1c, get_clock
+Sent 58 6784878.099865 6784878.099625 6: seq: 1d, get_clock
+Sent 59 6784879.886809 6784879.886569 6: seq: 1e, get_clock
+Sent 60 6784880.885201 6784880.884961 6: seq: 1f, get_clock
+Sent 61 6784882.713357 6784882.713117 6: seq: 10, get_clock
+Sent 62 6784887.887189 6784887.886949 6: seq: 11, get_clock
+Sent 63 6784888.898735 6784888.898495 6: seq: 12, get_clock
+Sent 64 6784891.504312 6784891.504072 6: seq: 13, get_clock
+Sent 65 6784895.946568 6784895.946328 6: seq: 14, get_clock
+Sent 66 6784897.399324 6784897.399084 6: seq: 15, get_clock
+Sent 67 6784898.526482 6784898.526242 6: seq: 16, get_clock
+Sent 68 6784905.921348 6784905.921108 6: seq: 17, get_clock
+Sent 69 6784916.565969 6784916.565729 6: seq: 18, get_clock
+Sent 70 6784925.899308 6784925.899068 6: seq: 19, get_clock
+Sent 71 6784954.176946 6784954.176706 6: seq: 1a, get_clock
+Sent 72 6784957.432051 6784957.431811 6: seq: 1b, get_clock
+Sent 73 6784992.989835 6784992.989595 6: seq: 1c, get_clock
+Sent 74 6785001.389653 6785001.389413 6: seq: 1d, get_clock
+Sent 75 6785005.709233 6785005.708993 6: seq: 1e, get_clock
+Sent 76 6785010.472455 6785010.472215 6: seq: 1f, get_clock
+Sent 77 6785011.526470 6785011.526230 6: seq: 10, get_clock
+Sent 78 6785015.522013 6785015.521773 6: seq: 11, get_clock
+Sent 79 6785033.871880 6785033.871640 6: seq: 12, get_clock
+Sent 80 6785071.280341 6785071.280101 6: seq: 13, get_clock
+Sent 81 6785107.983172 6785107.982932 6: seq: 14, get_clock
+Sent 82 6785156.366935 6785156.366695 6: seq: 15, get_clock
+Sent 83 6785193.839061 6785193.838821 6: seq: 16, get_clock
+Sent 84 6785242.764900 6785242.764660 6: seq: 17, get_clock
+Sent 85 6785261.937873 6785261.937633 6: seq: 18, get_clock
+Sent 86 6785296.168938 6785296.168698 6: seq: 19, get_clock
+Sent 87 6785339.508782 6785339.508542 6: seq: 1a, get_clock
+Sent 88 6785369.904135 6785369.903895 6: seq: 1b, get_clock
+Sent 89 6785415.697412 6785415.697172 6: seq: 1c, get_clock
+Sent 90 6785816.144469 6785816.144229 6: seq: 1d, emergency_stop
+Sent 91 6786974.633068 6786974.632828 6: seq: 1e, get_clock
+Sent 92 6788269.655159 6788269.654919 6: seq: 1f, get_clock
+Sent 93 6789619.888341 6789619.888101 6: seq: 10, get_clock
+Sent 94 6790751.753999 6790751.753759 6: seq: 11, get_clock
+Sent 95 6791198.701270 6791198.701030 6: seq: 12, get_clock
+Sent 96 6791217.556181 6791217.555941 6: seq: 13, get_clock
+Sent 97 6791272.052820 6791272.052580 6: seq: 14, get_clock
+Sent 98 6791310.274674 6791310.274434 6: seq: 15, get_clock
+Sent 99 6791311.517312 6791311.517072 6: seq: 16, get_clock
+Dumping receive queue 100 messages
+Receive: 0 6785816.143686 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=707905536 value=31524
+Receive: 1 6785816.143686 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=712945536 value=31504
+Receive: 2 6785816.143687 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=729505536 value=31526
+Receive: 3 6785816.143687 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=734545536 value=31504
+Receive: 4 6785816.143687 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=751105536 value=31526
+Receive: 5 6785816.143688 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=756145536 value=31505
+Receive: 6 6785816.143688 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=772705536 value=31530
+Receive: 7 6785816.143688 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=777745536 value=31507
+Receive: 8 6785816.143769 6785415.697412 13: seq: 1d, stats count=85 sum=79514 sumsq=399429
+Receive: 9 6785816.143689 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=794305536 value=31529
+Receive: 10 6785816.143689 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=799345536 value=31504
+Receive: 11 6785816.143689 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=815905536 value=31527
+Receive: 12 6785816.143690 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=820945536 value=31506
+Receive: 13 6785816.143690 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=837505536 value=31527
+Receive: 14 6785816.143690 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=842545536 value=31506
+Receive: 15 6785816.143690 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=859105536 value=31529
+Receive: 16 6785816.143691 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=864145536 value=31508
+Receive: 17 6785816.143691 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=880705536 value=31526
+Receive: 18 6785816.143691 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=885745536 value=31505
+Receive: 19 6785816.143692 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=902305536 value=31530
+Receive: 20 6785816.143692 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=907345536 value=31508
+Receive: 21 6785816.143692 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=923905536 value=31528
+Receive: 22 6785816.143692 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=928945536 value=31507
+Receive: 23 6785816.143693 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=945505536 value=31527
+Receive: 24 6785816.143693 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=950545536 value=31508
+Receive: 25 6785816.143693 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=967105536 value=31528
+Receive: 26 6785816.143693 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=972145536 value=31504
+Receive: 27 6785816.143693 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=988705536 value=31528
+Receive: 28 6785816.143694 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=993745536 value=31505
+Receive: 29 6785816.143694 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1010305536 value=31528
+Receive: 30 6785816.143694 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1015345536 value=31506
+Receive: 31 6785816.143695 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1031905536 value=31528
+Receive: 32 6785816.143699 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1036945536 value=31506
+Receive: 33 6785816.143699 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1053505536 value=31527
+Receive: 34 6785816.143700 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1058545536 value=31507
+Receive: 35 6785816.143700 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1075105536 value=31526
+Receive: 36 6785816.143700 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1080145536 value=31508
+Receive: 37 6785816.143700 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1096705536 value=31528
+Receive: 38 6785816.143701 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1101745536 value=31507
+Receive: 39 6785816.143701 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1118305536 value=31529
+Receive: 40 6785816.143701 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1123345536 value=31505
+Receive: 41 6785816.143701 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1139905536 value=31530
+Receive: 42 6785816.143702 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1144945536 value=31508
+Receive: 43 6785816.143782 6785415.697412 13: seq: 1d, stats count=85 sum=79514 sumsq=399429
+Receive: 44 6785816.143702 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1161505536 value=31531
+Receive: 45 6785816.143702 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1166545536 value=31506
+Receive: 46 6785816.143703 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1183105536 value=31528
+Receive: 47 6785816.143703 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1188145536 value=31505
+Receive: 48 6785816.143703 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1204705536 value=31529
+Receive: 49 6785816.143703 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1209745536 value=31505
+Receive: 50 6785816.143703 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1226305536 value=31525
+Receive: 51 6785816.143704 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1231345536 value=31504
+Receive: 52 6785816.143704 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1247905536 value=31531
+Receive: 53 6785816.143704 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1252945536 value=31506
+Receive: 54 6785816.143704 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1269505536 value=31529
+Receive: 55 6785816.143705 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1274545536 value=31508
+Receive: 56 6785816.143705 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1291105536 value=31530
+Receive: 57 6785816.143705 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1296145536 value=31506
+Receive: 58 6785816.143706 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1312705536 value=31529
+Receive: 59 6785816.143706 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1317745536 value=31506
+Receive: 60 6785816.143706 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1334305536 value=31530
+Receive: 61 6785816.143706 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1339345536 value=31505
+Receive: 62 6785816.143707 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1355905536 value=31528
+Receive: 63 6785816.143707 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1360945536 value=31505
+Receive: 64 6785816.143711 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1377505536 value=31530
+Receive: 65 6785816.143711 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1382545536 value=31505
+Receive: 66 6785816.143711 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1399105536 value=31528
+Receive: 67 6785816.143712 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1404145536 value=31505
+Receive: 68 6785816.143712 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1420705536 value=31527
+Receive: 69 6785816.143712 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1425745536 value=31508
+Receive: 70 6785816.143712 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1442305536 value=31530
+Receive: 71 6785816.143713 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1447345536 value=31508
+Receive: 72 6785816.143713 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1463905536 value=31530
+Receive: 73 6785816.143713 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1468945536 value=31506
+Receive: 74 6785816.143713 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1485505536 value=31528
+Receive: 75 6785816.143714 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1490545536 value=31505
+Receive: 76 6785816.143714 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1507105536 value=31529
+Receive: 77 6785816.143714 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1512145536 value=31508
+Receive: 78 6785816.143794 6785415.697412 13: seq: 1d, stats count=85 sum=79514 sumsq=399429
+Receive: 79 6785816.143715 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1528705536 value=31530
+Receive: 80 6785816.143715 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1533745536 value=31506
+Receive: 81 6785816.143715 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1550305536 value=31529
+Receive: 82 6785816.143716 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1555345536 value=31508
+Receive: 83 6785816.143716 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1571905536 value=31530
+Receive: 84 6785816.143716 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1576945536 value=31507
+Receive: 85 6785816.143716 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1593505536 value=31529
+Receive: 86 6785816.143717 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1598545536 value=31506
+Receive: 87 6785816.143717 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1615105536 value=31528
+Receive: 88 6785816.143717 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1620145536 value=31511
+Receive: 89 6785816.143718 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1636705536 value=31529
+Receive: 90 6785816.143718 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1641745536 value=31507
+Receive: 91 6785816.143718 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1658305536 value=31529
+Receive: 92 6785816.143718 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1663345536 value=31508
+Receive: 93 6785816.143718 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1679905536 value=31529
+Receive: 94 6785816.143719 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1684945536 value=31505
+Receive: 95 6785816.143719 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1701505536 value=31527
+Receive: 96 6785816.143727 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1706545536 value=31505
+Receive: 97 6785816.143728 6785415.697412 15: seq: 1d, analog_in_state oid=10 next_clock=1723105536 value=31531
+Receive: 98 6785816.143728 6785415.697412 15: seq: 1d, analog_in_state oid=17 next_clock=1728145536 value=31510
+Receive: 99 6785816.147043 6785816.144469 12: seq: 1e, shutdown clock=1713227040 static_string_id=Command request
+Resetting prediction variance 6789619.888: freq=71999265 diff=-299217859524 stddev=102218.312
+Resetting prediction variance 6790751.754: freq=11269570 diff=-26589229008 stddev=72000.000
+Resetting prediction variance 6791198.701: freq=8486233 diff=-12446873850 stddev=72000.000
+Resetting prediction variance 6791217.556: freq=7639785 diff=-6008759616 stddev=72000.000
+Resetting prediction variance 6791272.053: freq=7344620 diff=-658339426 stddev=72000.000
+Resetting prediction variance 6791310.275: freq=7319028 diff=1973490391 stddev=72000.000
+Resetting prediction variance 6791311.517: freq=7382770 diff=1654141183 stddev=72000.000
+Resetting prediction variance 6791312.577: freq=7428475 diff=1435957657 stddev=72000.000
+Resetting prediction variance 6791315.737: freq=7463286 diff=1421569447 stddev=72000.000
+Resetting prediction variance 6791317.435: freq=7494108 diff=1337724162 stddev=72000.000
+Resetting prediction variance 6791318.420: freq=7520418 diff=1236145676 stddev=72000.000
+Resetting prediction variance 6791319.404: freq=7542725 diff=1159621121 stddev=72000.000
+Resetting prediction variance 6791320.389: freq=7562107 diff=1101421067 stddev=72000.000
+Resetting prediction variance 6791321.374: freq=7579290 diff=1057009364 stddev=72000.000
+Resetting prediction variance 6791322.358: freq=7594782 diff=1023148461 stddev=72000.000
+Resetting prediction variance 6791323.342: freq=7608951 diff=997586806 stddev=72000.000
+Resetting prediction variance 6791324.327: freq=7622065 diff=978641506 stddev=72000.000
+Resetting prediction variance 6791325.312: freq=7634331 diff=965031993 stddev=72000.000
+Resetting prediction variance 6791326.297: freq=7645904 diff=955752494 stddev=72000.000
+Resetting prediction variance 6791327.281: freq=7656907 diff=950035142 stddev=72000.000
+Resetting prediction variance 6791328.266: freq=7667436 diff=947251594 stddev=72000.000
+Resetting prediction variance 6791329.305: freq=7677571 diff=950456577 stddev=72000.000
+Resetting prediction variance 6791330.290: freq=7687410 diff=951991957 stddev=72000.000
+Resetting prediction variance 6791331.274: freq=7696965 diff=955305063 stddev=72000.000
+Resetting prediction variance 6791332.259: freq=7706280 diff=960126860 stddev=72000.000
+Resetting prediction variance 6791333.244: freq=7715391 diff=966250715 stddev=72000.000
+Resetting prediction variance 6791334.228: freq=7724329 diff=973375538 stddev=72000.000
+Resetting prediction variance 6791335.212: freq=7733118 diff=981481602 stddev=72000.000
+Resetting prediction variance 6791336.196: freq=7741781 diff=990324193 stddev=72000.000
+Resetting prediction variance 6791337.181: freq=7750337 diff=999866937 stddev=72000.000
+Resetting prediction variance 6791338.165: freq=7758802 diff=1009951623 stddev=72000.000
+Resetting prediction variance 6791339.149: freq=7767189 diff=1020511686 stddev=72000.000
+Resetting prediction variance 6791340.133: freq=7775511 diff=1031504216 stddev=72000.000
+Resetting prediction variance 6791341.118: freq=7783779 diff=1042877031 stddev=72000.000
+Resetting prediction variance 6791342.102: freq=7792003 diff=1054479732 stddev=72000.000
+Resetting prediction variance 6791343.086: freq=7800190 diff=1066307813 stddev=72000.000
+Resetting prediction variance 6791344.070: freq=7808347 diff=1078322125 stddev=72000.000
+Resetting prediction variance 6791345.054: freq=7816482 diff=1090480135 stddev=72000.000
+Resetting prediction variance 6791347.972: freq=7824599 diff=1226823124 stddev=72000.000
+Resetting prediction variance 6791348.956: freq=7833625 diff=1233455606 stddev=72000.000
+Resetting prediction variance 6791349.941: freq=7842590 diff=1240488903 stddev=72000.000
+Resetting prediction variance 6791350.926: freq=7851503 diff=1247842828 stddev=72000.000
+Resetting prediction variance 6791351.910: freq=7860371 diff=1255493449 stddev=72000.000
+Resetting prediction variance 6791352.894: freq=7869201 diff=1263349126 stddev=72000.000
+Resetting prediction variance 6791353.879: freq=7877997 diff=1271481900 stddev=72000.000
+Resetting prediction variance 6791354.863: freq=7886767 diff=1279752200 stddev=72000.000
+Resetting prediction variance 6791355.848: freq=7895513 diff=1288171447 stddev=72000.000
+Resetting prediction variance 6791356.832: freq=7904242 diff=1296718361 stddev=72000.000
+Resetting prediction variance 6791357.816: freq=7912956 diff=1305398048 stddev=72000.000
+Resetting prediction variance 6791358.801: freq=7921661 diff=1314159197 stddev=72000.000
+Resetting prediction variance 6791359.785: freq=7930358 diff=1322961721 stddev=72000.000
+Resetting prediction variance 6791360.770: freq=7939051 diff=1331802448 stddev=72000.000
+Resetting prediction variance 6791361.754: freq=7947744 diff=1340672735 stddev=72000.000
+Resetting prediction variance 6791362.739: freq=7956438 diff=1349574876 stddev=72000.000
+Resetting prediction variance 6791363.724: freq=7965136 diff=1358486458 stddev=72000.000
+Resetting prediction variance 6791364.708: freq=7973840 diff=1367360176 stddev=72000.000
+Resetting prediction variance 6791365.692: freq=7982553 diff=1376202926 stddev=72000.000
+Resetting prediction variance 6791366.677: freq=7991276 diff=1385001943 stddev=72000.000
+Resetting prediction variance 6791367.661: freq=8000011 diff=1393796327 stddev=72000.000
+Resetting prediction variance 6791368.646: freq=8008759 diff=1402526897 stddev=72000.000
+Resetting prediction variance 6791369.631: freq=8017523 diff=1411224843 stddev=72000.000
+Resetting prediction variance 6791370.616: freq=8026303 diff=1419807533 stddev=72000.000
+Resetting prediction variance 6791371.601: freq=8035102 diff=1428350772 stddev=72000.000
+Resetting prediction variance 6791372.586: freq=8043919 diff=1436812429 stddev=72000.000
+Resetting prediction variance 6791373.570: freq=8052758 diff=1445148621 stddev=72000.000
+Resetting prediction variance 6791374.555: freq=8061617 diff=1453436141 stddev=72000.000
+Resetting prediction variance 6791375.539: freq=8070499 diff=1461614966 stddev=72000.000
+Resetting prediction variance 6791376.524: freq=8079405 diff=1469717651 stddev=72000.000
+Resetting prediction variance 6791377.508: freq=8088335 diff=1477680350 stddev=72000.000
+Resetting prediction variance 6791378.493: freq=8097291 diff=1485586355 stddev=72000.000
+Resetting prediction variance 6791379.478: freq=8106273 diff=1493370049 stddev=72000.000
+Resetting prediction variance 6791380.463: freq=8115282 diff=1501052112 stddev=72000.000
+Resetting prediction variance 6791381.448: freq=8124319 diff=1508639046 stddev=72000.000
+Resetting prediction variance 6791382.432: freq=8133385 diff=1516091729 stddev=72000.000
+Resetting prediction variance 6791383.417: freq=8142481 diff=1523449099 stddev=72000.000
+Resetting prediction variance 6791384.402: freq=8151607 diff=1530677689 stddev=72000.000
+Resetting prediction variance 6791385.387: freq=8160764 diff=1537824108 stddev=72000.000
+Resetting prediction variance 6791386.371: freq=8169953 diff=1544825569 stddev=72000.000
+Resetting prediction variance 6791387.356: freq=8179174 diff=1551711409 stddev=72000.000
+Resetting prediction variance 6791388.340: freq=8188429 diff=1558477415 stddev=72000.000
+Resetting prediction variance 6791389.325: freq=8197718 diff=1565138490 stddev=72000.000
+Resetting prediction variance 6791390.309: freq=8207041 diff=1571655621 stddev=72000.000
+Resetting prediction variance 6791391.294: freq=8216399 diff=1578130855 stddev=72000.000
+Resetting prediction variance 6791392.279: freq=8225794 diff=1584432726 stddev=72000.000
+Resetting prediction variance 6791393.263: freq=8235226 diff=1590626786 stddev=72000.000
+Resetting prediction variance 6791394.248: freq=8244695 diff=1596706481 stddev=72000.000
+Resetting prediction variance 6791395.232: freq=8254202 diff=1602673994 stddev=72000.000
+Resetting prediction variance 6791396.217: freq=8263749 diff=1608537411 stddev=72000.000
+Resetting prediction variance 6791397.201: freq=8273336 diff=1614272473 stddev=72000.000
+Resetting prediction variance 6791398.186: freq=8282963 diff=1619931581 stddev=72000.000
+Resetting prediction variance 6791399.171: freq=8292633 diff=1625486459 stddev=72000.000
+Resetting prediction variance 6791400.156: freq=8302345 diff=1630923052 stddev=72000.000
+Resetting prediction variance 6791401.141: freq=8312100 diff=1636244360 stddev=72000.000
+Resetting prediction variance 6791402.126: freq=8321900 diff=1641446557 stddev=72000.000
+Resetting prediction variance 6791403.110: freq=8331745 diff=1646541943 stddev=72000.000
+Resetting prediction variance 6791404.095: freq=8341637 diff=1651532095 stddev=72000.000
+Resetting prediction variance 6791405.080: freq=8351576 diff=1656442108 stddev=72000.000
+Resetting prediction variance 6791406.064: freq=8361563 diff=1661194151 stddev=72000.000
+Resetting prediction variance 6791407.049: freq=8371600 diff=1665862482 stddev=72000.000
+Resetting prediction variance 6791408.034: freq=8381687 diff=1670445076 stddev=72000.000
+Resetting prediction variance 6791409.018: freq=8391826 diff=1674917203 stddev=72000.000
+Resetting prediction variance 6791410.003: freq=8402018 diff=1679275037 stddev=72000.000
+Resetting prediction variance 6791410.987: freq=8412264 diff=1683560145 stddev=72000.000
+Resetting prediction variance 6791411.971: freq=8422566 diff=1687700263 stddev=72000.000
+Resetting prediction variance 6791412.956: freq=8432924 diff=1691773223 stddev=72000.000
+Resetting prediction variance 6791413.941: freq=8443340 diff=1695793475 stddev=72000.000
+Resetting prediction variance 6791414.926: freq=8453817 diff=1699742779 stddev=72000.000
+Resetting prediction variance 6791415.911: freq=8464354 diff=1703550465 stddev=72000.000
+Resetting prediction variance 6791416.896: freq=8474955 diff=1707296070 stddev=72000.000
+Resetting prediction variance 6791417.881: freq=8485620 diff=1710949997 stddev=72000.000
+Resetting prediction variance 6791418.866: freq=8496352 diff=1714530607 stddev=72000.000
+Resetting prediction variance 6791419.851: freq=8507151 diff=1718011698 stddev=72000.000
+Resetting prediction variance 6791420.835: freq=8518021 diff=1721359739 stddev=72000.000
+Resetting prediction variance 6791421.820: freq=8528962 diff=1724642979 stddev=72000.000
+Resetting prediction variance 6791422.804: freq=8539977 diff=1727832065 stddev=72000.000
+Resetting prediction variance 6791423.789: freq=8551067 diff=1730929242 stddev=72000.000
+Resetting prediction variance 6791424.773: freq=8562234 diff=1733968106 stddev=72000.000
+Resetting prediction variance 6791425.758: freq=8573482 diff=1736918802 stddev=72000.000
+Resetting prediction variance 6791426.742: freq=8584811 diff=1739817424 stddev=72000.000
+Resetting prediction variance 6791427.727: freq=8596225 diff=1742657632 stddev=72000.000
+Resetting prediction variance 6791428.712: freq=8607727 diff=1745434917 stddev=72000.000
+Resetting prediction variance 6791429.697: freq=8619318 diff=1748102628 stddev=72000.000
+Resetting prediction variance 6791430.682: freq=8631002 diff=1750731575 stddev=72000.000
+Resetting prediction variance 6791431.667: freq=8642780 diff=1753286878 stddev=72000.000
+Resetting prediction variance 6791432.652: freq=8654657 diff=1755765916 stddev=72000.000
+Resetting prediction variance 6791433.637: freq=8666635 diff=1758130084 stddev=72000.000
+Resetting prediction variance 6791434.621: freq=8678717 diff=1760440684 stddev=72000.000
+Resetting prediction variance 6791435.606: freq=8690905 diff=1762680006 stddev=72000.000
+Resetting prediction variance 6791436.590: freq=8703203 diff=1764867664 stddev=72000.000
+Resetting prediction variance 6791437.575: freq=8715616 diff=1767002652 stddev=72000.000
+Resetting prediction variance 6791438.560: freq=8728145 diff=1769086898 stddev=72000.000
+Resetting prediction variance 6791439.545: freq=8740796 diff=1771106012 stddev=72000.000
+Resetting prediction variance 6791440.529: freq=8753571 diff=1773045227 stddev=72000.000
+Resetting prediction variance 6791441.514: freq=8766475 diff=1774935059 stddev=72000.000
+Resetting prediction variance 6791442.499: freq=8779511 diff=1776744376 stddev=72000.000
+Resetting prediction variance 6791443.483: freq=8792685 diff=1778493019 stddev=72000.000
+Resetting prediction variance 6791444.467: freq=8805999 diff=1780181486 stddev=72000.000
+Resetting prediction variance 6791445.452: freq=8819459 diff=1781826586 stddev=72000.000
+Resetting prediction variance 6791446.436: freq=8833069 diff=1783401427 stddev=72000.000
+Resetting prediction variance 6791447.421: freq=8846834 diff=1784961797 stddev=72000.000
+Resetting prediction variance 6791448.405: freq=8860759 diff=1786439631 stddev=72000.000
+Resetting prediction variance 6791449.389: freq=8874850 diff=1787882428 stddev=72000.000
+Resetting prediction variance 6791450.374: freq=8889111 diff=1789271462 stddev=72000.000
+Resetting prediction variance 6791451.359: freq=8903548 diff=1790620402 stddev=72000.000
+Resetting prediction variance 6791452.343: freq=8918168 diff=1791905601 stddev=72000.000
+Resetting prediction variance 6791453.328: freq=8932975 diff=1793166788 stddev=72000.000
+Resetting prediction variance 6791454.312: freq=8947977 diff=1794355855 stddev=72000.000
+Resetting prediction variance 6791455.297: freq=8963179 diff=1795543836 stddev=72000.000
+Resetting prediction variance 6791456.282: freq=8978588 diff=1796668713 stddev=72000.000
+Resetting prediction variance 6791457.267: freq=8994212 diff=1797705928 stddev=72000.000
+Resetting prediction variance 6791458.252: freq=9010056 diff=1798752043 stddev=72000.000
+Resetting prediction variance 6791459.236: freq=9026128 diff=1799707830 stddev=72000.000
+Resetting prediction variance 6791460.221: freq=9042436 diff=1800667883 stddev=72000.000
+Resetting prediction variance 6791461.206: freq=9058988 diff=1801553866 stddev=72000.000
+Resetting prediction variance 6791462.190: freq=9075792 diff=1802394802 stddev=72000.000
+Resetting prediction variance 6791463.175: freq=9092855 diff=1803206203 stddev=72000.000
+Resetting prediction variance 6791464.159: freq=9110187 diff=1803932650 stddev=72000.000
+Resetting prediction variance 6791465.144: freq=9127795 diff=1804670577 stddev=72000.000
+Resetting prediction variance 6791466.128: freq=9145690 diff=1805315566 stddev=72000.000
+Resetting prediction variance 6791467.112: freq=9163881 diff=1805926669 stddev=72000.000
+Resetting prediction variance 6791468.097: freq=9182377 diff=1806542999 stddev=72000.000
+Resetting prediction variance 6791469.082: freq=9201189 diff=1807123271 stddev=72000.000
+Resetting prediction variance 6791470.067: freq=9220327 diff=1807648273 stddev=72000.000
+Resetting prediction variance 6791471.052: freq=9239803 diff=1808162777 stddev=72000.000
+Resetting prediction variance 6791472.036: freq=9259628 diff=1808621143 stddev=72000.000
+Resetting prediction variance 6791473.021: freq=9279812 diff=1809028187 stddev=72000.000
+Resetting prediction variance 6791474.006: freq=9300369 diff=1809416517 stddev=72000.000
+Resetting prediction variance 6791474.990: freq=9321309 diff=1809752134 stddev=72000.000
+Resetting prediction variance 6791475.975: freq=9342647 diff=1810056998 stddev=72000.000
+Resetting prediction variance 6791476.960: freq=9364395 diff=1810325125 stddev=72000.000
+Resetting prediction variance 6791477.945: freq=9386566 diff=1810580223 stddev=72000.000
+Resetting prediction variance 6791478.929: freq=9409176 diff=1810767845 stddev=72000.000
+Resetting prediction variance 6791479.914: freq=9432238 diff=1810934197 stddev=72000.000
+Resetting prediction variance 6791480.898: freq=9455767 diff=1811022758 stddev=72000.000
+Resetting prediction variance 6791481.883: freq=9479778 diff=1811082649 stddev=72000.000
+Resetting prediction variance 6791482.867: freq=9504286 diff=1811138045 stddev=72000.000
+Resetting prediction variance 6791483.852: freq=9529310 diff=1811133192 stddev=72000.000
+Resetting prediction variance 6791484.836: freq=9554865 diff=1811113588 stddev=72000.000
+Resetting prediction variance 6791485.821: freq=9580970 diff=1811057406 stddev=72000.000
+Resetting prediction variance 6791486.806: freq=9607641 diff=1810959842 stddev=72000.000
+Resetting prediction variance 6791487.790: freq=9634899 diff=1810819074 stddev=72000.000
+Resetting prediction variance 6791488.774: freq=9662762 diff=1810623162 stddev=72000.000
+Resetting prediction variance 6791489.758: freq=9691250 diff=1810398611 stddev=72000.000
+Resetting prediction variance 6791490.743: freq=9720382 diff=1810154404 stddev=72000.000
+Resetting prediction variance 6791491.727: freq=9750180 diff=1809871453 stddev=72000.000
+Resetting prediction variance 6791492.712: freq=9780667 diff=1809583911 stddev=72000.000
+Resetting prediction variance 6791493.696: freq=9811866 diff=1809219519 stddev=72000.000
+Resetting prediction variance 6791494.681: freq=9843798 diff=1808833571 stddev=72000.000
+Resetting prediction variance 6791495.666: freq=9876488 diff=1808422664 stddev=72000.000
+Resetting prediction variance 6791496.650: freq=9909962 diff=1807972678 stddev=72000.000
+Resetting prediction variance 6791497.635: freq=9944243 diff=1807460309 stddev=72000.000
+Resetting prediction variance 6791498.619: freq=9979358 diff=1806938695 stddev=72000.000
+Resetting prediction variance 6791499.604: freq=10015335 diff=1806374633 stddev=72000.000
+Resetting prediction variance 6791500.589: freq=10052202 diff=1805778013 stddev=72000.000
+Resetting prediction variance 6791501.573: freq=10089986 diff=1805104983 stddev=72000.000
+Resetting prediction variance 6791502.557: freq=10128717 diff=1804386234 stddev=72000.000
+Resetting prediction variance 6791503.542: freq=10168425 diff=1803645468 stddev=72000.000
+Resetting prediction variance 6791504.527: freq=10209141 diff=1802876909 stddev=72000.000
+Resetting prediction variance 6791505.511: freq=10250899 diff=1802025574 stddev=72000.000
+Resetting prediction variance 6791506.495: freq=10293729 diff=1801143645 stddev=72000.000
+Resetting prediction variance 6791507.480: freq=10337667 diff=1800264104 stddev=72000.000
+Resetting prediction variance 6791508.464: freq=10382750 diff=1799303038 stddev=72000.000
+Resetting prediction variance 6791509.449: freq=10429012 diff=1798331569 stddev=72000.000
+Resetting prediction variance 6791510.434: freq=10476491 diff=1797308621 stddev=72000.000
+Resetting prediction variance 6791511.418: freq=10525227 diff=1796221144 stddev=72000.000
+Resetting prediction variance 6791512.403: freq=10575258 diff=1795107922 stddev=72000.000
+Resetting prediction variance 6791513.388: freq=10626624 diff=1793960302 stddev=72000.000
+Resetting prediction variance 6791514.373: freq=10679370 diff=1792736899 stddev=72000.000
+Resetting prediction variance 6791515.357: freq=10733536 diff=1791427850 stddev=72000.000
+Resetting prediction variance 6791516.342: freq=10789164 diff=1790079238 stddev=72000.000
+Resetting prediction variance 6791517.326: freq=10846300 diff=1788686786 stddev=72000.000
+Resetting prediction variance 6791518.310: freq=10904991 diff=1787209940 stddev=72000.000
+Resetting prediction variance 6791519.294: freq=10965283 diff=1785699915 stddev=72000.000
+Resetting prediction variance 6791520.279: freq=11027226 diff=1784173043 stddev=72000.000
+Resetting prediction variance 6791521.264: freq=11090873 diff=1782555616 stddev=72000.000
+Resetting prediction variance 6791522.249: freq=11156273 diff=1780901718 stddev=72000.000
+Resetting prediction variance 6791523.233: freq=11223481 diff=1779162252 stddev=72000.000
+Resetting prediction variance 6791524.218: freq=11292549 diff=1777399604 stddev=72000.000
+Resetting prediction variance 6791525.202: freq=11363536 diff=1775533269 stddev=72000.000
+Resetting prediction variance 6791526.187: freq=11436496 diff=1773633811 stddev=72000.000
+Resetting prediction variance 6791527.172: freq=11511490 diff=1771643884 stddev=72000.000
+Resetting prediction variance 6791528.156: freq=11588575 diff=1769576232 stddev=72000.000
+Resetting prediction variance 6791529.141: freq=11667812 diff=1767475731 stddev=72000.000
+Resetting prediction variance 6791530.125: freq=11749267 diff=1765257618 stddev=72000.000
+Resetting prediction variance 6791531.110: freq=11833000 diff=1762993988 stddev=72000.000
+Resetting prediction variance 6791532.094: freq=11919080 diff=1760667273 stddev=72000.000
+Resetting prediction variance 6791533.080: freq=12007574 diff=1758286726 stddev=72000.000
+Resetting prediction variance 6791534.064: freq=12098553 diff=1755778797 stddev=72000.000
+Resetting prediction variance 6791535.048: freq=12192084 diff=1753182518 stddev=72000.000
+Resetting prediction variance 6791536.033: freq=12288235 diff=1750545069 stddev=72000.000
+Resetting prediction variance 6791537.017: freq=12387086 diff=1747792776 stddev=72000.000
+Resetting prediction variance 6791538.002: freq=12488706 diff=1744942473 stddev=72000.000
+Resetting prediction variance 6791538.986: freq=12593171 diff=1742008833 stddev=72000.000
+Resetting prediction variance 6791539.971: freq=12700559 diff=1739033169 stddev=72000.000
+Resetting prediction variance 6791540.956: freq=12810954 diff=1735940677 stddev=72000.000
+Resetting prediction variance 6791541.940: freq=12924433 diff=1732752736 stddev=72000.000
+Resetting prediction variance 6791542.925: freq=13041079 diff=1729461396 stddev=72000.000
+Resetting prediction variance 6791543.909: freq=13160974 diff=1726040156 stddev=72000.000
+Resetting prediction variance 6791544.894: freq=13284198 diff=1722579506 stddev=72000.000
+Resetting prediction variance 6791545.878: freq=13410845 diff=1718964332 stddev=72000.000
+Resetting prediction variance 6791546.863: freq=13540995 diff=1715267745 stddev=72000.000
+Resetting prediction variance 6791547.847: freq=13674740 diff=1711456274 stddev=72000.000
+Resetting prediction variance 6791548.832: freq=13812169 diff=1707507577 stddev=72000.000
+Resetting prediction variance 6791549.816: freq=13953367 diff=1703471684 stddev=72000.000
+Resetting prediction variance 6791550.801: freq=14098431 diff=1699349036 stddev=72000.000
+Resetting prediction variance 6791551.786: freq=14247458 diff=1695080994 stddev=72000.000
+Resetting prediction variance 6791552.771: freq=14400537 diff=1690697298 stddev=72000.000
+Resetting prediction variance 6791553.756: freq=14557763 diff=1686187138 stddev=72000.000
+Resetting prediction variance 6791554.740: freq=14719231 diff=1681523451 stddev=72000.000
+Resetting prediction variance 6791555.725: freq=14885032 diff=1676755415 stddev=72000.000
+Resetting prediction variance 6791556.710: freq=15055266 diff=1671854164 stddev=72000.000
+Resetting prediction variance 6791557.695: freq=15230030 diff=1666832047 stddev=72000.000
+Resetting prediction variance 6791558.679: freq=15409422 diff=1661646999 stddev=72000.000
+Resetting prediction variance 6791559.664: freq=15593536 diff=1656310540 stddev=72000.000
+Resetting prediction variance 6791560.649: freq=15782465 diff=1650849863 stddev=72000.000
+Resetting prediction variance 6791561.633: freq=15976310 diff=1645204752 stddev=72000.000
+Resetting prediction variance 6791562.617: freq=16175158 diff=1639425253 stddev=72000.000
+Resetting prediction variance 6791563.602: freq=16379109 diff=1633524424 stddev=72000.000
+Resetting prediction variance 6791564.587: freq=16588264 diff=1627456418 stddev=72000.000
+Resetting prediction variance 6791565.571: freq=16802715 diff=1621205251 stddev=72000.000
+Resetting prediction variance 6791566.556: freq=17022547 diff=1614820233 stddev=72000.000
+Resetting prediction variance 6791567.540: freq=17247861 diff=1608228265 stddev=72000.000
+Resetting prediction variance 6791568.525: freq=17478733 diff=1601531712 stddev=72000.000
+Resetting prediction variance 6791569.510: freq=17715268 diff=1594626621 stddev=72000.000
+Resetting prediction variance 6791570.494: freq=17957542 diff=1587571656 stddev=72000.000
+Resetting prediction variance 6791571.479: freq=18205645 diff=1580309321 stddev=72000.000
+Resetting prediction variance 6791572.463: freq=18459647 diff=1572871171 stddev=72000.000
+Resetting prediction variance 6791573.448: freq=18719627 diff=1565308560 stddev=72000.000
+Resetting prediction variance 6791574.433: freq=18985679 diff=1557555594 stddev=72000.000
+Resetting prediction variance 6791575.418: freq=19257872 diff=1549626275 stddev=72000.000
+Resetting prediction variance 6791576.402: freq=19536277 diff=1541468337 stddev=72000.000
+Resetting prediction variance 6791577.386: freq=19820944 diff=1533141258 stddev=72000.000
+Resetting prediction variance 6791578.371: freq=20111939 diff=1524628022 stddev=72000.000
+Resetting prediction variance 6791579.356: freq=20409319 diff=1515954998 stddev=72000.000
+Resetting prediction variance 6791580.341: freq=20713147 diff=1507083160 stddev=72000.000
+Resetting prediction variance 6791581.325: freq=21023469 diff=1497980751 stddev=72000.000
+Resetting prediction variance 6791582.309: freq=21340308 diff=1488688123 stddev=72000.000
+Resetting prediction variance 6791583.294: freq=21663703 diff=1479218670 stddev=72000.000
+Resetting prediction variance 6791584.278: freq=21993689 diff=1469530657 stddev=72000.000
+Resetting prediction variance 6791585.262: freq=22330278 diff=1459652540 stddev=72000.000
+Resetting prediction variance 6791586.247: freq=22673491 diff=1449618280 stddev=72000.000
+Resetting prediction variance 6791587.232: freq=23023353 diff=1439378909 stddev=72000.000
+Resetting prediction variance 6791588.216: freq=23379865 diff=1428901037 stddev=72000.000
+Resetting prediction variance 6791589.201: freq=23743001 diff=1418246197 stddev=72000.000
+Resetting prediction variance 6791590.185: freq=24112754 diff=1407414633 stddev=72000.000
+Resetting prediction variance 6791591.170: freq=24489117 diff=1396385274 stddev=72000.000
+Resetting prediction variance 6791592.154: freq=24872056 diff=1385138817 stddev=72000.000
+Resetting prediction variance 6791593.139: freq=25261522 diff=1373733575 stddev=72000.000
+Resetting prediction variance 6791594.124: freq=25657486 diff=1362107245 stddev=72000.000
+Resetting prediction variance 6791595.108: freq=26059875 diff=1350278844 stddev=72000.000
+Resetting prediction variance 6791596.092: freq=26468616 diff=1338276964 stddev=72000.000
+Resetting prediction variance 6791597.077: freq=26883643 diff=1326110341 stddev=72000.000
+Resetting prediction variance 6791598.061: freq=27304883 diff=1313741449 stddev=72000.000
+Resetting prediction variance 6791599.046: freq=27732231 diff=1301187843 stddev=72000.000
+Resetting prediction variance 6791600.030: freq=28165579 diff=1288479855 stddev=72000.000
+Resetting prediction variance 6791601.015: freq=28604828 diff=1275595075 stddev=72000.000
+Resetting prediction variance 6791602.000: freq=29049853 diff=1262518978 stddev=72000.000
+Resetting prediction variance 6791602.984: freq=29500505 diff=1249277351 stddev=72000.000
+Resetting prediction variance 6791603.968: freq=29956639 diff=1235877297 stddev=72000.000
+Resetting prediction variance 6791604.953: freq=30418104 diff=1222326804 stddev=72000.000
+Resetting prediction variance 6791605.937: freq=30884742 diff=1208619972 stddev=72000.000
+Resetting prediction variance 6791606.922: freq=31356375 diff=1194771320 stddev=72000.000
+Resetting prediction variance 6791607.907: freq=31832824 diff=1180793745 stddev=72000.000
+Resetting prediction variance 6791608.891: freq=32313908 diff=1166671047 stddev=72000.000
+Resetting prediction variance 6791609.876: freq=32799417 diff=1152402302 stddev=72000.000
+Resetting prediction variance 6791610.860: freq=33289129 diff=1138013465 stddev=72000.000
+Resetting prediction variance 6791611.845: freq=33782828 diff=1123507155 stddev=72000.000
+Resetting prediction variance 6791612.829: freq=34280285 diff=1108897610 stddev=72000.000
+Resetting prediction variance 6791613.814: freq=34781271 diff=1094192702 stddev=72000.000
+Resetting prediction variance 6791614.799: freq=35285551 diff=1079374547 stddev=72000.000
+Resetting prediction variance 6791615.783: freq=35792859 diff=1064466303 stddev=72000.000
+Resetting prediction variance 6791616.768: freq=36302940 diff=1049472689 stddev=72000.000
+Resetting prediction variance 6791617.752: freq=36815527 diff=1034402970 stddev=72000.000
+Resetting prediction variance 6791618.736: freq=37330348 diff=1019262313 stddev=72000.000
+Resetting prediction variance 6791619.721: freq=37847125 diff=1004094317 stddev=72000.000
+Resetting prediction variance 6791620.706: freq=38365609 diff=988865729 stddev=72000.000
+Resetting prediction variance 6791621.691: freq=38885508 diff=973598819 stddev=72000.000
+Resetting prediction variance 6791622.675: freq=39406541 diff=958291389 stddev=72000.000
+Resetting prediction variance 6791623.660: freq=39928412 diff=942968630 stddev=72000.000
+Resetting prediction variance 6791624.645: freq=40450840 diff=927601251 stddev=72000.000
+Resetting prediction variance 6791625.630: freq=40973505 diff=912257838 stddev=72000.000
+Resetting prediction variance 6791626.614: freq=41496147 diff=896886192 stddev=72000.000
+Resetting prediction variance 6791627.599: freq=42018443 diff=881546762 stddev=72000.000
+Resetting prediction variance 6791628.583: freq=42540124 diff=866209631 stddev=72000.000
+Resetting prediction variance 6791629.568: freq=43060883 diff=850900274 stddev=72000.000
+Resetting prediction variance 6791630.552: freq=43580431 diff=835616936 stddev=72000.000
+Resetting prediction variance 6791631.536: freq=44098472 diff=820376078 stddev=72000.000
+Resetting prediction variance 6791632.520: freq=44614721 diff=805189028 stddev=72000.000
+Resetting prediction variance 6791633.505: freq=45128900 diff=790070002 stddev=72000.000
+Resetting prediction variance 6791634.489: freq=45640741 diff=775021180 stddev=72000.000
+Resetting prediction variance 6791635.474: freq=46149980 diff=760053008 stddev=72000.000
+Resetting prediction variance 6791636.458: freq=46656353 diff=745154052 stddev=72000.000
+Resetting prediction variance 6791637.442: freq=47159590 diff=730355656 stddev=72000.000
+Resetting prediction variance 6791638.426: freq=47659446 diff=715652524 stddev=72000.000
+Resetting prediction variance 6791639.411: freq=48155671 diff=701062981 stddev=72000.000
+Resetting prediction variance 6791640.396: freq=48648037 diff=686600906 stddev=72000.000
+Resetting prediction variance 6791641.380: freq=49136337 diff=672250130 stddev=72000.000
+Resetting prediction variance 6791642.365: freq=49620335 diff=658023451 stddev=72000.000
+Resetting prediction variance 6791643.350: freq=50099817 diff=643932222 stddev=72000.000
+Resetting prediction variance 6791644.334: freq=50574583 diff=629971808 stddev=72000.000
+Resetting prediction variance 6791645.319: freq=51044426 diff=616163769 stddev=72000.000
+Resetting prediction variance 6791646.303: freq=51509173 diff=602504116 stddev=72000.000
+Resetting prediction variance 6791647.288: freq=51968648 diff=588998295 stddev=72000.000
+Resetting prediction variance 6791648.273: freq=52422682 diff=575659395 stddev=72000.000
+Resetting prediction variance 6791649.258: freq=52871129 diff=562481313 stddev=72000.000
+Resetting prediction variance 6791650.242: freq=53313840 diff=549458868 stddev=72000.000
+Resetting prediction variance 6791651.227: freq=53750658 diff=536616783 stddev=72000.000
+Resetting prediction variance 6791652.211: freq=54181470 diff=523942329 stddev=72000.000
+Resetting prediction variance 6791653.196: freq=54606146 diff=511464163 stddev=72000.000
+Resetting prediction variance 6791654.181: freq=55024605 diff=499160619 stddev=72000.000
+Resetting prediction variance 6791655.166: freq=55436740 diff=487051191 stddev=72000.000
+Resetting prediction variance 6791656.150: freq=55842476 diff=475116932 stddev=72000.000
+Resetting prediction variance 6791657.135: freq=56241718 diff=463382879 stddev=72000.000
+Resetting prediction variance 6791658.120: freq=56634414 diff=451844435 stddev=72000.000
+Resetting prediction variance 6791659.105: freq=57020513 diff=440490774 stddev=72000.000
+Resetting prediction variance 6791660.089: freq=57399951 diff=429330820 stddev=72000.000
+Resetting prediction variance 6791661.074: freq=57772687 diff=418372491 stddev=72000.000
+Resetting prediction variance 6791662.059: freq=58138699 diff=407612880 stddev=72000.000
+Resetting prediction variance 6791663.044: freq=58497965 diff=397054404 stddev=72000.000
+Resetting prediction variance 6791664.028: freq=58850479 diff=386682676 stddev=72000.000
+Resetting prediction variance 6791665.012: freq=59196213 diff=376514095 stddev=72000.000
+Resetting prediction variance 6791665.997: freq=59535181 diff=366546581 stddev=72000.000
+Resetting prediction variance 6791666.981: freq=59867393 diff=356775968 stddev=72000.000
+Resetting prediction variance 6791667.966: freq=60192865 diff=347211542 stddev=72000.000
+Resetting prediction variance 6791668.951: freq=60511634 diff=337840845 stddev=72000.000
+Resetting prediction variance 6791669.937: freq=60823725 diff=328671191 stddev=72000.000
+Resetting prediction variance 6791670.921: freq=61129181 diff=319681458 stddev=72000.000
+Resetting prediction variance 6791671.906: freq=61428019 diff=310896847 stddev=72000.000
+Resetting prediction variance 6791672.891: freq=61720304 diff=302303186 stddev=72000.000
+Resetting prediction variance 6791673.875: freq=62006087 diff=293901281 stddev=72000.000
+Resetting prediction variance 6791674.860: freq=62285426 diff=285686579 stddev=72000.000
+Resetting prediction variance 6791675.844: freq=62558376 diff=277653185 stddev=72000.000
+Resetting prediction variance 6791676.828: freq=62825001 diff=269809507 stddev=72000.000
+Resetting prediction variance 6791677.814: freq=63085372 diff=262157429 stddev=72000.000
+Resetting prediction variance 6791678.798: freq=63339579 diff=254682719 stddev=72000.000
+Resetting prediction variance 6791679.784: freq=63587693 diff=247390906 stddev=72000.000
+Resetting prediction variance 6791680.768: freq=63829801 diff=240271641 stddev=72000.000
+Resetting prediction variance 6791681.753: freq=64065978 diff=233324165 stddev=72000.000
+Resetting prediction variance 6791682.737: freq=64296304 diff=226548471 stddev=72000.000
+Resetting prediction variance 6791683.722: freq=64520870 diff=219945385 stddev=72000.000
+Resetting prediction variance 6791684.707: freq=64739771 diff=213509176 stddev=72000.000
+Resetting prediction variance 6791685.692: freq=64953101 diff=207235651 stddev=72000.000
+Resetting prediction variance 6791686.676: freq=65160950 diff=201123984 stddev=72000.000
+Resetting prediction variance 6791687.661: freq=65363412 diff=195168123 stddev=72000.000
+Resetting prediction variance 6791688.645: freq=65560582 diff=189365501 stddev=72000.000
+Resetting prediction variance 6791689.630: freq=65752551 diff=183720123 stddev=72000.000
+Resetting prediction variance 6791690.614: freq=65939424 diff=178224376 stddev=72000.000
+Resetting prediction variance 6791691.599: freq=66121299 diff=172873021 stddev=72000.000
+Resetting prediction variance 6791692.583: freq=66298270 diff=167669000 stddev=72000.000
+Resetting prediction variance 6791693.568: freq=66470443 diff=162603630 stddev=72000.000
+Resetting prediction variance 6791694.553: freq=66637912 diff=157681065 stddev=72000.000
+Resetting prediction variance 6791695.537: freq=66800782 diff=152889860 stddev=72000.000
+Resetting prediction variance 6791696.521: freq=66959146 diff=148229516 stddev=72000.000
+Resetting prediction variance 6791697.506: freq=67113098 diff=143701432 stddev=72000.000
+Resetting prediction variance 6791698.491: freq=67262740 diff=139301822 stddev=72000.000
+Resetting prediction variance 6791699.476: freq=67408173 diff=135026615 stddev=72000.000
+Resetting prediction variance 6791700.460: freq=67549494 diff=130868399 stddev=72000.000
+Resetting prediction variance 6791701.444: freq=67686790 diff=126828628 stddev=72000.000
+Resetting prediction variance 6791702.429: freq=67820156 diff=122904641 stddev=72000.000
+Resetting prediction variance 6791703.413: freq=67949686 diff=119096468 stddev=72000.000
+Resetting prediction variance 6791704.399: freq=68075478 diff=115400811 stddev=72000.000
+Resetting prediction variance 6791705.384: freq=68197628 diff=111808048 stddev=72000.000
+Resetting prediction variance 6791706.368: freq=68316219 diff=108319675 stddev=72000.000
+Resetting prediction variance 6791707.352: freq=68431338 diff=104932504 stddev=72000.000
+Resetting prediction variance 6791708.337: freq=68543071 diff=101646377 stddev=72000.000
+Resetting prediction variance 6791709.321: freq=68651507 diff=98457250 stddev=72000.000
+Resetting prediction variance 6791710.307: freq=68756731 diff=95364365 stddev=72000.000
+Resetting prediction variance 6791711.292: freq=68858830 diff=92362534 stddev=72000.000
+Resetting prediction variance 6791712.276: freq=68957884 diff=89448167 stddev=72000.000
+Resetting prediction variance 6791713.261: freq=69053969 diff=86623199 stddev=72000.000
+Resetting prediction variance 6791714.246: freq=69147169 diff=83882964 stddev=72000.000
+Resetting prediction variance 6791715.231: freq=69237560 diff=81222785 stddev=72000.000
+Resetting prediction variance 6791716.215: freq=69325215 diff=78645544 stddev=72000.000
+Resetting prediction variance 6791717.200: freq=69410211 diff=76146530 stddev=72000.000
+Resetting prediction variance 6791718.184: freq=69492622 diff=73725388 stddev=72000.000
+Resetting prediction variance 6791719.169: freq=69572520 diff=71372150 stddev=72000.000
+Resetting prediction variance 6791720.153: freq=69649969 diff=69093132 stddev=72000.000
+Resetting prediction variance 6791721.138: freq=69725039 diff=66884944 stddev=72000.000
+Resetting prediction variance 6791722.122: freq=69797799 diff=64744608 stddev=72000.000
+Resetting prediction variance 6791723.107: freq=69868314 diff=62670866 stddev=72000.000
+Resetting prediction variance 6791724.091: freq=69936650 diff=60660531 stddev=72000.000
+Resetting prediction variance 6791725.076: freq=70002867 diff=58711901 stddev=72000.000
+Resetting prediction variance 6791726.060: freq=70067026 diff=56823883 stddev=72000.000
+Resetting prediction variance 6791727.045: freq=70129187 diff=54997677 stddev=72000.000
+Resetting prediction variance 6791728.030: freq=70189411 diff=53225008 stddev=72000.000
+Resetting prediction variance 6791729.015: freq=70247751 diff=51511490 stddev=72000.000
+Resetting prediction variance 6791729.999: freq=70304267 diff=49848755 stddev=72000.000
+Resetting prediction variance 6791730.984: freq=70359009 diff=48238824 stddev=72000.000
+Resetting prediction variance 6791731.969: freq=70412030 diff=46680030 stddev=72000.000
+Resetting prediction variance 6791732.954: freq=70463382 diff=45170115 stddev=72000.000
+Resetting prediction variance 6791733.938: freq=70513115 diff=43706945 stddev=72000.000
+Resetting prediction variance 6791734.923: freq=70561275 diff=42289396 stddev=72000.000
+Resetting prediction variance 6791735.908: freq=70607910 diff=40920975 stddev=72000.000
+Resetting prediction variance 6791736.892: freq=70653069 diff=39589970 stddev=72000.000
+Resetting prediction variance 6791737.877: freq=70696792 diff=38304882 stddev=72000.000
+Resetting prediction variance 6791738.862: freq=70739125 diff=37059740 stddev=72000.000
+Resetting prediction variance 6791739.846: freq=70780111 diff=35854235 stddev=72000.000
+Resetting prediction variance 6791740.831: freq=70819789 diff=34686371 stddev=72000.000
+Resetting prediction variance 6791741.815: freq=70858199 diff=33555043 stddev=72000.000
+Resetting prediction variance 6791742.799: freq=70895379 diff=32461132 stddev=72000.000
+Resetting prediction variance 6791743.784: freq=70931367 diff=31404829 stddev=72000.000
+Resetting prediction variance 6791744.769: freq=70966206 diff=30379938 stddev=72000.000
