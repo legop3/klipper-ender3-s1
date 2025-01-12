@@ -9615,3 +9615,5 @@ Resetting prediction variance 6791870.799: freq=71985114 diff=409621 stddev=7200
 Resetting prediction variance 6791871.784: freq=71985576 diff=396234 stddev=72000.000
 Resetting prediction variance 6791872.769: freq=71986023 diff=384778 stddev=72000.000
 Resetting prediction variance 6791873.753: freq=71986457 diff=370251 stddev=72000.000
+b'Got error -1 in write: (19)No such device'
+b'Got EOF when reading from device'
