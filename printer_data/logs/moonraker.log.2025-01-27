@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Jan 29 20:03:10 2025 --------------------
+-------------------- Log Start | Tue Jan 28 01:01:47 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,44 +189,13 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-01-29 15:03:09,984 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-01-29 15:03:09,985 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.56ms
-2025-01-29 15:03:09,985 [websockets.py:open()] - Websocket Opened: ID: 140272911377760, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: localhost
-2025-01-29 15:03:10,051 [websockets.py:_handle_identify()] - Websocket 140272911377760 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-01-29 15:03:14,042 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2025-01-29 15:03:14,316 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
-2025-01-29 15:03:15,548 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2025-01-29 15:03:15,675 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['sysinit.target', '-.mount', 'system.slice']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'system.slice', 'network-online.target', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2025-01-29 15:03:17,957 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2025-01-29 15:03:17,958 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2025-01-29 15:03:18,208 [job_state.py:_handle_started()] - Job state initialized: standby
-2025-01-29 15:03:18,465 [klippy_connection.py:_check_ready()] - Klippy ready
-2025-01-29 15:03:19,213 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2025-01-29 15:03:32,687 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-01-29 15:03:32,725 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------170cd540c48aad2c
-2025-01-29 15:03:32,903 [application.py:post()] - Processing Uploaded File: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-01-29 15:03:33,434 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-01-29 15:03:33,503 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-01-29 15:03:33,507 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-01-29 15:03:33,959 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-01-29 15:03:33,968 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1277.19ms
-2025-01-29 15:03:34,013 [job_state.py:_status_update()] - Job Started: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-01-29 15:03:35,052 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2025-01-27 20:01:46,999 [websockets.py:on_close()] - Websocket Closed: ID: 140272937960304 Close Code: None, Close Reason: None, Pong Time Elapsed: 31.34
+2025-01-27 20:01:48,981 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2025-01-27 20:01:48,982 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 1.04ms
+2025-01-27 20:01:48,982 [websockets.py:open()] - Websocket Opened: ID: 140272911381456, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2025-01-27 20:01:48,996 [websockets.py:_handle_identify()] - Websocket 140272911381456 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-01-27 20:02:34,366 [websockets.py:on_close()] - Websocket Closed: ID: 140272911381456 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.38
+2025-01-27 20:02:36,112 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.64ms
+2025-01-27 20:02:36,113 [websockets.py:open()] - Websocket Opened: ID: 140272911369792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2025-01-27 20:02:36,126 [websockets.py:_handle_identify()] - Websocket 140272911369792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-01-27 21:05:47,499 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
