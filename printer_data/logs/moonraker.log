@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Jan 29 20:03:10 2025 --------------------
+-------------------- Log Start | Thu Jan 30 16:59:39 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['system.slice', 'systemd-journald.socket', 'network-online.target', '-.mount', 'sysinit.target', 'basic.target']
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'system.slice', 'network-online.target', 'sysinit.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,53 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-01-29 15:03:09,984 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-01-29 15:03:09,985 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.56ms
-2025-01-29 15:03:09,985 [websockets.py:open()] - Websocket Opened: ID: 140272911377760, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: localhost
-2025-01-29 15:03:10,051 [websockets.py:_handle_identify()] - Websocket 140272911377760 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-01-29 15:03:14,042 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2025-01-29 15:03:14,316 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
-2025-01-29 15:03:15,548 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2025-01-29 15:03:15,675 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['sysinit.target', '-.mount', 'system.slice']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'system.slice', 'network-online.target', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2025-01-29 15:03:17,957 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2025-01-29 15:03:17,958 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2025-01-29 15:03:18,208 [job_state.py:_handle_started()] - Job state initialized: standby
-2025-01-29 15:03:18,465 [klippy_connection.py:_check_ready()] - Klippy ready
-2025-01-29 15:03:19,213 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2025-01-29 15:03:32,687 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-01-29 15:03:32,725 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------170cd540c48aad2c
-2025-01-29 15:03:32,903 [application.py:post()] - Processing Uploaded File: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-01-29 15:03:33,434 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-01-29 15:03:33,503 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-01-29 15:03:33,507 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-01-29 15:03:33,959 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-01-29 15:03:33,968 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1277.19ms
-2025-01-29 15:03:34,013 [job_state.py:_status_update()] - Job Started: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-01-29 15:03:35,052 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2025-01-29 16:05:48,008 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-01-29 16:05:48,009 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-01-29 16:05:48,009 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2025-01-29 17:51:41,813 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2025-01-29 17:51:43,351 [websockets.py:on_close()] - Websocket Closed: ID: 140272911369792 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.23
-2025-01-29 17:51:44,138 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.80ms
-2025-01-29 17:51:44,138 [websockets.py:open()] - Websocket Opened: ID: 140272911369792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2025-01-29 17:51:44,178 [websockets.py:_handle_identify()] - Websocket 140272911369792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-01-29 18:55:48,034 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2025-01-30 11:59:39,129 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-01-30 11:59:39,137 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1738256349.833106, Usage: 0.78%, Memory: 45816 kB
+System Time: 1738256350.832737, Usage: 0.82%, Memory: 45816 kB
+System Time: 1738256351.834434, Usage: 0.74%, Memory: 45816 kB
+System Time: 1738256352.835732, Usage: 0.66%, Memory: 45816 kB
+System Time: 1738256353.836217, Usage: 0.77%, Memory: 45816 kB
+System Time: 1738256354.837203, Usage: 0.68%, Memory: 45816 kB
+System Time: 1738256355.837864, Usage: 0.72%, Memory: 45816 kB
+System Time: 1738256356.839725, Usage: 0.74%, Memory: 45816 kB
+System Time: 1738256357.839746, Usage: 0.71%, Memory: 45816 kB
+System Time: 1738256358.841864, Usage: 0.99%, Memory: 45816 kB
+System Time: 1738256359.842528, Usage: 0.66%, Memory: 45816 kB
+System Time: 1738256360.843313, Usage: 0.69%, Memory: 45816 kB
+System Time: 1738256361.844112, Usage: 0.65%, Memory: 45816 kB
+System Time: 1738256362.844818, Usage: 0.75%, Memory: 45816 kB
+System Time: 1738256363.845134, Usage: 0.74%, Memory: 45816 kB
+System Time: 1738256364.845268, Usage: 1.06%, Memory: 45816 kB
+System Time: 1738256365.846248, Usage: 0.9%, Memory: 45816 kB
+System Time: 1738256366.847177, Usage: 0.53%, Memory: 45816 kB
+System Time: 1738256367.848180, Usage: 0.71%, Memory: 45816 kB
+System Time: 1738256368.850563, Usage: 0.94%, Memory: 45816 kB
+System Time: 1738256369.850303, Usage: 0.94%, Memory: 45816 kB
+System Time: 1738256370.852123, Usage: 0.8%, Memory: 45816 kB
+System Time: 1738256371.852148, Usage: 0.73%, Memory: 45816 kB
+System Time: 1738256372.854025, Usage: 0.79%, Memory: 45816 kB
+System Time: 1738256373.854915, Usage: 0.83%, Memory: 45816 kB
+System Time: 1738256374.855584, Usage: 0.97%, Memory: 45816 kB
+System Time: 1738256375.858664, Usage: 1.06%, Memory: 45816 kB
+System Time: 1738256376.857355, Usage: 0.93%, Memory: 45816 kB
+System Time: 1738256377.860570, Usage: 0.72%, Memory: 45816 kB
+System Time: 1738256378.861346, Usage: 0.94%, Memory: 45816 kB
+CPU Temperature: 45.0
