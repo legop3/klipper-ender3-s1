@@ -230,3 +230,12 @@ Content-Type: multipart/form-data; boundary=------------------------170cd540c48a
 2025-01-29 15:03:33,968 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1277.19ms
 2025-01-29 15:03:34,013 [job_state.py:_status_update()] - Job Started: Revised_HDZero_goggle_finger_wrench_22m_0.20mm_205C_PLA_ENDER3S1.gcode
 2025-01-29 15:03:35,052 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2025-01-29 16:05:48,008 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-01-29 16:05:48,009 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-01-29 16:05:48,009 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
+2025-01-29 17:51:41,813 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
+2025-01-29 17:51:43,351 [websockets.py:on_close()] - Websocket Closed: ID: 140272911369792 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.23
+2025-01-29 17:51:44,138 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.80ms
+2025-01-29 17:51:44,138 [websockets.py:open()] - Websocket Opened: ID: 140272911369792, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
+2025-01-29 17:51:44,178 [websockets.py:_handle_identify()] - Websocket 140272911369792 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-01-29 18:55:48,034 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
