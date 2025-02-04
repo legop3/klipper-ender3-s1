@@ -303,3 +303,30 @@ Content-Type: multipart/form-data; boundary=------------------------d768682a77d5
 2025-02-03 19:20:09,828 [websockets.py:open()] - Websocket Opened: ID: 140272911377040, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
 2025-02-03 19:20:09,900 [websockets.py:_handle_identify()] - Websocket 140272911377040 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2025-02-03 19:22:24,406 [websockets.py:on_close()] - Websocket Closed: ID: 140272911377040 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.54
+2025-02-03 20:20:49,352 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
+2025-02-03 20:36:00,319 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-03 20:36:00,323 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------4b5272ba2238a6cd
+2025-02-03 20:36:00,334 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-03 20:36:00,441 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-03 20:36:00,448 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-03 20:36:00,450 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-03 20:36:00,556 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-03 20:36:00,563 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 240.25ms
+2025-02-03 20:36:00,626 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-03 20:36:01,357 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.164
+2025-02-03 20:36:02,091 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-03 21:10:34,105 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2025-02-03 21:10:34,106 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.38ms
+2025-02-03 21:10:34,106 [websockets.py:open()] - Websocket Opened: ID: 140272911384240, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
+2025-02-03 21:10:34,129 [websockets.py:_handle_identify()] - Websocket 140272911384240 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-03 21:10:44,941 [websockets.py:on_close()] - Websocket Closed: ID: 140272911384240 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.81
+2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
+2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-02-03 22:10:49,372 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
+2025-02-03 22:49:24,739 [websockets.py:on_close()] - Websocket Closed: ID: 140272910162704 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.06
+2025-02-03 22:49:37,167 [websockets.py:on_close()] - Websocket Closed: ID: 140272911376896 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.20
