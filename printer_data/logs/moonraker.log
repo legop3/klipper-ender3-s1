@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Feb  3 17:30:35 2025 --------------------
+-------------------- Log Start | Wed Feb 12 19:09:07 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['sysinit.target', '-.mount', 'system.slice']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'system.slice', 'network-online.target', 'sysinit.target']
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['network-online.target', 'basic.target', '-.mount', 'system.slice', 'systemd-journald.socket', 'sysinit.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,144 +189,47 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-02-03 12:30:35,169 [websockets.py:on_close()] - Websocket Closed: ID: 140272911369792 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.02
-2025-02-03 12:30:35,738 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.238
-2025-02-03 12:30:35,738 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.84ms
-2025-02-03 12:30:35,739 [websockets.py:open()] - Websocket Opened: ID: 140272910166160, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2025-02-03 12:30:35,804 [websockets.py:_handle_identify()] - Websocket 140272910166160 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 12:30:39,713 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2025-02-03 12:30:40,968 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2025-02-03 12:30:40,999 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'sysinit.target', 'system.slice']
-**After=['network-online.target', 'basic.target', '-.mount', 'system.slice', 'systemd-journald.socket', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2025-02-03 12:30:43,013 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2025-02-03 12:30:43,014 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2025-02-03 12:30:43,264 [job_state.py:_handle_started()] - Job state initialized: standby
-2025-02-03 12:30:43,518 [klippy_connection.py:_check_ready()] - Klippy ready
-2025-02-03 12:30:44,269 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2025-02-03 12:35:08,813 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-02-03 12:35:08,816 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------af77a7fefeaadc5e
-2025-02-03 12:35:08,828 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lid_1h18m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 12:35:09,252 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-02-03 12:35:09,318 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-02-03 12:35:09,321 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lid_1h18m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-02-03 12:35:09,535 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lid_1h18m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-02-03 12:35:09,545 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 728.48ms
-2025-02-03 12:35:09,769 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lid_1h18m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 12:35:11,414 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-02-03 12:37:06,959 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.164
-2025-02-03 12:37:06,960 [application.py:log_request()] - 101 GET /websocket (192.168.0.164) [_TRUSTED_USER_] 2.27ms
-2025-02-03 12:37:06,960 [websockets.py:open()] - Websocket Opened: ID: 140272911376896, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 12:37:06,994 [websockets.py:_handle_identify()] - Websocket 140272911376896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 12:39:26,078 [websockets.py:on_close()] - Websocket Closed: ID: 140272910166160 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.32
-2025-02-03 12:39:26,673 [application.py:log_request()] - 101 GET /websocket (192.168.0.238) [_TRUSTED_USER_] 0.74ms
-2025-02-03 12:39:26,673 [websockets.py:open()] - Websocket Opened: ID: 140272910162704, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0, Host Name: 192.168.0.40
-2025-02-03 12:39:26,709 [websockets.py:_handle_identify()] - Websocket 140272910162704 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 13:35:49,288 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-02-03 13:35:49,288 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-02-03 13:40:49,288 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.238
-2025-02-03 13:40:49,288 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
-2025-02-03 14:23:29,612 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-02-03 14:23:29,615 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------554518c76b8938ee
-2025-02-03 14:23:29,666 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_1h22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 14:23:29,809 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-02-03 14:23:29,822 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-02-03 14:23:29,824 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_1h22m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-02-03 14:23:29,971 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_1h22m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-02-03 14:23:29,986 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 371.50ms
-2025-02-03 14:23:30,128 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_1h22m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 14:23:31,496 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-02-03 14:23:33,836 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.164
-2025-02-03 15:25:49,305 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-02-03 15:25:49,305 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-02-03 15:25:49,305 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
-2025-02-03 17:36:05,257 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-02-03 17:36:05,261 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------d768682a77d569ff
-2025-02-03 17:36:05,280 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 17:36:05,424 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-02-03 17:36:05,445 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-02-03 17:36:05,448 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-02-03 17:36:05,699 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-02-03 17:36:05,708 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 447.19ms
-2025-02-03 17:36:05,768 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 17:36:07,368 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-02-03 17:36:07,515 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.164
-2025-02-03 18:35:37,897 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
-2025-02-03 18:35:37,898 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.73ms
-2025-02-03 18:35:37,898 [websockets.py:open()] - Websocket Opened: ID: 140272911384288, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 18:35:37,959 [websockets.py:_handle_identify()] - Websocket 140272911384288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 18:36:07,074 [websockets.py:on_close()] - Websocket Closed: ID: 140272911384288 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.11
-2025-02-03 18:39:19,451 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.75ms
-2025-02-03 18:39:19,452 [websockets.py:open()] - Websocket Opened: ID: 140272911382656, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 18:39:19,476 [websockets.py:_handle_identify()] - Websocket 140272911382656 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 18:40:49,338 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-02-03 18:40:49,338 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-02-03 18:40:49,338 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
-2025-02-03 19:02:48,869 [websockets.py:on_close()] - Websocket Closed: ID: 140272911382656 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.38
-2025-02-03 19:04:16,626 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.94ms
-2025-02-03 19:04:16,626 [websockets.py:open()] - Websocket Opened: ID: 140272911370368, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 19:04:16,657 [websockets.py:_handle_identify()] - Websocket 140272911370368 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 19:05:29,979 [websockets.py:on_close()] - Websocket Closed: ID: 140272911370368 Close Code: None, Close Reason: None, Pong Time Elapsed: 13.30
-2025-02-03 19:10:23,214 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.71ms
-2025-02-03 19:10:23,214 [websockets.py:open()] - Websocket Opened: ID: 140272911371376, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 19:10:23,261 [websockets.py:_handle_identify()] - Websocket 140272911371376 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 19:13:58,945 [websockets.py:on_close()] - Websocket Closed: ID: 140272911371376 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.66
-2025-02-03 19:15:12,403 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.97ms
-2025-02-03 19:15:12,403 [websockets.py:open()] - Websocket Opened: ID: 140272911375696, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 19:15:12,514 [websockets.py:_handle_identify()] - Websocket 140272911375696 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 19:16:19,407 [websockets.py:on_close()] - Websocket Closed: ID: 140272911375696 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.98
-2025-02-03 19:20:09,827 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.71ms
-2025-02-03 19:20:09,828 [websockets.py:open()] - Websocket Opened: ID: 140272911377040, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 19:20:09,900 [websockets.py:_handle_identify()] - Websocket 140272911377040 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 19:22:24,406 [websockets.py:on_close()] - Websocket Closed: ID: 140272911377040 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.54
-2025-02-03 20:20:49,352 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
-2025-02-03 20:36:00,319 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-02-03 20:36:00,323 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------4b5272ba2238a6cd
-2025-02-03 20:36:00,334 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 20:36:00,441 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-02-03 20:36:00,448 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-02-03 20:36:00,450 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-02-03 20:36:00,556 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-02-03 20:36:00,563 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 240.25ms
-2025-02-03 20:36:00,626 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-03 20:36:01,357 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.164
-2025-02-03 20:36:02,091 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-02-03 21:10:34,105 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
-2025-02-03 21:10:34,106 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.38ms
-2025-02-03 21:10:34,106 [websockets.py:open()] - Websocket Opened: ID: 140272911384240, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-03 21:10:34,129 [websockets.py:_handle_identify()] - Websocket 140272911384240 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-03 21:10:44,941 [websockets.py:on_close()] - Websocket Closed: ID: 140272911384240 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.81
-2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
-2025-02-03 21:40:49,367 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-02-03 22:10:49,372 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
-2025-02-03 22:49:24,739 [websockets.py:on_close()] - Websocket Closed: ID: 140272910162704 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.06
-2025-02-03 22:49:37,167 [websockets.py:on_close()] - Websocket Closed: ID: 140272911376896 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.20
+2025-02-12 14:09:07,625 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-12 14:09:17,120 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-02-12 14:09:47,666 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-12 14:09:51,222 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
