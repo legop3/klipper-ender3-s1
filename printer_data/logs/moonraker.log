@@ -233,3 +233,67 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-02-14 14:02:05,561 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.130
+2025-02-14 14:02:05,562 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.83ms
+2025-02-14 14:02:05,562 [websockets.py:open()] - Websocket Opened: ID: 140272911380880, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 14:02:05,590 [websockets.py:_handle_identify()] - Websocket 140272911380880 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 14:02:09,480 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-02-14 14:02:10,735 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-02-14 14:02:10,785 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'network-online.target', 'systemd-journald.socket', 'basic.target', '-.mount', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-02-14 14:02:12,802 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-02-14 14:02:12,803 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-02-14 14:02:13,053 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-02-14 14:02:13,307 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-02-14 14:02:14,058 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-02-14 14:03:21,058 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-14 14:03:21,061 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------4f30f4970179d1b9
+2025-02-14 14:03:21,071 [application.py:post()] - Processing Uploaded File: sidewall 1_32m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 14:03:21,244 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-14 14:03:21,263 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-14 14:03:21,265 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: sidewall 1_32m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-14 14:03:21,561 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "sidewall 1_32m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-14 14:03:21,575 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 514.71ms
+2025-02-14 14:03:21,761 [job_state.py:_status_update()] - Job Started: sidewall 1_32m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 14:03:23,025 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-14 14:19:04,334 [job_state.py:_status_update()] - Job Started: sidewall 1_32m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 14:26:44,860 [websockets.py:on_close()] - Websocket Closed: ID: 140272911380880 Close Code: None, Close Reason: None, Pong Time Elapsed: 29.27
+2025-02-14 14:26:45,568 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.67ms
+2025-02-14 14:26:45,569 [websockets.py:open()] - Websocket Opened: ID: 140272911369120, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 14:26:45,662 [websockets.py:_handle_identify()] - Websocket 140272911369120 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 14:46:34,864 [websockets.py:on_close()] - Websocket Closed: ID: 140272911369120 Close Code: None, Close Reason: None, Pong Time Elapsed: 29.27
+2025-02-14 14:46:36,239 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.70ms
+2025-02-14 14:46:36,239 [websockets.py:open()] - Websocket Opened: ID: 140272911370944, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 14:46:36,425 [websockets.py:_handle_identify()] - Websocket 140272911370944 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 14:54:26,273 [websockets.py:write_to_socket()] - Websocket closed while writing: 140272911370944
+2025-02-14 14:54:31,242 [websockets.py:on_close()] - Websocket Closed: ID: 140272911370944 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.28
+2025-02-14 14:54:37,262 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.72ms
+2025-02-14 14:54:37,262 [websockets.py:open()] - Websocket Opened: ID: 140272911382848, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 14:54:37,308 [websockets.py:_handle_identify()] - Websocket 140272911382848 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 15:05:06,729 [websockets.py:on_close()] - Websocket Closed: ID: 140272911382848 Close Code: None, Close Reason: None, Pong Time Elapsed: 29.46
+2025-02-14 15:05:07,676 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.62ms
+2025-02-14 15:05:07,676 [websockets.py:open()] - Websocket Opened: ID: 140272911369648, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 15:05:07,774 [websockets.py:_handle_identify()] - Websocket 140272911369648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 15:05:52,202 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-02-14 15:06:25,151 [websockets.py:on_close()] - Websocket Closed: ID: 140272911369648 Close Code: None, Close Reason: None, Pong Time Elapsed: 27.45
+2025-02-14 15:06:25,968 [application.py:log_request()] - 101 GET /websocket (192.168.0.130) [_TRUSTED_USER_] 0.72ms
+2025-02-14 15:06:25,969 [websockets.py:open()] - Websocket Opened: ID: 140272911382416, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-14 15:06:26,005 [websockets.py:_handle_identify()] - Websocket 140272911382416 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 15:20:52,204 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
