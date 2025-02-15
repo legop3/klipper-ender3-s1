@@ -500,3 +500,35 @@ OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2025-02-14 18:59:50,117 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2025-02-14 18:59:56,937 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case v2_1h34m_0.20mm_205C_PLA_ENDER3S1.gcode
 2025-02-14 19:25:52,247 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
+2025-02-14 20:00:52,253 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.194
+2025-02-14 20:00:52,253 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-02-14 20:44:32,895 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-14 20:45:29,231 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 20:45:30,349 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.130
+2025-02-14 20:58:43,798 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Lidv2.stl_1h35m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 21:45:52,267 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-02-14 21:45:52,267 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.130
+2025-02-14 22:24:39,889 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-14 22:24:39,894 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------9921ff08e899aecb
+2025-02-14 22:24:39,919 [application.py:post()] - Processing Uploaded File: sidewall 1 v4_51m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 22:24:40,034 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-14 22:24:40,053 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-14 22:24:40,056 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: sidewall 1 v4_51m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-14 22:24:40,637 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "sidewall 1 v4_51m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-14 22:24:40,649 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 755.24ms
+2025-02-14 22:24:40,836 [job_state.py:_status_update()] - Job Started: sidewall 1 v4_51m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-14 22:24:41,803 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.130
+2025-02-14 22:24:41,929 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-14 22:26:54,393 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-14 22:26:54,393 [application.py:log_request()] - 101 GET /websocket (192.168.0.226) [_TRUSTED_USER_] 0.95ms
+2025-02-14 22:26:54,393 [websockets.py:open()] - Websocket Opened: ID: 140272937942224, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: 192.168.0.40
+2025-02-14 22:26:54,450 [websockets.py:_handle_identify()] - Websocket 140272937942224 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-14 22:27:11,417 [websockets.py:on_close()] - Websocket Closed: ID: 140272937941648 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.26
+2025-02-14 23:25:52,283 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-02-14 23:25:52,283 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.130
+2025-02-14 23:25:52,284 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-02-14 23:30:52,284 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
