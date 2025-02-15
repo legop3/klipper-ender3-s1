@@ -210,3 +210,6 @@ Content-Type: multipart/form-data; boundary=------------------------926b12f5d85d
 2025-02-15 11:24:55,906 [job_state.py:_status_update()] - Job Started: wheels v1_1h44m_0.20mm_205C_PLA_ENDER3S1.gcode
 2025-02-15 11:24:56,538 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
 2025-02-15 11:24:57,080 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-15 12:25:52,416 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-02-15 12:25:52,417 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
+2025-02-15 12:25:52,417 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
