@@ -195,3 +195,18 @@ Klipper Version: v0.12.0-111-g4f00f219
 2025-02-15 01:16:09,499 [websockets.py:_handle_identify()] - Websocket 140272937934016 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2025-02-15 02:20:52,311 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.130
 2025-02-15 02:52:32,957 [websockets.py:on_close()] - Websocket Closed: ID: 140272937934016 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.49
+2025-02-15 11:24:53,839 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-15 11:24:53,841 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------926b12f5d85d2359
+2025-02-15 11:24:53,917 [application.py:post()] - Processing Uploaded File: wheels v1_1h44m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-15 11:24:54,074 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-15 11:24:54,102 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-15 11:24:54,105 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: wheels v1_1h44m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-15 11:24:55,743 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "wheels v1_1h44m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-15 11:24:55,755 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1914.07ms
+2025-02-15 11:24:55,906 [job_state.py:_status_update()] - Job Started: wheels v1_1h44m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-15 11:24:56,538 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-15 11:24:57,080 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
