@@ -235,3 +235,25 @@ Traceback (most recent call last):
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2025-02-16 10:05:18,931 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-16 19:43:01,427 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-16 19:43:01,436 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------eaee296ee22b76e8
+2025-02-16 19:43:01,476 [application.py:post()] - Processing Uploaded File: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-16 19:43:01,629 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-16 19:43:01,647 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-16 19:43:01,649 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-16 19:43:02,417 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-16 19:43:02,425 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 989.19ms
+2025-02-16 19:43:02,543 [job_state.py:_status_update()] - Job Started: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-16 19:43:04,108 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-16 19:43:48,404 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.131
+2025-02-16 19:43:48,405 [application.py:log_request()] - 101 GET /websocket (192.168.0.131) [_TRUSTED_USER_] 1.41ms
+2025-02-16 19:43:48,405 [websockets.py:open()] - Websocket Opened: ID: 140272937932048, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-16 19:43:48,473 [websockets.py:_handle_identify()] - Websocket 140272937932048 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-16 19:44:56,187 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-16 19:44:56,188 [application.py:log_request()] - 101 GET /websocket (192.168.0.226) [_TRUSTED_USER_] 0.94ms
+2025-02-16 19:44:56,188 [websockets.py:open()] - Websocket Opened: ID: 140272937932000, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: 192.168.0.40
+2025-02-16 19:44:56,193 [websockets.py:_handle_identify()] - Websocket 140272937932000 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
