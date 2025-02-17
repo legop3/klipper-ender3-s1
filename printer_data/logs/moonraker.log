@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Feb 16 15:03:48 2025 --------------------
+-------------------- Log Start | Mon Feb 17 16:44:54 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,76 +189,19 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-02-16 10:03:48,847 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-02-16 10:03:59,459 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2025-02-16 10:04:14,439 [websockets.py:write_to_socket()] - Websocket closed while writing: 140272937942224
-2025-02-16 10:04:19,397 [websockets.py:on_close()] - Websocket Closed: ID: 140272937942224 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
-2025-02-16 10:05:08,566 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-02-16 10:05:18,931 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-02-16 19:43:01,427 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-02-16 19:43:01,436 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------eaee296ee22b76e8
-2025-02-16 19:43:01,476 [application.py:post()] - Processing Uploaded File: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-16 19:43:01,629 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+2025-02-17 11:44:54,883 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-17 11:44:54,887 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------db17ebe944fbae78
+2025-02-17 11:44:54,984 [application.py:post()] - Processing Uploaded File: wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-17 11:44:55,176 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
 
-2025-02-16 19:43:01,647 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+2025-02-17 11:44:55,202 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
 
-2025-02-16 19:43:01,649 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+2025-02-17 11:44:55,204 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
 
-2025-02-16 19:43:02,417 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-02-16 19:43:02,425 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 989.19ms
-2025-02-16 19:43:02,543 [job_state.py:_status_update()] - Job Started: wheels v2_58m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-02-16 19:43:04,108 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-02-16 19:43:48,404 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.131
-2025-02-16 19:43:48,405 [application.py:log_request()] - 101 GET /websocket (192.168.0.131) [_TRUSTED_USER_] 1.41ms
-2025-02-16 19:43:48,405 [websockets.py:open()] - Websocket Opened: ID: 140272937932048, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
-2025-02-16 19:43:48,473 [websockets.py:_handle_identify()] - Websocket 140272937932048 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-16 19:44:56,187 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
-2025-02-16 19:44:56,188 [application.py:log_request()] - 101 GET /websocket (192.168.0.226) [_TRUSTED_USER_] 0.94ms
-2025-02-16 19:44:56,188 [websockets.py:open()] - Websocket Opened: ID: 140272937932000, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0, Host Name: 192.168.0.40
-2025-02-16 19:44:56,193 [websockets.py:_handle_identify()] - Websocket 140272937932000 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-02-16 20:45:52,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-02-16 20:45:52,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-02-16 20:45:52,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.131
-2025-02-16 20:45:52,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
-2025-02-16 21:25:24,237 [websockets.py:on_close()] - Websocket Closed: ID: 140272937932048 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.81
+2025-02-17 11:44:56,522 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-17 11:44:56,532 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1645.41ms
+2025-02-17 11:44:56,651 [job_state.py:_status_update()] - Job Started: wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-17 11:44:57,728 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-17 11:44:58,038 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-17 11:58:24,969 [job_state.py:_status_update()] - Job Started: wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode
