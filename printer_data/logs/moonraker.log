@@ -205,3 +205,25 @@ Content-Type: multipart/form-data; boundary=------------------------db17ebe944fb
 2025-02-17 11:44:57,728 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
 2025-02-17 11:44:58,038 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2025-02-17 11:58:24,969 [job_state.py:_status_update()] - Job Started: wheels v3_1h46m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-17 12:45:52,936 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-02-17 12:45:52,936 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
+2025-02-17 12:45:52,936 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-02-17 15:22:25,060 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-02-17 15:22:25,064 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------aa4715ad11ca5678
+2025-02-17 15:22:25,073 [application.py:post()] - Processing Uploaded File: top plate v1_1h8m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-17 15:22:25,351 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-02-17 15:22:25,382 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-02-17 15:22:25,386 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: top plate v1_1h8m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-02-17 15:22:25,626 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "top plate v1_1h8m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-02-17 15:22:25,642 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 578.84ms
+2025-02-17 15:22:25,791 [job_state.py:_status_update()] - Job Started: top plate v1_1h8m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-02-17 15:22:26,740 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-17 15:22:27,539 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-02-17 15:52:08,199 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.194
+2025-02-17 15:52:08,200 [application.py:log_request()] - 101 GET /websocket (192.168.0.194) [_TRUSTED_USER_] 1.35ms
+2025-02-17 15:52:08,200 [websockets.py:open()] - Websocket Opened: ID: 140272937929360, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-17 15:52:08,210 [websockets.py:_handle_identify()] - Websocket 140272937929360 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
