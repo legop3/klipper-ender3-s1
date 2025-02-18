@@ -231,3 +231,4 @@ Content-Type: multipart/form-data; boundary=------------------------aa4715ad11ca
 2025-02-17 16:25:52,976 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
 2025-02-17 16:25:52,976 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2025-02-17 16:55:52,982 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.194
+2025-02-17 21:47:51,293 [websockets.py:on_close()] - Websocket Closed: ID: 140272937929360 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.09
