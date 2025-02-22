@@ -1,13 +1,3 @@
-=============== Log rollover at Thu Feb 20 22:36:36 2025 ===============
-Starting Klippy...
-Args: ['/home/daniel/klipper/klippy/klippy.py', '/home/daniel/printer_data/config/printer.cfg', '-I', '/home/daniel/printer_data/comms/klippy.serial', '-l', '/home/daniel/printer_data/logs/klippy.log', '-a', '/home/daniel/printer_data/comms/klippy.sock']
-Git version: 'v0.12.0-111-g4f00f219'
-Branch: master
-Remote: origin
-Tracked URL: https://github.com/Klipper3d/klipper
-CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
-Python: '3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]'
-Start printer at Thu Feb 20 22:36:40 2025 (1740109000.6 59.6)
 ===== Config file =====
 [exclude_object]
 
@@ -353,47 +343,39 @@ max_x = 141.79
 min_y = 91.88999999999999
 max_y = 128.11
 =======================
-Extruder max_extrude_ratio=0.266081
-mcu 'mcu': Starting serial connect
-mcu 'mcu': got {'oid': 10, 'next_clock': 2938485248, 'value': 31603, '#name': 'analog_in_state', '#sent_time': 62.671787536, '#receive_time': 62.728123801}
-mcu 'mcu': got {'oid': 17, 'next_clock': 2943525248, 'value': 31579, '#name': 'analog_in_state', '#sent_time': 62.779997904999995, '#receive_time': 62.796085081}
-mcu 'mcu': got {'oid': 10, 'next_clock': 2960085248, 'value': 31602, '#name': 'analog_in_state', '#sent_time': 62.995104055999995, '#receive_time': 63.026090951}
 Loaded MCU 'mcu' 106 commands (v0.12.0-111-g4f00f219 / gcc: (15:10.3-2021.07-4) 10.3.1 20210621 (release) binutils: (2.38-3ubuntu1+15build1) 2.38)
 MCU 'mcu' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=72000000 MCU=stm32f103xe PWM_MAX=255 RECEIVE_WINDOW=192 RESERVE_PINS_serial=PA10,PA9 SERIAL_BAUD=250000 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
 Configured MCU 'mcu' (1024 moves)
-Starting heater checks for heater_bed
-bed_mesh: generated points
-Index |  Tool Adjusted  |   Probe
-  0   | (31.8, 40.5)    | (0.0, 0.0)
-  1   | (82.6, 40.5)    | (50.8, 0.0)
-  2   | (133.4, 40.5)   | (101.6, 0.0)
-  3   | (184.2, 40.5)   | (152.4, 0.0)
-  4   | (235.0, 40.5)   | (203.2, 0.0)
-  5   | (235.0, 86.6)   | (203.2, 46.1)
-  6   | (184.2, 86.6)   | (152.4, 46.1)
-  7   | (133.4, 86.6)   | (101.6, 46.1)
-  8   | (82.6, 86.6)    | (50.8, 46.1)
-  9   | (31.8, 86.6)    | (0.0, 46.1)
-  10  | (31.8, 132.7)   | (0.0, 92.2)
-  11  | (82.6, 132.7)   | (50.8, 92.2)
-  12  | (133.4, 132.7)  | (101.6, 92.2)
-  13  | (184.2, 132.7)  | (152.4, 92.2)
-  14  | (235.0, 132.7)  | (203.2, 92.2)
-  15  | (235.0, 178.9)  | (203.2, 138.4)
-  16  | (184.2, 178.9)  | (152.4, 138.4)
-  17  | (133.4, 178.9)  | (101.6, 138.4)
-  18  | (82.6, 178.9)   | (50.8, 138.4)
-  19  | (31.8, 178.9)   | (0.0, 138.4)
-  20  | (31.8, 225.0)   | (0.0, 184.5)
-  21  | (82.6, 225.0)   | (50.8, 184.5)
-  22  | (133.4, 225.0)  | (101.6, 184.5)
-  23  | (184.2, 225.0)  | (152.4, 184.5)
-  24  | (235.0, 225.0)  | (203.2, 184.5)
-Starting heater checks for extruder
-webhooks client 140424395731152: New connection
-webhooks client 140424395731152: Client info {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-webhooks: registering remote method 'shutdown_machine' for connection id: 140424395731152
-webhooks: registering remote method 'reboot_machine' for connection id: 140424395731152
-webhooks: registering remote method 'pause_job_queue' for connection id: 140424395731152
-webhooks: registering remote method 'start_job_queue' for connection id: 140424395731152
-webhooks: registering remote method 'set_device_power' for connection id: 140424395731152
+Args: ['/home/daniel/klipper/klippy/klippy.py', '/home/daniel/printer_data/config/printer.cfg', '-I', '/home/daniel/printer_data/comms/klippy.serial', '-l', '/home/daniel/printer_data/logs/klippy.log', '-a', '/home/daniel/printer_data/comms/klippy.sock']
+Git version: 'v0.12.0-111-g4f00f219'
+Branch: master
+Remote: origin
+Tracked URL: https://github.com/Klipper3d/klipper
+CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+Python: '3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]'
+webhooks client 140424395731152: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+=============== Log rollover at Sat Feb 22 12:29:38 2025 ===============
+b'Got EOF when reading from device'
+Timeout with MCU 'mcu' (eventtime=136445.188559)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 17 requests for client 140424395731152
+Received 73.790047: b'{"id": 139680006068480, "method": "info", "params": {"client_info": {"program": "Moonraker", "version": "v0.8.0-311-g65a8271"}}}'
+Received 73.797592: b'{"id": 139680006065696, "method": "list_endpoints", "params": {}}'
+Received 73.805689: b'{"id": 139680006071168, "method": "objects/subscribe", "params": {"objects": {"webhooks": null}, "response_template": {"method": "process_status_update"}}}'
+Received 73.807136: b'{"id": 139680006071168, "method": "gcode/subscribe_output", "params": {"response_template": {"method": "process_gcode_response"}}}'
+Received 73.808477: b'{"id": 139680006071168, "method": "list_endpoints", "params": {}}'
+Received 73.811121: b'{"id": 139680006072032, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null}, "response_template": {"method": "process_status_update"}}}'
+Received 74.057851: b'{"id": 139680034053936, "method": "objects/list", "params": {}}'
+Received 74.058724: b'{"id": 139680034053936, "method": "objects/query", "params": {"objects": {"configfile": null}}}'
+Received 74.311818: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "shutdown_machine"}, "remote_method": "shutdown_machine"}}'
+Received 74.313398: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "reboot_machine"}, "remote_method": "reboot_machine"}}'
+Received 74.314881: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "pause_job_queue"}, "remote_method": "pause_job_queue"}}'
+Received 74.316295: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "start_job_queue"}, "remote_method": "start_job_queue"}}'
+Received 74.317713: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "set_device_power"}, "remote_method": "set_device_power"}}'
+Received 74.319770: b'{"id": 139680024432928, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 74.320102: b'{"id": 139680024434080, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 74.560241: b'{"id": 139680024433072, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 74.812084: b'{"id": 139680024432688, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+gcode state: absolute_coord=True absolute_extrude=True base_position=[0.0, 0.0, 0.0, 0.0] last_position=[0.0, 0.0, 0.0, 0.0] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=25.0
+Reactor garbage collection: (73.806213125, 0.0, 0.0)

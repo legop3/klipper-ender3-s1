@@ -1,3 +1,13 @@
+=============== Log rollover at Thu Feb 20 22:36:36 2025 ===============
+Starting Klippy...
+Args: ['/home/daniel/klipper/klippy/klippy.py', '/home/daniel/printer_data/config/printer.cfg', '-I', '/home/daniel/printer_data/comms/klippy.serial', '-l', '/home/daniel/printer_data/logs/klippy.log', '-a', '/home/daniel/printer_data/comms/klippy.sock']
+Git version: 'v0.12.0-111-g4f00f219'
+Branch: master
+Remote: origin
+Tracked URL: https://github.com/Klipper3d/klipper
+CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+Python: '3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]'
+Start printer at Thu Feb 20 22:36:40 2025 (1740109000.6 59.6)
 ===== Config file =====
 [exclude_object]
 
@@ -343,42 +353,47 @@ max_x = 141.79
 min_y = 91.88999999999999
 max_y = 128.11
 =======================
+Extruder max_extrude_ratio=0.266081
+mcu 'mcu': Starting serial connect
+mcu 'mcu': got {'oid': 10, 'next_clock': 2938485248, 'value': 31603, '#name': 'analog_in_state', '#sent_time': 62.671787536, '#receive_time': 62.728123801}
+mcu 'mcu': got {'oid': 17, 'next_clock': 2943525248, 'value': 31579, '#name': 'analog_in_state', '#sent_time': 62.779997904999995, '#receive_time': 62.796085081}
+mcu 'mcu': got {'oid': 10, 'next_clock': 2960085248, 'value': 31602, '#name': 'analog_in_state', '#sent_time': 62.995104055999995, '#receive_time': 63.026090951}
 Loaded MCU 'mcu' 106 commands (v0.12.0-111-g4f00f219 / gcc: (15:10.3-2021.07-4) 10.3.1 20210621 (release) binutils: (2.38-3ubuntu1+15build1) 2.38)
 MCU 'mcu' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=72000000 MCU=stm32f103xe PWM_MAX=255 RECEIVE_WINDOW=192 RESERVE_PINS_serial=PA10,PA9 SERIAL_BAUD=250000 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
 Configured MCU 'mcu' (1024 moves)
-Args: ['/home/daniel/klipper/klippy/klippy.py', '/home/daniel/printer_data/config/printer.cfg', '-I', '/home/daniel/printer_data/comms/klippy.serial', '-l', '/home/daniel/printer_data/logs/klippy.log', '-a', '/home/daniel/printer_data/comms/klippy.sock']
-Git version: 'v0.12.0-111-g4f00f219'
-Branch: master
-Remote: origin
-Tracked URL: https://github.com/Klipper3d/klipper
-CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
-Python: '3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0]'
-webhooks client 140213488642624: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-=============== Log rollover at Thu Feb 13 16:35:44 2025 ===============
-b'Got EOF when reading from device'
-Timeout with MCU 'mcu' (eventtime=9673925.372642)
-Transition to shutdown state: Lost communication with MCU 'mcu'
-Dumping gcode input 0 blocks
-Dumping 20 requests for client 140213488642624
-Received 8824474.649659: b'{"id": 140272911368688, "method": "gcode/script", "params": {"script": "M221 S103"}}'
-Received 8824474.936249: b'{"id": 140272937972112, "method": "gcode/script", "params": {"script": "M221 S104"}}'
-Received 8824475.201379: b'{"id": 140272937971728, "method": "gcode/script", "params": {"script": "M221 S105"}}'
-Received 8824475.584768: b'{"id": 140272937969136, "method": "gcode/script", "params": {"script": "M221 S106"}}'
-Received 8824475.948535: b'{"id": 140272938860400, "method": "gcode/script", "params": {"script": "M221 S107"}}'
-Received 8824476.198028: b'{"id": 140272911371232, "method": "gcode/script", "params": {"script": "M221 S108"}}'
-Received 8824476.414855: b'{"id": 140272911380112, "method": "gcode/script", "params": {"script": "M221 S109"}}'
-Received 8824477.180809: b'{"id": 140272911383520, "method": "gcode/script", "params": {"script": "M221 S110"}}'
-Received 8825658.341773: b'{"id": 140272911382464, "method": "gcode/script", "params": {"script": "M221 S109"}}'
-Received 8825658.715871: b'{"id": 140272911381936, "method": "gcode/script", "params": {"script": "M221 S108"}}'
-Received 8825659.240819: b'{"id": 140272911379920, "method": "gcode/script", "params": {"script": "M221 S107"}}'
-Received 8825659.598638: b'{"id": 140272911379344, "method": "gcode/script", "params": {"script": "M221 S106"}}'
-Received 8825659.944555: b'{"id": 140272911382464, "method": "gcode/script", "params": {"script": "M221 S105"}}'
-Received 8825660.444216: b'{"id": 140272911369792, "method": "gcode/script", "params": {"script": "M221 S104"}}'
-Received 8825661.014739: b'{"id": 140272911381936, "method": "gcode/script", "params": {"script": "M221 S103"}}'
-Received 8825661.702568: b'{"id": 140272911375936, "method": "gcode/script", "params": {"script": "M221 S102"}}'
-Received 8826400.474539: b'{"id": 140272911370752, "method": "info", "params": {}}'
-Received 8826400.474539: b'{"id": 140272911379200, "method": "objects/list", "params": {}}'
-Received 8826400.475068: b'{"id": 140272911372000, "method": "gcode/help", "params": {}}'
-Received 8826400.576513: b'{"id": 140272911375936, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
-gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, 0.0, 19331.10459260051] last_position=[5.0, 187.0, 162.0, 19347.94342580051] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.02 speed=10.0
-Reactor garbage collection: (8824385.267969279, 0.0, 0.0)
+Starting heater checks for heater_bed
+bed_mesh: generated points
+Index |  Tool Adjusted  |   Probe
+  0   | (31.8, 40.5)    | (0.0, 0.0)
+  1   | (82.6, 40.5)    | (50.8, 0.0)
+  2   | (133.4, 40.5)   | (101.6, 0.0)
+  3   | (184.2, 40.5)   | (152.4, 0.0)
+  4   | (235.0, 40.5)   | (203.2, 0.0)
+  5   | (235.0, 86.6)   | (203.2, 46.1)
+  6   | (184.2, 86.6)   | (152.4, 46.1)
+  7   | (133.4, 86.6)   | (101.6, 46.1)
+  8   | (82.6, 86.6)    | (50.8, 46.1)
+  9   | (31.8, 86.6)    | (0.0, 46.1)
+  10  | (31.8, 132.7)   | (0.0, 92.2)
+  11  | (82.6, 132.7)   | (50.8, 92.2)
+  12  | (133.4, 132.7)  | (101.6, 92.2)
+  13  | (184.2, 132.7)  | (152.4, 92.2)
+  14  | (235.0, 132.7)  | (203.2, 92.2)
+  15  | (235.0, 178.9)  | (203.2, 138.4)
+  16  | (184.2, 178.9)  | (152.4, 138.4)
+  17  | (133.4, 178.9)  | (101.6, 138.4)
+  18  | (82.6, 178.9)   | (50.8, 138.4)
+  19  | (31.8, 178.9)   | (0.0, 138.4)
+  20  | (31.8, 225.0)   | (0.0, 184.5)
+  21  | (82.6, 225.0)   | (50.8, 184.5)
+  22  | (133.4, 225.0)  | (101.6, 184.5)
+  23  | (184.2, 225.0)  | (152.4, 184.5)
+  24  | (235.0, 225.0)  | (203.2, 184.5)
+Starting heater checks for extruder
+webhooks client 140424395731152: New connection
+webhooks client 140424395731152: Client info {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+webhooks: registering remote method 'shutdown_machine' for connection id: 140424395731152
+webhooks: registering remote method 'reboot_machine' for connection id: 140424395731152
+webhooks: registering remote method 'pause_job_queue' for connection id: 140424395731152
+webhooks: registering remote method 'start_job_queue' for connection id: 140424395731152
+webhooks: registering remote method 'set_device_power' for connection id: 140424395731152
