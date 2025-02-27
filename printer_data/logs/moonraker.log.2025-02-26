@@ -1,4 +1,4 @@
--------------------- Log Start | Sat Feb 22 17:29:42 2025 --------------------
+-------------------- Log Start | Wed Feb 26 07:03:48 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,37 +189,47 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-02-22 12:29:42,884 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2025-02-22 12:29:42,892 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1740245353.049153, Usage: 0.79%, Memory: 46148 kB
-System Time: 1740245354.051055, Usage: 0.62%, Memory: 46148 kB
-System Time: 1740245355.052108, Usage: 0.71%, Memory: 46148 kB
-System Time: 1740245356.053277, Usage: 1.06%, Memory: 46148 kB
-System Time: 1740245357.051102, Usage: 0.72%, Memory: 46148 kB
-System Time: 1740245358.054187, Usage: 0.38%, Memory: 46148 kB
-System Time: 1740245359.055389, Usage: 0.52%, Memory: 46148 kB
-System Time: 1740245360.056497, Usage: 0.74%, Memory: 46148 kB
-System Time: 1740245361.056452, Usage: 0.8%, Memory: 46148 kB
-System Time: 1740245362.055200, Usage: 0.67%, Memory: 46148 kB
-System Time: 1740245363.059208, Usage: 0.51%, Memory: 46148 kB
-System Time: 1740245364.057100, Usage: 0.64%, Memory: 46148 kB
-System Time: 1740245365.057907, Usage: 0.44%, Memory: 46148 kB
-System Time: 1740245366.060742, Usage: 0.68%, Memory: 46148 kB
-System Time: 1740245367.062539, Usage: 0.66%, Memory: 46148 kB
-System Time: 1740245368.064334, Usage: 0.68%, Memory: 46148 kB
-System Time: 1740245369.066161, Usage: 0.8%, Memory: 46148 kB
-System Time: 1740245370.067808, Usage: 0.74%, Memory: 46148 kB
-System Time: 1740245371.067702, Usage: 0.65%, Memory: 46148 kB
-System Time: 1740245372.071522, Usage: 0.45%, Memory: 46148 kB
-System Time: 1740245373.073422, Usage: 0.66%, Memory: 46148 kB
-System Time: 1740245374.076235, Usage: 0.53%, Memory: 46148 kB
-System Time: 1740245375.078289, Usage: 0.76%, Memory: 46148 kB
-System Time: 1740245376.078212, Usage: 0.85%, Memory: 46148 kB
-System Time: 1740245377.079120, Usage: 0.61%, Memory: 46148 kB
-System Time: 1740245378.081083, Usage: 0.73%, Memory: 46148 kB
-System Time: 1740245379.078825, Usage: 1.0%, Memory: 46148 kB
-System Time: 1740245380.080688, Usage: 0.22%, Memory: 46148 kB
-System Time: 1740245381.083767, Usage: 0.32%, Memory: 46148 kB
-System Time: 1740245382.086557, Usage: 0.5%, Memory: 46148 kB
-CPU Temperature: 31.0
+2025-02-26 02:03:48,006 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-26 02:03:59,610 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-02-26 02:04:47,697 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-02-26 02:04:48,085 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
