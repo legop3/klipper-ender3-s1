@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Feb 28 14:02:51 2025 --------------------
+-------------------- Log Start | Thu Feb 27 16:55:12 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,8 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-02-28 09:02:51,242 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-02-28 09:02:58,618 [power.py:init_state()] - Device Init Error: printer_plug
+2025-02-27 11:55:12,941 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-27 11:55:26,650 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -211,8 +211,59 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
     sock.connect(address)
 OSError: [Errno 101] Network is unreachable
-2025-02-28 09:04:01,333 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-02-28 09:04:06,705 [power.py:init_state()] - Device Init Error: printer_plug
+2025-02-27 11:56:09,713 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-02-27 11:56:13,037 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-27 12:41:45,462 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.226
+2025-02-27 12:41:45,464 [application.py:log_request()] - 101 GET /websocket (192.168.0.226) [_TRUSTED_USER_] 1.45ms
+2025-02-27 12:41:45,464 [websockets.py:open()] - Websocket Opened: ID: 139680006921120, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
+2025-02-27 12:41:45,519 [websockets.py:_handle_identify()] - Websocket 139680006921120 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-02-27 13:41:52,582 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
+2025-02-27 16:58:48,408 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-27 16:58:55,867 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-02-27 16:59:16,445 [websockets.py:write_to_socket()] - Websocket closed while writing: 139680006921120
+2025-02-27 16:59:20,466 [websockets.py:on_close()] - Websocket Closed: ID: 139680006921120 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
+2025-02-27 16:59:38,475 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-02-27 16:59:43,953 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
