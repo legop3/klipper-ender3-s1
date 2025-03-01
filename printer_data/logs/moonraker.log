@@ -238,3 +238,5 @@ OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2025-02-28 12:50:58,593 [websockets.py:open()] - Websocket Opened: ID: 139680006919152, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0, Host Name: 192.168.0.40
 2025-02-28 12:50:58,609 [websockets.py:_handle_identify()] - Websocket 139680006919152 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2025-02-28 13:51:52,937 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.226
+2025-02-28 21:53:29,407 [websockets.py:write_to_socket()] - Websocket closed while writing: 139680006919152
+2025-02-28 21:53:33,596 [websockets.py:on_close()] - Websocket Closed: ID: 139680006919152 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
