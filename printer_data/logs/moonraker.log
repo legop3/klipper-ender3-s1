@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Apr  4 05:28:09 2025 --------------------
+-------------------- Log Start | Tue Apr  8 17:53:24 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,5 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-04-04 01:28:09,767 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.131
-2025-04-04 01:28:09,767 [application.py:log_request()] - 101 GET /websocket (192.168.0.131) [_TRUSTED_USER_] 0.86ms
-2025-04-04 01:28:09,767 [websockets.py:open()] - Websocket Opened: ID: 139680006072704, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0, Host Name: 192.168.0.40
-2025-04-04 01:28:09,821 [websockets.py:_handle_identify()] - Websocket 139680006072704 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-04-04 01:28:14,640 [websockets.py:on_close()] - Websocket Closed: ID: 139680006072704 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.87
-2025-04-04 02:32:05,209 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.131
+2025-04-08 13:53:24,909 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-04-08 13:54:24,980 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
