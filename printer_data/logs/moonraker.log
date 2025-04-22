@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Apr 21 16:37:06 2025 --------------------
+-------------------- Log Start | Tue Apr 22 04:03:19 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,7 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-04-21 12:37:06,513 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 00:03:19,509 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -210,7 +210,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 12:37:51,866 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 00:04:05,208 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -231,7 +231,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 13:51:50,865 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 00:15:31,409 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -252,7 +252,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 13:52:28,143 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 00:16:00,703 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -273,7 +273,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 15:06:02,705 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 03:02:49,937 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -294,91 +294,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 15:06:16,853 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 20:52:45,009 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 20:52:50,061 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 23:37:24,049 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-04-21 23:38:01,198 [power.py:init_state()] - Device Init Error: printer_plug
+2025-04-22 03:03:11,134 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
