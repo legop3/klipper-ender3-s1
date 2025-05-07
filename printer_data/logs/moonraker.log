@@ -427,3 +427,37 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-05-06 21:11:02,847 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-05-06 21:11:02,854 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1746580233.089461, Usage: 0.68%, Memory: 51860 kB
+System Time: 1746580234.089284, Usage: 0.65%, Memory: 51860 kB
+System Time: 1746580235.090269, Usage: 0.63%, Memory: 51860 kB
+System Time: 1746580236.091737, Usage: 0.67%, Memory: 51860 kB
+System Time: 1746580237.091924, Usage: 0.8%, Memory: 51860 kB
+System Time: 1746580238.093431, Usage: 0.67%, Memory: 51860 kB
+System Time: 1746580239.093781, Usage: 1.01%, Memory: 51860 kB
+System Time: 1746580240.093317, Usage: 0.83%, Memory: 51860 kB
+System Time: 1746580241.095159, Usage: 0.67%, Memory: 51860 kB
+System Time: 1746580242.095090, Usage: 0.59%, Memory: 51860 kB
+System Time: 1746580243.096539, Usage: 0.61%, Memory: 51860 kB
+System Time: 1746580244.098100, Usage: 0.66%, Memory: 51860 kB
+System Time: 1746580245.100402, Usage: 0.66%, Memory: 51860 kB
+System Time: 1746580246.099549, Usage: 0.82%, Memory: 51860 kB
+System Time: 1746580247.100215, Usage: 0.76%, Memory: 51860 kB
+System Time: 1746580248.101239, Usage: 0.54%, Memory: 51860 kB
+System Time: 1746580249.104786, Usage: 0.92%, Memory: 51860 kB
+System Time: 1746580250.105285, Usage: 1.03%, Memory: 51860 kB
+System Time: 1746580251.102885, Usage: 0.85%, Memory: 51860 kB
+System Time: 1746580252.104825, Usage: 0.62%, Memory: 51860 kB
+System Time: 1746580253.104443, Usage: 0.62%, Memory: 51860 kB
+System Time: 1746580254.105095, Usage: 0.65%, Memory: 51860 kB
+System Time: 1746580255.107552, Usage: 0.56%, Memory: 51860 kB
+System Time: 1746580256.108463, Usage: 0.99%, Memory: 51860 kB
+System Time: 1746580257.107600, Usage: 1.15%, Memory: 51860 kB
+System Time: 1746580258.109825, Usage: 0.98%, Memory: 51860 kB
+System Time: 1746580259.110540, Usage: 0.74%, Memory: 51860 kB
+System Time: 1746580260.110116, Usage: 1.0%, Memory: 51860 kB
+System Time: 1746580261.111262, Usage: 0.57%, Memory: 51860 kB
+System Time: 1746580262.113038, Usage: 0.57%, Memory: 51860 kB
+CPU Temperature: 46.0
