@@ -1,0 +1,273 @@
+-------------------- Log Start | Sun Jun  8 22:55:37 2025 --------------------
+data_path: /home/daniel/printer_data
+is_default_data_path: False
+config_file: /home/daniel/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
+unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
+software_version: v0.8.0-311-g65a8271
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/daniel/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 5
+
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 12115808
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Ubuntu 22.04.4 LTS
+  id: ubuntu
+  version: 22.04
+  version_parts: {'major': '22', 'minor': '04', 'build_number': ''}
+  like: debian
+  codename: jammy
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', 'sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'basic.target', 'systemd-journald.socket', '-.mount', 'network-online.target', 'sysinit.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
+**ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/daniel/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=daniel
+
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['network-online.target', 'sysinit.target', 'systemd-journald.socket', 'basic.target', '-.mount', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo klipper-backup: No warnings detected
+Git Repo crowsnest: No warnings detected
+Klipper Version: v0.12.0-111-g4f00f219
+2025-06-08 18:55:37,474 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-06-08 18:55:37,638 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,639 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,639 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,644 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:38,943 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-06-08 18:55:38,995 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['systemd-journald.socket', 'system.slice', '-.mount', 'network-online.target', 'basic.target', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-06-08 18:55:39,523 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-06-08 18:55:40,777 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-06-08 18:55:42,650 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-06-08 18:55:42,652 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-06-08 18:55:42,902 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-06-08 18:55:43,232 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-06-08 18:55:43,652 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-06-08 18:55:46,567 [websockets.py:on_close()] - Websocket Closed: ID: 139802761805728 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.97
+2025-06-08 18:56:29,039 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-06-08 18:56:29,068 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 29.52ms
+2025-06-08 18:56:29,069 [websockets.py:open()] - Websocket Opened: ID: 139802771879632, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0, Host Name: localhost
+2025-06-08 18:56:29,120 [websockets.py:_handle_identify()] - Websocket 139802771879632 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-06-08 18:56:37,563 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.54 seconds, total blocked count: 1
+2025-06-08 18:56:37,764 [proc_stats.py:log_last_stats()] - 
+System Time: 1749423385.305960, Usage: 0.68%, Memory: 53532 kB
+System Time: 1749423386.303910, Usage: 0.78%, Memory: 53532 kB
+System Time: 1749423387.308037, Usage: 0.44%, Memory: 53532 kB
+System Time: 1749423388.306826, Usage: 0.8%, Memory: 53532 kB
+System Time: 1749423397.576416, Usage: 2.48%, Memory: 54108 kB
+2025-06-08 18:57:14,590 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:15,928 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:16,697 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:17,122 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:18,421 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:18,674 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:19,299 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:20,233 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:21,207 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:22,020 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:22,113 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:25,373 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:28,382 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
+2025-06-08 18:57:28,825 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
+2025-06-08 18:57:29,393 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
+2025-06-08 20:00:43,734 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-06-08 21:41:51,418 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.194
+2025-06-08 21:41:51,419 [application.py:log_request()] - 101 GET /websocket (192.168.0.194) [_TRUSTED_USER_] 1.05ms
+2025-06-08 21:41:51,419 [websockets.py:open()] - Websocket Opened: ID: 139802733839360, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0, Host Name: 192.168.0.40
+2025-06-08 21:41:51,456 [websockets.py:_handle_identify()] - Websocket 139802733839360 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-06-08 21:46:35,615 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-06-08 21:46:35,699 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------87f9843e59523e75
+2025-06-08 21:46:35,764 [application.py:post()] - Processing Uploaded File: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_Reinforced.stl_2h16m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-06-08 21:46:36,404 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-06-08 21:46:36,518 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-06-08 21:46:36,520 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_Reinforced.stl_2h16m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-06-08 21:46:36,864 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_Reinforced.stl_2h16m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-06-08 21:46:36,877 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1178.03ms
+2025-06-08 21:46:37,105 [job_state.py:_status_update()] - Job Started: Slim_enclosure_for_Heltec_Wireless_Tracker__M5Stack_CardKB_Case_Reinforced.stl_2h16m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-06-08 21:46:38,258 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-06-08 22:50:43,762 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.194
+2025-06-08 22:50:43,762 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-06-08 22:50:43,762 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-06-08 23:20:03,680 [websockets.py:on_close()] - Websocket Closed: ID: 139802733839360 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.25
+2025-06-08 23:20:04,280 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.165
+2025-06-08 23:20:04,280 [application.py:log_request()] - 101 GET /websocket (192.168.0.165) [_TRUSTED_USER_] 0.84ms
+2025-06-08 23:20:04,281 [websockets.py:open()] - Websocket Opened: ID: 139802733852944, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0, Host Name: 192.168.0.40
+2025-06-08 23:20:04,345 [websockets.py:_handle_identify()] - Websocket 139802733852944 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
