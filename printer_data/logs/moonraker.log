@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Jun  6 18:29:52 2025 --------------------
+-------------------- Log Start | Sun Jun  8 22:55:37 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,89 +189,58 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-06-06 14:29:52,029 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-06-06 14:29:52,101 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-06-06 14:30:05,166 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2025-06-06 14:35:02,332 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-06-06 14:35:03,301 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-06-06 14:35:08,305 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-06-08 18:55:37,474 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-06-08 18:55:37,638 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,639 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,639 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.restart, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:37,644 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2025-06-08 18:55:38,943 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-06-08 18:55:38,995 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['systemd-journald.socket', 'system.slice', '-.mount', 'network-online.target', 'basic.target', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-06-08 18:55:39,523 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-06-08 18:55:40,777 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-06-08 18:55:42,650 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-06-08 18:55:42,652 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-06-08 18:55:42,902 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-06-08 18:55:43,232 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-06-08 18:55:43,652 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-06-08 18:55:46,567 [websockets.py:on_close()] - Websocket Closed: ID: 139802761805728 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.97
+2025-06-08 18:56:29,039 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-06-08 18:56:29,068 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 29.52ms
+2025-06-08 18:56:29,069 [websockets.py:open()] - Websocket Opened: ID: 139802771879632, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0, Host Name: localhost
+2025-06-08 18:56:29,120 [websockets.py:_handle_identify()] - Websocket 139802771879632 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-06-08 18:56:37,563 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.54 seconds, total blocked count: 1
+2025-06-08 18:56:37,764 [proc_stats.py:log_last_stats()] - 
+System Time: 1749423385.305960, Usage: 0.68%, Memory: 53532 kB
+System Time: 1749423386.303910, Usage: 0.78%, Memory: 53532 kB
+System Time: 1749423387.308037, Usage: 0.44%, Memory: 53532 kB
+System Time: 1749423388.306826, Usage: 0.8%, Memory: 53532 kB
+System Time: 1749423397.576416, Usage: 2.48%, Memory: 54108 kB
+2025-06-08 18:57:14,590 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:15,928 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:16,697 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:17,122 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 247.000 154.000 10.000 [0.000]
+2025-06-08 18:57:18,421 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:18,674 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:19,299 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:20,233 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: -53.000 154.000 10.000 [0.000]
+2025-06-08 18:57:21,207 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:22,020 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:22,113 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:25,373 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 254.000 10.000 [0.000]
+2025-06-08 18:57:28,382 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
+2025-06-08 18:57:28,825 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
+2025-06-08 18:57:29,393 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 47.000 234.000 10.000 [0.000]
