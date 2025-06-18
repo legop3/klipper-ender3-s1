@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Jun 10 17:49:29 2025 --------------------
+-------------------- Log Start | Tue Jun 17 20:55:21 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,37 +189,24 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-06-10 13:49:29,373 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2025-06-10 13:49:29,379 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1749577739.498153, Usage: 0.87%, Memory: 49272 kB
-System Time: 1749577740.496833, Usage: 0.94%, Memory: 49272 kB
-System Time: 1749577741.500285, Usage: 1.0%, Memory: 49272 kB
-System Time: 1749577742.498406, Usage: 1.09%, Memory: 49272 kB
-System Time: 1749577743.502395, Usage: 0.8%, Memory: 49272 kB
-System Time: 1749577744.499629, Usage: 1.07%, Memory: 49272 kB
-System Time: 1749577745.501055, Usage: 0.66%, Memory: 49272 kB
-System Time: 1749577746.501403, Usage: 0.61%, Memory: 49272 kB
-System Time: 1749577747.504001, Usage: 0.84%, Memory: 49272 kB
-System Time: 1749577748.503076, Usage: 0.82%, Memory: 49272 kB
-System Time: 1749577749.504554, Usage: 0.62%, Memory: 49272 kB
-System Time: 1749577750.504817, Usage: 0.77%, Memory: 49272 kB
-System Time: 1749577751.505089, Usage: 0.95%, Memory: 49272 kB
-System Time: 1749577752.505419, Usage: 0.62%, Memory: 49272 kB
-System Time: 1749577753.507922, Usage: 0.7%, Memory: 49272 kB
-System Time: 1749577754.509328, Usage: 0.63%, Memory: 49272 kB
-System Time: 1749577755.511393, Usage: 0.66%, Memory: 49272 kB
-System Time: 1749577756.513309, Usage: 0.77%, Memory: 49272 kB
-System Time: 1749577757.517022, Usage: 0.98%, Memory: 49272 kB
-System Time: 1749577758.512685, Usage: 1.14%, Memory: 49272 kB
-System Time: 1749577759.516451, Usage: 0.56%, Memory: 49272 kB
-System Time: 1749577760.514580, Usage: 1.13%, Memory: 49272 kB
-System Time: 1749577761.514921, Usage: 0.85%, Memory: 49272 kB
-System Time: 1749577762.517189, Usage: 0.55%, Memory: 49272 kB
-System Time: 1749577763.517958, Usage: 0.63%, Memory: 49272 kB
-System Time: 1749577764.518375, Usage: 0.68%, Memory: 49272 kB
-System Time: 1749577765.519268, Usage: 1.2%, Memory: 49272 kB
-System Time: 1749577766.521008, Usage: 0.62%, Memory: 49272 kB
-System Time: 1749577767.521983, Usage: 0.56%, Memory: 49272 kB
-System Time: 1749577768.524043, Usage: 0.65%, Memory: 49272 kB
-CPU Temperature: 47.0
+2025-06-17 16:55:21,428 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
