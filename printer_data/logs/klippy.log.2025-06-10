@@ -352,30 +352,33 @@ Branch: master
 Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
-Python: '3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0]'
-webhooks client 140424395731152: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-=============== Log rollover at Sat Feb 22 12:29:38 2025 ===============
+Python: '3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]'
+webhooks client 139932897984672: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+=============== Log rollover at Tue Jun 10 13:49:24 2025 ===============
 b'Got EOF when reading from device'
-Timeout with MCU 'mcu' (eventtime=136445.188559)
+Timeout with MCU 'mcu' (eventtime=75469.248938)
 Transition to shutdown state: Lost communication with MCU 'mcu'
 Dumping gcode input 0 blocks
-Dumping 17 requests for client 140424395731152
-Received 73.790047: b'{"id": 139680006068480, "method": "info", "params": {"client_info": {"program": "Moonraker", "version": "v0.8.0-311-g65a8271"}}}'
-Received 73.797592: b'{"id": 139680006065696, "method": "list_endpoints", "params": {}}'
-Received 73.805689: b'{"id": 139680006071168, "method": "objects/subscribe", "params": {"objects": {"webhooks": null}, "response_template": {"method": "process_status_update"}}}'
-Received 73.807136: b'{"id": 139680006071168, "method": "gcode/subscribe_output", "params": {"response_template": {"method": "process_gcode_response"}}}'
-Received 73.808477: b'{"id": 139680006071168, "method": "list_endpoints", "params": {}}'
-Received 73.811121: b'{"id": 139680006072032, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null}, "response_template": {"method": "process_status_update"}}}'
-Received 74.057851: b'{"id": 139680034053936, "method": "objects/list", "params": {}}'
-Received 74.058724: b'{"id": 139680034053936, "method": "objects/query", "params": {"objects": {"configfile": null}}}'
-Received 74.311818: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "shutdown_machine"}, "remote_method": "shutdown_machine"}}'
-Received 74.313398: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "reboot_machine"}, "remote_method": "reboot_machine"}}'
-Received 74.314881: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "pause_job_queue"}, "remote_method": "pause_job_queue"}}'
-Received 74.316295: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "start_job_queue"}, "remote_method": "start_job_queue"}}'
-Received 74.317713: b'{"id": 139680034049184, "method": "register_remote_method", "params": {"response_template": {"method": "set_device_power"}, "remote_method": "set_device_power"}}'
-Received 74.319770: b'{"id": 139680024432928, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
-Received 74.320102: b'{"id": 139680024434080, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
-Received 74.560241: b'{"id": 139680024433072, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
-Received 74.812084: b'{"id": 139680024432688, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Dumping 20 requests for client 139932897984672
+Received 223.718194: b'{"id": 140212930963984, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 223.718194: b'{"id": 140212930959904, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 223.962779: b'{"id": 140212930964560, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 224.213974: b'{"id": 140213236502816, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 225.538915: b'{"id": 140212930963696, "method": "info", "params": {}}'
+Received 225.727654: b'{"id": 140212930962544, "method": "info", "params": {}}'
+Received 225.728075: b'{"id": 140212930964512, "method": "objects/list", "params": {}}'
+Received 225.730653: b'{"id": 140212930965088, "method": "gcode/help", "params": {}}'
+Received 225.776490: b'{"id": 140212930963696, "method": "info", "params": {}}'
+Received 225.779911: b'{"id": 140212930964752, "method": "objects/list", "params": {}}'
+Received 225.779911: b'{"id": 140212930956736, "method": "gcode/help", "params": {}}'
+Received 226.104791: b'{"id": 140212930963984, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 227.859165: b'{"id": 140212930963744, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 229.135799: b'{"id": 140212930956736, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 229.602151: b'{"id": 140212930963744, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 2061.995592: b'{"id": 140212921478848, "method": "info", "params": {}}'
+Received 2061.995857: b'{"id": 140212921480288, "method": "objects/list", "params": {}}'
+Received 2061.996297: b'{"id": 140212921482352, "method": "gcode/help", "params": {}}'
+Received 2062.027418: b'{"id": 140212921477552, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 2062.958725: b'{"id": 140212921479088, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
 gcode state: absolute_coord=True absolute_extrude=True base_position=[0.0, 0.0, 0.0, 0.0] last_position=[0.0, 0.0, 0.0, 0.0] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=25.0
-Reactor garbage collection: (73.806213125, 0.0, 0.0)
+Reactor garbage collection: (225.78056925, 0.0, 0.0)
