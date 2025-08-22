@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Aug 15 17:41:11 2025 --------------------
+-------------------- Log Start | Thu Aug 21 05:59:36 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,7 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-08-15 13:41:11,028 [power.py:init_state()] - Device Init Error: printer_plug
+2025-08-21 01:59:36,308 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -210,8 +210,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-08-15 13:41:12,294 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-08-15 13:41:24,093 [power.py:init_state()] - Device Init Error: printer_plug
+2025-08-21 01:59:38,562 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-08-21 01:59:49,374 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -232,7 +232,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
     sock.connect(address)
 OSError: [Errno 101] Network is unreachable
-2025-08-15 13:46:17,236 [power.py:init_state()] - Device Init Error: printer_plug
+2025-08-21 02:00:18,484 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -253,8 +253,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-08-15 13:46:22,703 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-08-15 13:46:24,387 [power.py:init_state()] - Device Init Error: printer_plug
+2025-08-21 02:00:25,933 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -275,68 +274,78 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-08-15 13:53:13,275 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-08-15 13:53:17,940 [power.py:init_state()] - Device Init Error: printer_plug
+2025-08-21 02:00:28,621 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-08-21 18:11:49,584 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-08-21 18:11:49,588 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------20872e3938fe0525
+2025-08-21 18:11:49,870 [application.py:post()] - Processing Uploaded File: Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-08-21 18:11:50,732 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-08-21 18:11:50,937 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-08-21 18:11:50,938 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-08-21 18:11:51,821 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-08-21 18:11:52,009 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2422.28ms
+2025-08-21 18:11:54,789 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-08-21 18:11:54,790 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.43ms
+2025-08-21 18:11:54,790 [websockets.py:open()] - Websocket Opened: ID: 139914692477472, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: localhost
+2025-08-21 18:11:54,874 [websockets.py:_handle_identify()] - Websocket 139914692477472 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-21 18:11:59,469 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-08-15 13:53:31,006 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2025-08-15 14:00:21,222 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
-2025-08-15 14:00:23,739 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+  File "/home/daniel/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 862, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2025-08-21 18:11:59,470 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-08-21 18:11:59,470 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2025-08-21 18:12:14,502 [websockets.py:on_close()] - Websocket Closed: ID: 139914692477472 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.71
+2025-08-21 18:12:15,276 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.42ms
+2025-08-21 18:12:15,277 [websockets.py:open()] - Websocket Opened: ID: 139914724562672, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: localhost
+2025-08-21 18:12:15,335 [websockets.py:_handle_identify()] - Websocket 139914724562672 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-21 18:12:16,838 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-08-21 18:12:16,892 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['-.mount', 'basic.target', 'network-online.target', 'systemd-journald.socket', 'sysinit.target', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-08-21 18:12:19,626 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-08-21 18:12:19,626 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-08-21 18:12:19,876 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-08-21 18:12:20,136 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-08-21 18:12:20,631 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-08-21 18:12:27,649 [job_state.py:_status_update()] - Job Started: Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-08-21 18:13:30,313 [job_state.py:_status_update()] - Job Started: Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-08-21 19:12:17,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-08-21 19:17:17,658 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-08-21 19:57:56,445 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
+2025-08-21 19:57:56,446 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 1.58ms
+2025-08-21 19:57:56,447 [websockets.py:open()] - Websocket Opened: ID: 139914716938976, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: 192.168.0.40
+2025-08-21 19:57:56,669 [websockets.py:_handle_identify()] - Websocket 139914716938976 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-21 20:09:06,662 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914716938976
+2025-08-21 20:09:11,449 [websockets.py:on_close()] - Websocket Closed: ID: 139914716938976 Close Code: None, Close Reason: None, Pong Time Elapsed: 43.64
+2025-08-21 20:34:21,566 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 1.21ms
+2025-08-21 20:34:21,566 [websockets.py:open()] - Websocket Opened: ID: 139914716939264, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: 192.168.0.40
+2025-08-21 20:34:21,578 [websockets.py:_handle_identify()] - Websocket 139914716939264 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-21 20:58:31,664 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914716939264
+2025-08-21 20:58:36,568 [websockets.py:on_close()] - Websocket Closed: ID: 139914716939264 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.85
+2025-08-21 21:37:17,682 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
+2025-08-21 22:23:00,067 [job_state.py:_status_update()] - Job Started: Enclosure_2h25m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-08-21 22:37:51,798 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
+2025-08-21 22:37:51,799 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 1.41ms
+2025-08-21 22:37:51,799 [websockets.py:open()] - Websocket Opened: ID: 139914716944880, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0, Host Name: 192.168.0.40
+2025-08-21 22:37:51,860 [websockets.py:_handle_identify()] - Websocket 139914716944880 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-21 23:42:17,710 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.166
