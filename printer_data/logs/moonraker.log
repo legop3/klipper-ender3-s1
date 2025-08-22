@@ -231,3 +231,9 @@ System Time: 1755840876.558525, Usage: 0.9%, Memory: 75168 kB
 System Time: 1755840877.559975, Usage: 0.87%, Memory: 75168 kB
 CPU Temperature: 47.0
 2025-08-22 01:58:23,342 [websockets.py:on_close()] - Websocket Closed: ID: 139914692483328 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.05
+2025-08-22 12:09:45,457 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
+2025-08-22 12:09:45,458 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 0.90ms
+2025-08-22 12:09:45,458 [websockets.py:open()] - Websocket Opened: ID: 139914716942432, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: 192.168.0.40
+2025-08-22 12:09:45,463 [websockets.py:_handle_identify()] - Websocket 139914716942432 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-22 12:16:56,189 [websockets.py:on_close()] - Websocket Closed: ID: 139914716942432 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.73
+2025-08-22 13:12:17,850 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
