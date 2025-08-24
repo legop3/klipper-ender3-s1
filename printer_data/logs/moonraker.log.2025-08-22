@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Aug 18 22:54:19 2025 --------------------
+-------------------- Log Start | Fri Aug 22 04:26:32 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount']
-**After=['basic.target', 'network-online.target', 'sysinit.target', 'system.slice', '-.mount', 'systemd-journald.socket']
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['-.mount', 'basic.target', 'network-online.target', 'systemd-journald.socket', 'sysinit.target', 'system.slice']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,45 +189,51 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-08-18 18:54:19,768 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-08-18 18:54:25,807 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-08-22 00:26:32,026 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914716944880
+2025-08-22 00:26:36,802 [websockets.py:on_close()] - Websocket Closed: ID: 139914716944880 Close Code: None, Close Reason: None, Pong Time Elapsed: 37.28
+2025-08-22 00:27:52,291 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
+2025-08-22 00:27:52,292 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 1.35ms
+2025-08-22 00:27:52,292 [websockets.py:open()] - Websocket Opened: ID: 139914692483328, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0, Host Name: 192.168.0.40
+2025-08-22 00:27:52,299 [websockets.py:_handle_identify()] - Websocket 139914692483328 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-22 01:32:17,728 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.166
+2025-08-22 01:34:38,088 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-08-22 01:34:38,095 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1755840848.535799, Usage: 0.76%, Memory: 75168 kB
+System Time: 1755840849.536126, Usage: 0.87%, Memory: 75168 kB
+System Time: 1755840850.536407, Usage: 0.74%, Memory: 75168 kB
+System Time: 1755840851.536768, Usage: 0.69%, Memory: 75168 kB
+System Time: 1755840852.538205, Usage: 0.78%, Memory: 75168 kB
+System Time: 1755840853.538249, Usage: 0.68%, Memory: 75168 kB
+System Time: 1755840854.539531, Usage: 0.99%, Memory: 75168 kB
+System Time: 1755840855.539961, Usage: 0.77%, Memory: 75168 kB
+System Time: 1755840856.540405, Usage: 0.75%, Memory: 75168 kB
+System Time: 1755840857.540700, Usage: 0.67%, Memory: 75168 kB
+System Time: 1755840858.541485, Usage: 0.67%, Memory: 75168 kB
+System Time: 1755840859.542707, Usage: 0.92%, Memory: 75168 kB
+System Time: 1755840860.543350, Usage: 0.76%, Memory: 75168 kB
+System Time: 1755840861.542624, Usage: 0.79%, Memory: 75168 kB
+System Time: 1755840862.543095, Usage: 0.8%, Memory: 75168 kB
+System Time: 1755840863.544148, Usage: 0.67%, Memory: 75168 kB
+System Time: 1755840864.544632, Usage: 1.03%, Memory: 75168 kB
+System Time: 1755840865.546218, Usage: 0.73%, Memory: 75168 kB
+System Time: 1755840866.548517, Usage: 0.66%, Memory: 75168 kB
+System Time: 1755840867.549963, Usage: 0.72%, Memory: 75168 kB
+System Time: 1755840868.551254, Usage: 0.83%, Memory: 75168 kB
+System Time: 1755840869.552067, Usage: 0.9%, Memory: 75168 kB
+System Time: 1755840870.553198, Usage: 0.77%, Memory: 75168 kB
+System Time: 1755840871.553552, Usage: 0.99%, Memory: 75168 kB
+System Time: 1755840872.554838, Usage: 0.91%, Memory: 75168 kB
+System Time: 1755840873.554980, Usage: 0.75%, Memory: 75168 kB
+System Time: 1755840874.556352, Usage: 1.47%, Memory: 75168 kB
+System Time: 1755840875.557922, Usage: 0.91%, Memory: 75168 kB
+System Time: 1755840876.558525, Usage: 0.9%, Memory: 75168 kB
+System Time: 1755840877.559975, Usage: 0.87%, Memory: 75168 kB
+CPU Temperature: 47.0
+2025-08-22 01:58:23,342 [websockets.py:on_close()] - Websocket Closed: ID: 139914692483328 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.05
+2025-08-22 12:09:45,457 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
+2025-08-22 12:09:45,458 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 0.90ms
+2025-08-22 12:09:45,458 [websockets.py:open()] - Websocket Opened: ID: 139914716942432, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0, Host Name: 192.168.0.40
+2025-08-22 12:09:45,463 [websockets.py:_handle_identify()] - Websocket 139914716942432 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-08-22 12:16:56,189 [websockets.py:on_close()] - Websocket Closed: ID: 139914716942432 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.73
+2025-08-22 13:12:17,850 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
