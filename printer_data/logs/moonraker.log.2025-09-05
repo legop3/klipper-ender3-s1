@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Sep  3 17:54:52 2025 --------------------
+-------------------- Log Start | Fri Sep  5 22:19:21 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-09-03 13:54:50,779 [websockets.py:on_close()] - Websocket Closed: ID: 139914720328720 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.25
-2025-09-03 17:13:18,452 [power.py:init_state()] - Device Init Error: printer_plug
+2025-09-05 18:19:21,844 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -211,7 +210,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-09-03 17:33:57,450 [power.py:init_state()] - Device Init Error: printer_plug
+2025-09-05 18:19:34,912 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
