@@ -281,3 +281,126 @@ Traceback (most recent call last):
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
 2025-10-03 14:42:29,750 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
+2025-10-03 20:48:49,349 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-03 20:56:50,134 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-03 21:04:39,685 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-03 21:04:43,577 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-10-03 21:04:52,750 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-10-03 21:05:08,594 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914721757264
+2025-10-03 21:05:13,510 [websockets.py:on_close()] - Websocket Closed: ID: 139914721757264 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2025-10-03 21:05:38,501 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-03 21:05:39,221 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.75
+2025-10-03 21:05:39,222 [application.py:log_request()] - 101 GET /websocket (192.168.0.75) [_TRUSTED_USER_] 0.79ms
+2025-10-03 21:05:39,222 [websockets.py:open()] - Websocket Opened: ID: 139914692273168, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0, Host Name: 192.168.0.40
+2025-10-03 21:05:39,226 [websockets.py:_handle_identify()] - Websocket 139914692273168 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-03 21:05:43,632 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-10-03 22:07:29,837 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.75
+2025-10-03 22:39:39,330 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914692273168
+2025-10-03 22:39:44,226 [websockets.py:on_close()] - Websocket Closed: ID: 139914692273168 Close Code: None, Close Reason: None, Pong Time Elapsed: 39.16
+2025-10-03 22:47:58,465 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.75
+2025-10-03 22:47:58,466 [application.py:log_request()] - 101 GET /websocket (192.168.0.75) [_TRUSTED_USER_] 1.42ms
+2025-10-03 22:47:58,466 [websockets.py:open()] - Websocket Opened: ID: 139914692264576, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0, Host Name: 192.168.0.40
+2025-10-03 22:47:58,666 [websockets.py:_handle_identify()] - Websocket 139914692264576 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-03 22:48:28,691 [websockets.py:write_to_socket()] - Websocket closed while writing: 139914692264576
+2025-10-03 22:48:33,469 [websockets.py:on_close()] - Websocket Closed: ID: 139914692264576 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2025-10-03 23:52:29,861 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.75
