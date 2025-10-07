@@ -231,3 +231,35 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-07 12:02:12,562 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-10-07 12:02:12,563 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.57ms
+2025-10-07 12:02:12,563 [websockets.py:open()] - Websocket Opened: ID: 139914692265056, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0, Host Name: localhost
+2025-10-07 12:02:12,643 [websockets.py:_handle_identify()] - Websocket 139914692265056 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-07 12:02:16,167 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-10-07 12:02:17,423 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-10-07 12:02:19,460 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-10-07 12:02:19,460 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-10-07 12:02:19,710 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-10-07 12:02:19,989 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-10-07 12:02:20,463 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-10-07 12:02:27,075 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-10-07 12:02:27,079 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------6cca7bb3ed5e374c
+2025-10-07 12:02:27,225 [application.py:post()] - Processing Uploaded File: Arducam Base_4h38m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-07 12:02:27,487 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-10-07 12:02:27,513 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-10-07 12:02:27,516 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Arducam Base_4h38m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-10-07 12:02:29,488 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Arducam Base_4h38m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-10-07 12:02:29,513 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2434.47ms
+2025-10-07 12:02:29,740 [job_state.py:_status_update()] - Job Started: Arducam Base_4h38m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-07 13:02:30,902 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-10-07 13:02:30,902 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-10-07 14:27:00,843 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.173
+2025-10-07 14:27:00,844 [application.py:log_request()] - 101 GET /websocket (192.168.0.173) [_TRUSTED_USER_] 1.16ms
+2025-10-07 14:27:00,844 [websockets.py:open()] - Websocket Opened: ID: 139914721769648, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:138.0) Gecko/20100101 Firefox/138.0, Host Name: 192.168.0.40
+2025-10-07 14:27:01,018 [websockets.py:_handle_identify()] - Websocket 139914721769648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-07 14:29:01,329 [websockets.py:on_close()] - Websocket Closed: ID: 139914721769648 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.48
+2025-10-07 15:27:30,926 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
