@@ -297,3 +297,35 @@ System Time: 1759878774.762246, Usage: 0.74%, Memory: 58520 kB
 System Time: 1759878775.762620, Usage: 0.56%, Memory: 58520 kB
 System Time: 1759878776.763954, Usage: 0.71%, Memory: 58520 kB
 CPU Temperature: 46.0
+2025-10-07 21:47:47,797 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-10-07 21:47:47,801 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------c2c5918cb279c818
+2025-10-07 21:47:47,837 [application.py:post()] - Processing Uploaded File: Arducam Base_1h36m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-07 21:47:48,101 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-10-07 21:47:48,118 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-10-07 21:47:48,123 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Arducam Base_1h36m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-10-07 21:47:48,819 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Arducam Base_1h36m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-10-07 21:47:48,825 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1024.25ms
+2025-10-07 21:47:52,731 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-10-07 21:47:53,985 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-10-07 21:47:56,023 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-10-07 21:47:56,023 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-10-07 21:47:56,274 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-10-07 21:47:56,529 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-10-07 21:47:57,028 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-10-07 21:47:57,876 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-10-07 21:48:25,612 [job_state.py:_status_update()] - Job Started: Arducam Base_1h36m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-07 22:52:31,006 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-10-07 22:52:31,006 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-10-07 23:14:23,289 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
+2025-10-07 23:14:23,289 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.91ms
+2025-10-07 23:14:23,289 [websockets.py:open()] - Websocket Opened: ID: 139914721761200, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0, Host Name: 192.168.0.40
+2025-10-07 23:14:23,312 [websockets.py:_handle_identify()] - Websocket 139914721761200 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-07 23:44:07,606 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
+2025-10-07 23:44:07,606 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 0.84ms
+2025-10-07 23:44:07,606 [websockets.py:open()] - Websocket Opened: ID: 139914692279648, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0, Host Name: 192.168.0.40
+2025-10-07 23:44:07,692 [websockets.py:_handle_identify()] - Websocket 139914692279648 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-07 23:44:14,440 [websockets.py:on_close()] - Websocket Closed: ID: 139914692279648 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.83
