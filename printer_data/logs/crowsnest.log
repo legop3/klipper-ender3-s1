@@ -5547,3 +5547,4 @@
 [10/08/25 12:13:31] crowsnest: WATCHDOG: Lost Device: '/dev/video0'
 [10/08/25 12:17:33] crowsnest: WATCHDOG: Device '/dev/video0' returned.
 [10/08/25 12:25:33] crowsnest: WATCHDOG: Lost Device: '/dev/video0'
+[10/08/25 18:56:01] crowsnest: WATCHDOG: Device '/dev/video0' returned.
