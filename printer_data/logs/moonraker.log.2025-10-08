@@ -1,0 +1,1242 @@
+-------------------- Log Start | Wed Oct  8 04:17:31 2025 --------------------
+data_path: /home/daniel/printer_data
+is_default_data_path: False
+config_file: /home/daniel/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
+unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
+software_version: v0.8.0-311-g65a8271
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/daniel/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, May 27 2025, 17:12:29) [GCC 11.4.0]
+launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 5
+
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, May 27 2025, 17:12:29) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 12115728
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Ubuntu 22.04.4 LTS
+  id: ubuntu
+  version: 22.04
+  version_parts: {'major': '22', 'minor': '04', 'build_number': ''}
+  like: debian
+  codename: jammy
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice', 'network-online.target']
+**After=['basic.target', 'network-online.target', '-.mount', 'system.slice', 'systemd-journald.socket', 'sysinit.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
+**ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/daniel/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=daniel
+
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['network-online.target', 'basic.target', 'system.slice', 'systemd-journald.socket', 'sysinit.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo klipper-backup: No warnings detected
+Git Repo crowsnest: No warnings detected
+Klipper Version: v0.12.0-111-g4f00f219
+2025-10-08 00:17:31,020 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
+2025-10-08 00:47:31,028 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.166
+2025-10-08 01:38:54,679 [websockets.py:on_close()] - Websocket Closed: ID: 139914721761200 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.38
+2025-10-08 10:06:30,860 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-10-08 10:06:30,867 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1759932361.534561, Usage: 1.23%, Memory: 60072 kB
+System Time: 1759932362.534863, Usage: 1.2%, Memory: 60072 kB
+System Time: 1759932363.536258, Usage: 1.26%, Memory: 60072 kB
+System Time: 1759932364.536479, Usage: 1.21%, Memory: 60072 kB
+System Time: 1759932365.538831, Usage: 1.25%, Memory: 60072 kB
+System Time: 1759932366.535837, Usage: 1.25%, Memory: 60072 kB
+System Time: 1759932367.540164, Usage: 0.83%, Memory: 60072 kB
+System Time: 1759932368.541538, Usage: 1.54%, Memory: 60072 kB
+System Time: 1759932369.543542, Usage: 1.15%, Memory: 60072 kB
+System Time: 1759932370.543906, Usage: 1.25%, Memory: 60072 kB
+System Time: 1759932371.543212, Usage: 1.29%, Memory: 60072 kB
+System Time: 1759932372.546220, Usage: 1.25%, Memory: 60072 kB
+System Time: 1759932373.547080, Usage: 1.56%, Memory: 60072 kB
+System Time: 1759932374.548175, Usage: 1.13%, Memory: 60072 kB
+System Time: 1759932375.549452, Usage: 1.17%, Memory: 60072 kB
+System Time: 1759932376.550102, Usage: 1.24%, Memory: 60072 kB
+System Time: 1759932377.551437, Usage: 1.3%, Memory: 60072 kB
+System Time: 1759932378.550852, Usage: 1.59%, Memory: 60072 kB
+System Time: 1759932379.553159, Usage: 1.08%, Memory: 60072 kB
+System Time: 1759932380.551210, Usage: 1.26%, Memory: 60072 kB
+System Time: 1759932381.554476, Usage: 1.01%, Memory: 60072 kB
+System Time: 1759932382.554935, Usage: 1.1%, Memory: 60072 kB
+System Time: 1759932383.556125, Usage: 1.39%, Memory: 60072 kB
+System Time: 1759932384.557480, Usage: 1.28%, Memory: 60072 kB
+System Time: 1759932385.558765, Usage: 1.28%, Memory: 60072 kB
+System Time: 1759932386.561412, Usage: 1.06%, Memory: 60072 kB
+System Time: 1759932387.562608, Usage: 1.13%, Memory: 60072 kB
+System Time: 1759932388.564075, Usage: 1.29%, Memory: 60072 kB
+System Time: 1759932389.561346, Usage: 1.11%, Memory: 60072 kB
+System Time: 1759932390.562635, Usage: 1.03%, Memory: 60072 kB
+CPU Temperature: 38.0
+2025-10-08 10:47:19,492 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+TimeoutError: [Errno 110] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 10:47:27,556 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+-------------------- Log Start | Wed Oct  8 15:17:19 2025 --------------------
+data_path: /home/daniel/printer_data
+is_default_data_path: False
+config_file: /home/daniel/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
+unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
+software_version: v0.8.0-311-g65a8271
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/daniel/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2025-10-08 11:17:20,036 [confighelper.py:read_file()] - Configuration File '/home/daniel/printer_data/config/moonraker.conf' parsed, total size: 1635 B
+2025-10-08 11:17:20,036 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+2025-10-08 11:17:21,091 [server.py:load_component()] - Component (secrets) loaded
+2025-10-08 11:17:21,108 [server.py:load_component()] - Component (template) loaded
+2025-10-08 11:17:21,114 [server.py:load_component()] - Component (klippy_connection) loaded
+2025-10-08 11:17:24,965 [server.py:load_component()] - Component (application) loaded
+2025-10-08 11:17:25,019 [server.py:load_component()] - Component (websockets) loaded
+2025-10-08 11:17:25,499 [server.py:load_component()] - Component (dbus_manager) loaded
+2025-10-08 11:17:25,931 [server.py:add_log_rollover_item()] - 
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 6
+2025-10-08 11:17:26,197 [server.py:load_component()] - Component (database) loaded
+2025-10-08 11:17:26,423 [file_manager.py:__init__()] - Using File System Observer: inotify
+2025-10-08 11:17:26,575 [server.py:load_component()] - Component (file_manager) loaded
+2025-10-08 11:17:26,651 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2025-10-08 11:17:26,652 [server.py:load_component()] - Component (authorization) loaded
+2025-10-08 11:17:26,656 [server.py:load_component()] - Component (klippy_apis) loaded
+2025-10-08 11:17:27,450 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 12115728
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Ubuntu 22.04.4 LTS
+  id: ubuntu
+  version: 22.04
+  version_parts: {'major': '22', 'minor': '04', 'build_number': ''}
+  like: debian
+  codename: jammy
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2025-10-08 11:17:27,452 [server.py:load_component()] - Component (shell_command) loaded
+2025-10-08 11:17:27,452 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2025-10-08 11:17:27,455 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2025-10-08 11:17:27,455 [server.py:load_component()] - Component (machine) loaded
+2025-10-08 11:17:27,457 [server.py:load_component()] - Component (data_store) loaded
+2025-10-08 11:17:27,458 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2025-10-08 11:17:27,458 [server.py:load_component()] - Component (proc_stats) loaded
+2025-10-08 11:17:27,460 [server.py:load_component()] - Component (job_state) loaded
+2025-10-08 11:17:27,462 [server.py:load_component()] - Component (job_queue) loaded
+2025-10-08 11:17:27,596 [server.py:load_component()] - Component (http_client) loaded
+2025-10-08 11:17:27,598 [server.py:load_component()] - Component (announcements) loaded
+2025-10-08 11:17:27,599 [server.py:load_component()] - Component (webcam) loaded
+2025-10-08 11:17:27,600 [server.py:load_component()] - Component (extensions) loaded
+2025-10-08 11:17:27,603 [server.py:load_component()] - Component (history) loaded
+2025-10-08 11:17:27,605 [server.py:load_component()] - Component (octoprint_compat) loaded
+2025-10-08 11:17:27,633 [power.py:__init__()] - Power component loading devices: ['power printer_plug']
+2025-10-08 11:17:27,635 [server.py:load_component()] - Component (power) loaded
+2025-10-08 11:17:27,761 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/daniel/moonraker-env
+2025-10-08 11:17:27,762 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/daniel/klippy-env
+2025-10-08 11:17:27,809 [server.py:load_component()] - Component (update_manager) loaded
+2025-10-08 11:17:27,810 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2025-10-08 11:17:27,815 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2025-10-08 11:17:28,017 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2025-10-08 11:17:28,017 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2025-10-08 11:17:28,017 [machine.py:validation_init()] - Installation version in database up to date
+2025-10-08 11:17:28,157 [machine.py:check_virt_status()] - No Virtualization Detected
+2025-10-08 11:17:28,332 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'network-online.target', 'system.slice', '-.mount']
+**After=['-.mount', 'systemd-journald.socket', 'basic.target', 'system.slice', 'sysinit.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
+**ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/daniel/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=daniel
+2025-10-08 11:17:28,332 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2025-10-08 11:17:28,332 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2025-10-08 11:17:28,333 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2025-10-08 11:17:28,333 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2025-10-08 11:17:28,333 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['network-online.target', 'basic.target', 'system.slice', 'systemd-journald.socket', 'sysinit.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-10-08 11:17:28,333 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2025-10-08 11:17:28,335 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2025-10-08 11:17:28,335 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2025-10-08 11:17:28,336 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-10-08 11:17:29,173 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2025-10-08 11:17:29,327 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/daniel/printer_data/comms/moonraker.sock'
+2025-10-08 11:17:29,328 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: basement
+2025-10-08 11:17:29,328 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2025-10-08 11:17:29,580 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-10-08 11:17:29,604 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['system.slice', '-.mount', 'sysinit.target', 'systemd-journald.socket', 'basic.target', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-10-08 11:17:29,856 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-111-g4f00f219
+2025-10-08 11:17:30,352 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2025-10-08 11:17:32,366 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2025-10-08 11:17:42,322 [base_deploy.py:log_info()] - PackageKit: Detected 136 package updates:
+alsa-ucm-conf
+apt
+apt-utils
+base-files
+bind9-dnsutils
+bind9-host
+bind9-libs
+coreutils
+cryptsetup
+cryptsetup-bin
+cryptsetup-initramfs
+dconf-cli
+dconf-gsettings-backend
+dconf-service
+distro-info-data
+dmidecode
+dmsetup
+dns-root-data
+e2fsprogs
+firmware-sof-signed
+fonts-noto-color-emoji
+gir1.2-mutter-10
+gir1.2-nm-1.0
+gir1.2-packagekitglib-1.0
+gjs
+gnome-control-center
+gnome-control-center-data
+gnome-control-center-faces
+gnome-remote-desktop
+gnome-shell
+gnome-shell-common
+gnome-shell-extension-prefs
+google-chrome-stable
+grub-efi-amd64-bin
+grub-efi-amd64-signed
+initramfs-tools
+initramfs-tools-bin
+initramfs-tools-core
+language-pack-en
+language-pack-en-base
+libapt-pkg6.0
+libcom-err2
+libcryptsetup12
+libdconf1
+libdevmapper1.02.1
+libegl-mesa0
+libext2fs2
+libgbm1
+libgjs0g
+libgl1-mesa-dri
+libglapi-mesa
+libglib2.0-0
+libglib2.0-bin
+libglib2.0-data
+libglx-mesa0
+libgpgme11
+libgpgmepp6
+libldap-2.5-0
+libldap-common
+libmalcontent-0-0
+libmbim-glib4
+libmbim-proxy
+libmm-glib0
+libmutter-10-0
+libnautilus-extension1a
+libnm0
+libpackagekit-glib2-18
+libpcap0.8
+libpulse-mainloop-glib0
+libpulse0
+libpulsedsp
+libpython3-dev
+libpython3-stdlib
+libseccomp2
+libsmbclient
+libsnmp-base
+libsnmp40
+libss2
+libwbclient0
+libxatracker2
+linux-base
+logsave
+mesa-va-drivers
+mesa-vdpau-drivers
+mesa-vulkan-drivers
+modemmanager
+mutter
+mutter-common
+nautilus
+nautilus-data
+network-manager
+network-manager-config-connectivity-ubuntu
+openvpn
+packagekit
+packagekit-tools
+pci.ids
+plasma-distro-release-notifier
+powermgmt-base
+pulseaudio
+pulseaudio-module-bluetooth
+pulseaudio-module-gsettings
+pulseaudio-utils
+python-apt-common
+python3
+python3-apt
+python3-dev
+python3-distupgrade
+python3-gpg
+python3-minimal
+python3-paramiko
+python3-samba
+python3-update-manager
+samba-common
+samba-common-bin
+samba-dsdb-modules
+samba-libs
+smbclient
+snapd
+systemd-hwe-hwdb
+tcpdump
+tracker-extract
+tracker-miner-fs
+ubuntu-advantage-tools
+ubuntu-minimal
+ubuntu-pro-client-l10n
+ubuntu-release-upgrader-core
+ubuntu-release-upgrader-gtk
+ubuntu-release-upgrader-qt
+ubuntu-standard
+update-manager
+update-manager-core
+update-notifier
+update-notifier-common
+xdg-desktop-portal
+xdg-desktop-portal-gnome
+ubuntu-pro-client
+2025-10-08 11:17:43,204 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker status --porcelain -b) successfully finished
+2025-10-08 11:17:43,209 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker branch --list --no-color) successfully finished
+2025-10-08 11:17:43,214 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker remote get-url origin) successfully finished
+2025-10-08 11:17:45,606 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/moonraker fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:45,608 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:46,109 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:46,109 [git_deploy.py:refresh_repo_state()] - Git Repo moonraker: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:46,109 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:46,267 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper status --porcelain -b) successfully finished
+2025-10-08 11:17:46,272 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper branch --list --no-color) successfully finished
+2025-10-08 11:17:46,276 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper remote get-url origin) successfully finished
+2025-10-08 11:17:46,288 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:46,290 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:46,790 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:46,790 [git_deploy.py:refresh_repo_state()] - Git Repo klipper: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:46,790 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:47,360 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config status --porcelain -b) successfully finished
+2025-10-08 11:17:47,366 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config branch --list --no-color) successfully finished
+2025-10-08 11:17:47,372 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config remote get-url origin) successfully finished
+2025-10-08 11:17:47,383 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/mainsail-config fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:47,384 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:47,886 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:47,886 [git_deploy.py:refresh_repo_state()] - Git Repo mainsail-config: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:47,886 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:48,897 [base_deploy.py:log_info()] - Web Client mainsail: Github Request Error - [Errno -3] Temporary failure in name resolution
+2025-10-08 11:17:48,897 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/daniel/mainsail
+Local Version: v2.10.0
+Remote Version: v2.10.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.10.0/mainsail.zip
+Download Size: 2081565
+Content Type: application/zip
+Rollback Version: v2.10.0
+Rollback Repo: mainsail-crew/mainsail
+2025-10-08 11:17:49,978 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging status --porcelain -b) successfully finished
+2025-10-08 11:17:49,984 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging branch --list --no-color) successfully finished
+2025-10-08 11:17:49,990 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging remote get-url origin) successfully finished
+2025-10-08 11:17:50,000 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/Klipper-Adaptive-Meshing-Purging fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:50,003 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:50,503 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:50,503 [git_deploy.py:refresh_repo_state()] - Git Repo Klipper-Adaptive-Meshing-Purging: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:50,503 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:51,034 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup status --porcelain -b) successfully finished
+2025-10-08 11:17:51,040 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup branch --list --no-color) successfully finished
+2025-10-08 11:17:51,046 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup remote get-url origin) successfully finished
+2025-10-08 11:17:51,057 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/klipper-backup fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:51,059 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:51,561 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:51,561 [git_deploy.py:refresh_repo_state()] - Git Repo klipper-backup: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:51,561 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:52,158 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest status --porcelain -b) successfully finished
+2025-10-08 11:17:52,164 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest branch --list --no-color) successfully finished
+2025-10-08 11:17:52,169 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest remote get-url origin) successfully finished
+2025-10-08 11:17:52,181 [shell_command.py:_check_proc_success()] - Command (git -C /home/daniel/crowsnest fetch origin --prune --progress) exited with return code 128
+2025-10-08 11:17:52,183 [shell_command.py:_check_proc_success()] - Command (find .git/objects/ -type f -empty | xargs rm) exited with return code 1
+2025-10-08 11:17:52,684 [git_deploy.py:_repair_loose_objects()] - Attempt to repair loose objects failed, hard recovery is required
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1152, in _repair_loose_objects
+    await shell_cmd.exec_cmd(
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'find .git/objects/ -type f -empty | xargs rm'
+2025-10-08 11:17:52,685 [git_deploy.py:refresh_repo_state()] - Git Repo crowsnest: Initialization failure
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:17:52,685 [git_deploy.py:refresh()] - Error Refreshing git state
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 58, in refresh
+    await self._update_repo_state()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 64, in _update_repo_state
+    await self.repo.refresh_repo_state(need_fetch=need_fetch)
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 339, in refresh_repo_state
+    await self.fetch()
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 748, in fetch
+    await self._run_git_cmd_async(
+  File "/home/daniel/moonraker/moonraker/components/update_manager/git_deploy.py", line 1217, in _run_git_cmd_async
+    raise self.server.error(
+moonraker.utils.ServerError: Unable to repair loose objects, use hard recovery
+2025-10-08 11:18:54,481 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-10-08 11:18:54,482 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-10-08 11:18:54,484 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2025-10-08 11:47:30,355 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2025-10-08 11:47:32,374 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2025-10-08 11:48:37,045 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 11:48:40,923 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-10-08 11:48:40,924 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2025-10-08 12:28:05,338 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 12:35:17,549 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 12:37:39,676 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 13:18:29,297 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 14:50:40,011 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 14:52:05,421 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:01:11,869 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:10:02,669 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:28:00,185 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:30:29,677 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+TimeoutError: [Errno 110] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:30:37,741 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 17:58:23,947 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 18:07:18,445 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-10-08 18:13:19,029 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
