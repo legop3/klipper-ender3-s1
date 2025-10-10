@@ -10648,3 +10648,30 @@ Stats 112362.6: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_s
 Stats 112363.6: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000008 bytes_write=12913302 bytes_read=2294937 bytes_retransmit=0 bytes_invalid=0 send_seq=233977 receive_seq=233977 retransmit_seq=0 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999160 heater_bed: target=0 temp=38.3 pwm=0.000  sysload=0.57 cputime=121.030 memavail=7628868 print_time=10186.137 buffer_time=0.000 print_stall=0 extruder: target=0 temp=37.6 pwm=0.000
 Stats 112364.6: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000008 bytes_write=12913308 bytes_read=2295043 bytes_retransmit=0 bytes_invalid=0 send_seq=233978 receive_seq=233978 retransmit_seq=0 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999160 heater_bed: target=0 temp=38.4 pwm=0.000  sysload=0.57 cputime=121.034 memavail=7611536 print_time=10186.137 buffer_time=0.000 print_stall=0 extruder: target=0 temp=37.6 pwm=0.000
 Stats 112365.6: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000008 bytes_write=12913320 bytes_read=2295180 bytes_retransmit=0 bytes_invalid=0 send_seq=233980 receive_seq=233980 retransmit_seq=0 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999159 heater_bed: target=0 temp=38.3 pwm=0.000  sysload=0.57 cputime=121.038 memavail=7595928 print_time=10186.137 buffer_time=0.000 print_stall=0 extruder: target=0 temp=37.5 pwm=0.000
+b'Got EOF when reading from device'
+Timeout with MCU 'mcu' (eventtime=118092.839607)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140139606319808
+Received 108151.148807: b'{"id": 139857730183152, "method": "gcode/script", "params": {"script": "M221 S103"}}'
+Received 108151.312950: b'{"id": 139857730183920, "method": "gcode/script", "params": {"script": "M221 S104"}}'
+Received 108151.437670: b'{"id": 139857730183296, "method": "gcode/script", "params": {"script": "M221 S105"}}'
+Received 108151.585032: b'{"id": 139857730184496, "method": "gcode/script", "params": {"script": "M221 S106"}}'
+Received 108151.737477: b'{"id": 139857730178352, "method": "gcode/script", "params": {"script": "M221 S107"}}'
+Received 108152.238393: b'{"id": 139857730155184, "method": "gcode/script", "params": {"script": "M221 S108"}}'
+Received 108152.415884: b'{"id": 139857730155664, "method": "gcode/script", "params": {"script": "M221 S109"}}'
+Received 108152.557017: b'{"id": 139857730155520, "method": "gcode/script", "params": {"script": "M221 S110"}}'
+Received 108169.290065: b'{"id": 139857730156912, "method": "gcode/script", "params": {"script": "M220 S79"}}'
+Received 108170.904076: b'{"id": 139857730156768, "method": "gcode/script", "params": {"script": "M220 S100"}}'
+Received 108232.862948: b'{"id": 139857730156960, "method": "gcode/script", "params": {"script": "M220 S132"}}'
+Received 108287.249549: b'{"id": 139857730155616, "method": "gcode/script", "params": {"script": "M221 S109"}}'
+Received 108287.430026: b'{"id": 139857730157392, "method": "gcode/script", "params": {"script": "M221 S108"}}'
+Received 108287.554455: b'{"id": 139857730157920, "method": "gcode/script", "params": {"script": "M221 S107"}}'
+Received 108287.687996: b'{"id": 139857730155232, "method": "gcode/script", "params": {"script": "M221 S106"}}'
+Received 108287.852394: b'{"id": 139857730181136, "method": "gcode/script", "params": {"script": "M221 S105"}}'
+Received 108291.112789: b'{"id": 139857730155088, "method": "gcode/script", "params": {"script": "M220 S137"}}'
+Received 108291.320045: b'{"id": 139857730157104, "method": "gcode/script", "params": {"script": "M220 S142"}}'
+Received 108291.486090: b'{"id": 139857730157728, "method": "gcode/script", "params": {"script": "M220 S147"}}'
+Received 108293.693363: b'{"id": 139857730155664, "method": "gcode/script", "params": {"script": "M220 S142"}}'
+gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, 0.0, 4082.5570974001257] last_position=[5.0, 187.0, 162.0, 4116.291570900115] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.023666666666666666 extrude_factor=1.05 speed=14.2
+Reactor garbage collection: (107184.488831694, 0.0, 0.0)

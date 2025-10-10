@@ -251,3 +251,43 @@ Content-Type: multipart/form-data; boundary=------------------------0658b09fd059
 2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
 2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-10-09 20:04:30,225 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-10-09 20:04:30,232 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1760054640.783370, Usage: 0.69%, Memory: 48404 kB
+System Time: 1760054641.782412, Usage: 0.72%, Memory: 48404 kB
+System Time: 1760054642.782826, Usage: 0.68%, Memory: 48404 kB
+System Time: 1760054643.784116, Usage: 0.57%, Memory: 48404 kB
+System Time: 1760054644.785254, Usage: 0.59%, Memory: 48404 kB
+System Time: 1760054645.786554, Usage: 0.6%, Memory: 48404 kB
+System Time: 1760054646.786847, Usage: 0.62%, Memory: 48404 kB
+System Time: 1760054647.788142, Usage: 0.81%, Memory: 48404 kB
+System Time: 1760054648.790522, Usage: 0.72%, Memory: 48404 kB
+System Time: 1760054649.791008, Usage: 0.62%, Memory: 48404 kB
+System Time: 1760054650.791397, Usage: 0.68%, Memory: 48404 kB
+System Time: 1760054651.791999, Usage: 0.58%, Memory: 48404 kB
+System Time: 1760054652.793463, Usage: 0.65%, Memory: 48404 kB
+System Time: 1760054653.794816, Usage: 0.57%, Memory: 48404 kB
+System Time: 1760054654.795343, Usage: 0.58%, Memory: 48404 kB
+System Time: 1760054655.796718, Usage: 0.57%, Memory: 48404 kB
+System Time: 1760054656.798340, Usage: 0.65%, Memory: 48404 kB
+System Time: 1760054657.798645, Usage: 0.82%, Memory: 48404 kB
+System Time: 1760054658.800105, Usage: 0.57%, Memory: 48404 kB
+System Time: 1760054659.800748, Usage: 0.59%, Memory: 48404 kB
+System Time: 1760054660.801347, Usage: 0.7%, Memory: 48404 kB
+System Time: 1760054661.801733, Usage: 0.68%, Memory: 48404 kB
+System Time: 1760054662.802014, Usage: 0.64%, Memory: 48404 kB
+System Time: 1760054663.803590, Usage: 0.59%, Memory: 48404 kB
+System Time: 1760054664.804464, Usage: 0.56%, Memory: 48404 kB
+System Time: 1760054665.806133, Usage: 0.76%, Memory: 48404 kB
+System Time: 1760054666.806501, Usage: 1.2%, Memory: 48404 kB
+System Time: 1760054667.806758, Usage: 1.07%, Memory: 48404 kB
+System Time: 1760054668.807023, Usage: 0.64%, Memory: 48404 kB
+System Time: 1760054669.807317, Usage: 0.58%, Memory: 48404 kB
+CPU Temperature: 47.0
+2025-10-09 20:30:55,602 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2025-10-09 20:30:55,602 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.81ms
+2025-10-09 20:30:55,603 [websockets.py:open()] - Websocket Opened: ID: 139857730155904, Proxied: True, User Agent: Mozilla/5.0 (Android 12; Mobile; rv:143.0) Gecko/143.0 Firefox/143.0, Host Name: 192.168.0.40
+2025-10-09 20:30:55,633 [websockets.py:_handle_identify()] - Websocket 139857730155904 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-09 20:30:58,619 [websockets.py:on_close()] - Websocket Closed: ID: 139857730155904 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.02
+2025-10-09 21:32:29,015 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
