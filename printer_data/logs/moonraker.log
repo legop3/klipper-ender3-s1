@@ -228,3 +228,26 @@ Content-Type: multipart/form-data; boundary=------------------------f3a4f30ecdbb
 2025-10-09 15:42:59,143 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "G29_SHIFTER_MOD_SPRING_3_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
 2025-10-09 15:42:59,155 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1051.56ms
 2025-10-09 15:42:59,302 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_3_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-09 16:02:55,873 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
+2025-10-09 16:02:55,874 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 1.34ms
+2025-10-09 16:02:55,874 [websockets.py:open()] - Websocket Opened: ID: 139857730156192, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0, Host Name: 192.168.0.40
+2025-10-09 16:02:55,882 [websockets.py:_handle_identify()] - Websocket 139857730156192 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-10-09 16:47:28,966 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-10-09 16:52:28,967 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-10-09 17:01:45,257 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-10-09 17:01:45,261 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------0658b09fd059e9ce
+2025-10-09 17:01:45,292 [application.py:post()] - Processing Uploaded File: G29_SHIFTER_MOD_SPRING_3_1h3m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-09 17:01:45,645 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-10-09 17:01:45,666 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-10-09 17:01:45,668 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: G29_SHIFTER_MOD_SPRING_3_1h3m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-10-09 17:01:46,165 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "G29_SHIFTER_MOD_SPRING_3_1h3m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-10-09 17:01:46,172 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 911.33ms
+2025-10-09 17:01:46,276 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_3_1h3m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-10-09 17:01:46,820 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
+2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-10-09 18:02:28,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
