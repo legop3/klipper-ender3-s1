@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Oct 14 16:55:13 2025 --------------------
+-------------------- Log Start | Mon Oct 20 23:47:48 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,45 +189,17 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-10-14 12:55:13,837 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2025-10-14 12:55:26,952 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('192.168.0.83', 9999)
+2025-10-20 19:47:38,694 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.97 seconds, total blocked count: 1
+2025-10-20 19:47:49,478 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 16.41 seconds, total blocked count: 2
+2025-10-20 19:47:49,478 [proc_stats.py:log_last_stats()] - 
+System Time: 1761004045.405208, Usage: 0.96%, Memory: 44156 kB
+System Time: 1761004046.406830, Usage: 0.62%, Memory: 44156 kB
+System Time: 1761004047.407346, Usage: 0.73%, Memory: 44156 kB
+System Time: 1761004048.409178, Usage: 0.66%, Memory: 43804 kB
+System Time: 1761004049.409339, Usage: 0.57%, Memory: 43804 kB
+2025-10-20 19:47:49,774 [proc_stats.py:log_last_stats()] - 
+System Time: 1761004047.407346, Usage: 0.73%, Memory: 44156 kB
+System Time: 1761004048.409178, Usage: 0.66%, Memory: 43804 kB
+System Time: 1761004049.409339, Usage: 0.57%, Memory: 43804 kB
+System Time: 1761004069.479627, Usage: 0.07%, Memory: 44064 kB
+System Time: 1761004069.491367, Usage: 0.5%, Memory: 44172 kB
