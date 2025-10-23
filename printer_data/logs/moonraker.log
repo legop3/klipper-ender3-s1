@@ -840,3 +840,892 @@ Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
     raise ShellCommandError(
 moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:28:35,258 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:28:48,960 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.58 seconds, total blocked count: 3119
+2025-10-23 00:28:51,369 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193720.270100, Usage: 0.72%, Memory: 23360 kB
+System Time: 1761193721.270990, Usage: 0.47%, Memory: 23052 kB
+System Time: 1761193722.272456, Usage: 0.41%, Memory: 23052 kB
+System Time: 1761193723.273959, Usage: 0.44%, Memory: 22880 kB
+System Time: 1761193724.276813, Usage: 0.61%, Memory: 22880 kB
+2025-10-23 00:28:52,020 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:29:05,023 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.49 seconds, total blocked count: 3120
+2025-10-23 00:29:05,561 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193737.173517, Usage: 0.75%, Memory: 23752 kB
+System Time: 1761193738.166111, Usage: 0.57%, Memory: 23748 kB
+System Time: 1761193739.166224, Usage: 0.72%, Memory: 23408 kB
+System Time: 1761193740.165468, Usage: 0.79%, Memory: 23180 kB
+System Time: 1761193741.168280, Usage: 0.54%, Memory: 23180 kB
+2025-10-23 00:29:07,889 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:29:25,026 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.06 seconds, total blocked count: 3121
+2025-10-23 00:29:26,725 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193753.950190, Usage: 0.42%, Memory: 22876 kB
+System Time: 1761193754.953200, Usage: 0.36%, Memory: 22876 kB
+System Time: 1761193755.953493, Usage: 0.65%, Memory: 22860 kB
+System Time: 1761193756.952724, Usage: 0.7%, Memory: 22860 kB
+System Time: 1761193757.952900, Usage: 0.38%, Memory: 22716 kB
+2025-10-23 00:29:29,505 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:29:43,893 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.64 seconds, total blocked count: 3122
+2025-10-23 00:29:45,825 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193775.386817, Usage: 0.63%, Memory: 23292 kB
+System Time: 1761193776.387922, Usage: 0.8%, Memory: 22888 kB
+System Time: 1761193777.460772, Usage: 0.87%, Memory: 22948 kB
+System Time: 1761193778.460955, Usage: 0.53%, Memory: 22752 kB
+System Time: 1761193779.465649, Usage: 0.47%, Memory: 22736 kB
+2025-10-23 00:29:48,125 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:30:01,783 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:30:15,224 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.51 seconds, total blocked count: 3123
+2025-10-23 00:30:15,505 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193807.656543, Usage: 0.44%, Memory: 23148 kB
+System Time: 1761193808.659133, Usage: 0.51%, Memory: 22928 kB
+System Time: 1761193809.661560, Usage: 0.59%, Memory: 22840 kB
+System Time: 1761193810.660819, Usage: 0.78%, Memory: 22716 kB
+System Time: 1761193811.660323, Usage: 0.68%, Memory: 22684 kB
+2025-10-23 00:30:18,782 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:30:35,243 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:30:47,870 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.26 seconds, total blocked count: 3124
+2025-10-23 00:30:48,074 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193840.572088, Usage: 0.89%, Memory: 23276 kB
+System Time: 1761193841.572941, Usage: 0.68%, Memory: 23276 kB
+System Time: 1761193842.571935, Usage: 0.73%, Memory: 22988 kB
+System Time: 1761193843.575220, Usage: 0.44%, Memory: 22988 kB
+System Time: 1761193844.976906, Usage: 0.65%, Memory: 23060 kB
+2025-10-23 00:30:51,362 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:31:08,047 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:31:23,049 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:31:37,527 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:31:50,844 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:32:05,862 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:32:18,962 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.22 seconds, total blocked count: 3125
+2025-10-23 00:32:19,164 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193930.875891, Usage: 0.86%, Memory: 23320 kB
+System Time: 1761193931.876722, Usage: 0.77%, Memory: 22936 kB
+System Time: 1761193932.874298, Usage: 0.84%, Memory: 22936 kB
+System Time: 1761193933.876964, Usage: 0.51%, Memory: 22808 kB
+System Time: 1761193934.878646, Usage: 0.76%, Memory: 22692 kB
+2025-10-23 00:32:22,531 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:32:35,808 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.73 seconds, total blocked count: 3126
+2025-10-23 00:32:36,012 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193947.545894, Usage: 0.73%, Memory: 23468 kB
+System Time: 1761193948.546706, Usage: 0.75%, Memory: 23248 kB
+System Time: 1761193949.548573, Usage: 0.79%, Memory: 23100 kB
+System Time: 1761193950.550548, Usage: 0.8%, Memory: 22784 kB
+System Time: 1761193951.550013, Usage: 0.88%, Memory: 22784 kB
+2025-10-23 00:32:39,381 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:32:55,396 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:33:08,729 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.15 seconds, total blocked count: 3127
+2025-10-23 00:33:09,466 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193980.634816, Usage: 0.76%, Memory: 23288 kB
+System Time: 1761193981.649327, Usage: 0.74%, Memory: 23328 kB
+System Time: 1761193982.651084, Usage: 0.5%, Memory: 23052 kB
+System Time: 1761193983.651600, Usage: 0.74%, Memory: 22824 kB
+System Time: 1761193984.652818, Usage: 0.61%, Memory: 22824 kB
+2025-10-23 00:33:12,094 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:33:25,641 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.51 seconds, total blocked count: 3128
+2025-10-23 00:33:27,885 [proc_stats.py:log_last_stats()] - 
+System Time: 1761193997.345884, Usage: 0.8%, Memory: 23284 kB
+System Time: 1761193998.344723, Usage: 0.7%, Memory: 23284 kB
+System Time: 1761193999.347401, Usage: 0.62%, Memory: 22944 kB
+System Time: 1761194000.347214, Usage: 0.8%, Memory: 22860 kB
+System Time: 1761194001.349098, Usage: 0.63%, Memory: 22740 kB
+2025-10-23 00:33:31,280 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:33:50,155 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:34:05,797 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:34:20,916 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.43 seconds, total blocked count: 3129
+2025-10-23 00:34:21,154 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194050.813237, Usage: 0.76%, Memory: 23160 kB
+System Time: 1761194051.811077, Usage: 0.73%, Memory: 23160 kB
+System Time: 1761194053.203958, Usage: 0.53%, Memory: 23112 kB
+System Time: 1761194054.206197, Usage: 0.51%, Memory: 22928 kB
+System Time: 1761194055.210204, Usage: 0.55%, Memory: 22928 kB
+2025-10-23 00:34:21,564 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:34:36,042 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.06 seconds, total blocked count: 3130
+2025-10-23 00:34:38,908 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194066.579688, Usage: 0.52%, Memory: 23704 kB
+System Time: 1761194067.580577, Usage: 0.79%, Memory: 23492 kB
+System Time: 1761194068.581483, Usage: 0.79%, Memory: 22972 kB
+System Time: 1761194069.579511, Usage: 0.83%, Memory: 22972 kB
+System Time: 1761194070.580223, Usage: 0.5%, Memory: 22788 kB
+2025-10-23 00:34:40,844 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:34:55,165 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:35:10,790 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:35:25,917 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:35:40,042 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:35:53,769 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:36:08,691 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:36:22,510 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:36:37,522 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:36:51,688 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.48 seconds, total blocked count: 3131
+2025-10-23 00:36:52,058 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194202.533816, Usage: 0.45%, Memory: 23224 kB
+System Time: 1761194203.538220, Usage: 0.49%, Memory: 23076 kB
+System Time: 1761194204.536868, Usage: 0.75%, Memory: 23076 kB
+System Time: 1761194205.538987, Usage: 0.52%, Memory: 22976 kB
+System Time: 1761194206.537145, Usage: 0.78%, Memory: 22976 kB
+2025-10-23 00:36:54,747 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:37:09,732 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:37:26,644 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:37:39,225 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.15 seconds, total blocked count: 3132
+2025-10-23 00:37:40,678 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194252.189355, Usage: 0.74%, Memory: 23272 kB
+System Time: 1761194253.346875, Usage: 0.5%, Memory: 23300 kB
+System Time: 1761194254.351104, Usage: 0.46%, Memory: 23072 kB
+System Time: 1761194255.349511, Usage: 0.79%, Memory: 22788 kB
+System Time: 1761194256.350685, Usage: 0.43%, Memory: 22788 kB
+2025-10-23 00:37:57,389 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.19 seconds, total blocked count: 3133
+2025-10-23 00:37:59,057 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194266.429034, Usage: 0.86%, Memory: 23296 kB
+System Time: 1761194267.427666, Usage: 0.67%, Memory: 22872 kB
+System Time: 1761194268.429857, Usage: 0.51%, Memory: 22872 kB
+System Time: 1761194269.430889, Usage: 0.59%, Memory: 22832 kB
+System Time: 1761194270.429236, Usage: 0.6%, Memory: 22632 kB
+2025-10-23 00:38:15,239 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.78 seconds, total blocked count: 3134
+2025-10-23 00:38:16,035 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194285.623528, Usage: 0.57%, Memory: 23180 kB
+System Time: 1761194286.622608, Usage: 0.76%, Memory: 23080 kB
+System Time: 1761194287.625555, Usage: 0.51%, Memory: 23080 kB
+System Time: 1761194288.623836, Usage: 0.66%, Memory: 22744 kB
+System Time: 1761194290.890587, Usage: 0.41%, Memory: 23028 kB
+2025-10-23 00:38:18,166 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:38:38,163 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:38:56,895 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:39:13,627 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:39:27,970 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:39:44,098 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:39:59,872 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.69 seconds, total blocked count: 3135
+2025-10-23 00:40:02,392 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194390.180809, Usage: 0.55%, Memory: 23088 kB
+System Time: 1761194391.182910, Usage: 0.63%, Memory: 22996 kB
+System Time: 1761194392.184128, Usage: 0.7%, Memory: 22852 kB
+System Time: 1761194393.183630, Usage: 0.82%, Memory: 22696 kB
+System Time: 1761194394.608823, Usage: 0.8%, Memory: 22796 kB
+2025-10-23 00:40:03,815 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:40:18,304 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:40:33,586 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:40:48,234 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.55 seconds, total blocked count: 3136
+2025-10-23 00:40:49,435 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194439.680540, Usage: 0.75%, Memory: 22964 kB
+System Time: 1761194440.679908, Usage: 0.92%, Memory: 22672 kB
+System Time: 1761194441.678095, Usage: 0.78%, Memory: 22476 kB
+System Time: 1761194443.693785, Usage: 0.4%, Memory: 22940 kB
+System Time: 1761194444.693734, Usage: 0.83%, Memory: 22884 kB
+2025-10-23 00:40:52,668 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:41:08,726 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:41:20,455 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.05 seconds, total blocked count: 3137
+2025-10-23 00:41:20,860 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194471.961450, Usage: 0.5%, Memory: 23704 kB
+System Time: 1761194472.961297, Usage: 0.64%, Memory: 23456 kB
+System Time: 1761194473.961836, Usage: 0.47%, Memory: 23080 kB
+System Time: 1761194474.963536, Usage: 0.51%, Memory: 23080 kB
+System Time: 1761194475.963829, Usage: 0.44%, Memory: 22816 kB
+2025-10-23 00:41:27,009 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:41:41,800 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.49 seconds, total blocked count: 3138
+2025-10-23 00:41:42,484 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194494.127528, Usage: 0.61%, Memory: 22980 kB
+System Time: 1761194495.124804, Usage: 0.75%, Memory: 22980 kB
+System Time: 1761194496.129356, Usage: 0.45%, Memory: 22800 kB
+System Time: 1761194497.131034, Usage: 0.69%, Memory: 22552 kB
+System Time: 1761194498.534910, Usage: 0.71%, Memory: 22968 kB
+2025-10-23 00:41:47,298 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:42:03,340 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.94 seconds, total blocked count: 3139
+2025-10-23 00:42:04,247 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194513.365220, Usage: 0.83%, Memory: 22944 kB
+System Time: 1761194514.362787, Usage: 0.76%, Memory: 22944 kB
+System Time: 1761194515.365302, Usage: 0.56%, Memory: 22684 kB
+System Time: 1761194518.682893, Usage: 0.44%, Memory: 23160 kB
+System Time: 1761194518.812594, Usage: 0.79%, Memory: 23288 kB
+2025-10-23 00:42:07,140 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:42:22,720 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:42:42,478 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:42:59,971 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:43:18,206 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.49 seconds, total blocked count: 3140
+2025-10-23 00:43:18,942 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194585.849428, Usage: 0.53%, Memory: 23272 kB
+System Time: 1761194586.848774, Usage: 0.61%, Memory: 22780 kB
+System Time: 1761194587.852669, Usage: 0.64%, Memory: 22920 kB
+System Time: 1761194588.852765, Usage: 0.74%, Memory: 22808 kB
+System Time: 1761194589.854371, Usage: 0.61%, Memory: 22784 kB
+2025-10-23 00:43:21,880 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:43:36,090 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:43:51,120 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:44:04,983 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:44:21,028 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:44:34,621 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.87 seconds, total blocked count: 3141
+2025-10-23 00:44:35,435 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194666.193223, Usage: 0.96%, Memory: 23356 kB
+System Time: 1761194667.193693, Usage: 0.85%, Memory: 22936 kB
+System Time: 1761194668.194133, Usage: 0.76%, Memory: 22936 kB
+System Time: 1761194669.195126, Usage: 0.77%, Memory: 22932 kB
+System Time: 1761194670.194982, Usage: 0.79%, Memory: 22844 kB
+2025-10-23 00:44:38,486 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:44:54,229 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:45:07,881 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:45:21,719 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:45:37,942 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.09 seconds, total blocked count: 3142
+2025-10-23 00:45:40,903 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194727.966975, Usage: 0.38%, Memory: 23036 kB
+System Time: 1761194728.967948, Usage: 0.51%, Memory: 22856 kB
+System Time: 1761194731.573257, Usage: 0.28%, Memory: 23056 kB
+System Time: 1761194732.570961, Usage: 0.73%, Memory: 23016 kB
+System Time: 1761194733.573551, Usage: 0.49%, Memory: 22940 kB
+2025-10-23 00:45:44,397 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:46:02,490 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:46:15,977 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.68 seconds, total blocked count: 3143
+2025-10-23 00:46:16,280 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194765.921913, Usage: 1.13%, Memory: 23832 kB
+System Time: 1761194766.919375, Usage: 0.84%, Memory: 23364 kB
+System Time: 1761194767.922949, Usage: 0.5%, Memory: 23364 kB
+System Time: 1761194768.922527, Usage: 0.69%, Memory: 22976 kB
+System Time: 1761194769.922159, Usage: 0.62%, Memory: 22976 kB
+2025-10-23 00:46:24,298 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:46:39,087 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:46:58,729 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.11 seconds, total blocked count: 3144
+2025-10-23 00:46:59,962 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194806.301779, Usage: 0.52%, Memory: 22988 kB
+System Time: 1761194808.630688, Usage: 0.35%, Memory: 23116 kB
+System Time: 1761194809.629503, Usage: 1.0%, Memory: 22920 kB
+System Time: 1761194810.628239, Usage: 0.72%, Memory: 22864 kB
+System Time: 1761194811.629046, Usage: 0.48%, Memory: 22864 kB
+2025-10-23 00:47:03,181 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:47:19,230 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:47:35,769 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:47:47,684 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.41 seconds, total blocked count: 3145
+2025-10-23 00:47:47,907 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194861.071823, Usage: 0.87%, Memory: 23236 kB
+System Time: 1761194862.072461, Usage: 0.73%, Memory: 23236 kB
+System Time: 1761194863.071409, Usage: 0.7%, Memory: 22968 kB
+System Time: 1761194864.072381, Usage: 0.51%, Memory: 22968 kB
+System Time: 1761194865.074963, Usage: 0.46%, Memory: 22852 kB
+2025-10-23 00:47:50,830 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:48:05,200 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:48:22,067 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:48:41,199 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.97 seconds, total blocked count: 3146
+2025-10-23 00:48:44,662 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194907.230025, Usage: 0.68%, Memory: 23044 kB
+System Time: 1761194908.231003, Usage: 0.7%, Memory: 22740 kB
+System Time: 1761194909.228878, Usage: 0.72%, Memory: 22740 kB
+System Time: 1761194910.431340, Usage: 0.5%, Memory: 23404 kB
+System Time: 1761194918.364310, Usage: 0.65%, Memory: 26128 kB
+2025-10-23 00:48:49,051 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.28 seconds, total blocked count: 3147
+2025-10-23 00:48:51,443 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194910.431340, Usage: 0.5%, Memory: 23404 kB
+System Time: 1761194918.364310, Usage: 0.65%, Memory: 26128 kB
+System Time: 1761194924.836136, Usage: 0.37%, Memory: 26264 kB
+System Time: 1761194925.836358, Usage: 0.63%, Memory: 25932 kB
+System Time: 1761194931.392542, Usage: 0.42%, Memory: 26512 kB
+2025-10-23 00:49:03,467 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:49:17,648 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:49:32,459 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:49:58,035 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.05 seconds, total blocked count: 3148
+2025-10-23 00:49:58,240 [proc_stats.py:log_last_stats()] - 
+System Time: 1761194990.233526, Usage: 0.53%, Memory: 23016 kB
+System Time: 1761194991.236347, Usage: 0.45%, Memory: 23016 kB
+System Time: 1761194992.237719, Usage: 0.52%, Memory: 22948 kB
+System Time: 1761194993.239927, Usage: 0.5%, Memory: 22800 kB
+System Time: 1761194994.237699, Usage: 0.85%, Memory: 22820 kB
+2025-10-23 00:50:00,633 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:50:20,585 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:50:41,493 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.51 seconds, total blocked count: 3149
+2025-10-23 00:50:41,818 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195027.141997, Usage: 0.9%, Memory: 23160 kB
+System Time: 1761195028.142627, Usage: 0.8%, Memory: 22900 kB
+System Time: 1761195029.140178, Usage: 0.8%, Memory: 22900 kB
+System Time: 1761195030.144002, Usage: 0.56%, Memory: 22840 kB
+System Time: 1761195033.463322, Usage: 0.41%, Memory: 23140 kB
+2025-10-23 00:50:42,253 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:50:56,163 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.1 seconds, total blocked count: 3150
+2025-10-23 00:50:56,917 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195048.070141, Usage: 0.37%, Memory: 23400 kB
+System Time: 1761195049.071517, Usage: 0.49%, Memory: 23060 kB
+System Time: 1761195050.073496, Usage: 0.66%, Memory: 23060 kB
+System Time: 1761195051.075338, Usage: 0.77%, Memory: 22868 kB
+System Time: 1761195052.072876, Usage: 0.8%, Memory: 22868 kB
+2025-10-23 00:51:01,119 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:51:18,446 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:51:34,381 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.73 seconds, total blocked count: 3151
+2025-10-23 00:51:35,773 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195084.904736, Usage: 0.76%, Memory: 23012 kB
+System Time: 1761195085.964833, Usage: 0.84%, Memory: 23072 kB
+System Time: 1761195086.941923, Usage: 0.54%, Memory: 22836 kB
+System Time: 1761195087.943031, Usage: 0.8%, Memory: 22676 kB
+System Time: 1761195088.942535, Usage: 0.75%, Memory: 22548 kB
+2025-10-23 00:51:38,369 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:51:51,573 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.67 seconds, total blocked count: 3152
+2025-10-23 00:51:52,284 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195103.822009, Usage: 0.8%, Memory: 23312 kB
+System Time: 1761195104.820432, Usage: 0.71%, Memory: 23108 kB
+System Time: 1761195105.985657, Usage: 0.53%, Memory: 23000 kB
+System Time: 1761195106.987241, Usage: 0.58%, Memory: 23000 kB
+System Time: 1761195107.988567, Usage: 0.58%, Memory: 22812 kB
+2025-10-23 00:51:56,162 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:52:11,249 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:52:31,086 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:52:49,770 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.39 seconds, total blocked count: 3153
+2025-10-23 00:52:50,232 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195157.484770, Usage: 0.81%, Memory: 22924 kB
+System Time: 1761195159.258174, Usage: 0.6%, Memory: 23108 kB
+System Time: 1761195160.259066, Usage: 0.86%, Memory: 22972 kB
+System Time: 1761195161.256443, Usage: 0.73%, Memory: 22888 kB
+System Time: 1761195162.257855, Usage: 0.48%, Memory: 22700 kB
+2025-10-23 00:52:52,909 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:53:07,734 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:53:25,742 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:53:39,480 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:53:54,630 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:54:10,775 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:54:13,654 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.41 seconds, total blocked count: 3154
+2025-10-23 00:54:14,480 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195242.203225, Usage: 0.45%, Memory: 22960 kB
+System Time: 1761195243.203606, Usage: 0.45%, Memory: 22960 kB
+System Time: 1761195244.206040, Usage: 0.49%, Memory: 22712 kB
+System Time: 1761195245.740902, Usage: 0.4%, Memory: 23040 kB
+System Time: 1761195254.477609, Usage: 0.43%, Memory: 23460 kB
+2025-10-23 00:54:27,296 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.17 seconds, total blocked count: 3155
+2025-10-23 00:54:28,366 [proc_stats.py:log_last_stats()] - 
+System Time: 1761195258.490875, Usage: 0.46%, Memory: 22968 kB
+System Time: 1761195260.071548, Usage: 0.46%, Memory: 23208 kB
+System Time: 1761195261.070965, Usage: 0.84%, Memory: 23128 kB
+System Time: 1761195262.070452, Usage: 0.6%, Memory: 23028 kB
+System Time: 1761195263.073169, Usage: 0.51%, Memory: 22652 kB
+2025-10-23 00:54:31,690 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2025-10-23 00:55:27,699 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
