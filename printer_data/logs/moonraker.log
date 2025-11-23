@@ -242,3 +242,26 @@ Content-Type: multipart/form-data; boundary=------------------------b5652a9db1e9
 2025-11-23 11:47:44,702 [websockets.py:open()] - Websocket Opened: ID: 140342300244288, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0, Host Name: 192.168.0.40
 2025-11-23 11:47:44,768 [websockets.py:_handle_identify()] - Websocket 140342300244288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2025-11-23 11:47:50,428 [websockets.py:on_close()] - Websocket Closed: ID: 140342300244288 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.73
+2025-11-23 12:41:44,554 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-11-23 12:41:44,557 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------9569985b3ed15a7e
+2025-11-23 12:41:44,616 [application.py:post()] - Processing Uploaded File: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-11-23 12:41:44,758 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-11-23 12:41:44,780 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-11-23 12:41:44,782 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-11-23 12:41:45,830 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2025-11-23 12:41:45,846 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1289.76ms
+2025-11-23 12:41:45,860 [job_state.py:_status_update()] - Job Started: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode
+2025-11-23 12:41:47,130 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-11-23 12:52:40,642 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
+2025-11-23 13:18:48,006 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2025-11-23 13:18:48,007 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.25ms
+2025-11-23 13:18:48,007 [websockets.py:open()] - Websocket Opened: ID: 140342326544896, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: 192.168.0.40
+2025-11-23 13:18:48,010 [websockets.py:_handle_identify()] - Websocket 140342326544896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-11-23 13:36:29,568 [websockets.py:on_close()] - Websocket Closed: ID: 140342326544896 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.56
+2025-11-23 13:42:40,650 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-11-23 13:42:40,650 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-11-23 14:27:40,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
