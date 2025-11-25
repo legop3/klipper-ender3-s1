@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Nov 23 07:24:52 2025 --------------------
+-------------------- Log Start | Tue Nov 25 02:27:14 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'system.slice', 'network-online.target']
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['systemd-journald.socket', '-.mount', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,79 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-11-23 02:24:52,322 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2025-11-23 02:24:53,576 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2025-11-23 02:24:53,606 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['system.slice', '-.mount', 'sysinit.target']
-**After=['systemd-journald.socket', '-.mount', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2025-11-23 02:24:55,623 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2025-11-23 02:24:55,624 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2025-11-23 02:24:55,874 [job_state.py:_handle_started()] - Job state initialized: standby
-2025-11-23 02:24:56,129 [klippy_connection.py:_check_ready()] - Klippy ready
-2025-11-23 02:24:56,629 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2025-11-23 02:24:57,163 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-11-23 02:25:24,133 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
-2025-11-23 02:25:24,136 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 2.74ms
-2025-11-23 02:25:24,136 [websockets.py:open()] - Websocket Opened: ID: 140342290595120, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: 192.168.0.40
-2025-11-23 02:25:24,159 [websockets.py:_handle_identify()] - Websocket 140342290595120 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-11-23 02:29:29,225 [websockets.py:on_close()] - Websocket Closed: ID: 140342290595120 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.09
-2025-11-23 02:35:11,606 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-11-23 02:35:11,609 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------b5652a9db1e93b0a
-2025-11-23 02:35:11,630 [application.py:post()] - Processing Uploaded File: Servo_Mount_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-23 02:35:11,756 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-11-23 02:35:11,771 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-11-23 02:35:11,775 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Servo_Mount_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-11-23 02:35:12,091 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Servo_Mount_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-11-23 02:35:12,099 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 490.99ms
-2025-11-23 02:35:12,182 [job_state.py:_status_update()] - Job Started: Servo_Mount_1h1m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-23 02:35:24,422 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.72ms
-2025-11-23 02:35:24,422 [websockets.py:open()] - Websocket Opened: ID: 140342290436960, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: 192.168.0.40
-2025-11-23 02:35:24,451 [websockets.py:_handle_identify()] - Websocket 140342290436960 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-11-23 03:37:40,549 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-11-23 03:37:40,549 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
-2025-11-23 03:37:40,549 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-11-23 03:44:35,848 [websockets.py:on_close()] - Websocket Closed: ID: 140342290436960 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.42
-2025-11-23 11:47:44,701 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
-2025-11-23 11:47:44,702 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 0.90ms
-2025-11-23 11:47:44,702 [websockets.py:open()] - Websocket Opened: ID: 140342300244288, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0, Host Name: 192.168.0.40
-2025-11-23 11:47:44,768 [websockets.py:_handle_identify()] - Websocket 140342300244288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-11-23 11:47:50,428 [websockets.py:on_close()] - Websocket Closed: ID: 140342300244288 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.73
-2025-11-23 12:41:44,554 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-11-23 12:41:44,557 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------9569985b3ed15a7e
-2025-11-23 12:41:44,616 [application.py:post()] - Processing Uploaded File: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-23 12:41:44,758 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-11-23 12:41:44,780 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-11-23 12:41:44,782 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-11-23 12:41:45,830 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-11-23 12:41:45,846 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1289.76ms
-2025-11-23 12:41:45,860 [job_state.py:_status_update()] - Job Started: SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-23 12:41:47,130 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-11-23 12:52:40,642 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
-2025-11-23 13:18:48,006 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
-2025-11-23 13:18:48,007 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.25ms
-2025-11-23 13:18:48,007 [websockets.py:open()] - Websocket Opened: ID: 140342326544896, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: 192.168.0.40
-2025-11-23 13:18:48,010 [websockets.py:_handle_identify()] - Websocket 140342326544896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-11-23 13:36:29,568 [websockets.py:on_close()] - Websocket Closed: ID: 140342326544896 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.56
-2025-11-23 13:42:40,650 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-11-23 13:42:40,650 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-11-23 14:27:40,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
+2025-11-24 21:27:14,035 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-11-24 21:27:14,042 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1764037604.817346, Usage: 0.72%, Memory: 53220 kB
+System Time: 1764037605.818209, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037606.819380, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037607.822429, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037608.822269, Usage: 0.92%, Memory: 53220 kB
+System Time: 1764037609.824333, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037610.824984, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037611.826276, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037612.826675, Usage: 0.61%, Memory: 53220 kB
+System Time: 1764037613.827050, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037614.826945, Usage: 0.58%, Memory: 53220 kB
+System Time: 1764037615.828552, Usage: 0.59%, Memory: 53220 kB
+System Time: 1764037616.829008, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037617.829972, Usage: 0.55%, Memory: 53220 kB
+System Time: 1764037618.831350, Usage: 0.73%, Memory: 53220 kB
+System Time: 1764037619.832315, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037620.832747, Usage: 0.51%, Memory: 53220 kB
+System Time: 1764037621.833963, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037622.834106, Usage: 0.6%, Memory: 53220 kB
+System Time: 1764037623.835168, Usage: 0.58%, Memory: 53220 kB
+System Time: 1764037624.836153, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037625.836051, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037626.837325, Usage: 0.59%, Memory: 53220 kB
+System Time: 1764037627.838371, Usage: 0.64%, Memory: 53220 kB
+System Time: 1764037628.838317, Usage: 0.89%, Memory: 53220 kB
+System Time: 1764037629.839855, Usage: 1.01%, Memory: 53220 kB
+System Time: 1764037630.839104, Usage: 0.75%, Memory: 53220 kB
+System Time: 1764037631.840281, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037632.841876, Usage: 0.6%, Memory: 53220 kB
+System Time: 1764037633.843001, Usage: 0.59%, Memory: 53220 kB
+CPU Temperature: 47.0
