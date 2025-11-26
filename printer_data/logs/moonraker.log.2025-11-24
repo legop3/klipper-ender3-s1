@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Nov 20 18:10:04 2025 --------------------
+-------------------- Log Start | Tue Nov 25 02:27:14 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'system.slice', 'network-online.target']
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['systemd-journald.socket', '-.mount', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,56 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-11-20 13:10:04,889 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 254.000 10.000 [4046.569]
-2025-11-20 13:10:06,798 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 254.000 10.000 [4046.569]
-2025-11-20 13:10:08,343 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 147.000 254.000 10.000 [4046.569]
-2025-11-20 13:10:28,297 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-11-20 13:10:28,300 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------e79632e145f7d00a
-2025-11-20 13:10:28,339 [application.py:post()] - Processing Uploaded File: 03_Cam_Backplate_v1_1h0m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-20 13:10:28,481 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-11-20 13:10:28,509 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-11-20 13:10:28,512 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: 03_Cam_Backplate_v1_1h0m_0.20mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-11-20 13:10:29,278 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "03_Cam_Backplate_v1_1h0m_0.20mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
-2025-11-20 13:10:29,287 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 987.44ms
-2025-11-20 13:10:29,345 [job_state.py:_status_update()] - Job Started: 03_Cam_Backplate_v1_1h0m_0.20mm_205C_PLA_ENDER3S1.gcode
-2025-11-20 13:10:30,074 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-11-20 14:12:39,891 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-11-20 14:12:39,891 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-11-20 15:00:30,295 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2025-11-20 15:00:30,302 [proc_stats.py:_handle_shutdown()] - 
+2025-11-24 21:27:14,035 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-11-24 21:27:14,042 [proc_stats.py:_handle_shutdown()] - 
 Moonraker System Usage Statistics:
-System Time: 1763668800.464342, Usage: 0.57%, Memory: 48380 kB
-System Time: 1763668801.465202, Usage: 0.51%, Memory: 48380 kB
-System Time: 1763668802.465384, Usage: 0.64%, Memory: 48380 kB
-System Time: 1763668803.465781, Usage: 0.55%, Memory: 48380 kB
-System Time: 1763668804.467168, Usage: 0.49%, Memory: 48380 kB
-System Time: 1763668805.468766, Usage: 0.49%, Memory: 48380 kB
-System Time: 1763668806.471318, Usage: 0.52%, Memory: 48380 kB
-System Time: 1763668807.473891, Usage: 0.53%, Memory: 48380 kB
-System Time: 1763668808.474352, Usage: 0.56%, Memory: 48380 kB
-System Time: 1763668809.476035, Usage: 0.74%, Memory: 48380 kB
-System Time: 1763668810.476479, Usage: 0.49%, Memory: 48380 kB
-System Time: 1763668811.477156, Usage: 0.53%, Memory: 48380 kB
-System Time: 1763668812.479017, Usage: 0.69%, Memory: 48380 kB
-System Time: 1763668813.479091, Usage: 0.53%, Memory: 48380 kB
-System Time: 1763668814.481277, Usage: 0.53%, Memory: 48380 kB
-System Time: 1763668815.481461, Usage: 0.62%, Memory: 48380 kB
-System Time: 1763668816.482090, Usage: 0.54%, Memory: 48380 kB
-System Time: 1763668817.483741, Usage: 0.54%, Memory: 48380 kB
-System Time: 1763668818.484670, Usage: 0.53%, Memory: 48380 kB
-System Time: 1763668819.485318, Usage: 0.75%, Memory: 48380 kB
-System Time: 1763668820.485772, Usage: 0.69%, Memory: 48380 kB
-System Time: 1763668821.487136, Usage: 0.48%, Memory: 48380 kB
-System Time: 1763668822.487654, Usage: 0.69%, Memory: 48380 kB
-System Time: 1763668823.492067, Usage: 0.55%, Memory: 48380 kB
-System Time: 1763668824.491364, Usage: 0.67%, Memory: 48380 kB
-System Time: 1763668825.493045, Usage: 0.57%, Memory: 48380 kB
-System Time: 1763668826.492890, Usage: 0.97%, Memory: 48384 kB
-System Time: 1763668827.494148, Usage: 0.53%, Memory: 48384 kB
-System Time: 1763668828.494354, Usage: 0.55%, Memory: 48384 kB
-System Time: 1763668829.496695, Usage: 0.76%, Memory: 48384 kB
-CPU Temperature: 46.0
+System Time: 1764037604.817346, Usage: 0.72%, Memory: 53220 kB
+System Time: 1764037605.818209, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037606.819380, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037607.822429, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037608.822269, Usage: 0.92%, Memory: 53220 kB
+System Time: 1764037609.824333, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037610.824984, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037611.826276, Usage: 0.63%, Memory: 53220 kB
+System Time: 1764037612.826675, Usage: 0.61%, Memory: 53220 kB
+System Time: 1764037613.827050, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037614.826945, Usage: 0.58%, Memory: 53220 kB
+System Time: 1764037615.828552, Usage: 0.59%, Memory: 53220 kB
+System Time: 1764037616.829008, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037617.829972, Usage: 0.55%, Memory: 53220 kB
+System Time: 1764037618.831350, Usage: 0.73%, Memory: 53220 kB
+System Time: 1764037619.832315, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037620.832747, Usage: 0.51%, Memory: 53220 kB
+System Time: 1764037621.833963, Usage: 0.66%, Memory: 53220 kB
+System Time: 1764037622.834106, Usage: 0.6%, Memory: 53220 kB
+System Time: 1764037623.835168, Usage: 0.58%, Memory: 53220 kB
+System Time: 1764037624.836153, Usage: 0.67%, Memory: 53220 kB
+System Time: 1764037625.836051, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037626.837325, Usage: 0.59%, Memory: 53220 kB
+System Time: 1764037627.838371, Usage: 0.64%, Memory: 53220 kB
+System Time: 1764037628.838317, Usage: 0.89%, Memory: 53220 kB
+System Time: 1764037629.839855, Usage: 1.01%, Memory: 53220 kB
+System Time: 1764037630.839104, Usage: 0.75%, Memory: 53220 kB
+System Time: 1764037631.840281, Usage: 0.62%, Memory: 53220 kB
+System Time: 1764037632.841876, Usage: 0.6%, Memory: 53220 kB
+System Time: 1764037633.843001, Usage: 0.59%, Memory: 53220 kB
+CPU Temperature: 47.0
