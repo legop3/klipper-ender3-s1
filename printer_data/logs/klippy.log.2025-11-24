@@ -343,8 +343,6 @@ max_x = 141.79
 min_y = 91.88999999999999
 max_y = 128.11
 =======================
-extruder: pressure_advance: 0.000000
-pressure_advance_smooth_time: 0.000000
 Loaded MCU 'mcu' 106 commands (v0.12.0-111-g4f00f219 / gcc: (15:10.3-2021.07-4) 10.3.1 20210621 (release) binutils: (2.38-3ubuntu1+15build1) 2.38)
 MCU 'mcu' config: ADC_MAX=4095 BUS_PINS_i2c1=PB6,PB7 BUS_PINS_i2c1a=PB8,PB9 BUS_PINS_i2c2=PB10,PB11 BUS_PINS_spi1=PA6,PA7,PA5 BUS_PINS_spi1a=PB4,PB5,PB3 BUS_PINS_spi2=PB14,PB15,PB13 BUS_PINS_spi3=PB4,PB5,PB3 CLOCK_FREQ=72000000 MCU=stm32f103xe PWM_MAX=255 RECEIVE_WINDOW=192 RESERVE_PINS_serial=PA10,PA9 SERIAL_BAUD=250000 STATS_SUMSQ_BASE=256 STEPPER_BOTH_EDGE=1
 Configured MCU 'mcu' (1024 moves)
@@ -355,14 +353,32 @@ Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
 Python: '3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]'
-webhooks client 140484536099664: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-=============== Log rollover at Sat Dec 20 00:00:00 2025 ===============
-Stats 2603030.6: gcodein=0  mcu: mcu_awake=0.013 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13001090 bytes_read=2352320 bytes_retransmit=9 bytes_invalid=0 send_seq=235656 receive_seq=235656 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999070 heater_bed: target=60 temp=60.0 pwm=0.313 sd_pos=2644928 sysload=1.21 cputime=6763.820 memavail=7314980 print_time=10477.863 buffer_time=2.181 print_stall=0 extruder: target=205 temp=205.0 pwm=0.437
-Stats 2603031.6: gcodein=0  mcu: mcu_awake=0.013 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13002618 bytes_read=2352553 bytes_retransmit=9 bytes_invalid=0 send_seq=235683 receive_seq=235683 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999071 heater_bed: target=60 temp=60.0 pwm=0.301 sd_pos=2645064 sysload=1.21 cputime=6763.828 memavail=7307168 print_time=10478.984 buffer_time=2.301 print_stall=0 extruder: target=205 temp=205.2 pwm=0.373
-Stats 2603032.6: gcodein=0  mcu: mcu_awake=0.013 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13004638 bytes_read=2352860 bytes_retransmit=9 bytes_invalid=0 send_seq=235719 receive_seq=235719 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999072 heater_bed: target=60 temp=60.1 pwm=0.088 sd_pos=2645227 sysload=1.21 cputime=6763.836 memavail=7304968 print_time=10480.382 buffer_time=2.699 print_stall=0 extruder: target=205 temp=205.1 pwm=0.395
-Stats 2603033.6: gcodein=0  mcu: mcu_awake=0.013 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13005602 bytes_read=2353048 bytes_retransmit=9 bytes_invalid=0 send_seq=235737 receive_seq=235737 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999072 heater_bed: target=60 temp=60.1 pwm=0.160 sd_pos=2645281 sysload=1.21 cputime=6763.842 memavail=7303368 print_time=10481.264 buffer_time=2.580 print_stall=0 extruder: target=205 temp=205.0 pwm=0.458
-Stats 2603034.6: gcodein=0  mcu: mcu_awake=0.010 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13006839 bytes_read=2353276 bytes_retransmit=9 bytes_invalid=0 send_seq=235760 receive_seq=235760 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999071 heater_bed: target=60 temp=60.1 pwm=0.157 sd_pos=2645387 sysload=1.21 cputime=6763.850 memavail=7303120 print_time=10482.143 buffer_time=2.458 print_stall=0 extruder: target=205 temp=205.0 pwm=0.482
-Stats 2603035.6: gcodein=0  mcu: mcu_awake=0.010 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13009590 bytes_read=2353643 bytes_retransmit=9 bytes_invalid=0 send_seq=235808 receive_seq=235808 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=11 upcoming_bytes=0 freq=71999069 heater_bed: target=60 temp=60.1 pwm=0.150 sd_pos=2645632 sysload=1.36 cputime=6763.858 memavail=7308104 print_time=10483.554 buffer_time=2.868 print_stall=0 extruder: target=205 temp=205.0 pwm=0.458
-Stats 2603036.6: gcodein=0  mcu: mcu_awake=0.010 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13010044 bytes_read=2353791 bytes_retransmit=9 bytes_invalid=0 send_seq=235818 receive_seq=235818 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=17 upcoming_bytes=0 freq=71999067 heater_bed: target=60 temp=60.1 pwm=0.232 sd_pos=2645658 sysload=1.36 cputime=6763.863 memavail=7305624 print_time=10483.726 buffer_time=2.039 print_stall=0 extruder: target=205 temp=205.0 pwm=0.458
-Stats 2603037.6: gcodein=0  mcu: mcu_awake=0.010 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13012405 bytes_read=2354089 bytes_retransmit=9 bytes_invalid=0 send_seq=235858 receive_seq=235858 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999065 heater_bed: target=60 temp=60.0 pwm=0.340 sd_pos=2645916 sysload=1.36 cputime=6763.870 memavail=7303816 print_time=10485.029 buffer_time=2.342 print_stall=0 extruder: target=205 temp=204.8 pwm=0.458
-Stats 2603038.6: gcodein=0  mcu: mcu_awake=0.010 mcu_task_avg=0.000032 mcu_task_stddev=0.000030 bytes_write=13014655 bytes_read=2354411 bytes_retransmit=9 bytes_invalid=0 send_seq=235897 receive_seq=235897 retransmit_seq=2 srtt=0.002 rttvar=0.000 rto=0.025 ready_bytes=51 upcoming_bytes=0 freq=71999063 heater_bed: target=60 temp=60.0 pwm=0.400 sd_pos=2646102 sysload=1.36 cputime=6763.878 memavail=7303592 print_time=10485.907 buffer_time=2.218 print_stall=0 extruder: target=205 temp=204.8 pwm=0.488
+webhooks client 140484537678384: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+=============== Log rollover at Mon Nov 24 21:27:08 2025 ===============
+b'Got EOF when reading from device'
+Timeout with MCU 'mcu' (eventtime=433837.189842)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140484537678384
+Received 312672.277172: b'{"id": 140342326006432, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 315907.717674: b'{"id": 140342290433456, "method": "gcode/script", "params": {"script": "SDCARD_PRINT_FILE FILENAME=\\"SG90_Servo_Mount_Vertical_2h58m_0.20mm_205C_PLA_ENDER3S1.gcode\\""}}'
+Received 315910.490047: b'{"id": 140342326003984, "method": "gcode/script", "params": {"script": "M221 S101"}}'
+Received 315910.650313: b'{"id": 140342300244288, "method": "gcode/script", "params": {"script": "M221 S102"}}'
+Received 315910.809516: b'{"id": 140342326548256, "method": "gcode/script", "params": {"script": "M221 S103"}}'
+Received 315910.990035: b'{"id": 140342326553824, "method": "gcode/script", "params": {"script": "M221 S104"}}'
+Received 315911.167449: b'{"id": 140342290432976, "method": "gcode/script", "params": {"script": "M221 S105"}}'
+Received 315916.081609: b'{"id": 140342290437776, "method": "gcode/script", "params": {"script": "M106 S255"}}'
+Received 316194.036491: b'{"id": 140342326553824, "method": "gcode/script", "params": {"script": "M106 S255"}}'
+Received 316553.677998: b'{"id": 140342326555264, "method": "gcode/script", "params": {"script": "M221 S106"}}'
+Received 316553.887080: b'{"id": 140342326548256, "method": "gcode/script", "params": {"script": "M221 S107"}}'
+Received 316554.015136: b'{"id": 140342326548112, "method": "gcode/script", "params": {"script": "M221 S108"}}'
+Received 316555.907294: b'{"id": 140342326548112, "method": "gcode/script", "params": {"script": "M221 S109"}}'
+Received 316556.092133: b'{"id": 140342326553968, "method": "gcode/script", "params": {"script": "M221 S110"}}'
+Received 318130.186984: b'{"id": 140342300243472, "method": "info", "params": {}}'
+Received 318130.187328: b'{"id": 140342290433264, "method": "objects/list", "params": {}}'
+Received 318130.187328: b'{"id": 140342290437200, "method": "gcode/help", "params": {}}'
+Received 318130.212465: b'{"id": 140342300245344, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "idle_timeout": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 318131.018924: b'{"id": 140342326545808, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 318135.411715: b'{"id": 140342300243424, "method": "gcode/script", "params": {"script": "M221 S100"}}'
+gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, 0.0, 10832.05575509855] last_position=[5.0, 187.0, 162.0, 10834.372875098556] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=10.0
+Reactor garbage collection: (315911.221305214, 0.0, 0.0)

@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Nov 26 07:56:23 2025 --------------------
+-------------------- Log Start | Sun Dec 14 18:59:37 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,5 +189,4 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-11-26 02:56:23,663 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2025-11-26 02:56:33,672 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-12-14 13:59:37,649 [websockets.py:on_close()] - Websocket Closed: ID: 140342326557856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.94
