@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Dec 25 18:51:45 2025 --------------------
+-------------------- Log Start | Tue Dec 23 16:55:56 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,46 +189,47 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-12-25 13:51:45,392 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2025-12-25 13:51:46,648 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2025-12-25 13:51:46,667 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['sysinit.target', 'system.slice', '-.mount']
-**After=['system.slice', 'systemd-journald.socket', 'basic.target', '-.mount', 'network-online.target', 'sysinit.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2025-12-25 13:51:48,682 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2025-12-25 13:51:48,683 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2025-12-25 13:51:48,934 [job_state.py:_handle_started()] - Job state initialized: standby
-2025-12-25 13:51:49,192 [klippy_connection.py:_check_ready()] - Klippy ready
-2025-12-25 13:51:49,688 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2025-12-25 13:51:50,432 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2025-12-25 13:59:55,649 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2025-12-25 13:59:55,674 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------1f9a5a4ed40be02c
-2025-12-25 13:59:55,769 [application.py:post()] - Processing Uploaded File: FREEPart_6_or_9_Kg_Spreader_Bar_Blocker_UnCuted_1h46m_0.20mm_240C_PETG_ENDER3S1.gcode
-2025-12-25 13:59:56,090 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2025-12-25 13:59:56,163 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2025-12-25 13:59:56,165 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: FREEPart_6_or_9_Kg_Spreader_Bar_Blocker_UnCuted_1h46m_0.20mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2025-12-25 13:59:57,067 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "FREEPart_6_or_9_Kg_Spreader_Bar_Blocker_UnCuted_1h46m_0.20mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2025-12-25 13:59:57,080 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1406.18ms
-2025-12-25 13:59:57,092 [job_state.py:_status_update()] - Job Started: FREEPart_6_or_9_Kg_Spreader_Bar_Blocker_UnCuted_1h46m_0.20mm_240C_PETG_ENDER3S1.gcode
-2025-12-25 15:02:56,029 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2025-12-25 15:02:56,029 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2025-12-25 15:13:57,528 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
-2025-12-25 15:13:57,529 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 0.79ms
-2025-12-25 15:13:57,529 [websockets.py:open()] - Websocket Opened: ID: 140342327973952, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:146.0) Gecko/146.0 Firefox/146.0, Host Name: 192.168.0.40
-2025-12-25 15:13:57,541 [websockets.py:_handle_identify()] - Websocket 140342327973952 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2025-12-25 15:25:11,657 [websockets.py:on_close()] - Websocket Closed: ID: 140342327973952 Close Code: 1001, Close Reason: Child was killed, Pong Time Elapsed: 4.07
+2025-12-23 11:55:56,471 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2025-12-23 11:56:09,724 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2025-12-23 11:57:12,787 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-12-23 11:57:16,549 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
