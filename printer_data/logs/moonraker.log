@@ -270,3 +270,11 @@ Content-Type: multipart/form-data; boundary=------------------------93a8cfb79c06
 2025-12-26 19:20:32,178 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2740.59ms
 2025-12-26 19:20:32,360 [job_state.py:_status_update()] - Job Started: FREEPart_6_or_9_Kg_ServoMount_55_X_55_6h8m_0.20mm_240C_PETG_ENDER3S1.gcode
 2025-12-26 19:20:33,365 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-12-26 20:22:56,328 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-12-26 20:22:56,328 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-12-26 20:53:08,590 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
+2025-12-26 20:53:08,591 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 1.41ms
+2025-12-26 20:53:08,591 [websockets.py:open()] - Websocket Opened: ID: 140342290593008, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0, Host Name: 192.168.0.40
+2025-12-26 20:53:08,613 [websockets.py:_handle_identify()] - Websocket 140342290593008 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2025-12-26 21:15:50,812 [websockets.py:on_close()] - Websocket Closed: ID: 140342290593008 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.22
+2025-12-26 21:57:56,345 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
