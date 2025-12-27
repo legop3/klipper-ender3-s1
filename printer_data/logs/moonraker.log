@@ -205,3 +205,43 @@ Klipper Version: v0.12.0-111-g4f00f219
 2025-12-27 05:57:01,027 [websockets.py:_handle_identify()] - Websocket 140342290591760 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2025-12-27 05:57:02,629 [websockets.py:on_close()] - Websocket Closed: ID: 140342290591760 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.62
 2025-12-27 06:57:56,441 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.166
+2025-12-27 13:39:18,775 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 320.000 14.004 [30567.241]
+2025-12-27 13:39:22,557 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 -80.000 13.811 [30567.241]
+2025-12-27 13:39:23,855 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 230.000 -80.000 13.811 [30567.241]
+2025-12-27 13:41:46,541 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:46,768 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:46,946 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:47,078 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:47,196 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:47,327 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:47,444 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:47,598 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 13:41:49,898 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 105.000 -9.000 88.817 [30567.241]
+2025-12-27 14:04:18,547 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-12-27 14:26:28,225 [application.py:prepare()] - Upload Request Received from 127.0.0.1
+Content-Type: multipart/form-data; boundary=----geckoformboundarya1de440434bcdc642ed7f2572cf3abfb
+2025-12-27 14:26:28,230 [application.py:post()] - Processing Uploaded File: printer.cfg
+2025-12-27 14:26:28,232 [application.py:log_request()] - 201 POST /server/files/upload (127.0.0.1) [_TRUSTED_USER_] 8.35ms
+2025-12-27 14:26:29,278 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-12-27 14:26:30,533 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-12-27 14:26:30,562 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['network-online.target', 'sysinit.target', '-.mount', 'basic.target', 'system.slice', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2025-12-27 14:26:32,575 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-12-27 14:26:32,576 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-12-27 14:26:32,826 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-12-27 14:26:33,082 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-12-27 14:26:33,580 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-12-27 15:27:56,525 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
