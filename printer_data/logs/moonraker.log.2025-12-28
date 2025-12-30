@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Dec 29 21:24:58 2025 --------------------
+-------------------- Log Start | Sun Dec 28 14:27:06 2025 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,64 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2025-12-29 16:24:58,272 [power.py:_send_tplink_command()] - Error sending tplink command: info
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-2025-12-29 16:24:58,272 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 858, in _send_tplink_command
-    raise self.server.error(msg)
-moonraker.utils.ServerError: Error sending tplink command: info
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 861, in _send_tplink_command
-    await writer.wait_closed()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
-    await self._protocol._get_close_waiter(self)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
-    n = self._sock.send(data)
-OSError: [Errno 113] No route to host
-2025-12-29 16:25:06,323 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2025-12-28 09:27:06,456 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-12-28 09:27:06,464 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1766931997.390879, Usage: 0.69%, Memory: 60440 kB
+System Time: 1766931998.392599, Usage: 0.73%, Memory: 60440 kB
+System Time: 1766931999.393892, Usage: 0.52%, Memory: 60440 kB
+System Time: 1766932000.395538, Usage: 0.69%, Memory: 60440 kB
+System Time: 1766932001.395527, Usage: 0.57%, Memory: 60440 kB
+System Time: 1766932002.397522, Usage: 0.58%, Memory: 60440 kB
+System Time: 1766932003.398402, Usage: 0.5%, Memory: 60440 kB
+System Time: 1766932004.399413, Usage: 0.57%, Memory: 60440 kB
+System Time: 1766932005.400381, Usage: 0.49%, Memory: 60440 kB
+System Time: 1766932006.401025, Usage: 0.59%, Memory: 60440 kB
+System Time: 1766932007.401862, Usage: 0.52%, Memory: 60440 kB
+System Time: 1766932008.404147, Usage: 0.69%, Memory: 60440 kB
+System Time: 1766932009.404835, Usage: 0.64%, Memory: 60440 kB
+System Time: 1766932010.406201, Usage: 0.76%, Memory: 60440 kB
+System Time: 1766932011.408092, Usage: 0.55%, Memory: 60440 kB
+System Time: 1766932012.408577, Usage: 0.58%, Memory: 60440 kB
+System Time: 1766932013.408545, Usage: 0.63%, Memory: 60440 kB
+System Time: 1766932014.410079, Usage: 0.63%, Memory: 60440 kB
+System Time: 1766932015.411023, Usage: 0.6%, Memory: 60440 kB
+System Time: 1766932016.411649, Usage: 0.62%, Memory: 60440 kB
+System Time: 1766932017.412545, Usage: 0.56%, Memory: 60440 kB
+System Time: 1766932018.414335, Usage: 0.72%, Memory: 60440 kB
+System Time: 1766932019.417358, Usage: 0.57%, Memory: 60440 kB
+System Time: 1766932020.416749, Usage: 0.82%, Memory: 60440 kB
+System Time: 1766932021.417692, Usage: 0.58%, Memory: 60440 kB
+System Time: 1766932022.417198, Usage: 0.61%, Memory: 60440 kB
+System Time: 1766932023.417872, Usage: 0.97%, Memory: 60440 kB
+System Time: 1766932024.418882, Usage: 0.53%, Memory: 60440 kB
+System Time: 1766932025.419742, Usage: 0.57%, Memory: 60440 kB
+System Time: 1766932026.419924, Usage: 0.73%, Memory: 60440 kB
+CPU Temperature: 48.0
