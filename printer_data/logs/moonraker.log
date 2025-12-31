@@ -212,3 +212,102 @@ Content-Type: multipart/form-data; boundary=------------------------a5c39cfe2158
 2025-12-30 17:24:21,584 [job_state.py:_status_update()] - Job Started: mifi pwn case bottom_1h54m_0.20mm_240C_PETG_ENDER3S1.gcode
 2025-12-30 18:27:57,325 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2025-12-30 18:27:57,325 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-12-30 20:25:48,159 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2025-12-30 20:25:48,162 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------7bd7ac24e76bf75b
+2025-12-30 20:25:48,180 [application.py:post()] - Processing Uploaded File: mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode
+2025-12-30 20:25:48,339 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2025-12-30 20:25:48,359 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2025-12-30 20:25:48,362 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2025-12-30 20:25:48,762 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2025-12-30 20:25:48,773 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 610.86ms
+2025-12-30 20:25:48,831 [job_state.py:_status_update()] - Job Started: mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode
+2025-12-30 20:25:49,956 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-12-30 21:27:57,355 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2025-12-30 21:27:57,355 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2025-12-30 22:50:03,825 [job_state.py:_status_update()] - Job Started: mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode
+2025-12-30 22:50:56,235 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2025-12-30 22:50:56,243 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1767153026.954490, Usage: 0.61%, Memory: 59388 kB
+System Time: 1767153027.954480, Usage: 0.61%, Memory: 59388 kB
+System Time: 1767153028.956300, Usage: 0.67%, Memory: 59388 kB
+System Time: 1767153029.957623, Usage: 0.67%, Memory: 59388 kB
+System Time: 1767153030.957510, Usage: 0.87%, Memory: 59388 kB
+System Time: 1767153031.958393, Usage: 0.64%, Memory: 59388 kB
+System Time: 1767153032.959425, Usage: 0.55%, Memory: 59388 kB
+System Time: 1767153033.959098, Usage: 0.65%, Memory: 59388 kB
+System Time: 1767153034.960296, Usage: 0.6%, Memory: 59388 kB
+System Time: 1767153035.959928, Usage: 0.72%, Memory: 59388 kB
+System Time: 1767153036.960823, Usage: 0.76%, Memory: 59388 kB
+System Time: 1767153037.962190, Usage: 0.7%, Memory: 59388 kB
+System Time: 1767153038.963086, Usage: 0.65%, Memory: 59388 kB
+System Time: 1767153039.963170, Usage: 0.83%, Memory: 59388 kB
+System Time: 1767153040.963257, Usage: 0.93%, Memory: 59388 kB
+System Time: 1767153041.964631, Usage: 0.56%, Memory: 59388 kB
+System Time: 1767153042.964777, Usage: 0.64%, Memory: 59388 kB
+System Time: 1767153043.965529, Usage: 0.67%, Memory: 59388 kB
+System Time: 1767153044.966482, Usage: 0.75%, Memory: 59388 kB
+System Time: 1767153045.966649, Usage: 0.59%, Memory: 59388 kB
+System Time: 1767153046.968845, Usage: 0.56%, Memory: 59388 kB
+System Time: 1767153047.969653, Usage: 0.73%, Memory: 59388 kB
+System Time: 1767153048.970815, Usage: 0.72%, Memory: 59388 kB
+System Time: 1767153049.970741, Usage: 0.72%, Memory: 59388 kB
+System Time: 1767153050.972688, Usage: 0.71%, Memory: 59388 kB
+System Time: 1767153051.973730, Usage: 0.61%, Memory: 59388 kB
+System Time: 1767153052.975265, Usage: 0.82%, Memory: 59388 kB
+System Time: 1767153053.976316, Usage: 0.87%, Memory: 59388 kB
+System Time: 1767153054.980315, Usage: 1.0%, Memory: 59388 kB
+System Time: 1767153055.978341, Usage: 1.3%, Memory: 59388 kB
+CPU Temperature: 50.0
+2025-12-30 22:51:09,206 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:12,651 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:13,869 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,074 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,293 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,525 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,670 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,803 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:14,953 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:15,075 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:15,207 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:15,355 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:15,625 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:16,275 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:16,496 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:16,607 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:16,741 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:16,915 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:18,831 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2025-12-30 22:51:55,923 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,925 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:55,926 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 503, Message: Klippy Disconnected
+2025-12-30 22:51:58,185 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2025-12-30 22:52:00,833 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2025-12-30 22:52:00,834 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2025-12-30 22:52:01,084 [job_state.py:_handle_started()] - Job state initialized: standby
+2025-12-30 22:52:01,340 [klippy_connection.py:_check_ready()] - Klippy ready
+2025-12-30 22:52:01,837 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2025-12-30 22:52:02,670 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2025-12-30 22:52:06,601 [job_state.py:_status_update()] - Job Started: mifi pwn bottom v2_2h4m_0.20mm_240C_PETG_ENDER3S1.gcode
+2025-12-30 23:52:57,383 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
