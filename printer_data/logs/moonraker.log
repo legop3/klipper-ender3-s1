@@ -249,3 +249,19 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-01-06 18:31:25,400 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-06 18:31:25,403 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------87e961ef8e0337a7
+2026-01-06 18:31:25,790 [application.py:post()] - Processing Uploaded File: roomba cam base_10h51m_0.06mm_240C_PETG_ENDER3S1.gcode
+2026-01-06 18:31:27,069 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-06 18:31:27,220 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-06 18:31:27,222 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba cam base_10h51m_0.06mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-06 18:31:33,273 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba cam base_10h51m_0.06mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-06 18:31:33,285 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 7881.40ms
+2026-01-06 18:31:33,473 [job_state.py:_status_update()] - Job Started: roomba cam base_10h51m_0.06mm_240C_PETG_ENDER3S1.gcode
+2026-01-06 18:31:35,557 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-06 19:33:00,410 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-06 19:33:00,410 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
