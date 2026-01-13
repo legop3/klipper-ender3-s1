@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Jan 11 17:33:28 2026 --------------------
+-------------------- Log Start | Tue Jan 13 18:37:11 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,19 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-01-11 12:33:28,879 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.111
-2026-01-11 12:33:28,880 [application.py:log_request()] - 101 GET /websocket (192.168.0.111) [_TRUSTED_USER_] 0.79ms
-2026-01-11 12:33:28,880 [websockets.py:open()] - Websocket Opened: ID: 140342326016896, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: 192.168.0.40
-2026-01-11 12:33:28,982 [websockets.py:_handle_identify()] - Websocket 140342326016896 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-01-11 12:33:31,953 [websockets.py:on_close()] - Websocket Closed: ID: 140342326016896 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.07
-2026-01-11 13:38:01,624 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.111
+2026-01-13 13:37:11,014 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-13 13:37:11,019 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------b1894fa2379e67e7
+2026-01-13 13:37:11,429 [application.py:post()] - Processing Uploaded File: ROOMBA_Wrangler_9h56m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-01-13 13:37:12,138 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-13 13:37:12,301 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-13 13:37:12,304 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: ROOMBA_Wrangler_9h56m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-13 13:37:18,708 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "ROOMBA_Wrangler_9h56m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-13 13:37:18,719 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 7700.32ms
+2026-01-13 13:37:18,915 [job_state.py:_status_update()] - Job Started: ROOMBA_Wrangler_9h56m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-01-13 13:37:19,984 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-13 14:38:02,151 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-13 14:38:02,151 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
