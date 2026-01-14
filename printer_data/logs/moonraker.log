@@ -190,3 +190,37 @@ Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
 2026-01-14 00:08:02,252 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
+2026-01-14 11:46:16,798 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-01-14 11:46:16,804 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1768409147.414336, Usage: 0.64%, Memory: 61984 kB
+System Time: 1768409148.414257, Usage: 0.6%, Memory: 61984 kB
+System Time: 1768409149.414625, Usage: 0.57%, Memory: 61984 kB
+System Time: 1768409150.415870, Usage: 0.67%, Memory: 61984 kB
+System Time: 1768409151.414743, Usage: 0.71%, Memory: 61984 kB
+System Time: 1768409152.415751, Usage: 0.53%, Memory: 61984 kB
+System Time: 1768409153.417784, Usage: 0.73%, Memory: 61984 kB
+System Time: 1768409154.416880, Usage: 0.54%, Memory: 61984 kB
+System Time: 1768409155.419640, Usage: 0.63%, Memory: 61984 kB
+System Time: 1768409156.419210, Usage: 0.73%, Memory: 61984 kB
+System Time: 1768409157.421402, Usage: 0.54%, Memory: 61984 kB
+System Time: 1768409158.421652, Usage: 0.64%, Memory: 61984 kB
+System Time: 1768409159.425317, Usage: 0.62%, Memory: 61984 kB
+System Time: 1768409160.425757, Usage: 0.78%, Memory: 61984 kB
+System Time: 1768409161.427101, Usage: 0.56%, Memory: 61984 kB
+System Time: 1768409162.427086, Usage: 0.57%, Memory: 61984 kB
+System Time: 1768409163.428588, Usage: 0.77%, Memory: 61984 kB
+System Time: 1768409164.428438, Usage: 0.62%, Memory: 61984 kB
+System Time: 1768409165.430028, Usage: 0.6%, Memory: 61984 kB
+System Time: 1768409166.430177, Usage: 0.6%, Memory: 61984 kB
+System Time: 1768409167.431130, Usage: 0.67%, Memory: 61984 kB
+System Time: 1768409168.431596, Usage: 0.57%, Memory: 61984 kB
+System Time: 1768409169.432484, Usage: 0.62%, Memory: 61984 kB
+System Time: 1768409170.432891, Usage: 0.63%, Memory: 61984 kB
+System Time: 1768409171.433308, Usage: 0.63%, Memory: 61984 kB
+System Time: 1768409172.435570, Usage: 0.63%, Memory: 61984 kB
+System Time: 1768409173.436728, Usage: 0.83%, Memory: 61984 kB
+System Time: 1768409174.438262, Usage: 1.01%, Memory: 61984 kB
+System Time: 1768409175.438039, Usage: 0.61%, Memory: 61984 kB
+System Time: 1768409176.440222, Usage: 0.52%, Memory: 61984 kB
+CPU Temperature: 46.0
