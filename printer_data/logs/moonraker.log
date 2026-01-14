@@ -224,3 +224,55 @@ System Time: 1768409174.438262, Usage: 1.01%, Memory: 61984 kB
 System Time: 1768409175.438039, Usage: 0.61%, Memory: 61984 kB
 System Time: 1768409176.440222, Usage: 0.52%, Memory: 61984 kB
 CPU Temperature: 46.0
+2026-01-14 13:38:35,313 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-01-14 13:38:36,568 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-01-14 13:38:36,679 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', 'basic.target', '-.mount', 'network-online.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-01-14 13:38:38,716 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-01-14 13:38:38,717 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-01-14 13:38:38,967 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-01-14 13:38:39,224 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-01-14 13:38:39,721 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-01-14 13:38:40,377 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-14 13:45:31,795 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-14 13:45:31,797 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------6e0812c91b2a727d
+2026-01-14 13:45:31,805 [application.py:post()] - Processing Uploaded File: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-14 13:45:31,912 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-14 13:45:31,994 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-14 13:45:31,996 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-14 13:45:32,200 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-14 13:45:32,207 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 409.52ms
+2026-01-14 13:45:32,375 [job_state.py:_status_update()] - Job Started: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-14 14:48:02,406 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-01-14 14:48:02,406 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-14 15:01:22,569 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-14 15:01:22,572 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------0a79dd20dfe08283
+2026-01-14 15:01:22,581 [application.py:post()] - Processing Uploaded File: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-14 15:01:22,710 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-14 15:01:22,721 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-14 15:01:22,723 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-14 15:01:22,999 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-14 15:01:23,009 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 437.49ms
+2026-01-14 15:01:23,200 [job_state.py:_status_update()] - Job Started: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-14 15:01:24,656 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
