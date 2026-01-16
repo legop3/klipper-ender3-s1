@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Jan 14 05:08:02 2026 --------------------
+-------------------- Log Start | Fri Jan 16 18:54:45 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount']
-**After=['network-online.target', 'sysinit.target', '-.mount', 'basic.target', 'system.slice', 'systemd-journald.socket']
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', 'basic.target', '-.mount', 'network-online.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,93 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-01-14 00:08:02,252 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.164
-2026-01-14 11:46:16,798 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2026-01-14 11:46:16,804 [proc_stats.py:_handle_shutdown()] - 
+2026-01-16 13:54:45,809 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-01-16 13:54:45,815 [proc_stats.py:_handle_shutdown()] - 
 Moonraker System Usage Statistics:
-System Time: 1768409147.414336, Usage: 0.64%, Memory: 61984 kB
-System Time: 1768409148.414257, Usage: 0.6%, Memory: 61984 kB
-System Time: 1768409149.414625, Usage: 0.57%, Memory: 61984 kB
-System Time: 1768409150.415870, Usage: 0.67%, Memory: 61984 kB
-System Time: 1768409151.414743, Usage: 0.71%, Memory: 61984 kB
-System Time: 1768409152.415751, Usage: 0.53%, Memory: 61984 kB
-System Time: 1768409153.417784, Usage: 0.73%, Memory: 61984 kB
-System Time: 1768409154.416880, Usage: 0.54%, Memory: 61984 kB
-System Time: 1768409155.419640, Usage: 0.63%, Memory: 61984 kB
-System Time: 1768409156.419210, Usage: 0.73%, Memory: 61984 kB
-System Time: 1768409157.421402, Usage: 0.54%, Memory: 61984 kB
-System Time: 1768409158.421652, Usage: 0.64%, Memory: 61984 kB
-System Time: 1768409159.425317, Usage: 0.62%, Memory: 61984 kB
-System Time: 1768409160.425757, Usage: 0.78%, Memory: 61984 kB
-System Time: 1768409161.427101, Usage: 0.56%, Memory: 61984 kB
-System Time: 1768409162.427086, Usage: 0.57%, Memory: 61984 kB
-System Time: 1768409163.428588, Usage: 0.77%, Memory: 61984 kB
-System Time: 1768409164.428438, Usage: 0.62%, Memory: 61984 kB
-System Time: 1768409165.430028, Usage: 0.6%, Memory: 61984 kB
-System Time: 1768409166.430177, Usage: 0.6%, Memory: 61984 kB
-System Time: 1768409167.431130, Usage: 0.67%, Memory: 61984 kB
-System Time: 1768409168.431596, Usage: 0.57%, Memory: 61984 kB
-System Time: 1768409169.432484, Usage: 0.62%, Memory: 61984 kB
-System Time: 1768409170.432891, Usage: 0.63%, Memory: 61984 kB
-System Time: 1768409171.433308, Usage: 0.63%, Memory: 61984 kB
-System Time: 1768409172.435570, Usage: 0.63%, Memory: 61984 kB
-System Time: 1768409173.436728, Usage: 0.83%, Memory: 61984 kB
-System Time: 1768409174.438262, Usage: 1.01%, Memory: 61984 kB
-System Time: 1768409175.438039, Usage: 0.61%, Memory: 61984 kB
-System Time: 1768409176.440222, Usage: 0.52%, Memory: 61984 kB
-CPU Temperature: 46.0
-2026-01-14 13:38:35,313 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-01-14 13:38:36,568 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-01-14 13:38:36,679 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', 'basic.target', '-.mount', 'network-online.target']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2026-01-14 13:38:38,716 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-01-14 13:38:38,717 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-01-14 13:38:38,967 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-01-14 13:38:39,224 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-01-14 13:38:39,721 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-01-14 13:38:40,377 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-01-14 13:45:31,795 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-01-14 13:45:31,797 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------6e0812c91b2a727d
-2026-01-14 13:45:31,805 [application.py:post()] - Processing Uploaded File: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-14 13:45:31,912 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-01-14 13:45:31,994 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-01-14 13:45:31,996 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-01-14 13:45:32,200 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
-2026-01-14 13:45:32,207 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 409.52ms
-2026-01-14 13:45:32,375 [job_state.py:_status_update()] - Job Started: roomba-side-brush_54m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-14 14:48:02,406 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-01-14 14:48:02,406 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-01-14 15:01:22,569 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-01-14 15:01:22,572 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------0a79dd20dfe08283
-2026-01-14 15:01:22,581 [application.py:post()] - Processing Uploaded File: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-14 15:01:22,710 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-01-14 15:01:22,721 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-01-14 15:01:22,723 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-01-14 15:01:22,999 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
-2026-01-14 15:01:23,009 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 437.49ms
-2026-01-14 15:01:23,200 [job_state.py:_status_update()] - Job Started: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-14 15:01:24,656 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-01-14 16:03:02,417 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-01-14 16:03:02,417 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-01-14 16:47:24,512 [job_state.py:_status_update()] - Job Started: roomba-side-brush_55m_0.28mm_235C_TPU_ENDER3S1.gcode
+System Time: 1768589656.500871, Usage: 0.66%, Memory: 62960 kB
+System Time: 1768589657.501370, Usage: 0.59%, Memory: 62960 kB
+System Time: 1768589658.503040, Usage: 0.57%, Memory: 62960 kB
+System Time: 1768589659.505824, Usage: 0.64%, Memory: 62960 kB
+System Time: 1768589660.505538, Usage: 0.64%, Memory: 62960 kB
+System Time: 1768589661.505324, Usage: 0.7%, Memory: 62960 kB
+System Time: 1768589662.506321, Usage: 0.54%, Memory: 62960 kB
+System Time: 1768589663.508639, Usage: 0.53%, Memory: 62960 kB
+System Time: 1768589664.508259, Usage: 0.69%, Memory: 62960 kB
+System Time: 1768589665.508658, Usage: 0.59%, Memory: 62960 kB
+System Time: 1768589666.509913, Usage: 0.6%, Memory: 62960 kB
+System Time: 1768589667.510987, Usage: 0.66%, Memory: 62960 kB
+System Time: 1768589668.509351, Usage: 0.77%, Memory: 62960 kB
+System Time: 1768589669.511308, Usage: 0.54%, Memory: 62960 kB
+System Time: 1768589670.511614, Usage: 0.72%, Memory: 62960 kB
+System Time: 1768589671.512347, Usage: 0.75%, Memory: 62960 kB
+System Time: 1768589672.514344, Usage: 0.59%, Memory: 62960 kB
+System Time: 1768589673.517066, Usage: 0.59%, Memory: 62960 kB
+System Time: 1768589674.519530, Usage: 0.58%, Memory: 62960 kB
+System Time: 1768589675.520245, Usage: 0.63%, Memory: 62960 kB
+System Time: 1768589676.521888, Usage: 0.57%, Memory: 62960 kB
+System Time: 1768589677.522579, Usage: 0.6%, Memory: 62960 kB
+System Time: 1768589678.523381, Usage: 0.56%, Memory: 62960 kB
+System Time: 1768589679.523910, Usage: 0.53%, Memory: 62960 kB
+System Time: 1768589680.525674, Usage: 0.6%, Memory: 62960 kB
+System Time: 1768589681.525245, Usage: 0.7%, Memory: 62960 kB
+System Time: 1768589682.527290, Usage: 0.66%, Memory: 62960 kB
+System Time: 1768589683.527072, Usage: 1.04%, Memory: 62960 kB
+System Time: 1768589684.527583, Usage: 0.6%, Memory: 62960 kB
+System Time: 1768589685.529767, Usage: 0.52%, Memory: 62960 kB
+CPU Temperature: 49.0
