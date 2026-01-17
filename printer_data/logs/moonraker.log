@@ -259,3 +259,5 @@ Properties:
 2026-01-16 19:46:11,043 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2026-01-16 19:46:11,695 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2026-01-16 19:46:22,076 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-16 20:48:02,970 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-16 20:48:02,970 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
