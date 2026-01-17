@@ -223,3 +223,39 @@ System Time: 1768589683.527072, Usage: 1.04%, Memory: 62960 kB
 System Time: 1768589684.527583, Usage: 0.6%, Memory: 62960 kB
 System Time: 1768589685.529767, Usage: 0.52%, Memory: 62960 kB
 CPU Temperature: 49.0
+2026-01-16 19:45:56,547 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-16 19:45:56,550 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------99c336f2933123fe
+2026-01-16 19:45:56,565 [application.py:post()] - Processing Uploaded File: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-16 19:45:56,895 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-16 19:45:57,000 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-16 19:45:57,004 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-16 19:45:57,220 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-16 19:45:57,228 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 678.30ms
+2026-01-16 19:46:06,721 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-01-16 19:46:07,976 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-01-16 19:46:08,022 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'network-online.target', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-01-16 19:46:10,038 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-01-16 19:46:10,038 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-01-16 19:46:10,289 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-01-16 19:46:10,547 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-01-16 19:46:11,043 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-01-16 19:46:11,695 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-16 19:46:22,076 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
