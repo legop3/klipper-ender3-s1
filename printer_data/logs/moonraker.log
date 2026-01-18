@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Jan 16 18:54:45 2026 --------------------
+-------------------- Log Start | Sun Jan 18 18:45:47 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', 'basic.target', '-.mount', 'network-online.target']
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'network-online.target', 'system.slice']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,75 +189,17 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-01-16 13:54:45,809 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2026-01-16 13:54:45,815 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1768589656.500871, Usage: 0.66%, Memory: 62960 kB
-System Time: 1768589657.501370, Usage: 0.59%, Memory: 62960 kB
-System Time: 1768589658.503040, Usage: 0.57%, Memory: 62960 kB
-System Time: 1768589659.505824, Usage: 0.64%, Memory: 62960 kB
-System Time: 1768589660.505538, Usage: 0.64%, Memory: 62960 kB
-System Time: 1768589661.505324, Usage: 0.7%, Memory: 62960 kB
-System Time: 1768589662.506321, Usage: 0.54%, Memory: 62960 kB
-System Time: 1768589663.508639, Usage: 0.53%, Memory: 62960 kB
-System Time: 1768589664.508259, Usage: 0.69%, Memory: 62960 kB
-System Time: 1768589665.508658, Usage: 0.59%, Memory: 62960 kB
-System Time: 1768589666.509913, Usage: 0.6%, Memory: 62960 kB
-System Time: 1768589667.510987, Usage: 0.66%, Memory: 62960 kB
-System Time: 1768589668.509351, Usage: 0.77%, Memory: 62960 kB
-System Time: 1768589669.511308, Usage: 0.54%, Memory: 62960 kB
-System Time: 1768589670.511614, Usage: 0.72%, Memory: 62960 kB
-System Time: 1768589671.512347, Usage: 0.75%, Memory: 62960 kB
-System Time: 1768589672.514344, Usage: 0.59%, Memory: 62960 kB
-System Time: 1768589673.517066, Usage: 0.59%, Memory: 62960 kB
-System Time: 1768589674.519530, Usage: 0.58%, Memory: 62960 kB
-System Time: 1768589675.520245, Usage: 0.63%, Memory: 62960 kB
-System Time: 1768589676.521888, Usage: 0.57%, Memory: 62960 kB
-System Time: 1768589677.522579, Usage: 0.6%, Memory: 62960 kB
-System Time: 1768589678.523381, Usage: 0.56%, Memory: 62960 kB
-System Time: 1768589679.523910, Usage: 0.53%, Memory: 62960 kB
-System Time: 1768589680.525674, Usage: 0.6%, Memory: 62960 kB
-System Time: 1768589681.525245, Usage: 0.7%, Memory: 62960 kB
-System Time: 1768589682.527290, Usage: 0.66%, Memory: 62960 kB
-System Time: 1768589683.527072, Usage: 1.04%, Memory: 62960 kB
-System Time: 1768589684.527583, Usage: 0.6%, Memory: 62960 kB
-System Time: 1768589685.529767, Usage: 0.52%, Memory: 62960 kB
-CPU Temperature: 49.0
-2026-01-16 19:45:56,547 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-01-16 19:45:56,550 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------99c336f2933123fe
-2026-01-16 19:45:56,565 [application.py:post()] - Processing Uploaded File: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-16 19:45:56,895 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-01-16 19:45:57,000 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-01-16 19:45:57,004 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-01-16 19:45:57,220 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
-2026-01-16 19:45:57,228 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 678.30ms
-2026-01-16 19:46:06,721 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-01-16 19:46:07,976 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-01-16 19:46:08,022 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'sysinit.target', 'system.slice']
-**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'network-online.target', 'system.slice']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2026-01-16 19:46:10,038 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-01-16 19:46:10,038 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-01-16 19:46:10,289 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-01-16 19:46:10,547 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-01-16 19:46:11,043 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-01-16 19:46:11,695 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-01-16 19:46:22,076 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-01-16 20:48:02,970 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-01-16 20:48:02,970 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-01-18 13:45:47,586 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-18 14:31:03,379 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.165
+2026-01-18 14:31:03,380 [application.py:log_request()] - 101 GET /websocket (192.168.0.165) [_TRUSTED_USER_] 0.85ms
+2026-01-18 14:31:03,380 [websockets.py:open()] - Websocket Opened: ID: 140342289553616, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:147.0) Gecko/147.0 Firefox/147.0, Host Name: 192.168.0.40
+2026-01-18 14:31:03,405 [websockets.py:_handle_identify()] - Websocket 140342289553616 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-01-18 14:31:07,650 [websockets.py:on_close()] - Websocket Closed: ID: 140342289553616 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.27
+2026-01-18 14:50:18,476 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2026-01-18 14:50:18,477 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.51ms
+2026-01-18 14:50:18,477 [websockets.py:open()] - Websocket Opened: ID: 140342289551216, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
+2026-01-18 14:50:18,503 [websockets.py:_handle_identify()] - Websocket 140342289551216 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-01-18 14:59:00,243 [websockets.py:on_close()] - Websocket Closed: ID: 140342289551216 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.76
+2026-01-18 15:30:51,939 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-18 15:33:03,416 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.165
+2026-01-18 15:53:03,419 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
