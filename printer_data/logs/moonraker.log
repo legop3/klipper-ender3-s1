@@ -203,3 +203,10 @@ Klipper Version: v0.12.0-111-g4f00f219
 2026-01-18 15:30:51,939 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
 2026-01-18 15:33:03,416 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.165
 2026-01-18 15:53:03,419 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
+2026-01-18 21:33:52,376 [job_state.py:_status_update()] - Job Started: roomba_circular_brush_1h1m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-01-18 22:31:51,602 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2026-01-18 22:31:51,602 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.86ms
+2026-01-18 22:31:51,602 [websockets.py:open()] - Websocket Opened: ID: 140342289562736, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
+2026-01-18 22:31:51,624 [websockets.py:_handle_identify()] - Websocket 140342289562736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-01-18 22:31:57,444 [websockets.py:on_close()] - Websocket Closed: ID: 140342289562736 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.84
+2026-01-18 23:33:03,491 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
