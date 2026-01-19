@@ -223,3 +223,45 @@ System Time: 1768841848.525178, Usage: 0.63%, Memory: 62828 kB
 System Time: 1768841849.526742, Usage: 0.69%, Memory: 62828 kB
 System Time: 1768841850.527442, Usage: 0.97%, Memory: 62828 kB
 CPU Temperature: 48.0
+2026-01-19 12:37:56,647 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-01-19 12:37:57,901 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-01-19 12:37:57,970 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', '-.mount', 'basic.target', 'network-online.target', 'systemd-journald.socket', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-01-19 12:37:59,982 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-01-19 12:37:59,983 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-01-19 12:38:00,234 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-01-19 12:38:00,494 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-01-19 12:38:00,987 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-01-19 12:38:01,811 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-19 12:38:33,753 [websockets.py:on_close()] - Websocket Closed: ID: 140342290584320 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.84
+2026-01-19 12:38:37,829 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.36ms
+2026-01-19 12:38:37,830 [websockets.py:open()] - Websocket Opened: ID: 140342289561728, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: localhost
+2026-01-19 12:38:37,871 [websockets.py:_handle_identify()] - Websocket 140342289561728 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-01-19 12:42:12,599 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-19 12:42:12,602 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------2b27a5e898eb4539
+2026-01-19 12:42:12,650 [application.py:post()] - Processing Uploaded File: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode
+2026-01-19 12:42:13,400 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-19 12:42:13,532 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-19 12:42:13,535 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-19 12:42:14,414 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-19 12:42:14,428 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1826.59ms
+2026-01-19 12:42:14,476 [job_state.py:_status_update()] - Job Started: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode
+2026-01-19 13:43:03,643 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-01-19 13:43:03,644 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
