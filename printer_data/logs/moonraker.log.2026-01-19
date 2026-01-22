@@ -1,0 +1,268 @@
+-------------------- Log Start | Mon Jan 19 16:57:31 2026 --------------------
+data_path: /home/daniel/printer_data
+is_default_data_path: False
+config_file: /home/daniel/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
+unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
+software_version: v0.8.0-311-g65a8271
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/daniel/printer_data/logs/moonraker.log
+python_version: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/daniel/printer_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[file_manager]
+enable_object_processing = True
+
+[power printer_plug]
+type = tplink_smartplug
+address = 192.168.0.83
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager klipper-backup]
+type = git_repo
+path = ~/klipper-backup
+origin = https://github.com/Staubgeborener/klipper-backup.git
+managed_services = moonraker
+primary_branch = main
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+#################################################################
+All Configuration Files:
+/home/daniel/printer_data/config/moonraker.conf
+#################################################################
+
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 6
+
+System Info:
+
+***python***
+  version: (3, 10, 12, 'final', 0)
+  version_string: 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: x86_64
+  cpu_desc: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 12115728
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: Ubuntu 22.04.4 LTS
+  id: ubuntu
+  version: 22.04
+  version_parts: {'major': '22', 'minor': '04', 'build_number': ''}
+  like: debian
+  codename: jammy
+  release_info: {}
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount', 'network-online.target']
+**After=['sysinit.target', 'system.slice', 'systemd-journald.socket', '-.mount', 'basic.target', 'network-online.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
+**ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/daniel/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=daniel
+
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['-.mount', 'basic.target', 'systemd-journald.socket', 'sysinit.target', 'network-online.target', 'system.slice']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
+Git Repo klipper-backup: No warnings detected
+Git Repo crowsnest: No warnings detected
+Klipper Version: v0.12.0-111-g4f00f219
+2026-01-19 11:57:31,316 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-01-19 11:57:31,322 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1768841821.503311, Usage: 0.67%, Memory: 62828 kB
+System Time: 1768841822.502038, Usage: 0.7%, Memory: 62828 kB
+System Time: 1768841823.503134, Usage: 0.65%, Memory: 62828 kB
+System Time: 1768841824.506204, Usage: 0.74%, Memory: 62828 kB
+System Time: 1768841825.504487, Usage: 0.83%, Memory: 62828 kB
+System Time: 1768841826.504940, Usage: 0.6%, Memory: 62828 kB
+System Time: 1768841827.506932, Usage: 0.64%, Memory: 62828 kB
+System Time: 1768841828.506848, Usage: 0.76%, Memory: 62828 kB
+System Time: 1768841829.508826, Usage: 0.56%, Memory: 62828 kB
+System Time: 1768841830.507666, Usage: 0.86%, Memory: 62828 kB
+System Time: 1768841831.508933, Usage: 0.6%, Memory: 62828 kB
+System Time: 1768841832.509421, Usage: 0.6%, Memory: 62828 kB
+System Time: 1768841833.511199, Usage: 0.57%, Memory: 62828 kB
+System Time: 1768841834.513120, Usage: 0.7%, Memory: 62828 kB
+System Time: 1768841835.516155, Usage: 0.58%, Memory: 62828 kB
+System Time: 1768841836.515023, Usage: 0.75%, Memory: 62828 kB
+System Time: 1768841837.516796, Usage: 0.54%, Memory: 62828 kB
+System Time: 1768841838.516811, Usage: 0.53%, Memory: 62828 kB
+System Time: 1768841839.516878, Usage: 0.63%, Memory: 62828 kB
+System Time: 1768841840.517575, Usage: 0.65%, Memory: 62828 kB
+System Time: 1768841841.518656, Usage: 0.59%, Memory: 62828 kB
+System Time: 1768841842.519411, Usage: 0.58%, Memory: 62828 kB
+System Time: 1768841843.520441, Usage: 0.58%, Memory: 62828 kB
+System Time: 1768841844.521207, Usage: 0.77%, Memory: 62828 kB
+System Time: 1768841845.521242, Usage: 0.55%, Memory: 62828 kB
+System Time: 1768841846.522189, Usage: 0.55%, Memory: 62828 kB
+System Time: 1768841847.523231, Usage: 0.62%, Memory: 62828 kB
+System Time: 1768841848.525178, Usage: 0.63%, Memory: 62828 kB
+System Time: 1768841849.526742, Usage: 0.69%, Memory: 62828 kB
+System Time: 1768841850.527442, Usage: 0.97%, Memory: 62828 kB
+CPU Temperature: 48.0
+2026-01-19 12:37:56,647 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-01-19 12:37:57,901 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-01-19 12:37:57,970 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', '-.mount', 'basic.target', 'network-online.target', 'systemd-journald.socket', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-01-19 12:37:59,982 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-01-19 12:37:59,983 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-01-19 12:38:00,234 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-01-19 12:38:00,494 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-01-19 12:38:00,987 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-01-19 12:38:01,811 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-19 12:38:33,753 [websockets.py:on_close()] - Websocket Closed: ID: 140342290584320 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.84
+2026-01-19 12:38:37,829 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.36ms
+2026-01-19 12:38:37,830 [websockets.py:open()] - Websocket Opened: ID: 140342289561728, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0, Host Name: localhost
+2026-01-19 12:38:37,871 [websockets.py:_handle_identify()] - Websocket 140342289561728 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-01-19 12:42:12,599 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-19 12:42:12,602 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------2b27a5e898eb4539
+2026-01-19 12:42:12,650 [application.py:post()] - Processing Uploaded File: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode
+2026-01-19 12:42:13,400 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-19 12:42:13,532 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-19 12:42:13,535 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-19 12:42:14,414 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-19 12:42:14,428 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1826.59ms
+2026-01-19 12:42:14,476 [job_state.py:_status_update()] - Job Started: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode
+2026-01-19 13:43:03,643 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-01-19 13:43:03,644 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-19 23:09:25,070 [job_state.py:_status_update()] - Job Started: streight_track_wheel_1h34m_0.28mm_240C_TPU_ENDER3S1.gcode
