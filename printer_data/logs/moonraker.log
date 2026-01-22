@@ -234,3 +234,61 @@ System Time: 1769032933.284877, Usage: 0.81%, Memory: 62912 kB
 System Time: 1769035621.994948, Usage: 0.08%, Memory: 62912 kB
 2026-01-21 17:47:15,962 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
 2026-01-21 17:47:15,962 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.40
+2026-01-21 20:33:05,148 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-01-21 20:33:06,404 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-01-21 20:33:06,438 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'system.slice', 'network-online.target', 'basic.target', '-.mount', 'systemd-journald.socket']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-01-21 20:33:08,451 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-01-21 20:33:08,452 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-01-21 20:33:08,703 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-01-21 20:33:08,960 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-01-21 20:33:09,457 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-01-21 20:33:10,162 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-21 20:33:18,481 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-01-21 20:33:18,488 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1769045569.350519, Usage: 0.8%, Memory: 62772 kB
+System Time: 1769045570.351145, Usage: 0.68%, Memory: 62772 kB
+System Time: 1769045571.351957, Usage: 0.85%, Memory: 62772 kB
+System Time: 1769045572.352355, Usage: 0.59%, Memory: 62772 kB
+System Time: 1769045573.353205, Usage: 0.77%, Memory: 62772 kB
+System Time: 1769045574.355643, Usage: 0.59%, Memory: 62772 kB
+System Time: 1769045575.355173, Usage: 0.78%, Memory: 62772 kB
+System Time: 1769045576.355943, Usage: 1.08%, Memory: 62772 kB
+System Time: 1769045577.356748, Usage: 0.68%, Memory: 62772 kB
+System Time: 1769045578.357422, Usage: 0.66%, Memory: 62772 kB
+System Time: 1769045579.358140, Usage: 0.87%, Memory: 62772 kB
+System Time: 1769045580.360227, Usage: 0.57%, Memory: 62772 kB
+System Time: 1769045581.361760, Usage: 0.71%, Memory: 62772 kB
+System Time: 1769045582.362259, Usage: 0.87%, Memory: 62772 kB
+System Time: 1769045583.363278, Usage: 0.72%, Memory: 62772 kB
+System Time: 1769045584.363817, Usage: 0.67%, Memory: 62772 kB
+System Time: 1769045585.366979, Usage: 1.26%, Memory: 62772 kB
+System Time: 1769045586.368973, Usage: 1.01%, Memory: 62772 kB
+System Time: 1769045587.369150, Usage: 3.56%, Memory: 62896 kB
+System Time: 1769045588.371528, Usage: 0.78%, Memory: 62896 kB
+System Time: 1769045589.370161, Usage: 3.12%, Memory: 62896 kB
+System Time: 1769045590.371087, Usage: 2.71%, Memory: 62896 kB
+System Time: 1769045591.372012, Usage: 0.67%, Memory: 62896 kB
+System Time: 1769045592.372033, Usage: 0.56%, Memory: 62896 kB
+System Time: 1769045593.372916, Usage: 0.57%, Memory: 62896 kB
+System Time: 1769045594.374352, Usage: 0.85%, Memory: 62896 kB
+System Time: 1769045595.375123, Usage: 0.66%, Memory: 62896 kB
+System Time: 1769045596.376783, Usage: 0.7%, Memory: 62896 kB
+System Time: 1769045597.378837, Usage: 0.55%, Memory: 62896 kB
+System Time: 1769045598.379845, Usage: 1.17%, Memory: 62896 kB
+CPU Temperature: 51.0
+2026-01-21 21:37:47,636 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
