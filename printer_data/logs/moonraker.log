@@ -207,3 +207,5 @@ Content-Type: multipart/form-data; boundary=------------------------039c82b4ed46
 2026-01-27 15:21:52,312 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2026-01-27 15:21:53,164 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2026-01-27 15:47:21,464 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-27 16:17:49,110 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-27 16:17:49,110 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
