@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Jan 29 06:09:53 2026 --------------------
+-------------------- Log Start | Tue Jan 27 20:14:57 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,23 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-01-29 01:09:53,747 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
-2026-01-29 01:09:53,748 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.80ms
-2026-01-29 01:09:53,748 [websockets.py:open()] - Websocket Opened: ID: 140342290432400, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
-2026-01-29 01:09:53,768 [websockets.py:_handle_identify()] - Websocket 140342290432400 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-01-29 01:26:11,947 [websockets.py:on_close()] - Websocket Closed: ID: 140342290432400 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.20
-2026-01-29 02:12:49,472 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
+2026-01-27 15:14:57,960 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-27 15:14:57,992 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------039c82b4ed46d928
+2026-01-27 15:14:58,007 [application.py:post()] - Processing Uploaded File: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-27 15:14:58,559 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-27 15:14:58,649 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-27 15:14:58,651 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-27 15:14:58,853 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-27 15:14:58,926 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 934.89ms
+2026-01-27 15:14:58,929 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-27 15:15:00,189 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-27 15:19:36,962 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-27 15:21:52,312 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-01-27 15:21:53,164 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-01-27 15:47:21,464 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_16m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-27 16:17:49,110 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-27 16:17:49,110 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
