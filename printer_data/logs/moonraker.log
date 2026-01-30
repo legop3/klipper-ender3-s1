@@ -958,3 +958,23 @@ Content-Type: multipart/form-data; boundary=------------------------a615f34a12e9
 2026-01-30 11:51:47,536 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_32m_0.28mm_205C_PLA_ENDER3S1.gcode
 2026-01-30 11:54:47,024 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2026-01-30 11:58:41,707 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_4(1)_32m_0.28mm_205C_PLA_ENDER3S1.gcode
+2026-01-30 12:55:22,278 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-01-30 12:55:22,278 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-30 14:12:54,772 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-01-30 14:12:54,774 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------76ceb178383df485
+2026-01-30 14:12:54,808 [application.py:post()] - Processing Uploaded File: G29_SHIFTER_MOD_SPRING_3(11)_1h14m_0.28mm_245C_PETG_ENDER3S1.gcode
+2026-01-30 14:12:54,961 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-01-30 14:12:54,975 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-01-30 14:12:54,978 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: G29_SHIFTER_MOD_SPRING_3(11)_1h14m_0.28mm_245C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-01-30 14:12:55,602 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "G29_SHIFTER_MOD_SPRING_3(11)_1h14m_0.28mm_245C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-01-30 14:12:55,610 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 836.03ms
+2026-01-30 14:12:55,740 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_3(11)_1h14m_0.28mm_245C_PETG_ENDER3S1.gcode
+2026-01-30 14:12:56,632 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-01-30 14:40:05,052 [job_state.py:_status_update()] - Job Started: G29_SHIFTER_MOD_SPRING_3(11)_1h14m_0.28mm_245C_PETG_ENDER3S1.gcode
+2026-01-30 14:43:30,537 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-01-30 15:15:22,302 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-01-30 15:15:22,302 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
