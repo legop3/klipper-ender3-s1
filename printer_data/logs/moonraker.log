@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Feb  1 18:47:41 2026 --------------------
+-------------------- Log Start | Mon Feb  2 16:13:17 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,44 +189,17 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-01 13:47:41,592 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-02-01 13:47:41,595 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------ccf0659f1d06758d
-2026-02-01 13:47:41,614 [application.py:post()] - Processing Uploaded File: playdate-cover_4h13m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-02-01 13:47:41,766 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+2026-02-02 11:13:17,539 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-02-02 11:13:17,542 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------5b940b536cbeaa3c
+2026-02-02 11:13:17,563 [application.py:post()] - Processing Uploaded File: TPU_IPHONE_12_mini_CASE_no_apple_logo_5h32m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-02-02 11:13:17,673 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
 
-2026-02-01 13:47:41,788 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+2026-02-02 11:13:17,695 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
 
-2026-02-01 13:47:41,791 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: playdate-cover_4h13m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
+2026-02-02 11:13:17,698 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: TPU_IPHONE_12_mini_CASE_no_apple_logo_5h32m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
 
-2026-02-01 13:47:42,162 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "playdate-cover_4h13m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
-2026-02-01 13:47:42,171 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 576.04ms
-2026-02-01 13:47:42,196 [job_state.py:_status_update()] - Job Started: playdate-cover_4h13m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-02-01 13:47:43,568 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-01 13:51:57,923 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 60.00 seconds
-2026-02-01 13:52:57,925 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 120.00 seconds
-2026-02-01 13:53:57,926 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 180.00 seconds
-2026-02-01 13:54:18,115 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-02-01 13:54:57,928 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 240.01 seconds
-2026-02-01 13:54:59,375 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.pause, Code: 400, Message: Lost communication with MCU 'mcu'
-Once the underlying issue is corrected, use the
-"FIRMWARE_RESTART" command to reset the firmware, reload the
-config, and restart the host software.
-Printer is shutdown
-
-2026-02-01 13:54:59,376 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Lost communication with MCU 'mcu'
-Once the underlying issue is corrected, use the
-"FIRMWARE_RESTART" command to reset the firmware, reload the
-config, and restart the host software.
-Printer is shutdown
-
-2026-02-01 13:54:59,377 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-02-01 13:55:00,633 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-02-01 13:55:07,698 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-02-01 13:55:07,698 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-02-01 13:55:07,949 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-02-01 13:55:08,209 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-02-01 13:55:08,703 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-02-01 13:55:25,753 [job_state.py:_status_update()] - Job Started: playdate-cover_4h13m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-02-01 14:50:22,802 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-02-01 15:00:22,804 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-02 11:13:18,101 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "TPU_IPHONE_12_mini_CASE_no_apple_logo_5h32m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
+2026-02-02 11:13:18,109 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 567.16ms
+2026-02-02 11:13:18,224 [job_state.py:_status_update()] - Job Started: TPU_IPHONE_12_mini_CASE_no_apple_logo_5h32m_0.28mm_235C_TPU_ENDER3S1.gcode
+2026-02-02 11:13:19,445 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
