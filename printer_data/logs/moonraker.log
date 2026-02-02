@@ -203,3 +203,46 @@ Content-Type: multipart/form-data; boundary=------------------------5b940b536cbe
 2026-02-02 11:13:18,109 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 567.16ms
 2026-02-02 11:13:18,224 [job_state.py:_status_update()] - Job Started: TPU_IPHONE_12_mini_CASE_no_apple_logo_5h32m_0.28mm_235C_TPU_ENDER3S1.gcode
 2026-02-02 11:13:19,445 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-02-02 12:15:23,027 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-02-02 12:15:23,027 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-02 14:38:14,882 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-02-02 14:38:14,886 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------a1c81a70a38d5ab5
+2026-02-02 14:38:14,895 [application.py:post()] - Processing Uploaded File: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-02 14:38:15,062 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-02-02 14:38:15,070 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-02-02 14:38:15,073 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-02-02 14:38:15,274 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-02-02 14:38:15,283 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 396.85ms
+2026-02-02 14:38:15,455 [job_state.py:_status_update()] - Job Started: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-02 14:38:16,769 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-02-02 14:43:44,657 [job_state.py:_status_update()] - Job Started: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-02 14:48:44,772 [job_state.py:_status_update()] - Job Started: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-02 14:53:39,422 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2026-02-02 14:53:40,679 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2026-02-02 14:53:40,700 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', '-.mount', 'sysinit.target']
+**After=['systemd-journald.socket', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
+**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/daniel/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=daniel
+2026-02-02 14:53:42,714 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2026-02-02 14:53:42,714 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2026-02-02 14:53:42,965 [job_state.py:_handle_started()] - Job state initialized: standby
+2026-02-02 14:53:43,223 [klippy_connection.py:_check_ready()] - Klippy ready
+2026-02-02 14:53:43,719 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2026-02-02 14:53:47,980 [job_state.py:_status_update()] - Job Started: M3-Wingnut_13m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-02 15:40:23,065 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-02-02 15:55:23,068 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
