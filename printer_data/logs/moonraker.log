@@ -223,3 +223,19 @@ Content-Type: multipart/form-data; boundary=------------------------f0ee3d7bde56
 2026-02-04 17:45:54,511 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-04 20:02:35,404 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-02-04 20:02:35,406 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------890fda568b1f8365
+2026-02-04 20:02:35,428 [application.py:post()] - Processing Uploaded File: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-04 20:02:35,527 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-02-04 20:02:35,538 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-02-04 20:02:35,541 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-02-04 20:02:35,866 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-02-04 20:02:35,873 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 467.09ms
+2026-02-04 20:02:35,993 [job_state.py:_status_update()] - Job Started: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-04 20:02:37,015 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-02-04 21:05:23,616 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-02-04 21:05:23,616 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
