@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Feb  4 14:37:05 2026 --------------------
+-------------------- Log Start | Thu Feb  5 17:01:31 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,53 +189,47 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-04 09:37:05,856 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-02-04 09:37:15,867 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-02-04 12:52:08,068 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-02-04 12:52:08,070 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------1300e4534a2484ee
-2026-02-04 12:52:08,097 [application.py:post()] - Processing Uploaded File: M4-Wingnut_38m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 12:52:08,241 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-02-04 12:52:08,258 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-02-04 12:52:08,261 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: M4-Wingnut_38m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-02-04 12:52:08,683 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "M4-Wingnut_38m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-02-04 12:52:08,689 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 619.55ms
-2026-02-04 12:52:08,777 [job_state.py:_status_update()] - Job Started: M4-Wingnut_38m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 12:52:09,787 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-04 13:55:23,543 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-02-04 13:55:23,543 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-02-04 17:45:52,997 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-02-04 17:45:52,999 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------f0ee3d7bde562022
-2026-02-04 17:45:53,010 [application.py:post()] - Processing Uploaded File: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 17:45:53,133 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-02-04 17:45:53,152 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-02-04 17:45:53,155 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-02-04 17:45:53,453 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-02-04 17:45:53,459 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 460.55ms
-2026-02-04 17:45:53,670 [job_state.py:_status_update()] - Job Started: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 17:45:54,511 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-02-04 20:02:35,404 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-02-04 20:02:35,406 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------890fda568b1f8365
-2026-02-04 20:02:35,428 [application.py:post()] - Processing Uploaded File: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 20:02:35,527 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-02-04 20:02:35,538 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-02-04 20:02:35,541 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-02-04 20:02:35,866 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-02-04 20:02:35,873 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 467.09ms
-2026-02-04 20:02:35,993 [job_state.py:_status_update()] - Job Started: gimbal mount v2 90deg_37m_0.28mm_240C_PETG_ENDER3S1.gcode
-2026-02-04 20:02:37,015 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-04 21:05:23,616 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-02-04 21:05:23,616 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-05 12:01:31,110 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 12:01:45,626 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
+    sock.connect(address)
+OSError: [Errno 101] Network is unreachable
+2026-02-05 12:08:08,785 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-02-05 12:08:11,459 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
