@@ -207,3 +207,19 @@ Content-Type: multipart/form-data; boundary=------------------------1300e4534a24
 2026-02-04 12:52:09,787 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2026-02-04 13:55:23,543 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2026-02-04 13:55:23,543 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-04 17:45:52,997 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-02-04 17:45:52,999 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------f0ee3d7bde562022
+2026-02-04 17:45:53,010 [application.py:post()] - Processing Uploaded File: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-04 17:45:53,133 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-02-04 17:45:53,152 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-02-04 17:45:53,155 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-02-04 17:45:53,453 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-02-04 17:45:53,459 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 460.55ms
+2026-02-04 17:45:53,670 [job_state.py:_status_update()] - Job Started: the thing itself_28m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-02-04 17:45:54,511 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-02-04 18:50:23,596 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
