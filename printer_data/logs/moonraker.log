@@ -233,3 +233,9 @@ Traceback (most recent call last):
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2026-02-05 12:08:11,459 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 18:58:43,290 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 18:58:53,299 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 19:00:33,385 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 19:00:53,400 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 19:02:03,459 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-02-05 19:02:13,469 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
