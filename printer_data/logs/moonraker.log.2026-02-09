@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Feb  8 03:41:47 2026 --------------------
+-------------------- Log Start | Mon Feb  9 23:13:44 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,49 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-07 22:41:47,505 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-02-07 22:41:59,005 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2026-02-07 22:45:24,859 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2026-02-07 22:45:26,871 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2026-02-07 22:48:17,861 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-02-07 22:48:22,161 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-02-09 18:13:44,861 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-02-09 18:13:44,869 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1770678795.708805, Usage: 0.71%, Memory: 53436 kB
+System Time: 1770678796.709815, Usage: 1.02%, Memory: 53436 kB
+System Time: 1770678797.707682, Usage: 1.31%, Memory: 53436 kB
+System Time: 1770678798.710977, Usage: 0.9%, Memory: 53436 kB
+System Time: 1770678799.711060, Usage: 1.05%, Memory: 53436 kB
+System Time: 1770678800.710183, Usage: 1.09%, Memory: 53436 kB
+System Time: 1770678801.718189, Usage: 0.82%, Memory: 53436 kB
+System Time: 1770678802.715511, Usage: 1.34%, Memory: 53436 kB
+System Time: 1770678803.716716, Usage: 1.05%, Memory: 53436 kB
+System Time: 1770678804.714489, Usage: 0.97%, Memory: 53436 kB
+System Time: 1770678805.716539, Usage: 0.67%, Memory: 53436 kB
+System Time: 1770678806.718594, Usage: 0.81%, Memory: 53436 kB
+System Time: 1770678807.719731, Usage: 1.06%, Memory: 53436 kB
+System Time: 1770678808.721679, Usage: 0.93%, Memory: 53436 kB
+System Time: 1770678809.722798, Usage: 0.95%, Memory: 53436 kB
+System Time: 1770678810.723903, Usage: 1.0%, Memory: 53436 kB
+System Time: 1770678811.725237, Usage: 1.15%, Memory: 53436 kB
+System Time: 1770678812.726370, Usage: 1.16%, Memory: 53436 kB
+System Time: 1770678813.725350, Usage: 1.15%, Memory: 53436 kB
+System Time: 1770678814.729779, Usage: 0.7%, Memory: 53436 kB
+System Time: 1770678815.729887, Usage: 1.03%, Memory: 53436 kB
+System Time: 1770678816.730927, Usage: 1.0%, Memory: 53436 kB
+System Time: 1770678817.732064, Usage: 1.24%, Memory: 53436 kB
+System Time: 1770678818.733160, Usage: 1.16%, Memory: 53436 kB
+System Time: 1770678819.731097, Usage: 0.89%, Memory: 53436 kB
+System Time: 1770678820.738210, Usage: 0.97%, Memory: 53436 kB
+System Time: 1770678821.736307, Usage: 1.26%, Memory: 53436 kB
+System Time: 1770678822.734258, Usage: 0.92%, Memory: 53436 kB
+System Time: 1770678823.736243, Usage: 0.71%, Memory: 53436 kB
+System Time: 1770678824.741676, Usage: 0.63%, Memory: 53436 kB
+CPU Temperature: 33.0
