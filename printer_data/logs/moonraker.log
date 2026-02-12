@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Feb 11 20:46:07 2026 --------------------
+-------------------- Log Start | Thu Feb 12 17:27:24 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', '-.mount', 'sysinit.target']
-**After=['systemd-journald.socket', 'sysinit.target', 'system.slice', 'basic.target', 'network-online.target', '-.mount']
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['systemd-journald.socket', 'basic.target', 'network-online.target', '-.mount', 'sysinit.target', 'system.slice']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,27 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-11 15:46:07,859 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-02-11 15:46:09,114 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-02-11 15:46:09,141 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['system.slice', 'sysinit.target', '-.mount']
-**After=['systemd-journald.socket', 'basic.target', 'network-online.target', '-.mount', 'sysinit.target', 'system.slice']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2026-02-11 15:46:11,154 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-02-11 15:46:11,155 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-02-11 15:46:11,405 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-02-11 15:46:11,661 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-02-11 15:46:12,160 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-02-11 15:46:12,777 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-11 16:50:25,446 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-12 12:27:24,825 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-02-12 12:27:24,832 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1770917215.697245, Usage: 0.62%, Memory: 54852 kB
+System Time: 1770917216.697791, Usage: 0.65%, Memory: 54852 kB
+System Time: 1770917217.699080, Usage: 0.65%, Memory: 54852 kB
+System Time: 1770917218.699234, Usage: 0.71%, Memory: 54852 kB
+System Time: 1770917219.701148, Usage: 0.63%, Memory: 54852 kB
+System Time: 1770917220.702032, Usage: 0.61%, Memory: 54852 kB
+System Time: 1770917221.702838, Usage: 0.59%, Memory: 54852 kB
+System Time: 1770917222.703832, Usage: 0.56%, Memory: 54852 kB
+System Time: 1770917223.703515, Usage: 0.57%, Memory: 54852 kB
+System Time: 1770917224.703876, Usage: 0.8%, Memory: 54852 kB
+System Time: 1770917225.705106, Usage: 0.55%, Memory: 54852 kB
+System Time: 1770917226.706403, Usage: 0.53%, Memory: 54852 kB
+System Time: 1770917227.708110, Usage: 0.65%, Memory: 54852 kB
+System Time: 1770917228.708368, Usage: 0.71%, Memory: 54852 kB
+System Time: 1770917229.709491, Usage: 0.67%, Memory: 54852 kB
+System Time: 1770917230.711596, Usage: 0.6%, Memory: 54852 kB
+System Time: 1770917231.712152, Usage: 0.57%, Memory: 54852 kB
+System Time: 1770917232.714754, Usage: 0.68%, Memory: 54852 kB
+System Time: 1770917233.713560, Usage: 0.61%, Memory: 54852 kB
+System Time: 1770917234.716352, Usage: 0.7%, Memory: 54852 kB
+System Time: 1770917235.716202, Usage: 0.69%, Memory: 54852 kB
+System Time: 1770917236.716617, Usage: 0.56%, Memory: 54852 kB
+System Time: 1770917237.716923, Usage: 0.61%, Memory: 54852 kB
+System Time: 1770917238.718353, Usage: 0.68%, Memory: 54852 kB
+System Time: 1770917239.718562, Usage: 0.65%, Memory: 54852 kB
+System Time: 1770917240.719978, Usage: 0.92%, Memory: 54852 kB
+System Time: 1770917241.720001, Usage: 0.59%, Memory: 54852 kB
+System Time: 1770917242.721268, Usage: 0.53%, Memory: 54852 kB
+System Time: 1770917243.722537, Usage: 0.53%, Memory: 54852 kB
+System Time: 1770917244.723950, Usage: 0.81%, Memory: 54852 kB
+CPU Temperature: 44.0
