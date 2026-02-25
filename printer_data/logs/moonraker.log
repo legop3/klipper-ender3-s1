@@ -1,4 +1,4 @@
--------------------- Log Start | Sat Feb 14 11:08:45 2026 --------------------
+-------------------- Log Start | Tue Feb 24 22:16:25 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,9 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-14 06:08:45,189 [websockets.py:on_close()] - Websocket Closed: ID: 140639111821920 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.72
-2026-02-14 06:08:46,194 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-14 06:08:46,195 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.78ms
-2026-02-14 06:08:46,195 [websockets.py:open()] - Websocket Opened: ID: 140639111822736, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: localhost
-2026-02-14 06:08:46,202 [websockets.py:_handle_identify()] - Websocket 140639111822736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-02-14 07:10:50,001 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-02-24 17:16:24,843 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
+2026-02-24 17:16:25,072 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 269.37ms
+2026-02-24 17:16:25,072 [websockets.py:open()] - Websocket Opened: ID: 140639110997056, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
+2026-02-24 17:16:25,098 [websockets.py:_handle_identify()] - Websocket 140639110997056 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-02-24 17:16:27,719 [websockets.py:on_close()] - Websocket Closed: ID: 140639110997056 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.88
+2026-02-24 18:20:52,691 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
