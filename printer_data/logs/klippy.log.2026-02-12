@@ -356,8 +356,32 @@ Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
 Python: '3.10.12 (main, Jan  8 2026, 06:52:19) [GCC 11.4.0]'
-webhooks client 140301811314992: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-=============== Log rollover at Sun Mar  1 00:00:00 2026 ===============
-Stats 2549770.8: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000009 bytes_write=297429 bytes_read=1732921 bytes_retransmit=9 bytes_invalid=0 send_seq=27612 receive_seq=27612 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999193 heater_bed: target=60 temp=60.0 pwm=0.206  sysload=0.52 cputime=8284.347 memavail=7872484 print_time=423.109 buffer_time=0.000 print_stall=0 extruder: target=0 temp=22.3 pwm=0.000
-Stats 2549771.8: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000009 bytes_write=297450 bytes_read=1733032 bytes_retransmit=9 bytes_invalid=0 send_seq=27614 receive_seq=27614 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999194 heater_bed: target=60 temp=60.0 pwm=0.150  sysload=0.52 cputime=8284.352 memavail=7840760 print_time=423.109 buffer_time=0.000 print_stall=0 extruder: target=0 temp=22.3 pwm=0.000
-Stats 2549772.8: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000014 mcu_task_stddev=0.000009 bytes_write=297487 bytes_read=1733178 bytes_retransmit=9 bytes_invalid=0 send_seq=27617 receive_seq=27617 retransmit_seq=2 srtt=0.003 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=71999194 heater_bed: target=60 temp=60.0 pwm=0.168  sysload=0.80 cputime=8284.356 memavail=7819624 print_time=423.109 buffer_time=0.000 print_stall=0 extruder: target=0 temp=22.3 pwm=0.000
+webhooks client 140301810496896: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+=============== Log rollover at Thu Feb 12 12:27:19 2026 ===============
+b'Got EOF when reading from device'
+Timeout with MCU 'mcu' (eventtime=1125798.905534)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140301810496896
+Received 1051324.638708: b'{"id": 140639108585392, "method": "list_endpoints", "params": {}}'
+Received 1051324.639894: b'{"id": 140639108582848, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1051324.889003: b'{"id": 140639108586832, "method": "objects/list", "params": {}}'
+Received 1051324.889951: b'{"id": 140639109483680, "method": "objects/query", "params": {"objects": {"configfile": null}}}'
+Received 1051325.140897: b'{"id": 140639109487616, "method": "register_remote_method", "params": {"response_template": {"method": "shutdown_machine"}, "remote_method": "shutdown_machine"}}'
+Received 1051325.141787: b'{"id": 140639109487616, "method": "register_remote_method", "params": {"response_template": {"method": "reboot_machine"}, "remote_method": "reboot_machine"}}'
+Received 1051325.142405: b'{"id": 140639109487616, "method": "register_remote_method", "params": {"response_template": {"method": "pause_job_queue"}, "remote_method": "pause_job_queue"}}'
+Received 1051325.142997: b'{"id": 140639109487616, "method": "register_remote_method", "params": {"response_template": {"method": "start_job_queue"}, "remote_method": "start_job_queue"}}'
+Received 1051325.143561: b'{"id": 140639109487616, "method": "register_remote_method", "params": {"response_template": {"method": "set_device_power"}, "remote_method": "set_device_power"}}'
+Received 1051325.144551: b'{"id": 140639109515152, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 1051325.144748: b'{"id": 140639109522496, "method": "objects/query", "params": {"objects": {"heaters": null}}}'
+Received 1051325.151854: b'{"id": 140639109515584, "method": "info", "params": {}}'
+Received 1051325.152225: b'{"id": 140639109514480, "method": "objects/list", "params": {}}'
+Received 1051325.152225: b'{"id": 140639109519328, "method": "gcode/help", "params": {}}'
+Received 1051325.213635: b'{"id": 140639109514816, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1051325.394344: b'{"id": 140639112700224, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null, "gcode": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1051325.644035: b'{"id": 140639109492416, "method": "objects/subscribe", "params": {"objects": {"webhooks": null, "print_stats": null, "heater_bed": null, "extruder": null, "gcode": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1051326.332599: b'{"id": 140639109486464, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 1051328.380020: b'{"id": 140639109489008, "method": "gcode/script", "params": {"script": "G28"}}'
+Received 1051428.448091: b'{"id": 140639108589760, "method": "gcode/script", "params": {"script": "G91\\nG1 Z+50 F1500\\nG90"}}'
+gcode state: absolute_coord=True absolute_extrude=True base_position=[0.0, 0.0, 0.0, 0.0] last_position=[147.0, 154.0, 60.0, 0.0] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=25.0
+Reactor garbage collection: (1051325.391798309, 0.0, 0.0)

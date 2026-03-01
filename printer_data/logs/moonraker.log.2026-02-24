@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Mar  1 01:05:38 2026 --------------------
+-------------------- Log Start | Tue Feb 24 22:16:25 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,34 +189,9 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-02-28 20:05:38,677 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-02-28 20:05:39,679 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
-2026-02-28 20:05:49,609 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-02-28 20:05:50,634 [server.py:add_log_rollover_item()] - 
-Systemd unit klipper.service:
-unit_name: klipper.service
-is_default: True
-manager: systemd
-Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['sysinit.target', 'network-online.target', 'basic.target', '-.mount', 'system.slice', 'systemd-journald.socket']
-**SupplementaryGroups=[]
-**EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
-**ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
-**WorkingDirectory=/home/daniel/klipper
-**FragmentPath=/etc/systemd/system/klipper.service
-**Description=Klipper 3D Printer Firmware SV1
-**User=daniel
-2026-02-28 20:05:52,433 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-02-28 20:05:52,433 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-02-28 20:05:52,684 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-02-28 20:05:52,974 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-02-28 20:05:53,437 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-02-28 20:05:55,299 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-02-28 21:10:53,753 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-02-28 21:40:42,724 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
-2026-02-28 21:40:42,725 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 23.40ms
-2026-02-28 21:40:42,725 [websockets.py:open()] - Websocket Opened: ID: 140639109521152, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.40
-2026-02-28 21:40:42,737 [websockets.py:_handle_identify()] - Websocket 140639109521152 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-02-28 21:40:49,792 [websockets.py:on_close()] - Websocket Closed: ID: 140639109521152 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.07
-2026-02-28 22:40:53,770 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
+2026-02-24 17:16:24,843 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.177
+2026-02-24 17:16:25,072 [application.py:log_request()] - 101 GET /websocket (192.168.0.177) [_TRUSTED_USER_] 269.37ms
+2026-02-24 17:16:25,072 [websockets.py:open()] - Websocket Opened: ID: 140639110997056, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
+2026-02-24 17:16:25,098 [websockets.py:_handle_identify()] - Websocket 140639110997056 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-02-24 17:16:27,719 [websockets.py:on_close()] - Websocket Closed: ID: 140639110997056 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.88
+2026-02-24 18:20:52,691 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.177
