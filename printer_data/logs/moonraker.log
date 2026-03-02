@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Mar  1 17:43:09 2026 --------------------
+-------------------- Log Start | Mon Mar  2 19:17:48 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,39 +189,37 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-03-01 12:43:09,363 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-03-01 12:43:09,386 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------ef59d396a4bfd694
-2026-03-01 12:43:10,115 [application.py:post()] - Processing Uploaded File: lens_guard_v8_1h42m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-03-01 12:43:10,796 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-03-01 12:43:10,895 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-03-01 12:43:10,898 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: lens_guard_v8_1h42m_0.28mm_235C_TPU_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-03-01 12:43:11,198 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "lens_guard_v8_1h42m_0.28mm_235C_TPU_ENDER3S1.gcode" --check-objects) successfully finished
-2026-03-01 12:43:11,266 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1883.58ms
-2026-03-01 12:43:11,268 [job_state.py:_status_update()] - Job Started: lens_guard_v8_1h42m_0.28mm_235C_TPU_ENDER3S1.gcode
-2026-03-01 12:43:12,551 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-03-01 12:45:56,804 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-03-01 12:46:56,805 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
-2026-03-01 12:47:56,806 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
-2026-03-01 12:48:56,807 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
-2026-03-01 12:49:56,807 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
-2026-03-01 12:50:56,808 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.00 seconds
-2026-03-01 12:51:56,810 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
-2026-03-01 12:52:56,810 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
-2026-03-01 12:56:41,438 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.13
-2026-03-01 12:56:41,438 [application.py:log_request()] - 101 GET /websocket (192.168.0.13) [_TRUSTED_USER_] 0.86ms
-2026-03-01 12:56:41,438 [websockets.py:open()] - Websocket Opened: ID: 140639109514528, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0, Host Name: 192.168.0.40
-2026-03-01 12:56:41,689 [websockets.py:_handle_identify()] - Websocket 140639109514528 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-03-01 12:57:04,923 [websockets.py:on_close()] - Websocket Closed: ID: 140639109514528 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.48
-2026-03-01 13:11:55,606 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
-2026-03-01 13:11:55,606 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.88ms
-2026-03-01 13:11:55,607 [websockets.py:open()] - Websocket Opened: ID: 140639109527296, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.40
-2026-03-01 13:11:55,629 [websockets.py:_handle_identify()] - Websocket 140639109527296 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-03-01 13:45:53,923 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-03-01 13:45:53,923 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-03-01 14:00:53,925 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.13
-2026-03-01 14:15:53,927 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
-2026-03-01 23:15:12,008 [websockets.py:on_close()] - Websocket Closed: ID: 140639109527296 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.40
+2026-03-02 14:17:48,834 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2026-03-02 14:17:48,841 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1772479039.762954, Usage: 0.53%, Memory: 38328 kB
+System Time: 1772479040.764251, Usage: 0.59%, Memory: 38328 kB
+System Time: 1772479041.764211, Usage: 0.56%, Memory: 38328 kB
+System Time: 1772479042.764550, Usage: 0.57%, Memory: 38328 kB
+System Time: 1772479043.765793, Usage: 0.53%, Memory: 38328 kB
+System Time: 1772479044.767097, Usage: 0.6%, Memory: 38328 kB
+System Time: 1772479045.768373, Usage: 0.6%, Memory: 38328 kB
+System Time: 1772479046.770643, Usage: 0.66%, Memory: 38328 kB
+System Time: 1772479047.770828, Usage: 0.68%, Memory: 38328 kB
+System Time: 1772479048.772127, Usage: 0.5%, Memory: 38328 kB
+System Time: 1772479049.773294, Usage: 0.51%, Memory: 38328 kB
+System Time: 1772479050.774488, Usage: 0.57%, Memory: 38328 kB
+System Time: 1772479051.777186, Usage: 0.6%, Memory: 38328 kB
+System Time: 1772479052.777050, Usage: 0.97%, Memory: 38328 kB
+System Time: 1772479053.776882, Usage: 0.73%, Memory: 38328 kB
+System Time: 1772479054.778191, Usage: 0.53%, Memory: 38328 kB
+System Time: 1772479055.779427, Usage: 0.63%, Memory: 38328 kB
+System Time: 1772479056.778764, Usage: 0.67%, Memory: 38328 kB
+System Time: 1772479057.780218, Usage: 0.66%, Memory: 38328 kB
+System Time: 1772479058.781846, Usage: 0.65%, Memory: 38328 kB
+System Time: 1772479059.782052, Usage: 0.6%, Memory: 38328 kB
+System Time: 1772479060.783350, Usage: 0.61%, Memory: 38328 kB
+System Time: 1772479061.783762, Usage: 0.56%, Memory: 38328 kB
+System Time: 1772479062.785778, Usage: 0.61%, Memory: 38328 kB
+System Time: 1772479063.790214, Usage: 0.63%, Memory: 38328 kB
+System Time: 1772479064.788014, Usage: 1.07%, Memory: 38328 kB
+System Time: 1772479065.788580, Usage: 0.54%, Memory: 38328 kB
+System Time: 1772479066.790176, Usage: 0.64%, Memory: 38328 kB
+System Time: 1772479067.791260, Usage: 0.88%, Memory: 38328 kB
+System Time: 1772479068.792127, Usage: 0.67%, Memory: 38328 kB
+CPU Temperature: 45.0
