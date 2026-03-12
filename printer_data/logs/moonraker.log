@@ -212,3 +212,4 @@ Properties:
 2026-03-11 19:44:20,430 [klippy_connection.py:_check_ready()] - Klippy ready
 2026-03-11 19:44:20,931 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2026-03-11 19:44:21,559 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-03-11 20:45:56,536 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
