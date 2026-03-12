@@ -190,3 +190,33 @@ Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
 2026-03-12 11:59:08,041 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-03-12 12:09:06,992 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-03-12 12:09:07,010 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------2e1c483ae2dab7e9
+2026-03-12 12:09:07,241 [application.py:post()] - Processing Uploaded File: Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-03-12 12:09:07,688 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-03-12 12:09:07,765 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-03-12 12:09:07,768 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-03-12 12:09:09,687 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-03-12 12:09:09,697 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 2687.22ms
+2026-03-12 12:09:09,777 [job_state.py:_status_update()] - Job Started: Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-03-12 12:14:49,277 [job_state.py:_status_update()] - Job Started: Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-03-12 12:19:58,670 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 330.000 220.000 2.260 [99.957]
+2026-03-12 12:29:36,551 [job_state.py:_status_update()] - Job Started: Heltec-WT_v15_back-7mm-mLogo_3h35m_0.28mm_240C_PETG_ENDER3S1.gcode
+2026-03-12 13:10:56,710 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-03-12 13:10:56,710 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-03-12 14:28:19,491 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.166
+2026-03-12 14:28:19,491 [application.py:log_request()] - 101 GET /websocket (192.168.0.166) [_TRUSTED_USER_] 0.79ms
+2026-03-12 14:28:19,491 [websockets.py:open()] - Websocket Opened: ID: 140639110996528, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:148.0) Gecko/148.0 Firefox/148.0, Host Name: 192.168.0.40
+2026-03-12 14:28:19,522 [websockets.py:_handle_identify()] - Websocket 140639110996528 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-03-12 14:28:41,678 [websockets.py:on_close()] - Websocket Closed: ID: 140639110996528 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.18
+2026-03-12 14:57:26,767 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.172
+2026-03-12 14:57:26,768 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.99ms
+2026-03-12 14:57:26,768 [websockets.py:open()] - Websocket Opened: ID: 140639111001088, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.40
+2026-03-12 14:57:26,796 [websockets.py:_handle_identify()] - Websocket 140639111001088 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-03-12 15:30:56,733 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.166
+2026-03-12 15:39:36,825 [websockets.py:write_to_socket()] - Websocket closed while writing: 140639111001088
+2026-03-12 15:39:41,771 [websockets.py:on_close()] - Websocket Closed: ID: 140639111001088 Close Code: None, Close Reason: None, Pong Time Elapsed: 41.12
