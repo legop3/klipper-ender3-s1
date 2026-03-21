@@ -221,3 +221,28 @@ Content-Type: multipart/form-data; boundary=------------------------77d57dcd2f4e
 2026-03-20 14:12:47,971 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
 2026-03-20 15:16:52,580 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2026-03-20 15:16:52,580 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-03-20 18:05:36,711 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-03-20 18:05:36,714 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------4a1eccf84b205447
+2026-03-20 18:05:36,740 [application.py:post()] - Processing Uploaded File: stealth rover bottom 3_51m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-03-20 18:05:36,872 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-03-20 18:05:36,888 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-03-20 18:05:36,891 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: stealth rover bottom 3_51m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-03-20 18:05:37,307 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "stealth rover bottom 3_51m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-03-20 18:05:37,314 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 600.49ms
+2026-03-20 18:05:37,331 [job_state.py:_status_update()] - Job Started: stealth rover bottom 3_51m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-03-20 18:05:38,135 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-03-20 18:19:06,266 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2026-03-20 18:19:06,267 [application.py:log_request()] - 101 GET /websocket (192.168.0.180) [_TRUSTED_USER_] 1.35ms
+2026-03-20 18:19:06,267 [websockets.py:open()] - Websocket Opened: ID: 139778852288688, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.40
+2026-03-20 18:19:06,315 [websockets.py:_handle_identify()] - Websocket 139778852288688 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-03-20 18:36:44,479 [websockets.py:on_close()] - Websocket Closed: ID: 139778852288688 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.15
+2026-03-20 19:06:50,679 [application.py:log_request()] - 101 GET /websocket (192.168.0.180) [_TRUSTED_USER_] 1.21ms
+2026-03-20 19:06:50,679 [websockets.py:open()] - Websocket Opened: ID: 139778852288928, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: 192.168.0.40
+2026-03-20 19:06:50,713 [websockets.py:_handle_identify()] - Websocket 139778852288928 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-03-20 19:06:52,617 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-03-20 19:06:52,617 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-03-20 19:44:38,783 [websockets.py:on_close()] - Websocket Closed: ID: 139778852288928 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.10
