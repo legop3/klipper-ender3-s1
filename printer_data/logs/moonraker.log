@@ -1,4 +1,4 @@
--------------------- Log Start | Mon May 18 22:16:36 2026 --------------------
+-------------------- Log Start | Wed May 20 01:11:25 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,7 +189,7 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-05-18 18:16:36,735 [power.py:_send_tplink_command()] - Error sending tplink command: info
+2026-05-19 21:11:25,695 [power.py:_send_tplink_command()] - Error sending tplink command: info
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
     await writer.drain()
@@ -198,7 +198,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
     raise ConnectionResetError('Connection lost')
 ConnectionResetError: Connection lost
-2026-05-18 18:16:36,735 [power.py:init_state()] - Device Init Error: printer_plug
+2026-05-19 21:11:25,695 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
     await writer.drain()
@@ -229,7 +229,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
     n = self._sock.send(data)
 OSError: [Errno 113] No route to host
-2026-05-18 18:16:44,799 [power.py:init_state()] - Device Init Error: printer_plug
+2026-05-19 21:11:33,759 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
