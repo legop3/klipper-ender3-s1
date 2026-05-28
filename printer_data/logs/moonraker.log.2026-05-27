@@ -1,4 +1,4 @@
--------------------- Log Start | Thu May 28 04:48:08 2026 --------------------
+-------------------- Log Start | Thu May 28 01:58:25 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,4 +189,28 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-05-28 00:48:08,749 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
+2026-05-27 21:58:25,827 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-05-27 21:58:25,832 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------5d58f51c50c754aa
+2026-05-27 21:58:25,898 [application.py:post()] - Processing Uploaded File: mirrorable hinge mount_1h18m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-05-27 21:58:26,361 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-05-27 21:58:26,434 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-05-27 21:58:26,436 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: mirrorable hinge mount_1h18m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-05-27 21:58:26,919 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "mirrorable hinge mount_1h18m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-05-27 21:58:26,930 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 1099.06ms
+2026-05-27 21:58:27,104 [job_state.py:_status_update()] - Job Started: mirrorable hinge mount_1h18m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-05-27 21:58:27,158 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-05-27 22:50:37,987 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.173
+2026-05-27 22:50:37,988 [application.py:log_request()] - 101 GET /websocket (192.168.0.173) [_TRUSTED_USER_] 1.35ms
+2026-05-27 22:50:37,988 [websockets.py:open()] - Websocket Opened: ID: 139920719991408, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0, Host Name: 192.168.0.40
+2026-05-27 22:50:38,020 [websockets.py:_handle_identify()] - Websocket 139920719991408 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-05-27 22:50:51,967 [websockets.py:on_close()] - Websocket Closed: ID: 139920719991408 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.98
+2026-05-27 23:03:08,733 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
+2026-05-27 23:03:08,733 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-05-27 23:44:46,804 [application.py:log_request()] - 101 GET /websocket (192.168.0.173) [_TRUSTED_USER_] 1.22ms
+2026-05-27 23:44:46,805 [websockets.py:open()] - Websocket Opened: ID: 139920719987568, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0, Host Name: 192.168.0.40
+2026-05-27 23:44:46,810 [websockets.py:_handle_identify()] - Websocket 139920719987568 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-05-27 23:45:51,228 [websockets.py:on_close()] - Websocket Closed: ID: 139920719987568 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.42
