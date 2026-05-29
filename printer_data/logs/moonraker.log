@@ -1,4 +1,4 @@
--------------------- Log Start | Thu May 28 04:48:08 2026 --------------------
+-------------------- Log Start | Fri May 29 19:16:29 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,93 +189,30 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-05-28 00:48:08,749 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
-2026-05-28 12:39:13,936 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2026-05-28 12:39:14,033 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1779986324.370131, Usage: 0.7%, Memory: 49272 kB
-System Time: 1779986325.441360, Usage: 0.81%, Memory: 49272 kB
-System Time: 1779986326.370798, Usage: 0.92%, Memory: 49272 kB
-System Time: 1779986327.493166, Usage: 0.81%, Memory: 49272 kB
-System Time: 1779986328.425405, Usage: 0.6%, Memory: 49272 kB
-System Time: 1779986329.493087, Usage: 0.62%, Memory: 49272 kB
-System Time: 1779986330.425244, Usage: 0.6%, Memory: 49272 kB
-System Time: 1779986331.493057, Usage: 0.71%, Memory: 49272 kB
-System Time: 1779986332.421414, Usage: 0.61%, Memory: 49272 kB
-System Time: 1779986333.376606, Usage: 0.73%, Memory: 49272 kB
-System Time: 1779986334.473246, Usage: 0.72%, Memory: 49272 kB
-System Time: 1779986335.409052, Usage: 0.69%, Memory: 49272 kB
-System Time: 1779986336.477049, Usage: 0.86%, Memory: 49272 kB
-System Time: 1779986337.409587, Usage: 0.59%, Memory: 49272 kB
-System Time: 1779986338.477116, Usage: 0.69%, Memory: 49272 kB
-System Time: 1779986339.405128, Usage: 0.58%, Memory: 49272 kB
-System Time: 1779986340.384529, Usage: 0.65%, Memory: 49272 kB
-System Time: 1779986341.453415, Usage: 0.88%, Memory: 49272 kB
-System Time: 1779986342.390262, Usage: 0.64%, Memory: 49272 kB
-System Time: 1779986343.449716, Usage: 0.66%, Memory: 49272 kB
-System Time: 1779986344.508873, Usage: 0.61%, Memory: 49272 kB
-System Time: 1779986345.425179, Usage: 0.61%, Memory: 49272 kB
-System Time: 1779986346.389921, Usage: 0.77%, Memory: 49272 kB
-System Time: 1779986347.473431, Usage: 0.73%, Memory: 49272 kB
-System Time: 1779986348.410159, Usage: 0.74%, Memory: 49272 kB
-System Time: 1779986349.465570, Usage: 0.77%, Memory: 49272 kB
-System Time: 1779986350.593368, Usage: 3.3%, Memory: 49272 kB
-System Time: 1779986351.527750, Usage: 3.4%, Memory: 49272 kB
-System Time: 1779986352.476886, Usage: 4.28%, Memory: 49272 kB
-System Time: 1779986353.399555, Usage: 1.08%, Memory: 49272 kB
-CPU Temperature: 47.0
-2026-05-28 12:39:32,119 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
-2026-05-28 12:39:33,373 [klippy_connection.py:_do_connect()] - Klippy Connection Established
-2026-05-28 12:39:35,417 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
-2026-05-28 12:39:35,418 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
-2026-05-28 12:39:35,668 [job_state.py:_handle_started()] - Job state initialized: standby
-2026-05-28 12:39:35,922 [klippy_connection.py:_check_ready()] - Klippy ready
-2026-05-28 12:39:36,423 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
-2026-05-28 12:39:36,965 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-05-28 13:43:08,881 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-05-28 21:27:24,217 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-05-28 21:27:41,832 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2026-05-28 21:28:00,038 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
-2026-05-28 21:28:02,050 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
-2026-05-28 21:34:34,604 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-05-28 21:34:34,979 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-05-29 15:16:29,993 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
+2026-05-29 15:16:30,035 [application.py:prepare()] - Upload Request Received from 192.168.0.40
+Content-Type: multipart/form-data; boundary=------------------------226e31632efb36e6
+2026-05-29 15:16:30,084 [application.py:post()] - Processing Uploaded File: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-05-29 15:16:30,255 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
+
+2026-05-29 15:16:30,276 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
+
+2026-05-29 15:16:30,279 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
+
+2026-05-29 15:16:30,900 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
+2026-05-29 15:16:30,912 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 877.96ms
+2026-05-29 15:16:30,988 [job_state.py:_status_update()] - Job Started: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode
+2026-05-29 15:16:32,106 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-05-29 15:19:38,022 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-05-29 15:19:38,277 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-05-29 15:19:41,489 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-05-29 15:19:43,326 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2026-05-29 15:32:45,917 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
+2026-05-29 15:32:45,918 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.10ms
+2026-05-29 15:32:45,918 [websockets.py:open()] - Websocket Opened: ID: 139920745401840, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0, Host Name: 192.168.0.40
+2026-05-29 15:32:45,954 [websockets.py:_handle_identify()] - Websocket 139920745401840 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-05-29 15:47:46,397 [websockets.py:on_close()] - Websocket Closed: ID: 139920745401840 Close Code: 1001, Close Reason: Child was killed, Pong Time Elapsed: 0.43
+2026-05-29 15:56:21,157 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.98ms
+2026-05-29 15:56:21,158 [websockets.py:open()] - Websocket Opened: ID: 139920748179808, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0, Host Name: 192.168.0.40
+2026-05-29 15:56:21,170 [websockets.py:_handle_identify()] - Websocket 139920748179808 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-05-29 15:56:33,122 [websockets.py:on_close()] - Websocket Closed: ID: 139920748179808 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.96
