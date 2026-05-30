@@ -1,4 +1,4 @@
--------------------- Log Start | Fri May 29 19:16:29 2026 --------------------
+-------------------- Log Start | Sat May 30 04:38:09 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,78 +189,4 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-05-29 15:16:29,993 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-05-29 15:16:30,035 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------226e31632efb36e6
-2026-05-29 15:16:30,084 [application.py:post()] - Processing Uploaded File: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 15:16:30,255 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-05-29 15:16:30,276 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-05-29 15:16:30,279 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-05-29 15:16:30,900 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-05-29 15:16:30,912 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 877.96ms
-2026-05-29 15:16:30,988 [job_state.py:_status_update()] - Job Started: mirrorable hinge mount v2_1h7m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 15:16:32,106 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-05-29 15:19:38,022 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-05-29 15:19:38,277 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-05-29 15:19:41,489 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-05-29 15:19:43,326 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
-2026-05-29 15:32:45,917 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.171
-2026-05-29 15:32:45,918 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 1.10ms
-2026-05-29 15:32:45,918 [websockets.py:open()] - Websocket Opened: ID: 139920745401840, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0, Host Name: 192.168.0.40
-2026-05-29 15:32:45,954 [websockets.py:_handle_identify()] - Websocket 139920745401840 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-05-29 15:47:46,397 [websockets.py:on_close()] - Websocket Closed: ID: 139920745401840 Close Code: 1001, Close Reason: Child was killed, Pong Time Elapsed: 0.43
-2026-05-29 15:56:21,157 [application.py:log_request()] - 101 GET /websocket (192.168.0.171) [_TRUSTED_USER_] 0.98ms
-2026-05-29 15:56:21,158 [websockets.py:open()] - Websocket Opened: ID: 139920748179808, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:151.0) Gecko/151.0 Firefox/151.0, Host Name: 192.168.0.40
-2026-05-29 15:56:21,170 [websockets.py:_handle_identify()] - Websocket 139920748179808 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-05-29 15:56:33,122 [websockets.py:on_close()] - Websocket Closed: ID: 139920748179808 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.96
-2026-05-29 16:06:41,305 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.173
-2026-05-29 16:06:41,306 [application.py:log_request()] - 101 GET /websocket (192.168.0.173) [_TRUSTED_USER_] 1.19ms
-2026-05-29 16:06:41,306 [websockets.py:open()] - Websocket Opened: ID: 139920748183072, Proxied: True, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0, Host Name: 192.168.0.40
-2026-05-29 16:06:41,326 [websockets.py:_handle_identify()] - Websocket 139920748183072 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-05-29 16:18:09,148 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-05-29 16:18:09,148 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-05-29 16:58:09,155 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.171
-2026-05-29 17:08:09,158 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
-2026-05-29 21:51:35,811 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-05-29 21:51:35,814 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------4535934f82756516
-2026-05-29 21:51:35,839 [application.py:post()] - Processing Uploaded File: 04_Cam_Frontplate_v2_WithIRConfigHoles_31m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 21:51:36,018 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-05-29 21:51:36,044 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-05-29 21:51:36,051 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: 04_Cam_Frontplate_v2_WithIRConfigHoles_31m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-05-29 21:51:36,515 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "04_Cam_Frontplate_v2_WithIRConfigHoles_31m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-05-29 21:51:36,528 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 714.22ms
-2026-05-29 21:51:36,539 [job_state.py:_status_update()] - Job Started: 04_Cam_Frontplate_v2_WithIRConfigHoles_31m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 21:51:36,813 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.173
-2026-05-29 21:51:37,506 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-05-29 21:54:34,833 [websockets.py:on_close()] - Websocket Closed: ID: 139920748183072 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.52
-2026-05-29 22:53:09,219 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-05-29 22:53:09,219 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
-2026-05-29 22:53:09,219 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-05-29 22:54:12,517 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.40
-2026-05-29 22:54:12,520 [application.py:prepare()] - Upload Request Received from 192.168.0.40
-Content-Type: multipart/form-data; boundary=------------------------b413565844841e3b
-2026-05-29 22:54:12,553 [application.py:post()] - Processing Uploaded File: 04_Cam_Frontplate_v2_WithIRConfigHoles_29m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 22:54:12,708 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is enabled
-
-2026-05-29 22:54:12,729 [shell_command.py:pipe_data_received()] - INFO:prepropress_cancellation:Shapely not found, complex hulls disabled
-
-2026-05-29 22:54:12,733 [shell_command.py:pipe_data_received()] - INFO:metadata:Performing Object Processing on file: 04_Cam_Frontplate_v2_WithIRConfigHoles_29m_0.10mm_240C_PETG_ENDER3S1.gcode, sliced by PrusaSlicer
-
-2026-05-29 22:54:13,325 [shell_command.py:_check_proc_success()] - Command (/home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/components/file_manager/metadata.py -p /home/daniel/printer_data/gcodes -f "04_Cam_Frontplate_v2_WithIRConfigHoles_29m_0.10mm_240C_PETG_ENDER3S1.gcode" --check-objects) successfully finished
-2026-05-29 22:54:13,337 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.40) [_TRUSTED_USER_] 817.07ms
-2026-05-29 22:54:13,491 [job_state.py:_status_update()] - Job Started: 04_Cam_Frontplate_v2_WithIRConfigHoles_29m_0.10mm_240C_PETG_ENDER3S1.gcode
-2026-05-29 22:54:14,435 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-05-29 23:34:45,684 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.173
-2026-05-29 23:34:45,685 [application.py:log_request()] - 101 GET /websocket (192.168.0.173) [_TRUSTED_USER_] 1.25ms
-2026-05-29 23:34:45,685 [websockets.py:open()] - Websocket Opened: ID: 139920745401072, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0, Host Name: 192.168.0.40
-2026-05-29 23:34:45,696 [websockets.py:_handle_identify()] - Websocket 139920745401072 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-05-29 23:58:09,230 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
-2026-05-29 23:58:09,230 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
-2026-05-29 23:59:21,152 [websockets.py:on_close()] - Websocket Closed: ID: 139920745401072 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.46
+2026-05-30 00:38:09,243 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.173
