@@ -250,3 +250,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-06-04 12:37:26,562 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-06-04 12:37:26,563 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.60ms
+2026-06-04 12:37:26,563 [websockets.py:open()] - Websocket Opened: ID: 139920745401984, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0, Host Name: localhost
+2026-06-04 12:37:26,722 [websockets.py:_handle_identify()] - Websocket 139920745401984 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-06-04 13:38:44,518 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
