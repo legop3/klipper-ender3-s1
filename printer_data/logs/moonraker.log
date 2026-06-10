@@ -1,4 +1,4 @@
--------------------- Log Start | Sat Jun  6 23:42:40 2026 --------------------
+-------------------- Log Start | Wed Jun 10 12:00:46 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,327 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-06-06 19:42:40,014 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
-2026-06-06 19:42:40,014 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 35.22ms
-2026-06-06 19:42:40,022 [websockets.py:open()] - Websocket Opened: ID: 139920745414560, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0, Host Name: localhost
-2026-06-06 19:42:40,063 [websockets.py:_handle_identify()] - Websocket 139920745414560 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-06-06 20:43:45,056 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-06-10 08:00:46,049 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.87 seconds, total blocked count: 87
+2026-06-10 08:00:46,316 [proc_stats.py:log_last_stats()] - 
+System Time: 1781092835.428481, Usage: 0.51%, Memory: 25588 kB
+System Time: 1781092836.328690, Usage: 0.38%, Memory: 25524 kB
+System Time: 1781092838.348117, Usage: 0.29%, Memory: 25516 kB
+System Time: 1781092839.396233, Usage: 0.64%, Memory: 25512 kB
+System Time: 1781092841.204936, Usage: 0.25%, Memory: 25436 kB
+2026-06-10 11:59:57,040 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.2 seconds, total blocked count: 88
+2026-06-10 12:00:00,256 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107185.212740, Usage: 0.47%, Memory: 25644 kB
+System Time: 1781107186.133002, Usage: 0.6%, Memory: 25484 kB
+System Time: 1781107188.782529, Usage: 0.55%, Memory: 25156 kB
+System Time: 1781107189.489031, Usage: 0.29%, Memory: 25636 kB
+System Time: 1781107190.540775, Usage: 0.57%, Memory: 25596 kB
+2026-06-10 12:00:02,024 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:00:10,132 [websockets.py:write_to_socket()] - Websocket closed while writing: 139920745414560
+2026-06-10 12:00:16,298 [websockets.py:on_close()] - Websocket Closed: ID: 139920745414560 Close Code: None, Close Reason: None, Pong Time Elapsed: 36.28
+2026-06-10 12:00:25,618 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.31 seconds, total blocked count: 89
+2026-06-10 12:00:36,635 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107214.305041, Usage: 0.41%, Memory: 25488 kB
+System Time: 1781107217.504957, Usage: 0.27%, Memory: 25552 kB
+System Time: 1781107217.628740, Usage: 0.49%, Memory: 25548 kB
+System Time: 1781107218.532552, Usage: 0.38%, Memory: 25472 kB
+System Time: 1781107219.632910, Usage: 0.36%, Memory: 25336 kB
+2026-06-10 12:00:36,738 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.12 seconds, total blocked count: 90
+2026-06-10 12:00:36,953 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107214.305041, Usage: 0.41%, Memory: 25488 kB
+System Time: 1781107217.504957, Usage: 0.27%, Memory: 25552 kB
+System Time: 1781107217.628740, Usage: 0.49%, Memory: 25548 kB
+System Time: 1781107218.532552, Usage: 0.38%, Memory: 25472 kB
+System Time: 1781107219.632910, Usage: 0.36%, Memory: 25336 kB
+2026-06-10 12:00:46,928 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.19 seconds, total blocked count: 91
+2026-06-10 12:00:49,821 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107236.993070, Usage: 0.18%, Memory: 26436 kB
+System Time: 1781107238.048289, Usage: 0.44%, Memory: 26252 kB
+System Time: 1781107239.092606, Usage: 0.4%, Memory: 26116 kB
+System Time: 1781107239.992859, Usage: 0.39%, Memory: 25964 kB
+System Time: 1781107241.088318, Usage: 0.43%, Memory: 25468 kB
+2026-06-10 12:01:04,474 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 10.65 seconds, total blocked count: 92
+2026-06-10 12:01:06,375 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107250.813472, Usage: 0.14%, Memory: 26156 kB
+System Time: 1781107250.956291, Usage: 0.41%, Memory: 25628 kB
+System Time: 1781107251.860551, Usage: 0.49%, Memory: 25376 kB
+System Time: 1781107252.821842, Usage: 0.43%, Memory: 25192 kB
+System Time: 1781107253.889342, Usage: 0.34%, Memory: 25192 kB
+2026-06-10 12:01:11,519 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.78 seconds, total blocked count: 93
+2026-06-10 12:01:11,720 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107251.860551, Usage: 0.49%, Memory: 25376 kB
+System Time: 1781107252.821842, Usage: 0.43%, Memory: 25192 kB
+System Time: 1781107253.889342, Usage: 0.34%, Memory: 25192 kB
+System Time: 1781107271.559961, Usage: 0.2%, Memory: 25344 kB
+System Time: 1781107271.672374, Usage: 0.43%, Memory: 26048 kB
+2026-06-10 12:01:37,307 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.74 seconds, total blocked count: 94
+2026-06-10 12:01:37,866 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107289.912322, Usage: 0.45%, Memory: 25252 kB
+System Time: 1781107290.624355, Usage: 0.51%, Memory: 25412 kB
+System Time: 1781107291.580410, Usage: 0.55%, Memory: 25284 kB
+System Time: 1781107292.649170, Usage: 0.42%, Memory: 25116 kB
+System Time: 1781107293.560197, Usage: 0.44%, Memory: 24952 kB
+2026-06-10 12:01:43,470 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.16 seconds, total blocked count: 95
+2026-06-10 12:01:45,122 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107289.912322, Usage: 0.45%, Memory: 25252 kB
+System Time: 1781107290.624355, Usage: 0.51%, Memory: 25412 kB
+System Time: 1781107291.580410, Usage: 0.55%, Memory: 25284 kB
+System Time: 1781107292.649170, Usage: 0.42%, Memory: 25116 kB
+System Time: 1781107293.560197, Usage: 0.44%, Memory: 24952 kB
+2026-06-10 12:01:45,702 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:01:58,790 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.7 seconds, total blocked count: 96
+2026-06-10 12:02:00,972 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107290.624355, Usage: 0.51%, Memory: 25412 kB
+System Time: 1781107291.580410, Usage: 0.55%, Memory: 25284 kB
+System Time: 1781107292.649170, Usage: 0.42%, Memory: 25116 kB
+System Time: 1781107293.560197, Usage: 0.44%, Memory: 24952 kB
+System Time: 1781107313.128733, Usage: 0.19%, Memory: 26112 kB
+2026-06-10 12:02:32,153 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 15.02 seconds, total blocked count: 97
+2026-06-10 12:02:33,772 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107326.521962, Usage: 0.34%, Memory: 25156 kB
+System Time: 1781107327.326428, Usage: 0.47%, Memory: 25472 kB
+System Time: 1781107328.256613, Usage: 0.49%, Memory: 25400 kB
+System Time: 1781107329.372164, Usage: 0.28%, Memory: 25044 kB
+System Time: 1781107338.477557, Usage: 0.31%, Memory: 25504 kB
+2026-06-10 12:02:39,925 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.15 seconds, total blocked count: 98
+2026-06-10 12:02:51,825 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107328.256613, Usage: 0.49%, Memory: 25400 kB
+System Time: 1781107329.372164, Usage: 0.28%, Memory: 25044 kB
+System Time: 1781107338.477557, Usage: 0.31%, Memory: 25504 kB
+System Time: 1781107353.993497, Usage: 0.18%, Memory: 26724 kB
+System Time: 1781107354.916860, Usage: 0.57%, Memory: 26616 kB
+2026-06-10 12:02:51,949 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.02 seconds, total blocked count: 99
+2026-06-10 12:02:53,267 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107329.372164, Usage: 0.28%, Memory: 25044 kB
+System Time: 1781107338.477557, Usage: 0.31%, Memory: 25504 kB
+System Time: 1781107353.993497, Usage: 0.18%, Memory: 26724 kB
+System Time: 1781107354.916860, Usage: 0.57%, Memory: 26616 kB
+System Time: 1781107373.171206, Usage: 0.46%, Memory: 25796 kB
+2026-06-10 12:03:08,932 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 9.89 seconds, total blocked count: 100
+2026-06-10 12:03:11,175 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107375.277095, Usage: 0.34%, Memory: 25604 kB
+System Time: 1781107377.109183, Usage: 0.21%, Memory: 25852 kB
+System Time: 1781107378.044481, Usage: 0.5%, Memory: 25776 kB
+System Time: 1781107379.164427, Usage: 0.37%, Memory: 25512 kB
+System Time: 1781107380.121022, Usage: 0.47%, Memory: 25068 kB
+2026-06-10 12:03:28,888 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:03:47,241 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.25 seconds, total blocked count: 101
+2026-06-10 12:03:49,158 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107416.540467, Usage: 0.59%, Memory: 25272 kB
+System Time: 1781107417.200283, Usage: 0.51%, Memory: 25384 kB
+System Time: 1781107418.244793, Usage: 0.5%, Memory: 25340 kB
+System Time: 1781107419.172988, Usage: 0.5%, Memory: 25000 kB
+System Time: 1781107420.216556, Usage: 0.37%, Memory: 24876 kB
+2026-06-10 12:04:07,388 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.12 seconds, total blocked count: 102
+2026-06-10 12:04:11,014 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107431.304178, Usage: 0.56%, Memory: 25656 kB
+System Time: 1781107432.292264, Usage: 0.44%, Memory: 25132 kB
+System Time: 1781107433.278702, Usage: 0.5%, Memory: 24960 kB
+System Time: 1781107434.340477, Usage: 0.48%, Memory: 24884 kB
+System Time: 1781107435.288981, Usage: 0.48%, Memory: 24864 kB
+2026-06-10 12:04:14,607 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.22 seconds, total blocked count: 103
+2026-06-10 12:04:15,066 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107432.292264, Usage: 0.44%, Memory: 25132 kB
+System Time: 1781107433.278702, Usage: 0.5%, Memory: 24960 kB
+System Time: 1781107434.340477, Usage: 0.48%, Memory: 24884 kB
+System Time: 1781107435.288981, Usage: 0.48%, Memory: 24864 kB
+System Time: 1781107454.744977, Usage: 0.08%, Memory: 25628 kB
+2026-06-10 12:04:19,540 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.91 seconds, total blocked count: 104
+2026-06-10 12:04:21,184 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107433.278702, Usage: 0.5%, Memory: 24960 kB
+System Time: 1781107434.340477, Usage: 0.48%, Memory: 24884 kB
+System Time: 1781107435.288981, Usage: 0.48%, Memory: 24864 kB
+System Time: 1781107454.744977, Usage: 0.08%, Memory: 25628 kB
+System Time: 1781107455.071478, Usage: 0.47%, Memory: 26200 kB
+2026-06-10 12:04:40,352 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.18 seconds, total blocked count: 105
+2026-06-10 12:04:41,045 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107468.366130, Usage: 0.26%, Memory: 25400 kB
+System Time: 1781107469.276701, Usage: 0.53%, Memory: 25344 kB
+System Time: 1781107470.212436, Usage: 0.46%, Memory: 25176 kB
+System Time: 1781107471.260403, Usage: 0.43%, Memory: 25308 kB
+System Time: 1781107472.176854, Usage: 0.47%, Memory: 25124 kB
+2026-06-10 12:05:23,357 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 14.36 seconds, total blocked count: 106
+2026-06-10 12:05:24,983 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107504.146967, Usage: 0.42%, Memory: 25232 kB
+System Time: 1781107505.116040, Usage: 0.46%, Memory: 25188 kB
+System Time: 1781107506.164765, Usage: 0.47%, Memory: 25180 kB
+System Time: 1781107507.088783, Usage: 0.49%, Memory: 25048 kB
+System Time: 1781107508.173069, Usage: 0.49%, Memory: 24912 kB
+2026-06-10 12:05:40,692 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.89 seconds, total blocked count: 107
+2026-06-10 12:05:41,606 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107530.220332, Usage: 0.44%, Memory: 25564 kB
+System Time: 1781107531.912380, Usage: 0.24%, Memory: 25548 kB
+System Time: 1781107532.828688, Usage: 0.47%, Memory: 25520 kB
+System Time: 1781107533.901474, Usage: 0.41%, Memory: 25520 kB
+System Time: 1781107534.816859, Usage: 0.35%, Memory: 25520 kB
+2026-06-10 12:06:03,106 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.24 seconds, total blocked count: 108
+2026-06-10 12:06:05,358 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107547.937104, Usage: 0.43%, Memory: 25396 kB
+System Time: 1781107548.980755, Usage: 0.42%, Memory: 25336 kB
+System Time: 1781107550.630461, Usage: 0.48%, Memory: 25252 kB
+System Time: 1781107550.961367, Usage: 0.42%, Memory: 25192 kB
+System Time: 1781107551.860821, Usage: 0.46%, Memory: 25140 kB
+2026-06-10 12:06:28,932 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.1 seconds, total blocked count: 109
+2026-06-10 12:06:44,369 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 13.57 seconds, total blocked count: 110
+2026-06-10 12:06:48,315 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107570.988611, Usage: 0.48%, Memory: 25136 kB
+System Time: 1781107572.032747, Usage: 0.42%, Memory: 25084 kB
+System Time: 1781107575.763649, Usage: 0.24%, Memory: 25528 kB
+System Time: 1781107576.212144, Usage: 0.6%, Memory: 25684 kB
+System Time: 1781107581.242910, Usage: 0.27%, Memory: 25684 kB
+2026-06-10 12:06:48,428 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.93 seconds, total blocked count: 111
+2026-06-10 12:06:48,428 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107570.988611, Usage: 0.48%, Memory: 25136 kB
+System Time: 1781107572.032747, Usage: 0.42%, Memory: 25084 kB
+System Time: 1781107575.763649, Usage: 0.24%, Memory: 25528 kB
+System Time: 1781107576.212144, Usage: 0.6%, Memory: 25684 kB
+System Time: 1781107581.242910, Usage: 0.27%, Memory: 25684 kB
+2026-06-10 12:06:49,197 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107570.988611, Usage: 0.48%, Memory: 25136 kB
+System Time: 1781107572.032747, Usage: 0.42%, Memory: 25084 kB
+System Time: 1781107575.763649, Usage: 0.24%, Memory: 25528 kB
+System Time: 1781107576.212144, Usage: 0.6%, Memory: 25684 kB
+System Time: 1781107581.242910, Usage: 0.27%, Memory: 25684 kB
+2026-06-10 12:07:12,191 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.92 seconds, total blocked count: 112
+2026-06-10 12:07:24,346 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107616.340751, Usage: 0.19%, Memory: 25404 kB
+System Time: 1781107617.260465, Usage: 0.48%, Memory: 25340 kB
+System Time: 1781107618.316445, Usage: 0.45%, Memory: 25316 kB
+System Time: 1781107619.260815, Usage: 0.47%, Memory: 25292 kB
+System Time: 1781107620.308718, Usage: 0.34%, Memory: 25328 kB
+2026-06-10 12:07:24,446 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.26 seconds, total blocked count: 113
+2026-06-10 12:07:25,235 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107616.340751, Usage: 0.19%, Memory: 25404 kB
+System Time: 1781107617.260465, Usage: 0.48%, Memory: 25340 kB
+System Time: 1781107618.316445, Usage: 0.45%, Memory: 25316 kB
+System Time: 1781107619.260815, Usage: 0.47%, Memory: 25292 kB
+System Time: 1781107620.308718, Usage: 0.34%, Memory: 25328 kB
+2026-06-10 12:07:48,332 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.72 seconds, total blocked count: 114
+2026-06-10 12:07:49,666 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107654.588931, Usage: 0.44%, Memory: 25256 kB
+System Time: 1781107655.049501, Usage: 0.42%, Memory: 25248 kB
+System Time: 1781107655.660560, Usage: 0.44%, Memory: 25248 kB
+System Time: 1781107656.717508, Usage: 0.36%, Memory: 25204 kB
+System Time: 1781107657.624318, Usage: 0.39%, Memory: 25076 kB
+2026-06-10 12:08:06,880 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.04 seconds, total blocked count: 115
+2026-06-10 12:08:07,520 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107675.102846, Usage: 0.37%, Memory: 25256 kB
+System Time: 1781107676.045729, Usage: 0.35%, Memory: 25256 kB
+System Time: 1781107679.838568, Usage: 0.26%, Memory: 25360 kB
+System Time: 1781107679.852806, Usage: 0.29%, Memory: 25276 kB
+System Time: 1781107680.905779, Usage: 0.36%, Memory: 25148 kB
+2026-06-10 12:08:09,959 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:08:25,750 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.66 seconds, total blocked count: 116
+2026-06-10 12:08:26,174 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107695.612403, Usage: 0.37%, Memory: 25544 kB
+System Time: 1781107696.424945, Usage: 0.46%, Memory: 25504 kB
+System Time: 1781107697.472522, Usage: 0.38%, Memory: 25472 kB
+System Time: 1781107698.529391, Usage: 0.34%, Memory: 25304 kB
+System Time: 1781107699.429625, Usage: 0.46%, Memory: 25304 kB
+2026-06-10 12:08:38,624 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.87 seconds, total blocked count: 117
+2026-06-10 12:08:38,825 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107710.397147, Usage: 0.44%, Memory: 26024 kB
+System Time: 1781107711.331834, Usage: 0.38%, Memory: 25952 kB
+System Time: 1781107712.408986, Usage: 0.49%, Memory: 25952 kB
+System Time: 1781107713.460238, Usage: 0.41%, Memory: 25796 kB
+System Time: 1781107718.795595, Usage: 0.1%, Memory: 25708 kB
+2026-06-10 12:08:42,832 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:08:48,939 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.17 seconds, total blocked count: 118
+2026-06-10 12:08:49,569 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107719.530907, Usage: 0.57%, Memory: 25928 kB
+System Time: 1781107724.757795, Usage: 0.25%, Memory: 26016 kB
+System Time: 1781107724.846992, Usage: 0.5%, Memory: 25792 kB
+System Time: 1781107725.888637, Usage: 0.39%, Memory: 25792 kB
+System Time: 1781107729.060551, Usage: 0.23%, Memory: 25760 kB
+2026-06-10 12:09:02,137 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:09:18,888 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.58 seconds, total blocked count: 119
+2026-06-10 12:09:19,089 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107750.401922, Usage: 0.21%, Memory: 25528 kB
+System Time: 1781107751.336135, Usage: 0.44%, Memory: 25264 kB
+System Time: 1781107752.380949, Usage: 0.39%, Memory: 25228 kB
+System Time: 1781107754.386337, Usage: 0.22%, Memory: 25412 kB
+System Time: 1781107755.316310, Usage: 0.48%, Memory: 25400 kB
+2026-06-10 12:09:21,781 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:09:36,945 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:09:50,779 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.46 seconds, total blocked count: 120
+2026-06-10 12:09:51,114 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107782.800740, Usage: 0.35%, Memory: 25532 kB
+System Time: 1781107783.733337, Usage: 0.4%, Memory: 25316 kB
+System Time: 1781107784.781948, Usage: 0.47%, Memory: 25248 kB
+System Time: 1781107785.836699, Usage: 0.38%, Memory: 25204 kB
+System Time: 1781107787.672457, Usage: 0.32%, Memory: 25336 kB
+2026-06-10 12:10:08,798 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.55 seconds, total blocked count: 121
+2026-06-10 12:10:09,976 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107796.208906, Usage: 0.46%, Memory: 25936 kB
+System Time: 1781107797.248811, Usage: 0.36%, Memory: 25600 kB
+System Time: 1781107798.156930, Usage: 0.44%, Memory: 25600 kB
+System Time: 1781107799.841182, Usage: 0.26%, Memory: 25568 kB
+System Time: 1781107800.876553, Usage: 0.55%, Memory: 25532 kB
+2026-06-10 12:10:11,594 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-06-10 12:10:19,091 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.33 seconds, total blocked count: 122
+2026-06-10 12:10:20,528 [proc_stats.py:log_last_stats()] - 
+System Time: 1781107797.248811, Usage: 0.36%, Memory: 25600 kB
+System Time: 1781107798.156930, Usage: 0.44%, Memory: 25600 kB
+System Time: 1781107799.841182, Usage: 0.26%, Memory: 25568 kB
+System Time: 1781107800.876553, Usage: 0.55%, Memory: 25532 kB
+System Time: 1781107820.515378, Usage: 0.16%, Memory: 25896 kB
+2026-06-10 12:11:30,616 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
