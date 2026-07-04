@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Jul  2 14:39:43 2026 --------------------
+-------------------- Log Start | Sat Jul  4 19:04:33 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,64 +189,627 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-07-02 10:39:43,775 [power.py:_send_tplink_command()] - Error sending tplink command: info
+2026-07-04 15:04:23,359 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.26 seconds, total blocked count: 681
+2026-07-04 15:04:33,312 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 10.0 seconds, total blocked count: 682
+2026-07-04 15:04:33,725 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191855.986708, Usage: 0.28%, Memory: 38284 kB
+System Time: 1783191857.028227, Usage: 0.36%, Memory: 38284 kB
+System Time: 1783191858.080972, Usage: 0.32%, Memory: 37808 kB
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+2026-07-04 15:04:34,743 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191858.080972, Usage: 0.32%, Memory: 37808 kB
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+2026-07-04 15:04:40,108 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.78 seconds, total blocked count: 683
+2026-07-04 15:04:49,579 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191858.080972, Usage: 0.32%, Memory: 37808 kB
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+2026-07-04 15:04:58,700 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 18.62 seconds, total blocked count: 684
+2026-07-04 15:05:15,532 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+2026-07-04 15:05:18,163 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 19.45 seconds, total blocked count: 685
+2026-07-04 15:05:43,711 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+2026-07-04 15:05:46,405 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 28.24 seconds, total blocked count: 686
+2026-07-04 15:06:02,788 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191858.996892, Usage: 0.33%, Memory: 37508 kB
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+2026-07-04 15:06:17,833 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 31.41 seconds, total blocked count: 687
+2026-07-04 15:06:38,700 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+System Time: 1783191986.868163, Usage: 0.43%, Memory: 35776 kB
+2026-07-04 15:06:48,538 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 30.62 seconds, total blocked count: 688
+2026-07-04 15:07:23,293 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 18.93 seconds, total blocked count: 689
+2026-07-04 15:09:13,206 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+System Time: 1783191986.868163, Usage: 0.43%, Memory: 35776 kB
+2026-07-04 15:09:45,863 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 158.34 seconds, total blocked count: 690
+2026-07-04 15:09:47,079 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191860.044902, Usage: 0.61%, Memory: 37432 kB
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+System Time: 1783191986.868163, Usage: 0.43%, Memory: 35776 kB
+2026-07-04 15:09:47,523 [proc_stats.py:log_last_stats()] - 
+System Time: 1783191873.727126, Usage: 0.25%, Memory: 36012 kB
+System Time: 1783191873.734825, Usage: 0.59%, Memory: 39016 kB
+System Time: 1783191911.423407, Usage: 0.46%, Memory: 36416 kB
+System Time: 1783191986.868163, Usage: 0.43%, Memory: 35776 kB
+System Time: 1783192187.523314, Usage: 0.37%, Memory: 35344 kB
+2026-07-04 15:10:00,237 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 10.53 seconds, total blocked count: 691
+2026-07-04 15:10:01,123 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192187.523314, Usage: 0.37%, Memory: 35344 kB
+System Time: 1783192187.596870, Usage: 0.45%, Memory: 38944 kB
+System Time: 1783192188.957091, Usage: 0.28%, Memory: 38204 kB
+System Time: 1783192190.458311, Usage: 0.3%, Memory: 37444 kB
+System Time: 1783192191.244694, Usage: 0.4%, Memory: 37252 kB
+2026-07-04 15:10:05,822 [machine.py:_parse_network_interfaces()] - Error processing network update
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-2026-07-02 10:39:43,775 [power.py:init_state()] - Device Init Error: printer_plug
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:10:20,640 [machine.py:_parse_network_interfaces()] - Error processing network update
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-
-During handling of the above exception, another exception occurred:
-
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:10:55,912 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.22 seconds, total blocked count: 692
+2026-07-04 15:10:59,338 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192245.253984, Usage: 0.26%, Memory: 36832 kB
+System Time: 1783192246.168580, Usage: 0.34%, Memory: 36764 kB
+System Time: 1783192247.269912, Usage: 0.41%, Memory: 36564 kB
+System Time: 1783192248.771199, Usage: 0.22%, Memory: 36740 kB
+System Time: 1783192249.808077, Usage: 0.35%, Memory: 36740 kB
+2026-07-04 15:11:04,592 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.68 seconds, total blocked count: 693
+2026-07-04 15:11:05,048 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192245.253984, Usage: 0.26%, Memory: 36832 kB
+System Time: 1783192246.168580, Usage: 0.34%, Memory: 36764 kB
+System Time: 1783192247.269912, Usage: 0.41%, Memory: 36564 kB
+System Time: 1783192248.771199, Usage: 0.22%, Memory: 36740 kB
+System Time: 1783192249.808077, Usage: 0.35%, Memory: 36740 kB
+2026-07-04 15:11:05,549 [machine.py:_parse_network_interfaces()] - Error processing network update
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 858, in _send_tplink_command
-    raise self.server.error(msg)
-moonraker.utils.ServerError: Error sending tplink command: info
-
-During handling of the above exception, another exception occurred:
-
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:11:42,099 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 18.07 seconds, total blocked count: 694
+2026-07-04 15:12:05,177 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 23.03 seconds, total blocked count: 695
+2026-07-04 15:12:11,691 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192280.076972, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192281.164402, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+2026-07-04 15:12:24,843 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 19.66 seconds, total blocked count: 696
+2026-07-04 15:12:28,172 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192281.164402, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+2026-07-04 15:12:40,995 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192281.164402, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+2026-07-04 15:12:40,996 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 16.21 seconds, total blocked count: 697
+2026-07-04 15:12:47,450 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192281.164402, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+2026-07-04 15:12:47,874 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.88 seconds, total blocked count: 698
+2026-07-04 15:12:50,897 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192281.164402, Usage: 0.25%, Memory: 37380 kB
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+2026-07-04 15:12:58,722 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.81 seconds, total blocked count: 699
+2026-07-04 15:13:00,475 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192282.212783, Usage: 0.24%, Memory: 37096 kB
+System Time: 1783192283.140357, Usage: 0.32%, Memory: 37252 kB
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+2026-07-04 15:13:11,759 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.05 seconds, total blocked count: 700
+2026-07-04 15:13:32,070 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+2026-07-04 15:13:38,964 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 25.51 seconds, total blocked count: 701
+2026-07-04 15:13:49,578 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.23 seconds, total blocked count: 702
+2026-07-04 15:14:06,081 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+2026-07-04 15:14:20,244 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+2026-07-04 15:14:28,871 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 39.37 seconds, total blocked count: 703
+2026-07-04 15:14:54,373 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 25.47 seconds, total blocked count: 704
+2026-07-04 15:14:54,374 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+2026-07-04 15:14:54,603 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192284.184886, Usage: 0.25%, Memory: 37020 kB
+System Time: 1783192342.046471, Usage: 0.1%, Memory: 37112 kB
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+2026-07-04 15:14:54,877 [machine.py:_parse_network_interfaces()] - Error processing network update
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 861, in _send_tplink_command
-    await writer.wait_closed()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
-    await self._protocol._get_close_waiter(self)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
-    n = self._sock.send(data)
-OSError: [Errno 113] No route to host
-2026-07-02 10:39:51,839 [power.py:init_state()] - Device Init Error: printer_plug
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:15:02,519 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.18 seconds, total blocked count: 705
+2026-07-04 15:15:03,084 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+System Time: 1783192502.879873, Usage: 0.21%, Memory: 35988 kB
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+2026-07-04 15:15:24,217 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 21.69 seconds, total blocked count: 706
+2026-07-04 15:16:09,071 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192378.868768, Usage: 0.33%, Memory: 38592 kB
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+System Time: 1783192502.879873, Usage: 0.21%, Memory: 35988 kB
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+2026-07-04 15:16:13,574 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 46.88 seconds, total blocked count: 707
+2026-07-04 15:16:14,350 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192380.597244, Usage: 0.4%, Memory: 38136 kB
+System Time: 1783192381.773375, Usage: 0.45%, Memory: 37444 kB
+System Time: 1783192502.879873, Usage: 0.21%, Memory: 35988 kB
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+2026-07-04 15:16:25,257 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 8.88 seconds, total blocked count: 708
+2026-07-04 15:16:52,553 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 27.32 seconds, total blocked count: 709
+2026-07-04 15:17:36,169 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192502.879873, Usage: 0.21%, Memory: 35988 kB
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+2026-07-04 15:18:02,039 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+2026-07-04 15:18:06,750 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 72.63 seconds, total blocked count: 710
+2026-07-04 15:18:37,360 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 32.08 seconds, total blocked count: 711
+2026-07-04 15:18:49,939 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+2026-07-04 15:19:03,401 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 25.78 seconds, total blocked count: 712
+2026-07-04 15:19:09,966 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+2026-07-04 15:19:14,314 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192502.933858, Usage: 0.51%, Memory: 38768 kB
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+2026-07-04 15:19:14,383 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.35 seconds, total blocked count: 713
+2026-07-04 15:19:23,368 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+2026-07-04 15:19:54,733 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 38.36 seconds, total blocked count: 714
+2026-07-04 15:20:13,829 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 21.07 seconds, total blocked count: 715
+2026-07-04 15:20:16,937 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+2026-07-04 15:20:17,065 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192574.349399, Usage: 0.31%, Memory: 38320 kB
+System Time: 1783192575.653658, Usage: 0.36%, Memory: 38748 kB
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+2026-07-04 15:20:37,763 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 20.68 seconds, total blocked count: 716
+2026-07-04 15:20:38,681 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192575.660964, Usage: 0.46%, Memory: 37792 kB
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+2026-07-04 15:20:45,417 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 7.67 seconds, total blocked count: 717
+2026-07-04 15:21:07,877 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 21.69 seconds, total blocked count: 718
+2026-07-04 15:21:11,996 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+2026-07-04 15:21:12,198 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+2026-07-04 15:21:12,198 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 5.09 seconds, total blocked count: 719
+2026-07-04 15:21:12,430 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192675.259994, Usage: 0.14%, Memory: 37788 kB
+System Time: 1783192755.467502, Usage: 0.33%, Memory: 36260 kB
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+2026-07-04 15:21:12,700 [machine.py:_parse_network_interfaces()] - Error processing network update
 Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:21:27,051 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 14.85 seconds, total blocked count: 720
+2026-07-04 15:21:35,605 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+2026-07-04 15:21:44,784 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 15.63 seconds, total blocked count: 721
+2026-07-04 15:22:10,363 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 24.33 seconds, total blocked count: 722
+2026-07-04 15:22:14,625 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192817.072759, Usage: 0.41%, Memory: 36932 kB
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+2026-07-04 15:22:18,782 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.76 seconds, total blocked count: 723
+2026-07-04 15:22:19,476 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+2026-07-04 15:22:19,476 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192817.101807, Usage: 0.51%, Memory: 38568 kB
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+2026-07-04 15:22:37,468 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 18.64 seconds, total blocked count: 724
+2026-07-04 15:22:55,898 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192838.713454, Usage: 0.51%, Memory: 36512 kB
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+2026-07-04 15:22:56,199 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 18.78 seconds, total blocked count: 725
+2026-07-04 15:23:14,910 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+2026-07-04 15:23:43,148 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 41.75 seconds, total blocked count: 726
+2026-07-04 15:24:40,575 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 55.39 seconds, total blocked count: 727
+2026-07-04 15:24:45,576 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+2026-07-04 15:25:08,512 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 35.12 seconds, total blocked count: 728
+2026-07-04 15:25:13,692 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192873.174519, Usage: 0.36%, Memory: 37144 kB
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+2026-07-04 15:25:20,011 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+2026-07-04 15:25:20,080 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.62 seconds, total blocked count: 729
+2026-07-04 15:25:31,068 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192885.395224, Usage: 0.6%, Memory: 37364 kB
+System Time: 1783192937.062323, Usage: 0.18%, Memory: 37908 kB
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+2026-07-04 15:25:31,470 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.39 seconds, total blocked count: 730
+2026-07-04 15:25:31,671 [proc_stats.py:log_last_stats()] - 
+System Time: 1783192941.422142, Usage: 0.35%, Memory: 38044 kB
+System Time: 1783192991.123458, Usage: 0.25%, Memory: 36308 kB
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+2026-07-04 15:25:48,631 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 13.77 seconds, total blocked count: 731
+2026-07-04 15:25:53,210 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+2026-07-04 15:25:53,351 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.72 seconds, total blocked count: 732
+2026-07-04 15:25:58,312 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+2026-07-04 15:26:04,727 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 11.38 seconds, total blocked count: 733
+2026-07-04 15:26:17,330 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+2026-07-04 15:26:17,330 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 12.6 seconds, total blocked count: 734
+2026-07-04 15:26:17,531 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+2026-07-04 15:26:26,094 [machine.py:_parse_network_interfaces()] - Error processing network update
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/machine.py", line 684, in _parse_network_interfaces
+    resp = await self.addr_cmd.run_with_response(log_complete=False)
+  File "/home/daniel/moonraker/moonraker/components/shell_command.py", line 277, in run_with_response
+    raise ShellCommandError(
+moonraker.components.shell_command.ShellCommandError: Error running shell command: 'ip -json -det address'
+2026-07-04 15:26:57,281 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 39.92 seconds, total blocked count: 735
+2026-07-04 15:27:03,506 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193119.346799, Usage: 0.31%, Memory: 36204 kB
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+2026-07-04 15:27:03,566 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 6.32 seconds, total blocked count: 736
+2026-07-04 15:28:51,064 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+2026-07-04 15:28:53,778 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 108.63 seconds, total blocked count: 737
+2026-07-04 15:29:19,745 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c56e60>, <Task finished name='Task-47600749' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1367, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/usr/lib/python3.10/ssl.py", line 1371, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+2026-07-04 15:30:04,069 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193131.542312, Usage: 0.31%, Memory: 38476 kB
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+2026-07-04 15:30:06,542 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 74.26 seconds, total blocked count: 738
+2026-07-04 15:31:07,180 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+2026-07-04 15:31:13,745 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 66.96 seconds, total blocked count: 739
+2026-07-04 15:31:17,432 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c568c0>, <Task finished name='Task-47600760' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=ValueError('IOStream is not idle; cannot convert to SSL')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1246, in start_tls
+    raise ValueError("IOStream is not idle; cannot convert to SSL")
+ValueError: IOStream is not idle; cannot convert to SSL
+2026-07-04 15:31:55,045 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 39.21 seconds, total blocked count: 740
+2026-07-04 15:32:00,933 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+2026-07-04 15:32:24,412 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 31.79 seconds, total blocked count: 741
+2026-07-04 15:32:42,272 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193131.549786, Usage: 0.62%, Memory: 38668 kB
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+2026-07-04 15:33:56,869 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+2026-07-04 15:34:24,613 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 120.2 seconds, total blocked count: 742
+2026-07-04 15:43:22,188 [concurrent.py:future_set_exception_unless_cancelled()] - Exception after Future was cancelled
+tornado.simple_httpclient.HTTPTimeoutError: Timeout while connecting
+2026-07-04 15:43:23,094 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c56d40>, <Task finished name='Task-47600769' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1367, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/usr/lib/python3.10/ssl.py", line 1371, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)
+2026-07-04 15:43:37,321 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193148.901263, Usage: 0.23%, Memory: 37408 kB
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+2026-07-04 15:44:05,779 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 572.4 seconds, total blocked count: 743
+2026-07-04 15:44:40,723 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 42.51 seconds, total blocked count: 744
+2026-07-04 15:44:44,695 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+2026-07-04 15:44:58,150 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c569e0>, <Task finished name='Task-47600782' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=ValueError('IOStream is not idle; cannot convert to SSL')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1246, in start_tls
+    raise ValueError("IOStream is not idle; cannot convert to SSL")
+ValueError: IOStream is not idle; cannot convert to SSL
+2026-07-04 15:45:26,073 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+2026-07-04 15:45:32,174 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 52.65 seconds, total blocked count: 745
+2026-07-04 15:46:23,882 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2026-07-04 15:47:08,436 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193148.912560, Usage: 0.38%, Memory: 38932 kB
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+2026-07-04 15:47:12,531 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 99.67 seconds, total blocked count: 746
+2026-07-04 15:47:46,154 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+System Time: 1783194455.361477, Usage: 0.38%, Memory: 36028 kB
+2026-07-04 15:48:05,946 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 52.39 seconds, total blocked count: 747
+2026-07-04 15:48:35,479 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c56440>, <Task finished name='Task-47600796' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=ValueError('IOStream is not idle; cannot convert to SSL')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1246, in start_tls
+    raise ValueError("IOStream is not idle; cannot convert to SSL")
+ValueError: IOStream is not idle; cannot convert to SSL
+2026-07-04 15:48:39,941 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 35.71 seconds, total blocked count: 748
+2026-07-04 15:48:39,941 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193324.465906, Usage: 0.26%, Memory: 37428 kB
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+System Time: 1783194455.361477, Usage: 0.38%, Memory: 36028 kB
+2026-07-04 15:48:39,943 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0x7f41d4c57e20>, <Task finished name='Task-47600801' coro=<_HTTPConnection.run() done, defined at /home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py:290> exception=ValueError('IOStream is not idle; cannot convert to SSL')>)
+Traceback (most recent call last):
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/daniel/moonraker-env/lib/python3.10/site-packages/tornado/iostream.py", line 1246, in start_tls
+    raise ValueError("IOStream is not idle; cannot convert to SSL")
+ValueError: IOStream is not idle; cannot convert to SSL
+2026-07-04 15:48:40,142 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193456.761648, Usage: 0.09%, Memory: 36444 kB
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+System Time: 1783194455.361477, Usage: 0.38%, Memory: 36028 kB
+System Time: 1783194519.946326, Usage: 0.31%, Memory: 38840 kB
+2026-07-04 15:49:19,702 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 39.74 seconds, total blocked count: 749
+2026-07-04 15:49:56,021 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+System Time: 1783194455.361477, Usage: 0.38%, Memory: 36028 kB
+System Time: 1783194519.946326, Usage: 0.31%, Memory: 38840 kB
+System Time: 1783194558.762423, Usage: 1.0%, Memory: 38704 kB
+2026-07-04 15:49:56,022 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 36.34 seconds, total blocked count: 750
+2026-07-04 15:49:57,376 [proc_stats.py:log_last_stats()] - 
+System Time: 1783193624.134925, Usage: 0.29%, Memory: 36436 kB
+System Time: 1783194273.945637, Usage: 0.08%, Memory: 38144 kB
+System Time: 1783194455.361477, Usage: 0.38%, Memory: 36028 kB
+System Time: 1783194519.946326, Usage: 0.31%, Memory: 38840 kB
+System Time: 1783194558.762423, Usage: 1.0%, Memory: 38704 kB
+2026-07-04 15:50:09,705 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 10.44 seconds, total blocked count: 751
+2026-07-04 15:50:10,930 [proc_stats.py:log_last_stats()] - 
+System Time: 1783194519.946326, Usage: 0.31%, Memory: 38840 kB
+System Time: 1783194558.762423, Usage: 1.0%, Memory: 38704 kB
+System Time: 1783194599.261644, Usage: 0.06%, Memory: 38440 kB
+System Time: 1783194606.486232, Usage: 0.46%, Memory: 37616 kB
+System Time: 1783194610.348296, Usage: 0.22%, Memory: 41068 kB
