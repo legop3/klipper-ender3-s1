@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Jul  5 17:13:53 2026 --------------------
+-------------------- Log Start | Tue Jul  7 04:49:09 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -102,7 +102,7 @@ All Configuration Files:
 #################################################################
 
 Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
-Unsafe Shutdown Count: 8
+Unsafe Shutdown Count: 9
 
 System Info:
 
@@ -118,7 +118,7 @@ System Info:
   serial_number: 
   hardware_desc: 
   model: 
-  total_memory: 12115724
+  total_memory: 12115712
   memory_units: kB
 
 ***sd_info***
@@ -158,8 +158,8 @@ unit_name: moonraker.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['network-online.target', 'sysinit.target', '-.mount', 'system.slice']
-**After=['-.mount', 'system.slice', 'systemd-journald.socket', 'basic.target', 'sysinit.target', 'network-online.target']
+**Requires=['system.slice', 'network-online.target', '-.mount', 'sysinit.target']
+**After=['sysinit.target', 'basic.target', '-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice']
 **SupplementaryGroups=['moonraker-admin']
 **EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
 **ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
@@ -173,8 +173,8 @@ unit_name: klipper.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['-.mount', 'system.slice', 'sysinit.target']
-**After=['systemd-journald.socket', '-.mount', 'network-online.target', 'sysinit.target', 'basic.target', 'system.slice']
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', '-.mount', 'basic.target', 'network-online.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,64 +189,9 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-07-05 13:13:53,887 [power.py:_send_tplink_command()] - Error sending tplink command: info
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-2026-07-05 13:13:53,887 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
-    await writer.drain()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
-    await self._protocol._drain_helper()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
-    raise ConnectionResetError('Connection lost')
-ConnectionResetError: Connection lost
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 858, in _send_tplink_command
-    raise self.server.error(msg)
-moonraker.utils.ServerError: Error sending tplink command: info
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 861, in _send_tplink_command
-    await writer.wait_closed()
-  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
-    await self._protocol._get_close_waiter(self)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
-    n = self._sock.send(data)
-OSError: [Errno 113] No route to host
-2026-07-05 13:14:01,951 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-07-07 00:49:09,478 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.5
+2026-07-07 00:49:09,478 [application.py:log_request()] - 101 GET /websocket (192.168.0.5) [_TRUSTED_USER_] 0.75ms
+2026-07-07 00:49:09,479 [websockets.py:open()] - Websocket Opened: ID: 140699720178208, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0, Host Name: 192.168.0.40
+2026-07-07 00:49:09,501 [websockets.py:_handle_identify()] - Websocket 140699720178208 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-07-07 01:11:06,120 [websockets.py:on_close()] - Websocket Closed: ID: 140699720178208 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.64
+2026-07-07 01:54:09,965 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.5

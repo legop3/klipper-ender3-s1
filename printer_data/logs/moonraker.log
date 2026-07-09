@@ -1,4 +1,4 @@
--------------------- Log Start | Tue Jul  7 04:49:09 2026 --------------------
+-------------------- Log Start | Thu Jul  9 06:34:15 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,9 +189,10 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-07-07 00:49:09,478 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.5
-2026-07-07 00:49:09,478 [application.py:log_request()] - 101 GET /websocket (192.168.0.5) [_TRUSTED_USER_] 0.75ms
-2026-07-07 00:49:09,479 [websockets.py:open()] - Websocket Opened: ID: 140699720178208, Proxied: True, User Agent: Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0, Host Name: 192.168.0.40
-2026-07-07 00:49:09,501 [websockets.py:_handle_identify()] - Websocket 140699720178208 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
-2026-07-07 01:11:06,120 [websockets.py:on_close()] - Websocket Closed: ID: 140699720178208 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.64
-2026-07-07 01:54:09,965 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.5
+2026-07-09 02:34:15,395 [proc_stats.py:_watchdog_callback()] - EVENT LOOP BLOCKED: 4.15 seconds, total blocked count: 2
+2026-07-09 02:34:15,596 [proc_stats.py:log_last_stats()] - 
+System Time: 1783578849.600595, Usage: 0.64%, Memory: 40584 kB
+System Time: 1783578850.596526, Usage: 2.52%, Memory: 40584 kB
+System Time: 1783578851.597089, Usage: 0.95%, Memory: 40584 kB
+System Time: 1783578852.599249, Usage: 0.61%, Memory: 40584 kB
+System Time: 1783578855.416135, Usage: 3.95%, Memory: 45224 kB
