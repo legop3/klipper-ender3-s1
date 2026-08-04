@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Jul 16 15:26:40 2026 --------------------
+-------------------- Log Start | Mon Aug  3 05:36:40 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -17,7 +17,7 @@ git_repo_url: https://github.com/Arksine/moonraker.git
 modified_files: []
 unofficial_components: []
 log_file: /home/daniel/printer_data/logs/moonraker.log
-python_version: 3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]
+python_version: 3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]
 launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
 msgspec_enabled: False
 uvloop_enabled: False
@@ -102,13 +102,13 @@ All Configuration Files:
 #################################################################
 
 Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
-Unsafe Shutdown Count: 9
+Unsafe Shutdown Count: 10
 
 System Info:
 
 ***python***
   version: (3, 10, 12, 'final', 0)
-  version_string: 3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]
+  version_string: 3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]
 
 ***cpu_info***
   cpu_count: 4
@@ -118,7 +118,7 @@ System Info:
   serial_number: 
   hardware_desc: 
   model: 
-  total_memory: 12115712
+  total_memory: 12115716
   memory_units: kB
 
 ***sd_info***
@@ -158,8 +158,8 @@ unit_name: moonraker.service
 is_default: True
 manager: systemd
 Properties:
-**Requires=['system.slice', 'network-online.target', '-.mount', 'sysinit.target']
-**After=['sysinit.target', 'basic.target', '-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice']
+**Requires=['-.mount', 'system.slice', 'network-online.target', 'sysinit.target']
+**After=['basic.target', 'sysinit.target', '-.mount', 'network-online.target', 'systemd-journald.socket', 'system.slice']
 **SupplementaryGroups=['moonraker-admin']
 **EnvironmentFiles=/home/daniel/printer_data/systemd/moonraker.env
 **ExecStart=/home/daniel/moonraker-env/bin/python $MOONRAKER_ARGS
@@ -174,7 +174,7 @@ is_default: True
 manager: systemd
 Properties:
 **Requires=['sysinit.target', 'system.slice', '-.mount']
-**After=['sysinit.target', 'systemd-journald.socket', 'system.slice', '-.mount', 'basic.target', 'network-online.target']
+**After=['systemd-journald.socket', 'system.slice', 'network-online.target', 'sysinit.target', '-.mount', 'basic.target']
 **SupplementaryGroups=[]
 **EnvironmentFiles=/home/daniel/printer_data/systemd/klipper.env
 **ExecStart=/home/daniel/klippy-env/bin/python $KLIPPER_ARGS
@@ -189,73 +189,47 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-07-16 11:26:40,329 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-07-16 11:26:59,070 [power.py:init_state()] - Device Init Error: printer_plug
+2026-08-03 01:36:40,978 [power.py:_send_tplink_command()] - Error sending tplink command: info
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
+    await writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-08-03 01:36:40,978 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
+    await writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 858, in _send_tplink_command
+    raise self.server.error(msg)
+moonraker.utils.ServerError: Error sending tplink command: info
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
   File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
     res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2026-07-16 11:31:50,677 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-07-16 11:31:52,212 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2026-07-16 11:39:11,115 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-07-16 11:39:28,797 [power.py:init_state()] - Device Init Error: printer_plug
-Traceback (most recent call last):
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
-    state: int = await self._send_info_request()
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
-    res = await self._send_tplink_command("info")
-  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
-    reader, writer = await asyncio.open_connection(
-  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
-    transport, _ = await loop.create_connection(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
-    sock = await self._connect_sock(
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
-    await self.sock_connect(sock, address)
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
-    return await fut
-  File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
-    sock.connect(address)
-OSError: [Errno 101] Network is unreachable
-2026-07-16 11:40:56,884 [power.py:init_state()] - Device Init Error: printer_plug
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 861, in _send_tplink_command
+    await writer.wait_closed()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 113] No route to host
+2026-08-03 01:36:49,042 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -276,27 +250,64 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
-2026-07-16 11:41:01,227 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
--------------------- Log Start | Thu Jul 30 18:01:10 2026 --------------------
-data_path: /home/daniel/printer_data
-is_default_data_path: False
-config_file: /home/daniel/printer_data/config/moonraker.conf
-startup_warnings: []
-verbose: False
-debug: False
-asyncio_debug: False
-is_backup_config: False
-is_python_package: False
-instance_uuid: b58008b63adb40a8a31f7dfdb480fcc5
-unix_socket_path: /home/daniel/printer_data/comms/moonraker.sock
-software_version: v0.8.0-311-g65a8271
-git_branch: master
-git_remote: origin
-git_repo_url: https://github.com/Arksine/moonraker.git
-modified_files: []
-unofficial_components: []
-log_file: /home/daniel/printer_data/logs/moonraker.log
-python_version: 3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]
-launch_args: /home/daniel/moonraker-env/bin/python /home/daniel/moonraker/moonraker/moonraker.py -d /home/daniel/printer_data
-msgspec_enabled: False
-uvloop_enabled: False
+2026-08-03 02:13:54,706 [power.py:_send_tplink_command()] - Error sending tplink command: info
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
+    await writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-08-03 02:13:54,706 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 843, in _send_tplink_command
+    await writer.drain()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 371, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 858, in _send_tplink_command
+    raise self.server.error(msg)
+moonraker.utils.ServerError: Error sending tplink command: info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 861, in _send_tplink_command
+    await writer.wait_closed()
+  File "/usr/lib/python3.10/asyncio/streams.py", line 343, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 924, in write
+    n = self._sock.send(data)
+OSError: [Errno 113] No route to host
+2026-08-03 02:14:02,770 [power.py:init_state()] - Device Init Error: printer_plug
+Traceback (most recent call last):
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
+    state: int = await self._send_info_request()
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 884, in _send_info_request
+    res = await self._send_tplink_command("info")
+  File "/home/daniel/moonraker/moonraker/components/power.py", line 839, in _send_tplink_command
+    reader, writer = await asyncio.open_connection(
+  File "/usr/lib/python3.10/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1076, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1060, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 969, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 501, in sock_connect
+    return await fut
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
