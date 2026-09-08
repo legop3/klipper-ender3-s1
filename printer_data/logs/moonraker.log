@@ -1213,3 +1213,13 @@ OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2026-09-07 15:40:49,570 [websockets.py:on_close()] - Websocket Closed: ID: 139690669209056 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.70
 2026-09-07 15:50:56,585 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.40
 2026-09-07 15:50:56,586 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2026-09-07 16:10:09,645 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.65ms
+2026-09-07 16:10:09,646 [websockets.py:open()] - Websocket Opened: ID: 139690669208288, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:155.0) Gecko/155.0 Firefox/155.0, Host Name: 192.168.0.40
+2026-09-07 16:10:09,667 [websockets.py:_handle_identify()] - Websocket 139690669208288 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-09-07 16:14:15,758 [job_state.py:_status_update()] - Job Started: ROOMBA_Wrangler_3h51m_0.20mm_240C_PETG_ENDER3S1.gcode
+2026-09-07 16:15:48,060 [websockets.py:on_close()] - Websocket Closed: ID: 139690669208288 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.38
+2026-09-07 17:07:18,547 [application.py:log_request()] - 101 GET /websocket (192.168.0.172) [_TRUSTED_USER_] 0.75ms
+2026-09-07 17:07:18,547 [websockets.py:open()] - Websocket Opened: ID: 139690669208912, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:155.0) Gecko/155.0 Firefox/155.0, Host Name: 192.168.0.40
+2026-09-07 17:07:18,560 [websockets.py:_handle_identify()] - Websocket 139690669208912 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-09-07 17:07:21,145 [websockets.py:on_close()] - Websocket Closed: ID: 139690669208912 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.60
+2026-09-07 18:10:56,611 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.172
