@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Sep 11 16:10:38 2026 --------------------
+-------------------- Log Start | Wed Sep 16 10:38:38 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,37 +189,9 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-09-11 12:10:38,498 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2026-09-11 12:10:38,504 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1789143009.397000, Usage: 1.42%, Memory: 50964 kB
-System Time: 1789143010.395890, Usage: 0.94%, Memory: 50964 kB
-System Time: 1789143011.396417, Usage: 0.57%, Memory: 50964 kB
-System Time: 1789143012.397400, Usage: 0.66%, Memory: 50964 kB
-System Time: 1789143013.398753, Usage: 0.63%, Memory: 50964 kB
-System Time: 1789143014.399318, Usage: 0.62%, Memory: 50964 kB
-System Time: 1789143015.402081, Usage: 0.61%, Memory: 50964 kB
-System Time: 1789143016.404598, Usage: 0.79%, Memory: 50964 kB
-System Time: 1789143017.404154, Usage: 1.19%, Memory: 50964 kB
-System Time: 1789143018.406918, Usage: 0.81%, Memory: 50964 kB
-System Time: 1789143019.408666, Usage: 1.07%, Memory: 50964 kB
-System Time: 1789143020.406142, Usage: 1.24%, Memory: 50964 kB
-System Time: 1789143021.407770, Usage: 0.54%, Memory: 50964 kB
-System Time: 1789143022.409261, Usage: 0.56%, Memory: 50964 kB
-System Time: 1789143023.409767, Usage: 0.7%, Memory: 50964 kB
-System Time: 1789143024.413669, Usage: 0.65%, Memory: 50964 kB
-System Time: 1789143025.411189, Usage: 1.08%, Memory: 50964 kB
-System Time: 1789143026.413057, Usage: 0.56%, Memory: 50964 kB
-System Time: 1789143027.413681, Usage: 0.74%, Memory: 50964 kB
-System Time: 1789143028.417566, Usage: 0.57%, Memory: 50964 kB
-System Time: 1789143029.416047, Usage: 1.06%, Memory: 50964 kB
-System Time: 1789143030.420234, Usage: 0.78%, Memory: 50964 kB
-System Time: 1789143031.420535, Usage: 1.02%, Memory: 50964 kB
-System Time: 1789143032.421237, Usage: 1.15%, Memory: 50964 kB
-System Time: 1789143033.423479, Usage: 1.28%, Memory: 50964 kB
-System Time: 1789143034.420650, Usage: 1.03%, Memory: 50964 kB
-System Time: 1789143035.425854, Usage: 1.04%, Memory: 50964 kB
-System Time: 1789143036.424878, Usage: 1.32%, Memory: 50964 kB
-System Time: 1789143037.426493, Usage: 1.05%, Memory: 50964 kB
-System Time: 1789143038.426052, Usage: 0.98%, Memory: 50964 kB
-CPU Temperature: 45.0
+2026-09-16 06:38:38,785 [websockets.py:on_close()] - Websocket Closed: ID: 139690670311552 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.11
+2026-09-16 06:38:39,789 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2026-09-16 06:38:39,789 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 1.01ms
+2026-09-16 06:38:39,789 [websockets.py:open()] - Websocket Opened: ID: 139690669704768, Proxied: True, User Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36, Host Name: localhost
+2026-09-16 06:38:39,793 [websockets.py:_handle_identify()] - Websocket 139690669704768 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-09-16 07:40:58,973 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
