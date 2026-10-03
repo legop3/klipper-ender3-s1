@@ -1,4 +1,4 @@
--------------------- Log Start | Sat Oct  3 15:10:16 2026 --------------------
+-------------------- Log Start | Mon Sep 28 14:33:42 2026 --------------------
 data_path: /home/daniel/printer_data
 is_default_data_path: False
 config_file: /home/daniel/printer_data/config/moonraker.conf
@@ -189,8 +189,8 @@ Git Repo Klipper-Adaptive-Meshing-Purging: No warnings detected
 Git Repo klipper-backup: No warnings detected
 Git Repo crowsnest: No warnings detected
 Klipper Version: v0.12.0-111-g4f00f219
-2026-10-03 11:10:16,281 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-10-03 11:10:26,959 [power.py:init_state()] - Device Init Error: printer_plug
+2026-09-28 10:33:42,110 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-09-28 10:33:49,198 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
@@ -211,8 +211,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 509, in _sock_connect
     sock.connect(address)
 OSError: [Errno 101] Network is unreachable
-2026-10-03 11:11:56,384 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
-2026-10-03 11:12:00,037 [power.py:init_state()] - Device Init Error: printer_plug
+2026-09-28 10:38:42,426 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.40
+2026-09-28 10:38:47,333 [power.py:init_state()] - Device Init Error: printer_plug
 Traceback (most recent call last):
   File "/home/daniel/moonraker/moonraker/components/power.py", line 898, in init_state
     state: int = await self._send_info_request()
