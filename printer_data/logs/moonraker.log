@@ -277,3 +277,5 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/asyncio/selector_events.py", line 541, in _sock_connect_cb
     raise OSError(err, f'Connect call failed {address}')
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
+2026-10-03 16:26:25,196 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2026-10-03 16:26:52,207 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
