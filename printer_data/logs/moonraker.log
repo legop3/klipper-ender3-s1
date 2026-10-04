@@ -279,3 +279,5 @@ Traceback (most recent call last):
 OSError: [Errno 113] Connect call failed ('192.168.0.83', 9999)
 2026-10-03 16:26:25,196 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
 2026-10-03 16:26:52,207 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
+2026-10-03 20:26:25,203 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2026-10-03 20:26:52,215 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
