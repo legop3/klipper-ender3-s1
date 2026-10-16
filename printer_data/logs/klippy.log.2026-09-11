@@ -355,33 +355,33 @@ Branch: master
 Remote: origin
 Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
-Python: '3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]'
-webhooks client 140475213226496: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
-=============== Log rollover at Wed Jul 15 20:37:40 2026 ===============
+Python: '3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]'
+webhooks client 140328463326448: {'program': 'Moonraker', 'version': 'v0.8.0-311-g65a8271'}
+=============== Log rollover at Fri Sep 11 12:10:34 2026 ===============
 b'Got EOF when reading from device'
-Timeout with MCU 'mcu' (eventtime=776094.879178)
+Timeout with MCU 'mcu' (eventtime=342949.178850)
 Transition to shutdown state: Lost communication with MCU 'mcu'
 Dumping gcode input 0 blocks
-Dumping 20 requests for client 140475213226496
-Received 7497.331836: b'{"id": 140699720179408, "method": "gcode/script", "params": {"script": "M220 S100"}}'
-Received 7498.534554: b'{"id": 140699720177152, "method": "gcode/script", "params": {"script": "M221 S100"}}'
-Received 13571.547190: b'{"id": 140699774592496, "method": "info", "params": {}}'
-Received 13571.547190: b'{"id": 140699720177392, "method": "objects/list", "params": {}}'
-Received 13571.547190: b'{"id": 140699720187376, "method": "gcode/help", "params": {}}'
-Received 13571.560291: b'{"id": 140699720176480, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
-Received 13572.363026: b'{"id": 140699720179456, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
-Received 13576.550096: b'{"id": 140699720175472, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-25 F1500\\nG90"}}'
-Received 13583.966617: b'{"id": 140699720182240, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-25 F1500\\nG90"}}'
-Received 13590.918393: b'{"id": 140699720172208, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-25 F1500\\nG90"}}'
-Received 13596.994670: b'{"id": 140699720187760, "method": "gcode/script", "params": {"script": "G91\\nG1 Y+25 F6000\\nG90"}}'
-Received 13598.715943: b'{"id": 140699720184400, "method": "gcode/script", "params": {"script": "G91\\nG1 Y-25 F6000\\nG90"}}'
-Received 13599.754383: b'{"id": 140699720185408, "method": "gcode/script", "params": {"script": "G91\\nG1 Y-25 F6000\\nG90"}}'
-Received 13600.727715: b'{"id": 140699720175904, "method": "gcode/script", "params": {"script": "G91\\nG1 Y-25 F6000\\nG90"}}'
-Received 13607.149463: b'{"id": 140699720172832, "method": "gcode/script", "params": {"script": "G91\\nG1 Y-25 F6000\\nG90"}}'
-Received 13609.083801: b'{"id": 140699720178448, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-10 F1500\\nG90"}}'
-Received 13612.243254: b'{"id": 140699720175424, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-10 F1500\\nG90"}}'
-Received 13615.660032: b'{"id": 140699720175328, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-10 F1500\\nG90"}}'
-Received 13621.974851: b'{"id": 140699720175424, "method": "gcode/script", "params": {"script": "G91\\nG1 Z-10 F1500\\nG90"}}'
-Received 50736.406734: b'{"id": 140699720184544, "method": "gcode/script", "params": {"script": "M84"}}'
-gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, -0.08499999999999999, 1897.2399060999217] last_position=[5.0, 112.0, 46.91499999999999, 1976.6805760999077] homing_position=[0.0, 0.0, -0.08499999999999999, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=25.0
-Reactor garbage collection: (13573.216212783, 0.0, 0.0)
+Dumping 20 requests for client 140328463326448
+Received 9948.393039: b'{"id": 139690670310160, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 9949.289416: b'{"id": 139690670311312, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 11717.189155: b'{"id": 139690669207808, "method": "info", "params": {}}'
+Received 11717.189155: b'{"id": 139690670310976, "method": "objects/list", "params": {}}'
+Received 11717.189466: b'{"id": 139690659551008, "method": "gcode/help", "params": {}}'
+Received 11717.212228: b'{"id": 139690669207856, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 11718.188747: b'{"id": 139690669207328, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 11723.369489: b'{"id": 139690669206368, "method": "pause_resume/pause", "params": {}}'
+Received 11730.741420: b'{"id": 139690669208192, "method": "pause_resume/cancel", "params": {}}'
+Received 11764.462857: b'{"id": 139690669210688, "method": "gcode/script", "params": {"script": "M84"}}'
+Received 11962.964046: b'{"id": 139690669208048, "method": "gcode/script", "params": {"script": "SDCARD_PRINT_FILE FILENAME=\\"ROOMBA_Wrangler_3h51m_0.20mm_240C_PETG_ENDER3S1.gcode\\""}}'
+Received 12253.584141: b'{"id": 139690669209776, "method": "gcode/script", "params": {"script": "M220 S100"}}'
+Received 14898.383925: b'{"id": 139690669211120, "method": "gcode/script", "params": {"script": "M220 S152"}}'
+Received 14965.469069: b'{"id": 139690669208912, "method": "gcode/script", "params": {"script": "M220 S100"}}'
+Received 15145.976559: b'{"id": 139690669209296, "method": "info", "params": {}}'
+Received 15145.976559: b'{"id": 139690669210688, "method": "objects/list", "params": {}}'
+Received 15145.976559: b'{"id": 139690659558256, "method": "gcode/help", "params": {}}'
+Received 15145.997700: b'{"id": 139690669209536, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "gcode_move": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro _KAMP_Settings": null, "heaters": null, "heater_bed": null, "heater_fan hotend_fan": null, "fan": null, "probe": null, "bed_mesh": null, "pause_resume": null, "filament_switch_sensor e0_sensor": null, "bed_screws": null, "print_stats": null, "virtual_sdcard": null, "display_status": null, "gcode_macro START_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro CANCEL_PRINT": null, "idle_timeout": null, "stepper_enable": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 15146.865252: b'{"id": 139690669210496, "method": "objects/query", "params": {"objects": {"extruder": ["can_extrude"]}}}'
+Received 25289.039645: b'{"id": 139690669210832, "method": "gcode/script", "params": {"script": "M220 S200"}}'
+gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, 0.0, 21076.21561999866] last_position=[5.0, 187.0, 162.0, 21241.16863999844] homing_position=[0.0, 0.0, 0.0, 0.0] speed_factor=0.03333333333333333 extrude_factor=1.0 speed=20.0
+Reactor garbage collection: (11998.687571572, 0.0, 0.0)
