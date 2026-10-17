@@ -242,3 +242,9 @@ Content-Type: multipart/form-data; boundary=------------------------1b72e609e6da
 2026-10-17 05:56:50,221 [websockets.py:_handle_identify()] - Websocket 140408122177856 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
 2026-10-17 05:56:51,884 [websockets.py:on_close()] - Websocket Closed: ID: 140408122177856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.74
 2026-10-17 06:58:20,695 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.184
+2026-10-17 08:51:40,078 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.184
+2026-10-17 08:51:40,079 [application.py:log_request()] - 101 GET /websocket (192.168.0.184) [_TRUSTED_USER_] 0.98ms
+2026-10-17 08:51:40,079 [websockets.py:open()] - Websocket Opened: ID: 140408122096608, Proxied: True, User Agent: Mozilla/5.0 (Android 13; Mobile; rv:158.0) Gecko/158.0 Firefox/158.0, Host Name: 192.168.0.40
+2026-10-17 08:51:40,089 [websockets.py:_handle_identify()] - Websocket 140408122096608 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2026-10-17 08:51:41,612 [websockets.py:on_close()] - Websocket Closed: ID: 140408122096608 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.53
+2026-10-17 09:53:20,730 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.184
